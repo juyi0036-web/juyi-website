@@ -10,20 +10,18 @@ export default function About() {
 
       <Navbar />
 
-      {/* 头部区域 */}
       <div className="bg-choco text-cream py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
-          {/* --- 修改点：Logo 放大 --- */}
+          {/* Logo 图片区域 */}
           <div className="mb-8 flex justify-center">
-             {/* h-32 改成了 h-48 (更大)，p-2 改成了 p-4 (留白更多)，shadow-xl 改成了 shadow-2xl (更立体) */}
+             {/* 关键修改：确保 public 文件夹里有 logo.png */}
              <img 
                src="/logo.png" 
                alt="JUYI CHR Emblème" 
                className="h-48 w-auto bg-cream rounded-full p-4 border-4 border-[#EAD8C0] shadow-2xl" 
              />
           </div>
-          {/* ------------------------- */}
 
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl uppercase">
             L'Excellence du Matériel
@@ -35,7 +33,6 @@ export default function About() {
       </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
         {/* 我们的故事 */}
         <div className="mb-20">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
@@ -92,7 +89,6 @@ export default function About() {
             </p>
           </div>
         </div>
-
       </main>
     </div>
   );

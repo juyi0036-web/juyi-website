@@ -28,10 +28,10 @@ export default function Home() {
               </span>
             </p>
             
-            {/* 按钮组 - 修复了跳转链接 */}
+            {/* 按钮组 */}
             <div className="mt-10 max-w-md mx-auto sm:flex sm:justify-center md:mt-12 gap-4">
               <div className="rounded-md shadow">
-                {/* 修改点：直接跳到烘焙设备分类，保证有内容显示 */}
+                {/* 链接已修复，指向和面机页面 */}
                 <Link href="/products/boulangerie-patisserie/petrins" className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-md text-choco bg-cream hover:bg-white md:py-4 md:text-lg md:px-10 no-underline transition transform hover:-translate-y-1">
                   Voir le Catalogue
                 </Link>
@@ -106,4 +106,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-8 px-4 text-center">
             <p className="text-sm text-gray-400">
                 &copy; 2025 Juyi CHR Supply Chain Management.
-            </p
+            </p>
+        </div>
+      </footer>
+    </div>
+  );
+}

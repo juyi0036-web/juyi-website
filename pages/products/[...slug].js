@@ -1,1 +1,115 @@
+import { useRouter } from 'next/router';
+import Head from 'next/head';
+import Link from 'next/link';
+import Navbar from '../../components/Navbar';
+import { categories } from '../../data/categories';
+import { products } from '../../data/products';
 
+export default function ProductCategory() {
+  const router = useRouter();
+  const { slug } = router.query; 
+
+  // 防止页面刷新时报错，等待数据加载
+  if (!slug) return <div className="min-h-screen bg-cream"></div>;
+
+  const categorySlug = slug[0];
+  const subCategorySlug = slug[1];
+  
+  // 查找当前分类信息
+  const currentCategory = categories.find(c => c.slug === categorySlug);
+  const currentSubCategory = currentCategory?.subcategories.find(s => s.slug === subCategorySlug);
+
+  // 筛选产品
+  const categoryProducts = products.filter(product => {
+    if (subCategorySlug) {
+      return product.categorySlug === categorySlug && product.subCategorySlug === subCategorySlug;
+    }
+    return product.categorySlug === categorySlug;
+  });
+
+  const pageTitle = currentSubCategory ? currentSubCategory.name : (currentCategory ? currentCategory.name : 'Produits');
+
+  return (
+    <div className="min-h-screen bg-cream font-sans">
+      <Head>
+        <title>{pageTitle} | JUYI CHR</title>
+      </Head>
+
+      <Navbar />
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* 面包屑导航 */}
+        <nav className="text-sm text-gray-500 mb-8">
+          <Link href="/" className="hover:text-red-700">Accueil</Link>
+          <span className="mx-2">/</span>
+          <span className="capitalize">{currentCategory?.name || categorySlug}</span>
+          {currentSubCategory && (
+            <>
+              <span className="mx-2">/</span>
+              <span className="font-bold text-choco">{currentSubCategory.name}</span>
+            </>
+          )}
+        </nav>
+
+        <div className="border-b border-[#EAD8C0] pb-5 mb-8">
+          <h1 className="text-3xl font-extrabold text-choco uppercase">
+            {pageTitle}
+          </h1>
+          <p className="mt-2 text-gray-600">
+            {categoryProducts.length} référence(s) disponible(s)
+          </p>
+        </div>
+
+        {/* 产品列表 */}
+        {categoryProducts.length > 0 ? (
+          <div className="grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+            {categoryProducts.map((product) => (
+              <div key={product.id} className="group bg-white border border-[#EAD8C0] rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                
+                {/* 图片区 */}
+                <div className="relative w-full h-64 bg-white p-4 flex items-center justify-center border-b border-gray-100">
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition"
+                  />
+                </div>
+
+                {/* 内容区 */}
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-lg font-bold text-choco mb-2 group-hover:text-red-700 transition">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-4 line-clamp-2">
+                    {product.description}
+                  </p>
+
+                  {/* 简要参数 */}
+                  {product.specs && (
+                    <div className="bg-cream/30 rounded p-3 text-xs text-gray-600 mb-6 flex-1">
+                      {Object.entries(product.specs).slice(0, 3).map(([key, value]) => (
+                        <div key={key} className="flex justify-between py-1 border-b border-gray-100 last:border-0">
+                          <span className="font-semibold">{key}:</span>
+                          <span>{value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  <a href="https://wa.me/85269724241" target="_blank" className="w-full block text-center bg-choco text-white py-3 rounded-lg font-bold hover:bg-red-700 transition uppercase text-sm tracking-wide no-underline">
+                    Demander un prix
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20 bg-white rounded-xl border border-dashed border-choco">
+            <p className="text-xl text-gray-500">Aucun produit pour le moment</p>
+            <p className="text-sm text-gray-400 mt-2">Catalogue en cours de mise à jour.</p>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}

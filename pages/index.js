@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
-    // 1. 全局背景统一为奶油色 (bg-cream)
     <div className="min-h-screen bg-cream font-sans flex flex-col">
       <Head>
         <title>JUYI CHR - Équipement Boulangerie & Cuisine Pro</title>
@@ -14,7 +13,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex-grow">
-        {/* 2. Hero 区域：改为巧克力色背景，文字为奶油色，突出品牌 */}
+        {/* Hero 区域 */}
         <div className="bg-choco text-cream py-24 border-b-8 border-[#EAD8C0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl uppercase">
@@ -29,10 +28,11 @@ export default function Home() {
               </span>
             </p>
             
-            {/* 按钮组 */}
+            {/* 按钮组 - 修复了跳转链接 */}
             <div className="mt-10 max-w-md mx-auto sm:flex sm:justify-center md:mt-12 gap-4">
               <div className="rounded-md shadow">
-                <Link href="/products" className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-md text-choco bg-cream hover:bg-white md:py-4 md:text-lg md:px-10 no-underline transition transform hover:-translate-y-1">
+                {/* 修改点：直接跳到烘焙设备分类，保证有内容显示 */}
+                <Link href="/products/boulangerie-patisserie/petrins" className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-md text-choco bg-cream hover:bg-white md:py-4 md:text-lg md:px-10 no-underline transition transform hover:-translate-y-1">
                   Voir le Catalogue
                 </Link>
               </div>
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 3. 快速分类入口 - 使用卡片设计 */}
+        {/* 快速分类入口 */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-extrabold text-choco uppercase tracking-wide">
@@ -102,14 +102,8 @@ export default function Home() {
         </div>
       </main>
       
-      {/* 4. 页脚统一颜色 */}
       <footer className="bg-white border-t border-[#EAD8C0] mt-auto">
         <div className="max-w-7xl mx-auto py-8 px-4 text-center">
             <p className="text-sm text-gray-400">
                 &copy; 2025 Juyi CHR Supply Chain Management.
-            </p>
-        </div>
-      </footer>
-    </div>
-  );
-}
+            </p

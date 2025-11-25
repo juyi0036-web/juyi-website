@@ -1,34 +1,36 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState, useEffect } from 'react'; // 引入需要的 React 功能
+import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 
 export default function Home() {
-  // 定义轮播图的图片和对应的文字主题
+  // 定义轮播图：针对法国市场的精准选图
   const slides = [
     {
-      // 图片1：专业厨房/餐饮 (Cuisine & Restaurant)
-      image: "https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2070&auto=format&fit=crop",
-      title: "Cuisine Professionnelle",
-      subtitle: "Des équipements performants pour les chefs exigeants."
+      // Slide 1: 咖啡 & 制冰 (Café & Bar) -> 替换了原来的厨房图
+      // 图片：专业浓缩咖啡机特写，体现高端吧台感
+      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop",
+      title: "Univers Café & Bar",
+      subtitle: "Machines à café, Machines à glaçons & Vitrines."
     },
     {
-      // 图片2：烘焙 (Boulangerie)
+      // Slide 2: 烘焙 (Boulangerie) -> 保留了您喜欢的面包图
       image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
       title: "Boulangerie & Pâtisserie",
-      subtitle: "La tradition du goût alliée à la puissance industrielle."
+      subtitle: "Pétrins, Diviseuses et le savoir-faire du pain."
     },
     {
-      // 图片3：不锈钢/仓储 (Inox & Stockage)
-      image: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?q=80&w=2071&auto=format&fit=crop",
-      title: "Agencement Inox & Froid",
-      subtitle: "Hygiène irréprochable et conservation maîtrisée."
+      // Slide 3: 烤箱 & 烹饪 (Cuisine) -> 替换成了西式不锈钢烤箱图
+      // 图片：纯粹的不锈钢西餐厨房，没有米饭元素
+      image: "https://images.unsplash.com/photo-1586810696076-c35ef33b4439?q=80&w=2071&auto=format&fit=crop",
+      title: "Cuisson & Fours Pro",
+      subtitle: "La performance thermique pour les chefs."
     }
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // 自动切换逻辑：每 5 秒换一张图
+  // 自动切换：每 5 秒换一张
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -50,7 +52,7 @@ export default function Home() {
         {/* === 动态轮播首屏 (Hero Slider) === */}
         <div className="relative bg-choco text-cream min-h-[85vh] flex items-center justify-center overflow-hidden">
           
-          {/* 背景图片层 (循环生成所有图片，通过透明度控制显示哪一张) */}
+          {/* 背景图片层 */}
           {slides.map((slide, index) => (
             <div 
               key={index}
@@ -62,8 +64,8 @@ export default function Home() {
                 className="absolute inset-0 bg-cover bg-center transform scale-105"
                 style={{ backgroundImage: `url('${slide.image}')` }}
               ></div>
-              {/* 黑色遮罩 */}
-              <div className="absolute inset-0 bg-black/50"></div>
+              {/* 黑色遮罩：加深一点，让文字更清晰 */}
+              <div className="absolute inset-0 bg-black/60"></div>
             </div>
           ))}
 
@@ -75,7 +77,7 @@ export default function Home() {
             
             <h1 className="text-5xl tracking-tight font-extrabold sm:text-6xl md:text-7xl uppercase text-white drop-shadow-2xl">
               <span className="block">Votre Partenaire Industriel</span>
-              {/* 动态变化的副标题，对应当前图片 */}
+              {/* 动态副标题 */}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EAD8C0] to-white mt-4 transition-all duration-500">
                 {slides[currentSlide].title}
               </span>
@@ -85,7 +87,7 @@ export default function Home() {
               {slides[currentSlide].subtitle}
             </p>
             
-            {/* 底部滑动指示点 */}
+            {/* 指示点 */}
             <div className="flex justify-center gap-3 mt-8">
               {slides.map((_, index) => (
                 <button 
@@ -101,6 +103,7 @@ export default function Home() {
             {/* 按钮组 */}
             <div className="mt-12 max-w-md mx-auto sm:flex sm:justify-center gap-4">
               <div className="rounded-full shadow-xl glow-effect">
+                {/* 链接改回跳到和面机，作为主打 */}
                 <Link href="/products/boulangerie-patisserie/petrins" className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-full text-choco bg-[#EAD8C0] hover:bg-white md:py-4 md:text-lg md:px-10 no-underline transition duration-300 transform hover:scale-105">
                   Voir le Catalogue
                 </Link>
@@ -138,7 +141,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* === 3. 全品类入口 (不仅是烘焙) === */}
+        {/* === 3. 全品类入口 === */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-extrabold text-choco uppercase tracking-wide">
@@ -149,22 +152,22 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1: Cuisine & Restauration */}
+            {/* Card 1: Cuisine Pro (换了图，对应烤箱/烹饪) */}
             <Link href="/products/inox-mobilier/tables-inox" className="group relative h-96 rounded-2xl overflow-hidden shadow-xl block">
               <div 
                 className="absolute inset-0 bg-cover bg-center transition duration-700 transform group-hover:scale-110"
-                style={{backgroundImage: "url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop')"}}
+                style={{backgroundImage: "url('https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2070&auto=format&fit=crop')"}}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-70 transition"></div>
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl font-bold text-white mb-2 uppercase group-hover:text-[#EAD8C0] transition">Cuisine Pro</h3>
                 <p className="text-gray-300 text-sm translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
-                  Fourneaux, Friteuses, Grills... <br/> La performance au service du chef.
+                  Fours, Cuisson, Snack... <br/> Performance Chef.
                 </p>
               </div>
             </Link>
 
-            {/* Card 2: Boulangerie */}
+            {/* Card 2: Boulangerie (保留面包图) */}
             <Link href="/products/boulangerie-patisserie/petrins" className="group relative h-96 rounded-2xl overflow-hidden shadow-xl block">
               <div 
                 className="absolute inset-0 bg-cover bg-center transition duration-700 transform group-hover:scale-110"
@@ -174,22 +177,22 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl font-bold text-white mb-2 uppercase group-hover:text-[#EAD8C0] transition">Boulangerie</h3>
                 <p className="text-gray-300 text-sm translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
-                  Pétrins, Fours Rotatifs... <br/> L'art de la pâte.
+                  Pétrins, Façonneuses... <br/> Tradition & Technologie.
                 </p>
               </div>
             </Link>
 
-            {/* Card 3: Froid & Inox */}
+            {/* Card 3: Froid & Bar (咖啡/制冰/冷柜) */}
             <Link href="/products/froid/armoires-refrigerees" className="group relative h-96 rounded-2xl overflow-hidden shadow-xl block">
               <div 
                 className="absolute inset-0 bg-cover bg-center transition duration-700 transform group-hover:scale-110"
-                style={{backgroundImage: "url('https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?q=80&w=2071&auto=format&fit=crop')"}}
+                style={{backgroundImage: "url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop')"}}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-70 transition"></div>
               <div className="absolute bottom-0 left-0 p-8">
-                <h3 className="text-2xl font-bold text-white mb-2 uppercase group-hover:text-[#EAD8C0] transition">Inox & Froid</h3>
+                <h3 className="text-2xl font-bold text-white mb-2 uppercase group-hover:text-[#EAD8C0] transition">Bar & Froid</h3>
                 <p className="text-gray-300 text-sm translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
-                  Armoires, Tables, Plonges... <br/> Hygiène et durabilité.
+                  Café, Glaçons, Vitrines... <br/> Service & Conservation.
                 </p>
               </div>
             </Link>

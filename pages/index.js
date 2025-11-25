@@ -7,7 +7,7 @@ export default function Home() {
   // 定义 4 组高端氛围图
   const slides = [
     {
-      // 模块 1: 面包 & 烘焙
+      // 模块 1: 面包 & 烘焙 (保留您喜欢的)
       // 图片：工匠正在撒面粉，光影非常有质感
       image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
       title: "L'Art de la Boulangerie",
@@ -15,27 +15,27 @@ export default function Home() {
       link: "/products/boulangerie-patisserie/petrins"
     },
     {
-      // 模块 2: 烹饪 & 热厨
-      // 图片：高级餐厅后厨，火焰与专注的厨师
-      image: "https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2070&auto=format&fit=crop",
-      title: "Haute Cuisine",
-      subtitle: "Des équipements de cuisson pour les chefs étoilés.",
-      link: "/products/inox-mobilier/tables-inox" // 暂时导向不锈钢或热厨分类
+      // 模块 2: 烹饪 & 生产线 (已修改)
+      // 图片：展示整齐的商用厨房生产线，不锈钢设备排列，体现“后厨流水线”
+      image: "https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=2080&auto=format&fit=crop",
+      title: "Ligne de Cuisson",
+      subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
+      link: "/products/inox-mobilier/tables-inox" 
     },
     {
-      // 模块 3: 不锈钢 & 空间
+      // 模块 3: 不锈钢 & 空间 (保留)
       // 图片：极致干净、充满线条感的现代商用厨房
       image: "https://images.unsplash.com/photo-1530610476181-d8ceb28bc012?q=80&w=2070&auto=format&fit=crop",
       title: "Espace & Hygiène",
-      subtitle: "L'élégance de l'inox. Agencement optimisé.",
+      subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
       link: "/products/inox-mobilier/tables-inox"
     },
     {
-      // 模块 4: 制冷 & 冰爽
-      // 图片：晶莹剔透的冰块特写，体现制冰机的高端品质
-      image: "https://images.unsplash.com/photo-1497636577773-f1231844b336?q=80&w=2070&auto=format&fit=crop",
-      title: "Fraîcheur Absolue",
-      subtitle: "Maîtrise du froid et de la glace.",
+      // 模块 4: 制冷 & 制冰机 (已修改)
+      // 图片：极具质感的冰块特写，代表制冰机和冷冻技术
+      image: "https://images.unsplash.com/photo-1505569127510-bde15360e651?q=80&w=2070&auto=format&fit=crop",
+      title: "Froid & Glace",
+      subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
       link: "/products/froid/armoires-refrigerees"
     }
   ];
@@ -122,7 +122,6 @@ export default function Home() {
         <div className="bg-white py-8 border-b border-[#EAD8C0]/30">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-around flex-wrap gap-8 opacity-70 grayscale hover:grayscale-0 transition duration-500">
-               {/* 这里用文字代替图标，更显极简高级 */}
                <span className="text-xl font-bold text-choco">CE CERTIFIED</span>
                <span className="text-xl font-bold text-choco">DIRECT FACTORY</span>
                <span className="text-xl font-bold text-choco">GLOBAL SHIPPING</span>
@@ -140,7 +139,7 @@ export default function Home() {
             <div className="w-16 h-1 bg-[#EAD8C0] mx-auto mt-6"></div>
           </div>
 
-          {/* 改为 2行2列 的布局，更稳重，适合展示大图 */}
+          {/* 2行2列 布局 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             {slides.map((slide, index) => (
@@ -161,7 +160,7 @@ export default function Home() {
                       {slide.title}
                     </h3>
                     <p className="text-gray-300 text-lg font-light opacity-0 group-hover:opacity-100 transition duration-500 delay-100">
-                      Découvrir la collection &rarr;
+                      {slide.subtitle} <span className="ml-2">&rarr;</span>
                     </p>
                   </div>
                 </div>

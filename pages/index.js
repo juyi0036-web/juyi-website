@@ -52,7 +52,11 @@ export default function Home() {
                 className="absolute inset-0 bg-cover bg-center transform scale-105 transition duration-[10000ms]"
                 style={{ backgroundImage: `url('${slide.image}')` }}
               ></div>
-              <div className="absolute inset-0 bg-black/40"></div>
+              <div className={`absolute inset-0 ${
+                slide.link.includes('/products/froid')
+                  ? 'bg-gradient-to-br from-cyan-700/40 via-blue-800/40 to-cyan-900/40'
+                  : 'bg-black/40'
+              }`}></div>
             </div>
           ))}
 

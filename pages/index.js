@@ -47,10 +47,17 @@ export default function Home() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              {/* 直接显示网络图片 */}
+              {/* 背景图：制冷主题使用 contain 以完整显示 */}
               <div 
-                className="absolute inset-0 bg-cover bg-center transform scale-105 transition duration-[10000ms]"
-                style={{ backgroundImage: `url('${slide.image}')` }}
+                className={`absolute inset-0 ${
+                  slide.link.includes('/products/froid')
+                    ? 'bg-contain bg-center bg-no-repeat'
+                    : 'bg-cover bg-center transform scale-105'
+                } transition duration-[10000ms]`}
+                style={{ 
+                  backgroundImage: `url('${slide.image}')`,
+                  backgroundColor: slide.link.includes('/products/froid') ? '#0b1e2d' : undefined
+                }}
               ></div>
               <div className={`absolute inset-0 ${
                 slide.link.includes('/products/froid')

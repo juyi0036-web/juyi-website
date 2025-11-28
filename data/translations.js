@@ -47,7 +47,7 @@ export const translations = {
       },
       {
         title: "Fours & Ligne Chaude",
-        subtitle: "Fours, grill, friteuses等商用热厨核心设备。",
+        subtitle: "Fours, grills et friteuses — équipements chauds professionnels.",
         link: "/products/preparation/friteuses-grills",
         image: "/hero-hotline.jpg"
       },

@@ -43,25 +43,25 @@ export const translations = {
         title: "L'Art de la Boulangerie",
         subtitle: "La tradition artisanale rencontre la précision industrielle.",
         link: "/products/boulangerie-patisserie/petrins",
-        image: "https://source.unsplash.com/Hx7xdwhj2AY/2070x1200"
+        image: "/hero-bakery.jpg"
       },
       {
         title: "Ligne de Cuisson",
         subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
         link: "/products/inox-mobilier/tables-inox",
-        image: "https://source.unsplash.com/-eKZLpj7U0E/2070x1200"
+        image: "/hero-cuisine.jpg"
       },
       {
         title: "Espace & Hygiène",
         subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
         link: "/products/inox-mobilier/tables-inox",
-        image: "https://source.unsplash.com/0dj9V9s-R9c/2070x1200"
+        image: "/hero-stainless.jpg"
       },
       {
         title: "Froid & Glace",
         subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
         link: "/products/froid/armoires-refrigerees",
-        image: "https://source.unsplash.com/1PlVbeOCd78/2070x1200"
+        image: "/hero-ice.jpg"
       }
     ],
     about_meta_title: "Qui sommes-nous | JUYI CHR",
@@ -140,25 +140,25 @@ export const translations = {
         title: "The Art of Bakery",
         subtitle: "Artisanal tradition meets industrial precision.",
         link: "/products/boulangerie-patisserie/petrins",
-        image: "https://source.unsplash.com/Hx7xdwhj2AY/2070x1200"
+        image: "/hero-bakery.jpg"
       },
       {
         title: "Cooking Line",
         subtitle: "Complete solutions for your hot kitchen layout.",
         link: "/products/inox-mobilier/tables-inox",
-        image: "https://source.unsplash.com/-eKZLpj7U0E/2070x1200"
+        image: "/hero-cuisine.jpg"
       },
       {
         title: "Space & Hygiene",
         subtitle: "The elegance of stainless steel. Tables, sinks and trolleys.",
         link: "/products/inox-mobilier/tables-inox",
-        image: "https://source.unsplash.com/0dj9V9s-R9c/2070x1200"
+        image: "/hero-stainless.jpg"
       },
       {
         title: "Cold & Ice",
         subtitle: "Ice makers and high-performance refrigerated cabinets.",
         link: "/products/froid/armoires-refrigerees",
-        image: "https://source.unsplash.com/1PlVbeOCd78/2070x1200"
+        image: "/hero-ice.jpg"
       }
     ],
     about_meta_title: "About Us | JUYI CHR",
@@ -237,25 +237,25 @@ export const translations = {
         title: "El Arte de la Panadería",
         subtitle: "La tradición artesanal se une a la precisión industrial.",
         link: "/products/boulangerie-patisserie/petrins",
-        image: "https://source.unsplash.com/Hx7xdwhj2AY/2070x1200"
+        image: "/hero-bakery.jpg"
       },
       {
         title: "Línea de Cocción",
         subtitle: "Soluciones completas para su cocina caliente.",
         link: "/products/inox-mobilier/tables-inox",
-        image: "https://source.unsplash.com/-eKZLpj7U0E/2070x1200"
+        image: "/hero-cuisine.jpg"
       },
       {
         title: "Espacio e Higiene",
         subtitle: "La elegancia del inox. Mesas, fregaderos y carros.",
         link: "/products/inox-mobilier/tables-inox",
-        image: "https://source.unsplash.com/0dj9V9s-R9c/2070x1200"
+        image: "/hero-stainless.jpg"
       },
       {
         title: "Frío y Hielo",
         subtitle: "Máquinas de hielo y armarios refrigerados de alto rendimiento.",
         link: "/products/froid/armoires-refrigerees",
-        image: "https://source.unsplash.com/1PlVbeOCd78/2070x1200"
+        image: "/hero-ice.jpg"
       }
     ],
     about_meta_title: "Quiénes Somos | JUYI CHR",

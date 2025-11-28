@@ -67,7 +67,9 @@ export default function Home() {
       <main className="flex-grow">
         
         {/* === 全屏轮播 Hero === */}
-        <div className="relative bg-choco text-cream min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <div className={`relative bg-choco text-cream ${
+          slides[currentSlide]?.link?.includes('/products/froid') ? 'min-h-[70vh] md:min-h-[75vh]' : 'min-h-[85vh]'
+        } flex items-center justify-center overflow-hidden`}>
           
           {slides.map((slide, index) => (
             <div 

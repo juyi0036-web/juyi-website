@@ -11,11 +11,7 @@ export default function Home() {
   const t = translations[locale] || translations.fr;
 
   const slides = t.home_slides.map((s) => ({
-    image: s.link.includes('boulangerie-patisserie')
-      ? "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop"
-      : s.link.includes('inox-mobilier')
-      ? "https://images.unsplash.com/photo-1530610476181-d8ceb28bc012?q=80&w=2070&auto=format&fit=crop"
-      : "https://images.unsplash.com/photo-1505569127510-bde15360e651?q=80&w=2070&auto=format&fit=crop",
+    image: s.image,
     title: s.title,
     subtitle: s.subtitle,
     link: s.link,

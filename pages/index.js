@@ -10,41 +10,13 @@ export default function Home() {
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  // === 这里修改了：全部使用您上传到 public/products 的本地图片 ===
-  const slides = [
-    {
-      // 1. 面包 (Boulangerie)
-      // 对应文件：public/products/boulangerie.jpg
-      image: "/products/boulangerie.jpg", 
-      title: "L'Art de la Boulangerie",
-      subtitle: "La tradition artisanale rencontre la précision industrielle.",
-      link: "/products/boulangerie-patisserie/petrins"
-    },
-    {
-      // 2. 烹饪 (Cuisine)
-      // 对应文件：public/products/cuisine.jpg
-      image: "/products/cuisine.jpg",
-      title: "Ligne de Cuisson",
-      subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
-      link: "/products/inox-mobilier/tables-inox" 
-    },
-    {
-      // 3. 不锈钢 (Inox)
-      // 对应文件：public/products/inox.jpg
-      image: "/products/inox.jpg",
-      title: "Espace & Hygiène",
-      subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
-      link: "/products/inox-mobilier/tables-inox"
-    },
-    {
-      // 4. 制冷 (Froid)
-      // 对应文件：public/products/froid.jpg
-      image: "/products/froid.jpg",
-      title: "Froid & Glace",
-      subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
-      link: "/products/froid/armoires-refrigerees"
-    }
-  ];
+  const slides = (t.home_slides || []).map((s) => ({
+    image: s.image,
+    title: s.title,
+    subtitle: s.subtitle,
+    link: s.link,
+    fit: s.fit || 'cover'
+  }));
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -59,16 +31,15 @@ export default function Home() {
     <div className="min-h-screen bg-cream font-sans flex flex-col">
       <Head>
         <title>JUYI CHR - {t.hero_title_1}</title>
-        <meta name="description" content="Fournisseur d'équipement professionnel CHR. Direct Usine Chine-France." />
+        <meta name="description" content={t.home_meta_description} />
       </Head>
 
       <Navbar />
 
       <main className="flex-grow">
         
-        {/* === 全屏轮播 Hero === */}
         <div className={`relative bg-choco text-cream ${
-          slides[currentSlide]?.link?.includes('/products/froid') ? 'min-h-[70vh] md:min-h-[75vh]' : 'min-h-[85vh]'
+          slides[currentSlide]?.fit === 'contain' ? 'min-h-[70vh] md:min-h-[75vh]' : 'min-h-[85vh]'
         } flex items-center justify-center overflow-hidden`}>
           
           {slides.map((slide, index) => (
@@ -78,14 +49,22 @@ export default function Home() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              {/* 显示本地图片 */}
-              <img 
-                src={slide.image} 
-                alt={slide.title}
-                className="absolute inset-0 w-full h-full object-cover object-center"
-              />
-              {/* 黑色遮罩 */}
-              <div className="absolute inset-0 bg-black/40"></div>
+              <div 
+                className={`absolute inset-0 ${
+                  slide.fit === 'contain'
+                    ? 'bg-contain bg-center bg-no-repeat'
+                    : 'bg-cover bg-center transform scale-105'
+                } transition duration-[10000ms]`}
+                style={{ 
+                  backgroundImage: `url('${slide.image}')`,
+                  backgroundColor: slide.link.includes('/products/froid') ? '#0b1e2d' : '#0b0b0b'
+                }}
+              ></div>
+              <div className={`absolute inset-0 ${
+                slide.link.includes('/products/froid')
+                  ? 'bg-gradient-to-br from-cyan-700/40 via-blue-800/40 to-cyan-900/40'
+                  : 'bg-black/40'
+              }`}></div>
             </div>
           ))}
 

@@ -50,7 +50,7 @@ export const translations = {
         title: "Fours & Ligne Chaude",
         subtitle: "Fours, grills et friteuses — équipements chauds professionnels.",
         link: "/products/preparation/friteuses-grills",
-        image: "/hero-cuisine.jpg",
+        image: "/hero-hotline-pro.jpg",
         fit: "cover"
       },
       {
@@ -151,7 +151,7 @@ export const translations = {
         title: "Ovens & Hot Line",
         subtitle: "Commercial ovens, grills and fryers for pro kitchens.",
         link: "/products/preparation/friteuses-grills",
-        image: "/hero-cuisine.jpg",
+        image: "/hero-hotline-pro.jpg",
         fit: "cover"
       },
       {
@@ -252,7 +252,7 @@ export const translations = {
         title: "Hornos & Línea Caliente",
         subtitle: "Hornos comerciales, parrillas y freidoras.",
         link: "/products/preparation/friteuses-grills",
-        image: "/hero-cuisine.jpg",
+        image: "/hero-hotline-pro.jpg",
         fit: "cover"
       },
       {

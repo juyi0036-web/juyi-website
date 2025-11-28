@@ -10,33 +10,36 @@ export default function Home() {
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
+  // === 这里修改了：全部使用您上传到 public/products 的本地图片 ===
   const slides = [
     {
-      // 1. 面包 (Boulangerie) - [保留]
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
+      // 1. 面包 (Boulangerie)
+      // 对应文件：public/products/boulangerie.jpg
+      image: "/products/boulangerie.jpg", 
       title: "L'Art de la Boulangerie",
       subtitle: "La tradition artisanale rencontre la précision industrielle.",
       link: "/products/boulangerie-patisserie/petrins"
     },
     {
-      // 2. 烹饪 (Cuisine) - [已替换]
-      // 新图：专业厨师在不锈钢灶台上猛火烹饪，体现商用设备的火力与性能
-      image: "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?q=80&w=2062&auto=format&fit=crop",
+      // 2. 烹饪 (Cuisine)
+      // 对应文件：public/products/cuisine.jpg
+      image: "/products/cuisine.jpg",
       title: "Ligne de Cuisson",
       subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
       link: "/products/inox-mobilier/tables-inox" 
     },
     {
-      // 3. 不锈钢 (Inox) - [保留]
-      image: "https://images.unsplash.com/photo-1530610476181-d8ceb28bc012?q=80&w=2070&auto=format&fit=crop",
+      // 3. 不锈钢 (Inox)
+      // 对应文件：public/products/inox.jpg
+      image: "/products/inox.jpg",
       title: "Espace & Hygiène",
       subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
       link: "/products/inox-mobilier/tables-inox"
     },
     {
-      // 4. 制冷 (Froid) - [已替换]
-      // 新图：商用冷柜内部视角，展示整齐的食材保鲜，体现容量与温控
-      image: "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?q=80&w=2070&auto=format&fit=crop",
+      // 4. 制冷 (Froid)
+      // 对应文件：public/products/froid.jpg
+      image: "/products/froid.jpg",
       title: "Froid & Glace",
       subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
       link: "/products/froid/armoires-refrigerees"
@@ -73,12 +76,13 @@ export default function Home() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              {/* 背景图 */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center transform scale-105 transition duration-[10000ms]"
-                style={{ backgroundImage: `url('${slide.image}')` }}
-              ></div>
-              {/* 遮罩层 */}
+              {/* 显示本地图片 */}
+              <img 
+                src={slide.image} 
+                alt={slide.title}
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
+              {/* 黑色遮罩 */}
               <div className="absolute inset-0 bg-black/40"></div>
             </div>
           ))}
@@ -132,7 +136,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* === 四大核心板块入口 === */}
+        {/* === 四大核心板块入口 (2x2 布局) === */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-extrabold text-choco uppercase tracking-widest">

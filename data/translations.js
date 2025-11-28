@@ -46,10 +46,10 @@ export const translations = {
         image: "/hero-bakery.jpg"
       },
       {
-        title: "Ligne de Cuisson",
-        subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
-        link: "/products/inox-mobilier/tables-inox",
-        image: "/hero-cuisine.jpg"
+        title: "Fours & Ligne Chaude",
+        subtitle: "Fours, grill, friteuses等商用热厨核心设备。",
+        link: "/products/preparation/friteuses-grills",
+        image: "/hero-hotline.jpg"
       },
       {
         title: "Espace & Hygiène",
@@ -143,10 +143,10 @@ export const translations = {
         image: "/hero-bakery.jpg"
       },
       {
-        title: "Cooking Line",
-        subtitle: "Complete solutions for your hot kitchen layout.",
-        link: "/products/inox-mobilier/tables-inox",
-        image: "/hero-cuisine.jpg"
+        title: "Ovens & Hot Line",
+        subtitle: "Commercial ovens, grills and fryers for pro kitchens.",
+        link: "/products/preparation/friteuses-grills",
+        image: "/hero-hotline.jpg"
       },
       {
         title: "Space & Hygiene",
@@ -240,10 +240,10 @@ export const translations = {
         image: "/hero-bakery.jpg"
       },
       {
-        title: "Línea de Cocción",
-        subtitle: "Soluciones completas para su cocina caliente.",
-        link: "/products/inox-mobilier/tables-inox",
-        image: "/hero-cuisine.jpg"
+        title: "Hornos & Línea Caliente",
+        subtitle: "Hornos comerciales, parrillas y freidoras.",
+        link: "/products/preparation/friteuses-grills",
+        image: "/hero-hotline.jpg"
       },
       {
         title: "Espacio e Higiene",

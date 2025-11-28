@@ -52,7 +52,7 @@ export default function Navbar() {
                     {categories.map((cat) => (
                       <div key={cat.slug} className="relative z-10">
                         <h3 className="text-base font-extrabold text-choco uppercase tracking-widest mb-4 border-b-2 border-choco pb-2">
-                          {cat.name}
+                          {cat.name?.[locale] || cat.name?.fr || cat.name}
                         </h3>
                         <ul className="space-y-3 list-none p-0 m-0">
                           {cat.subcategories.map((sub) => (
@@ -61,8 +61,8 @@ export default function Navbar() {
                                 href={`/products/${cat.slug}/${sub.slug}`} 
                                 className="text-sm text-gray-700 hover:text-red-700 hover:translate-x-1 transform transition block no-underline font-medium"
                               >
-                                {sub.name}
-                              </Link>
+                                {sub.name?.[locale] || sub.name?.fr || sub.name}
+                                </Link>
                             </li>
                           ))}
                         </ul>

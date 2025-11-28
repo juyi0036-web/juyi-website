@@ -10,37 +10,16 @@ export default function Home() {
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  // 直接使用高清网络图，无需上传！
-  const slides = [
-    {
-      // 1. 面包 (Boulangerie) - 工匠撒粉图
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
-      title: "L'Art de la Boulangerie",
-      subtitle: "La tradition artisanale rencontre la précision industrielle.",
-      link: "/products/boulangerie-patisserie/petrins"
-    },
-    {
-      // 2. 烹饪 (Cuisine) - 繁忙的后厨生产线
-      image: "https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=2080&auto=format&fit=crop",
-      title: "Ligne de Cuisson",
-      subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
-      link: "/products/inox-mobilier/tables-inox" 
-    },
-    {
-      // 3. 不锈钢 (Inox) - 极致干净的空间
-      image: "https://images.unsplash.com/photo-1530610476181-d8ceb28bc012?q=80&w=2070&auto=format&fit=crop",
-      title: "Espace & Hygiène",
-      subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
-      link: "/products/inox-mobilier/tables-inox"
-    },
-    {
-      // 4. 制冷 (Froid) - 冰块特写
-      image: "https://images.unsplash.com/photo-1505569127510-bde15360e651?q=80&w=2070&auto=format&fit=crop",
-      title: "Froid & Glace",
-      subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
-      link: "/products/froid/armoires-refrigerees"
-    }
-  ];
+  const slides = t.home_slides.map((s) => ({
+    image: s.link.includes('boulangerie-patisserie')
+      ? "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop"
+      : s.link.includes('inox-mobilier')
+      ? "https://images.unsplash.com/photo-1530610476181-d8ceb28bc012?q=80&w=2070&auto=format&fit=crop"
+      : "https://images.unsplash.com/photo-1505569127510-bde15360e651?q=80&w=2070&auto=format&fit=crop",
+    title: s.title,
+    subtitle: s.subtitle,
+    link: s.link,
+  }));
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -55,7 +34,7 @@ export default function Home() {
     <div className="min-h-screen bg-cream font-sans flex flex-col">
       <Head>
         <title>JUYI CHR - {t.hero_title_1}</title>
-        <meta name="description" content="Fournisseur d'équipement professionnel CHR. Direct Usine Chine-France." />
+        <meta name="description" content={t.home_meta_description} />
       </Head>
 
       <Navbar />
@@ -87,7 +66,7 @@ export default function Home() {
             </span>
             
             <h1 className="text-5xl tracking-tight font-extrabold sm:text-7xl md:text-8xl uppercase text-white drop-shadow-2xl">
-              <span className="block mb-2">Inspirer</span>
+              <span className="block mb-2">{t.home_inspirer}</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EAD8C0] via-white to-[#EAD8C0]">
                 {slides[currentSlide].title}
               </span>
@@ -125,4 +104,12 @@ export default function Home() {
                <span className="text-xl font-bold text-choco">{t.trust_ce}</span>
                <span className="text-xl font-bold text-choco">{t.trust_factory}</span>
                <span className="text-xl font-bold text-choco">{t.trust_export}</span>
-               <span className="text-xl font-
+               <span className="text-xl font-bold text-choco">{t.trust_response}</span>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  );
+}

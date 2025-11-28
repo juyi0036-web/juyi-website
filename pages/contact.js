@@ -1,12 +1,16 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import { useRouter } from 'next/router';
+import { translations } from '../data/translations';
 
 export default function Contact() {
+  const { locale } = useRouter();
+  const t = translations[locale] || translations.fr;
   return (
     <div className="min-h-screen bg-cream font-sans flex flex-col">
       <Head>
-        <title>Contactez-nous | JUYI CHR</title>
-        <meta name="description" content="Contactez JUYI CHR pour vos équipements de boulangerie et cuisine professionnelle. Service export Chine-France." />
+        <title>{t.contact_meta_title}</title>
+        <meta name="description" content={t.contact_hero_p} />
       </Head>
 
       <Navbar />
@@ -15,10 +19,10 @@ export default function Contact() {
       <div className="bg-choco text-cream py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl uppercase">
-            Parlons de votre projet
+            {t.contact_hero_h1}
           </h1>
           <p className="mt-4 text-xl text-cream/80 max-w-2xl mx-auto">
-            Une question technique ? Un devis export ? Notre équipe franco-chinoise est là pour vous.
+            {t.contact_hero_p}
           </p>
         </div>
       </div>
@@ -29,7 +33,7 @@ export default function Contact() {
           {/* 左侧：联系信息卡片 */}
           <div>
             <h2 className="text-2xl font-bold text-choco mb-8 uppercase tracking-wide border-l-4 border-red-700 pl-4">
-              Nos Coordonnées
+              {t.contact_coords_title}
             </h2>
             
             <div className="bg-white p-8 rounded-xl shadow-md border-2 border-[#EAD8C0] space-y-8">
@@ -41,10 +45,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-bold text-choco">WhatsApp Service Export</h3>
+                  <h3 className="text-lg font-bold text-choco">{t.contact_whatsapp_title}</h3>
                   <p className="mt-1 text-lg text-gray-800 font-medium">+852 6972 4241</p>
-                  {/* 名字已改为 Sophie */}
-                  <p className="text-sm text-gray-500">Sophie (Réponse sous 1h)</p>
+                  <p className="text-sm text-gray-500">{t.contact_whatsapp_note}</p>
                 </div>
               </div>
 
@@ -56,9 +59,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-bold text-choco">Email Professionnel</h3>
+                  <h3 className="text-lg font-bold text-choco">{t.contact_email_title}</h3>
                   <p className="mt-1 text-lg text-gray-800 font-medium">juyi0036@gmail.com</p>
-                  <p className="text-sm text-gray-500">Pour devis et catalogues</p>
+                  <p className="text-sm text-gray-500">{t.contact_email_note}</p>
                 </div>
               </div>
 
@@ -70,9 +73,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-bold text-choco">Siège & Usine</h3>
-                  <p className="mt-1 text-base text-gray-600">Guangzhou, China</p>
-                  <p className="text-sm text-gray-500">Visite d'usine sur rendez-vous</p>
+                  <h3 className="text-lg font-bold text-choco">{t.contact_address_title}</h3>
+                  <p className="mt-1 text-base text-gray-600">{t.contact_address_city}</p>
+                  <p className="text-sm text-gray-500">{t.contact_address_note}</p>
                 </div>
               </div>
             </div>
@@ -81,48 +84,48 @@ export default function Contact() {
           {/* 右侧：专业表单 */}
           <div>
              <h2 className="text-2xl font-bold text-choco mb-8 uppercase tracking-wide border-l-4 border-red-700 pl-4">
-              Envoyer un Message
+              {t.contact_form_title}
             </h2>
             <form className="bg-white p-8 rounded-xl shadow-2xl border border-[#EAD8C0] space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-bold text-choco">
-                  Nom / Entreprise
+                  {t.contact_form_name_label}
                 </label>
                 <input
                   type="text"
                   id="name"
                   className="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:ring-choco focus:border-choco transition"
-                  placeholder="Ex: Boulangerie Le Bon Pain"
+                  placeholder={t.contact_form_name_placeholder}
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-bold text-choco">
-                  Email
+                  {t.contact_form_email_label}
                 </label>
                 <input
                   type="email"
                   id="email"
                   className="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:ring-choco focus:border-choco transition"
-                  placeholder="contact@example.com"
+                  placeholder={t.contact_form_email_placeholder}
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-bold text-choco">
-                  Votre Demande
+                  {t.contact_form_message_label}
                 </label>
                 <textarea
                   id="message"
                   rows={4}
                   className="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:ring-choco focus:border-choco transition"
-                  placeholder="Bonjour Sophie, je voudrais des informations sur..."
+                  placeholder={t.contact_form_message_placeholder}
                 />
               </div>
               <button
                 type="button"
                 className="w-full py-4 px-6 rounded-lg shadow-lg text-lg font-bold text-white bg-choco hover:bg-red-800 transition transform hover:-translate-y-1"
-                onClick={() => alert("Merci ! Pour l'instant, merci de nous contacter via WhatsApp pour une réponse immédiate.")}
+                onClick={() => alert(t.contact_form_alert)}
               >
-                Envoyer
+                {t.contact_form_submit}
               </button>
             </form>
           </div>

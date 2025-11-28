@@ -1,42 +1,58 @@
 export const categories = [
   {
-    name: "Boulangerie & Pâtisserie",
+    name: {
+      fr: "Boulangerie & Pâtisserie",
+      en: "Bakery & Pastry",
+      es: "Panadería y Pastelería",
+    },
     slug: "boulangerie-patisserie",
     subcategories: [
-      { name: "Pétrins (Spirale/Fourche)", slug: "petrins" },
-      { name: "Diviseuses & Façonneuses", slug: "diviseuses-faconneuses" },
-      { name: "Fours (Rotatifs/Soles)", slug: "fours" },
-      { name: "Laminoirs", slug: "laminoirs" },
-      { name: "Chambres de Fermentation", slug: "fermentation" }
+      { name: { fr: "Pétrins (Spirale/Fourche)", en: "Mixers (Spiral/Fork)", es: "Amasadoras (Espiral/Horquilla)" }, slug: "petrins" },
+      { name: { fr: "Diviseuses & Façonneuses", en: "Dividers & Moulders", es: "Divisoras y Formadoras" }, slug: "diviseuses-faconneuses" },
+      { name: { fr: "Fours (Rotatifs/Soles)", en: "Ovens (Rotary/Deck)", es: "Hornos (Rotativos/De solera)" }, slug: "fours" },
+      { name: { fr: "Laminoirs", en: "Sheeters", es: "Laminadoras" }, slug: "laminoirs" },
+      { name: { fr: "Chambres de Fermentation", en: "Proofing Chambers", es: "Cámaras de fermentación" }, slug: "fermentation" }
     ]
   },
   {
-    name: "Inox & Mobilier",
+    name: {
+      fr: "Inox & Mobilier",
+      en: "Stainless & Furniture",
+      es: "Inox y Mobiliario",
+    },
     slug: "inox-mobilier",
     subcategories: [
-      { name: "Tables de Travail (Inox)", slug: "tables-inox" },
-      { name: "Plonges & Éviers", slug: "plonges" },
-      { name: "Échelles & Chariots", slug: "echelles-chariots" },
-      { name: "Rangements Muraux", slug: "rangements" }
+      { name: { fr: "Tables de Travail (Inox)", en: "Work Tables (Stainless)", es: "Mesas de trabajo (Inox)" }, slug: "tables-inox" },
+      { name: { fr: "Plonges & Éviers", en: "Sinks & Basins", es: "Fregaderos y Cubas" }, slug: "plonges" },
+      { name: { fr: "Échelles & Chariots", en: "Racks & Trolleys", es: "Carros y Estanterías" }, slug: "echelles-chariots" },
+      { name: { fr: "Rangements Muraux", en: "Wall Storage", es: "Almacenamiento mural" }, slug: "rangements" }
     ]
   },
   {
-    name: "Froid & Réfrigération",
+    name: {
+      fr: "Froid & Réfrigération",
+      en: "Cold & Refrigeration",
+      es: "Frío y Refrigeración",
+    },
     slug: "froid",
     subcategories: [
-      { name: "Armoires Réfrigérées", slug: "armoires-refrigerees" },
-      { name: "Tours Pâtissiers", slug: "tours-patissiers" },
-      { name: "Cellules de Refroidissement", slug: "cellules" },
-      { name: "Vitrines (Gâteaux/Boissons)", slug: "vitrines" }
+      { name: { fr: "Armoires Réfrigérées", en: "Refrigerated Cabinets", es: "Armarios refrigerados" }, slug: "armoires-refrigerees" },
+      { name: { fr: "Tours Pâtissiers", en: "Pastry Counters", es: "Mesas pasteleras" }, slug: "tours-patissiers" },
+      { name: { fr: "Cellules de Refroidissement", en: "Blast Chillers", es: "Abatidores" }, slug: "cellules" },
+      { name: { fr: "Vitrines (Gâteaux/Boissons)", en: "Display Cases (Cakes/Drinks)", es: "Vitrinas (Pasteles/Bebidas)" }, slug: "vitrines" }
     ]
   },
   {
-    name: "Préparation & Snacking",
+    name: {
+      fr: "Préparation & Snacking",
+      en: "Preparation & Snacking",
+      es: "Preparación y Snacking",
+    },
     slug: "preparation",
     subcategories: [
-      { name: "Batteurs Mélangeurs", slug: "batteurs" },
-      { name: "Trancheuses à Pain", slug: "trancheuses" },
-      { name: "Friteuses & Grills", slug: "friteuses-grills" }
+      { name: { fr: "Batteurs Mélangeurs", en: "Planetary Mixers", es: "Batidoras mezcladoras" }, slug: "batteurs" },
+      { name: { fr: "Trancheuses à Pain", en: "Bread Slicers", es: "Cortadoras de pan" }, slug: "trancheuses" },
+      { name: { fr: "Friteuses & Grills", en: "Fryers & Grills", es: "Freidoras y Parrillas" }, slug: "friteuses-grills" }
     ]
   }
 ];

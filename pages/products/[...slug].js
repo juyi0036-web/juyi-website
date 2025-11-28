@@ -4,10 +4,13 @@ import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 import { categories } from '../../data/categories';
 import { products } from '../../data/products';
+import { translations } from '../../data/translations';
 
 export default function ProductCategory() {
   const router = useRouter();
   const { slug } = router.query; 
+  const { locale } = router;
+  const t = translations[locale] || translations.fr;
 
   // 防止页面刷新时报错，等待数据加载
   if (!slug) return <div className="min-h-screen bg-cream"></div>;
@@ -27,7 +30,9 @@ export default function ProductCategory() {
     return product.categorySlug === categorySlug;
   });
 
-  const pageTitle = currentSubCategory ? currentSubCategory.name : (currentCategory ? currentCategory.name : 'Produits');
+  const pageTitle = currentSubCategory
+    ? (currentSubCategory.name?.[locale] || currentSubCategory.name?.fr || currentSubCategory.name)
+    : (currentCategory ? (currentCategory.name?.[locale] || currentCategory.name?.fr || currentCategory.name) : t.nav_products);
 
   return (
     <div className="min-h-screen bg-cream font-sans">
@@ -40,13 +45,13 @@ export default function ProductCategory() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* 面包屑导航 */}
         <nav className="text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-red-700">Accueil</Link>
+          <Link href="/" className="hover:text-red-700">{t.nav_home}</Link>
           <span className="mx-2">/</span>
-          <span className="capitalize">{currentCategory?.name || categorySlug}</span>
+          <span className="capitalize">{(currentCategory?.name && (currentCategory.name[locale] || currentCategory.name.fr)) || currentCategory?.name || categorySlug}</span>
           {currentSubCategory && (
             <>
               <span className="mx-2">/</span>
-              <span className="font-bold text-choco">{currentSubCategory.name}</span>
+              <span className="font-bold text-choco">{(currentSubCategory.name && (currentSubCategory.name[locale] || currentSubCategory.name.fr)) || currentSubCategory.name}</span>
             </>
           )}
         </nav>
@@ -56,7 +61,7 @@ export default function ProductCategory() {
             {pageTitle}
           </h1>
           <p className="mt-2 text-gray-600">
-            {categoryProducts.length} référence(s) disponible(s)
+            {categoryProducts.length} {t.product_count_label}
           </p>
         </div>
 
@@ -97,7 +102,7 @@ export default function ProductCategory() {
                   )}
 
                   <a href="https://wa.me/85269724241" target="_blank" className="w-full block text-center bg-choco text-white py-3 rounded-lg font-bold hover:bg-red-700 transition uppercase text-sm tracking-wide no-underline">
-                    Demander un prix
+                    {t.ask_price}
                   </a>
                 </div>
               </div>
@@ -105,8 +110,8 @@ export default function ProductCategory() {
           </div>
         ) : (
           <div className="text-center py-20 bg-white rounded-xl border border-dashed border-choco">
-            <p className="text-xl text-gray-500">Aucun produit pour le moment</p>
-            <p className="text-sm text-gray-400 mt-2">Catalogue en cours de mise à jour.</p>
+            <p className="text-xl text-gray-500">{t.no_products}</p>
+            <p className="text-sm text-gray-400 mt-2">{t.catalog_updating}</p>
           </div>
         )}
       </main>

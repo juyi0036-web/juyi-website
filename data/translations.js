@@ -61,7 +61,7 @@ export const translations = {
         title: "Froid & Glace",
         subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
         link: "/products/froid/armoires-refrigerees",
-        image: "/hero-ice.jpg"
+        image: "/hero-cold-pro.jpg"
       }
     ],
     about_meta_title: "Qui sommes-nous | JUYI CHR",
@@ -158,7 +158,7 @@ export const translations = {
         title: "Cold & Ice",
         subtitle: "Ice makers and high-performance refrigerated cabinets.",
         link: "/products/froid/armoires-refrigerees",
-        image: "/hero-ice.jpg"
+        image: "/hero-cold-pro.jpg"
       }
     ],
     about_meta_title: "About Us | JUYI CHR",
@@ -255,7 +255,7 @@ export const translations = {
         title: "Frío y Hielo",
         subtitle: "Máquinas de hielo y armarios refrigerados de alto rendimiento.",
         link: "/products/froid/armoires-refrigerees",
-        image: "/hero-ice.jpg"
+        image: "/hero-cold-pro.jpg"
       }
     ],
     about_meta_title: "Quiénes Somos | JUYI CHR",

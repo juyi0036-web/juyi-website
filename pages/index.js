@@ -38,9 +38,7 @@ export default function Home() {
 
       <main className="flex-grow">
         
-        <div className={`relative bg-choco text-cream ${
-          slides[currentSlide]?.fit === 'contain' ? 'min-h-[70vh] md:min-h-[75vh]' : 'min-h-[85vh]'
-        } flex items-center justify-center overflow-hidden`}>
+        <div className={`relative bg-choco text-cream min-h-[85vh] flex items-center justify-center overflow-hidden`}>
           
           {slides.map((slide, index) => (
             <div 
@@ -49,19 +47,20 @@ export default function Home() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <div 
-                className={`absolute inset-0 ${
-                  slide.fit === 'contain'
-                    ? 'bg-contain bg-center bg-no-repeat'
-                    : 'bg-cover bg-center transform scale-105'
-                } transition duration-[10000ms]`}
-                style={{ 
-                  backgroundImage: `url('${slide.image}')`,
-                  backgroundColor: slide.link.includes('/products/froid') ? '#0b1e2d' : '#0b0b0b'
-                }}
-              ></div>
+              {slide.fit === 'contain' ? (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="absolute inset-0 w-full h-full object-contain"
+                />
+              ) : (
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transform scale-105 transition duration-[10000ms]"
+                  style={{ backgroundImage: `url('${slide.image}')` }}
+                ></div>
+              )}
               <div className={`absolute inset-0 ${
-                slide.link.includes('/products/froid')
+                slide.fit === 'contain' && slide.link.includes('/products/froid')
                   ? 'bg-gradient-to-br from-cyan-700/40 via-blue-800/40 to-cyan-900/40'
                   : 'bg-black/40'
               }`}></div>
@@ -131,10 +130,11 @@ export default function Home() {
             {slides.map((slide, index) => (
               <Link href={slide.link} key={index} className="group relative h-[400px] overflow-hidden rounded-none shadow-2xl block">
                 {/* 图片 */}
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transition duration-[800ms] transform group-hover:scale-110"
-                  style={{backgroundImage: `url('${slide.image}')`}}
-                ></div>
+                {slide.fit === 'contain' ? (
+                  <img src={slide.image} alt={slide.title} className="absolute inset-0 w-full h-full object-contain" />
+                ) : (
+                  <img src={slide.image} alt={slide.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-[800ms]" />
+                )}
                 
                 {/* 渐变遮罩 */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition duration-500"></div>

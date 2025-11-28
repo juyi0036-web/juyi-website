@@ -10,12 +10,38 @@ export default function Home() {
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  const slides = t.home_slides.map((s) => ({
-    image: s.image,
-    title: s.title,
-    subtitle: s.subtitle,
-    link: s.link,
-  }));
+  const slides = [
+    {
+      // 1. 面包 (Boulangerie) - [保留]
+      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
+      title: "L'Art de la Boulangerie",
+      subtitle: "La tradition artisanale rencontre la précision industrielle.",
+      link: "/products/boulangerie-patisserie/petrins"
+    },
+    {
+      // 2. 烹饪 (Cuisine) - [已替换]
+      // 新图：专业厨师在不锈钢灶台上猛火烹饪，体现商用设备的火力与性能
+      image: "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?q=80&w=2062&auto=format&fit=crop",
+      title: "Ligne de Cuisson",
+      subtitle: "Solutions complètes pour l'agencement de votre cuisine chaude.",
+      link: "/products/inox-mobilier/tables-inox" 
+    },
+    {
+      // 3. 不锈钢 (Inox) - [保留]
+      image: "https://images.unsplash.com/photo-1530610476181-d8ceb28bc012?q=80&w=2070&auto=format&fit=crop",
+      title: "Espace & Hygiène",
+      subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
+      link: "/products/inox-mobilier/tables-inox"
+    },
+    {
+      // 4. 制冷 (Froid) - [已替换]
+      // 新图：商用冷柜内部视角，展示整齐的食材保鲜，体现容量与温控
+      image: "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?q=80&w=2070&auto=format&fit=crop",
+      title: "Froid & Glace",
+      subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
+      link: "/products/froid/armoires-refrigerees"
+    }
+  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -30,7 +56,7 @@ export default function Home() {
     <div className="min-h-screen bg-cream font-sans flex flex-col">
       <Head>
         <title>JUYI CHR - {t.hero_title_1}</title>
-        <meta name="description" content={t.home_meta_description} />
+        <meta name="description" content="Fournisseur d'équipement professionnel CHR. Direct Usine Chine-France." />
       </Head>
 
       <Navbar />
@@ -47,23 +73,13 @@ export default function Home() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              {/* 背景图：制冷主题使用 contain 以完整显示 */}
+              {/* 背景图 */}
               <div 
-                className={`absolute inset-0 ${
-                  slide.link.includes('/products/froid')
-                    ? 'bg-contain bg-center bg-no-repeat'
-                    : 'bg-cover bg-center transform scale-105'
-                } transition duration-[10000ms]`}
-                style={{ 
-                  backgroundImage: `url('${slide.image}')`,
-                  backgroundColor: slide.link.includes('/products/froid') ? '#0b1e2d' : undefined
-                }}
+                className="absolute inset-0 bg-cover bg-center transform scale-105 transition duration-[10000ms]"
+                style={{ backgroundImage: `url('${slide.image}')` }}
               ></div>
-              <div className={`absolute inset-0 ${
-                slide.link.includes('/products/froid')
-                  ? 'bg-gradient-to-br from-cyan-700/40 via-blue-800/40 to-cyan-900/40'
-                  : 'bg-black/40'
-              }`}></div>
+              {/* 遮罩层 */}
+              <div className="absolute inset-0 bg-black/40"></div>
             </div>
           ))}
 
@@ -73,7 +89,7 @@ export default function Home() {
             </span>
             
             <h1 className="text-5xl tracking-tight font-extrabold sm:text-7xl md:text-8xl uppercase text-white drop-shadow-2xl">
-              <span className="block mb-2">{t.home_inspirer}</span>
+              <span className="block mb-2">Inspirer</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EAD8C0] via-white to-[#EAD8C0]">
                 {slides[currentSlide].title}
               </span>
@@ -116,7 +132,51 @@ export default function Home() {
           </div>
         </div>
 
+        {/* === 四大核心板块入口 === */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl font-extrabold text-choco uppercase tracking-widest">
+              {t.section_univers}
+            </h2>
+            <div className="w-16 h-1 bg-[#EAD8C0] mx-auto mt-6"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            {slides.map((slide, index) => (
+              <Link href={slide.link} key={index} className="group relative h-[400px] overflow-hidden rounded-none shadow-2xl block">
+                {/* 图片 */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transition duration-[800ms] transform group-hover:scale-110"
+                  style={{backgroundImage: `url('${slide.image}')`}}
+                ></div>
+                
+                {/* 渐变遮罩 */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition duration-500"></div>
+                
+                {/* 文字内容 */}
+                <div className="absolute bottom-0 left-0 p-10 w-full">
+                  <div className="border-l-4 border-[#EAD8C0] pl-6 transform transition duration-500 translate-y-2 group-hover:translate-y-0">
+                    <h3 className="text-3xl font-bold text-white mb-2 uppercase tracking-wider">
+                      {slide.title}
+                    </h3>
+                    <p className="text-gray-300 text-lg font-light opacity-0 group-hover:opacity-100 transition duration-500 delay-100">
+                      {slide.subtitle} <span className="ml-2">&rarr;</span>
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+
+          </div>
+        </div>
       </main>
+      
+      <footer className="bg-choco text-white/40 py-12 border-t border-white/5 text-center">
+        <p className="text-xs uppercase tracking-widest">
+          © 2025 Juyi CHR • Guangzhou & France
+        </p>
+      </footer>
     </div>
   );
 }

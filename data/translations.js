@@ -50,8 +50,8 @@ export const translations = {
         title: "Fours & Ligne Chaude",
         subtitle: "Fours, grills et friteuses — équipements chauds professionnels.",
         link: "/products/preparation/friteuses-grills",
-        image: "/hero-hotline.jpg",
-        fit: "contain"
+        image: "/hero-cuisine.jpg",
+        fit: "cover"
       },
       {
         title: "Espace & Hygiène",
@@ -65,7 +65,7 @@ export const translations = {
         subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
         link: "/products/froid/armoires-refrigerees",
         image: "/hero-ice-machine.jpg",
-        fit: "contain"
+        fit: "cover"
       }
     ],
     about_meta_title: "Qui sommes-nous | JUYI CHR",
@@ -151,8 +151,8 @@ export const translations = {
         title: "Ovens & Hot Line",
         subtitle: "Commercial ovens, grills and fryers for pro kitchens.",
         link: "/products/preparation/friteuses-grills",
-        image: "/hero-hotline.jpg",
-        fit: "contain"
+        image: "/hero-cuisine.jpg",
+        fit: "cover"
       },
       {
         title: "Space & Hygiene",
@@ -166,7 +166,7 @@ export const translations = {
         subtitle: "Ice makers and high-performance refrigerated cabinets.",
         link: "/products/froid/armoires-refrigerees",
         image: "/hero-ice-machine.jpg",
-        fit: "contain"
+        fit: "cover"
       }
     ],
     about_meta_title: "About Us | JUYI CHR",
@@ -252,8 +252,8 @@ export const translations = {
         title: "Hornos & Línea Caliente",
         subtitle: "Hornos comerciales, parrillas y freidoras.",
         link: "/products/preparation/friteuses-grills",
-        image: "/hero-hotline.jpg",
-        fit: "contain"
+        image: "/hero-cuisine.jpg",
+        fit: "cover"
       },
       {
         title: "Espacio e Higiene",
@@ -267,7 +267,7 @@ export const translations = {
         subtitle: "Máquinas de hielo y armarios refrigerados de alto rendimiento.",
         link: "/products/froid/armoires-refrigerees",
         image: "/hero-ice-machine.jpg",
-        fit: "contain"
+        fit: "cover"
       }
     ],
     about_meta_title: "Quiénes Somos | JUYI CHR",

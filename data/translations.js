@@ -51,7 +51,8 @@ export const translations = {
         subtitle: "Fours, grills et friteuses — équipements chauds professionnels.",
         link: "/products/preparation/friteuses-grills",
         image: "/hero-hotline-pro.jpg",
-        fit: "cover"
+        fit: "cover",
+        position: "right"
       },
       {
         title: "Espace & Hygiène",
@@ -64,8 +65,9 @@ export const translations = {
         title: "Froid & Glace",
         subtitle: "Machines à glaçons et armoires réfrigérées haute performance.",
         link: "/products/froid/armoires-refrigerees",
-        image: "/hero-ice-machine.jpg",
-        fit: "cover"
+        image: "/hero-cold-pro.jpg",
+        fit: "cover",
+        position: "center"
       }
     ],
     about_meta_title: "Qui sommes-nous | JUYI CHR",
@@ -152,7 +154,8 @@ export const translations = {
         subtitle: "Commercial ovens, grills and fryers for pro kitchens.",
         link: "/products/preparation/friteuses-grills",
         image: "/hero-hotline-pro.jpg",
-        fit: "cover"
+        fit: "cover",
+        position: "right"
       },
       {
         title: "Space & Hygiene",
@@ -165,8 +168,9 @@ export const translations = {
         title: "Cold & Ice",
         subtitle: "Ice makers and high-performance refrigerated cabinets.",
         link: "/products/froid/armoires-refrigerees",
-        image: "/hero-ice-machine.jpg",
-        fit: "cover"
+        image: "/hero-cold-pro.jpg",
+        fit: "cover",
+        position: "center"
       }
     ],
     about_meta_title: "About Us | JUYI CHR",
@@ -253,7 +257,8 @@ export const translations = {
         subtitle: "Hornos comerciales, parrillas y freidoras.",
         link: "/products/preparation/friteuses-grills",
         image: "/hero-hotline-pro.jpg",
-        fit: "cover"
+        fit: "cover",
+        position: "right"
       },
       {
         title: "Espacio e Higiene",
@@ -266,8 +271,9 @@ export const translations = {
         title: "Frío y Hielo",
         subtitle: "Máquinas de hielo y armarios refrigerados de alto rendimiento.",
         link: "/products/froid/armoires-refrigerees",
-        image: "/hero-ice-machine.jpg",
-        fit: "cover"
+        image: "/hero-cold-pro.jpg",
+        fit: "cover",
+        position: "center"
       }
     ],
     about_meta_title: "Quiénes Somos | JUYI CHR",

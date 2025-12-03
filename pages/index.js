@@ -15,7 +15,8 @@ export default function Home() {
     title: s.title,
     subtitle: s.subtitle,
     link: s.link,
-    fit: s.fit || 'cover'
+    fit: s.fit || 'cover',
+    position: s.position || 'center'
   }));
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,13 +52,24 @@ export default function Home() {
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="absolute inset-0 w-full h-full object-contain"
+                  className={`absolute inset-0 w-full h-full object-contain ${
+                    slide.position === 'left' ? 'object-left' :
+                    slide.position === 'right' ? 'object-right' :
+                    slide.position === 'top' ? 'object-top' :
+                    slide.position === 'bottom' ? 'object-bottom' : 'object-center'
+                  }`}
                 />
               ) : (
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transform scale-105 transition duration-[10000ms]"
-                  style={{ backgroundImage: `url('${slide.image}')` }}
-                ></div>
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className={`absolute inset-0 w-full h-full object-cover ${
+                    slide.position === 'left' ? 'object-left' :
+                    slide.position === 'right' ? 'object-right' :
+                    slide.position === 'top' ? 'object-top' :
+                    slide.position === 'bottom' ? 'object-bottom' : 'object-center'
+                  }`}
+                />
               )}
               <div className={`absolute inset-0 ${
                 slide.fit === 'contain' && slide.link.includes('/products/froid')
@@ -131,9 +143,19 @@ export default function Home() {
               <Link href={slide.link} key={index} className="group relative h-[400px] overflow-hidden rounded-none shadow-2xl block">
                 {/* 图片 */}
                 {slide.fit === 'contain' ? (
-                  <img src={slide.image} alt={slide.title} className="absolute inset-0 w-full h-full object-contain" />
+                  <img src={slide.image} alt={slide.title} className={`absolute inset-0 w-full h-full object-contain ${
+                    slide.position === 'left' ? 'object-left' :
+                    slide.position === 'right' ? 'object-right' :
+                    slide.position === 'top' ? 'object-top' :
+                    slide.position === 'bottom' ? 'object-bottom' : 'object-center'
+                  }`} />
                 ) : (
-                  <img src={slide.image} alt={slide.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-[800ms]" />
+                  <img src={slide.image} alt={slide.title} className={`absolute inset-0 w-full h-full object-cover transition duration-[800ms] ${
+                    slide.position === 'left' ? 'object-left' :
+                    slide.position === 'right' ? 'object-right' :
+                    slide.position === 'top' ? 'object-top' :
+                    slide.position === 'bottom' ? 'object-bottom' : 'object-center'
+                  } group-hover:scale-110`} />
                 )}
                 
                 {/* 渐变遮罩 */}

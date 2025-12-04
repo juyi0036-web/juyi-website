@@ -113,12 +113,12 @@ export default function ProductCategory() {
                   {/* 简要参数 */}
                   {product.specs && (
                     <div className="bg-cream/30 rounded p-3 text-xs text-gray-600 mb-6 flex-1">
-                      {Object.entries(product.specs).slice(0, 3).map(([key, value]) => (
-                        <div key={key} className="flex justify-between py-1 border-b border-gray-100 last:border-0">
-                          <span className="font-semibold">{key}:</span>
-                          <span>{value}</span>
-                        </div>
-                      ))}
+                     {Object.entries(product.specs).slice(0, 3).map(([key, value]) => (
+                       <div key={key} className="flex justify-between py-1 border-b border-gray-100 last:border-0">
+                         <span className="font-semibold">{(t.spec_labels && t.spec_labels[key]) || key}:</span>
+                         <span>{value}</span>
+                       </div>
+                     ))}
                     </div>
                   )}
 

@@ -98,7 +98,7 @@ export default function ProductDetail() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {Object.entries(product.specs).map(([k, v]) => (
                     <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
-                      <span className="text-sm font-semibold text-choco">{k}</span>
+                      <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
                       <span className="text-sm text-gray-700">{v}</span>
                     </div>
                   ))}

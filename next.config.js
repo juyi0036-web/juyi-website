@@ -2,6 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: false,
+  async headers() {
+    return [
+      {
+        source: '/:file(hero-bakery-20251204|hero-hotline-20251204|hero-stainless-20251204|hero-cold-20251204).jpg',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=0, must-revalidate' }
+        ],
+      },
+    ];
+  },
   // 这里开启国际化 (i18n)
   i18n: {
     // 支持的语言列表：法语(默认), 英语, 西班牙语

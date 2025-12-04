@@ -38,7 +38,7 @@ export const products = [
     subCategorySlug: "petrins",
     name: "Pétrin à Spirale 80kg - Série Pro",
     description: "Cuve inox 304, double vitesse, timer et inverseur. Conçu pour production continue.",
-    image: "/products/petrin-test.jpg",
+    image: "/products/chariot.jpg",
     specs: {
       "Capacité Farine": "80 kg",
       "Puissance": "6.0 kW",

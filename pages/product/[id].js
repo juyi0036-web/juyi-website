@@ -27,6 +27,21 @@ export default function ProductDetail() {
   const pageTitle = displayName || 'Produit';
   const categoryPath = product ? `/products/${product.categorySlug}${product.subCategorySlug ? '/' + product.subCategorySlug : ''}` : '/products';
 
+  if (!product) {
+    return (
+      <div className="min-h-screen bg-cream font-sans">
+        <Navbar />
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+          <h1 className="text-2xl font-bold text-choco mb-4">{t.no_products}</h1>
+          <p className="text-gray-600 mb-8">{t.catalog_updating}</p>
+          <Link href="/" className="inline-block bg-choco text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition uppercase text-sm tracking-wide no-underline">
+            {t.nav_home}
+          </Link>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-cream font-sans">
       <Head>

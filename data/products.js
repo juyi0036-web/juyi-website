@@ -30,19 +30,7 @@ export const products = [
   },
 
   // 3. 冷柜 (Froid -> Armoires)
-  {
-    id: "armoire-positive",
-    categorySlug: "froid",
-    subCategorySlug: "armoires-refrigerees", // 必须对应 categories.js
-    name: "Armoire Positive 700L Inox",
-    description: "Froid ventilé, groupe tropicalisé (+43°C). Intérieur compatible GN 2/1.",
-    image: "/products/petrin-test.jpg", // 暂时先用这张图占位
-    specs: {
-      "Volume": "700 Litres",
-      "Température": "-2°C / +8°C",
-      "Gaz": "R290 (Écologique)"
-    }
-  }
+  // 已清空该子分类产品
   ,
   {
     id: "petrin-80-pro",
@@ -60,7 +48,7 @@ export const products = [
   {
     id: "blast-freezer-bl-e10",
     categorySlug: "froid",
-    subCategorySlug: "armoires-refrigerees",
+    subCategorySlug: "cellules",
     name: {
       fr: "Cellule de surgélation BL-E10",
       en: "Blast Freezer BL-E10",

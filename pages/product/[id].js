@@ -6,15 +6,13 @@ import { products } from '../../data/products';
 import { categories } from '../../data/categories';
 import { translations } from '../../data/translations';
 
-export default function ProductDetail() {
+export default function ProductDetail({ product: productProp }) {
   const router = useRouter();
   const { id } = router.query;
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  if (!id) return <div className="min-h-screen bg-cream"></div>;
-
-  const product = products.find(p => p.id === id);
+  const product = productProp || products.find(p => p.id === id || router.asPath.split('/').pop());
   const displayName = product && (typeof product.name === 'object'
     ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
     : product.name);
@@ -46,7 +44,7 @@ export default function ProductDetail() {
     <div className="min-h-screen bg-cream font-sans">
       <Head>
         <title>{pageTitle} | JUYI CHR</title>
-        <meta name="description" content={product?.description || ''} />
+        <meta name="description" content={displayDesc || ''} />
       </Head>
 
       <Navbar />
@@ -122,4 +120,12 @@ export default function ProductDetail() {
       </footer>
     </div>
   );
+}
+
+export async function getServerSideProps({ params }) {
+  const { id } = params || {};
+  const product = products.find(p => p.id === id) || null;
+  return {
+    props: { product }
+  };
 }

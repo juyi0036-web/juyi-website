@@ -12,7 +12,7 @@ export default function ProductDetail({ product: productProp }) {
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  const product = productProp || products.find(p => p.id === id || router.asPath.split('/').pop());
+  const product = productProp || products.find(p => p && (p.id === id || p.id === router.asPath.split('/').pop()));
   const displayName = product && (typeof product.name === 'object'
     ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
     : product.name);
@@ -124,7 +124,7 @@ export default function ProductDetail({ product: productProp }) {
 
 export async function getServerSideProps(context) {
   const id = (context?.params && context.params.id) || (context?.resolvedUrl ? context.resolvedUrl.split('/').pop() : null);
-  const product = id ? (products.find(p => p.id === id) || null) : null;
+  const product = id ? (products.find(p => p && p.id === id) || null) : null;
   return {
     props: { product }
   };

@@ -23,12 +23,14 @@ export default function ProductCategory() {
   const currentSubCategory = currentCategory?.subcategories.find(s => s.slug === subCategorySlug);
 
   // 筛选产品
-  const categoryProducts = products.filter(product => {
-    if (subCategorySlug) {
-      return product.categorySlug === categorySlug && product.subCategorySlug === subCategorySlug;
-    }
-    return product.categorySlug === categorySlug;
-  });
+  const categoryProducts = products
+    .filter(Boolean)
+    .filter(product => {
+      if (subCategorySlug) {
+        return product.categorySlug === categorySlug && product.subCategorySlug === subCategorySlug;
+      }
+      return product.categorySlug === categorySlug;
+    });
 
   const pageTitle = currentSubCategory
     ? (currentSubCategory.name?.[locale] || currentSubCategory.name?.fr || currentSubCategory.name)

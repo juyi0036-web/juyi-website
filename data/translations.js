@@ -60,7 +60,8 @@ export const translations = {
         subtitle: "L'élégance de l'inox. Tables, plonges et chariots.",
         link: "/products/inox-mobilier/tables-inox",
         image: "/hero-stainless-pro.jpg?v=20251204",
-        fit: "cover"
+        fit: "cover",
+        position: "center"
       },
       {
         title: "Froid & Glace",
@@ -164,7 +165,8 @@ export const translations = {
         subtitle: "The elegance of stainless steel. Tables, sinks and trolleys.",
         link: "/products/inox-mobilier/tables-inox",
         image: "/hero-stainless-pro.jpg?v=20251204",
-        fit: "cover"
+        fit: "cover",
+        position: "center"
       },
       {
         title: "Cold & Ice",
@@ -268,7 +270,8 @@ export const translations = {
         subtitle: "La elegancia del inox. Mesas, fregaderos y carros.",
         link: "/products/inox-mobilier/tables-inox",
         image: "/hero-stainless-pro.jpg?v=20251204",
-        fit: "cover"
+        fit: "cover",
+        position: "center"
       },
       {
         title: "Frío y Hielo",

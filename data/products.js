@@ -82,12 +82,130 @@ export const products = [
     subCategorySlug: "fours",
     name: "Four à soles 4x600",
     description: "Chambres indépendantes, vapeur intégrée, pierres réfractaires haute performance.",
-    image: "/products/petrin-test.jpg",
+    image: "/products/chariot.jpg",
     specs: {
       "Capacité": "4 x 600mm",
       "Puissance": "18 kW",
       "Alimentation": "380V",
       "Vapeur": "Oui"
+    }
+  },
+  {
+    id: "moulder-450",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "diviseuses-faconneuses",
+    name: {
+      fr: "Façonneuse à pain 450",
+      en: "Bread moulder 450",
+      es: "Formadora de pan 450"
+    },
+    description: {
+      fr: "Rouleaux réglables, convoyeur 450 mm. Idéale pour baguettes et pains.",
+      en: "Adjustable rollers, 450 mm conveyor. Ideal for baguettes and loaves.",
+      es: "Rodillos ajustables, cinta de 450 mm. Ideal para baguettes y panes."
+    },
+    image: "/products/petrin-test.jpg",
+    specs: {
+      "Largeur bande": "450 mm",
+      "Épaisseur laminage": "2–30 mm",
+      "Puissance": "1.1 kW",
+      "Voltage": "220V / 50Hz",
+      "Dimensions": "800 x 700 x 1200 mm",
+      "Poids": "180 kg"
+    }
+  },
+  {
+    id: "laminoir-520",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "laminoirs",
+    name: {
+      fr: "Laminoir à pâte 520",
+      en: "Dough sheeter 520",
+      es: "Laminadora de masa 520"
+    },
+    description: {
+      fr: "Table repliable, largeur utile 520 mm, vitesse variable.",
+      en: "Foldable table, 520 mm working width, variable speed.",
+      es: "Mesa abatible, ancho útil 520 mm, velocidad variable."
+    },
+    image: "/products/petrin-test.jpg",
+    specs: {
+      "Largeur utile": "520 mm",
+      "Épaisseur minimale": "0.5 mm",
+      "Puissance": "0.75 kW",
+      "Voltage": "220V / 50Hz",
+      "Dimensions": "2300 x 950 x 1200 mm",
+      "Poids": "190 kg"
+    }
+  },
+  {
+    id: "chambre-fermentation-16n",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "fermentation",
+    name: {
+      fr: "Chambre de fermentation 16 niveaux",
+      en: "Proofing cabinet 16 levels",
+      es: "Cámara de fermentación 16 niveles"
+    },
+    description: {
+      fr: "Contrôle d'humidité et température, compatible plaques 600×400.",
+      en: "Humidity and temperature control, fits 600×400 trays.",
+      es: "Control de humedad y temperatura, compatible bandejas 600×400."
+    },
+    image: "/products/petrin-test.jpg",
+    specs: {
+      "Niveaux": "16",
+      "Température": "+20°C / +45°C",
+      "Humidité": "60%–95%",
+      "Puissance": "2.0 kW",
+      "Voltage": "220V / 50Hz",
+      "Dimensions": "800 x 900 x 2000 mm"
+    }
+  },
+  {
+    id: "etagere-murale-1200",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "rangements",
+    name: {
+      fr: "Étagère murale inox 1200",
+      en: "Wall shelf stainless 1200",
+      es: "Estante mural inox 1200"
+    },
+    description: {
+      fr: "Inox 304, renforts soudés, dosseret, charge 80 kg.",
+      en: "304 stainless, welded reinforcements, backsplash, 80 kg load.",
+      es: "Inox 304, refuerzos soldados, alzaprimas, carga 80 kg."
+    },
+    image: "/products/petrin-test.jpg",
+    specs: {
+      "Dimensions": "1200 x 300 x 300 mm",
+      "Matériau": "Inox 304",
+      "Charge": "80 kg",
+      "Épaisseur": "1.2 mm"
+    }
+  },
+  {
+    id: "trancheuse-pain-450",
+    categorySlug: "preparation",
+    subCategorySlug: "trancheuses",
+    name: {
+      fr: "Trancheuse à pain 450",
+      en: "Bread slicer 450",
+      es: "Cortadora de pan 450"
+    },
+    description: {
+      fr: "Épaisseur réglable, grande sécurité, débit élevé.",
+      en: "Adjustable slice thickness, high safety, high throughput.",
+      es: "Espesor de corte ajustable, alta seguridad, alto rendimiento."
+    },
+    image: "/products/petrin-test.jpg",
+    specs: {
+      "Largeur max": "450 mm",
+      "Épaisseur coupe": "8–16 mm",
+      "Puissance": "0.75 kW",
+      "Voltage": "220V / 50Hz",
+      "Dimensions": "700 x 900 x 1200 mm",
+      "Poids": "140 kg"
     }
   },
   {

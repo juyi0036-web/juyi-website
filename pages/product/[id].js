@@ -122,9 +122,9 @@ export default function ProductDetail({ product: productProp }) {
   );
 }
 
-export async function getServerSideProps({ params }) {
-  const { id } = params || {};
-  const product = products.find(p => p.id === id) || null;
+export async function getServerSideProps(context) {
+  const id = (context?.params && context.params.id) || (context?.resolvedUrl ? context.resolvedUrl.split('/').pop() : null);
+  const product = id ? (products.find(p => p.id === id) || null) : null;
   return {
     props: { product }
   };

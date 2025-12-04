@@ -43,8 +43,9 @@ export const translations = {
         title: "L'Art de la Boulangerie",
         subtitle: "La tradition artisanale rencontre la précision industrielle.",
         link: "/products/boulangerie-patisserie/petrins",
-        image: "/hero-bakery.jpg",
-        fit: "cover"
+        image: "/hero-bakery-pro.jpg",
+        fit: "cover",
+        position: "center"
       },
       {
         title: "Fours & Ligne Chaude",
@@ -146,8 +147,9 @@ export const translations = {
         title: "The Art of Bakery",
         subtitle: "Artisanal tradition meets industrial precision.",
         link: "/products/boulangerie-patisserie/petrins",
-        image: "/hero-bakery.jpg",
-        fit: "cover"
+        image: "/hero-bakery-pro.jpg",
+        fit: "cover",
+        position: "center"
       },
       {
         title: "Ovens & Hot Line",
@@ -249,8 +251,9 @@ export const translations = {
         title: "El Arte de la Panadería",
         subtitle: "La tradición artesanal se une a la precisión industrial.",
         link: "/products/boulangerie-patisserie/petrins",
-        image: "/hero-bakery.jpg",
-        fit: "cover"
+        image: "/hero-bakery-pro.jpg",
+        fit: "cover",
+        position: "center"
       },
       {
         title: "Hornos & Línea Caliente",

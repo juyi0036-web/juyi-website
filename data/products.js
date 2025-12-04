@@ -61,8 +61,16 @@ export const products = [
     id: "blast-freezer-bl-e10",
     categorySlug: "froid",
     subCategorySlug: "armoires-refrigerees",
-    name: "极速冷冻柜",
-    description: "-45°C 极速冷冻，10层GN 1/1 (600x400mm)，工业级304不锈钢，热气化霜，R404a。",
+    name: {
+      fr: "Cellule de surgélation BL-E10",
+      en: "Blast Freezer BL-E10",
+      es: "Abatidor de congelación BL-E10"
+    },
+    description: {
+      fr: "Surgélation à -45°C, 5 niveaux GN 1/1 (EN 600×400), inox 304, sonde alimentaire, contrôleur 4 modes.",
+      en: "-45°C blast freezing, 5 GN 1/1 levels (EN 600×400), stainless steel 304, food probe, four-mode controller.",
+      es: "Congelación rápida a -45°C, 5 niveles GN 1/1 (EN 600×400), acero inoxidable 304, sonda alimentaria, controlador de 4 modos."
+    },
     image: "/products/bl-e10-blast-freezer.jpg",
     specs: {
       "Modèle": "BL-E10",

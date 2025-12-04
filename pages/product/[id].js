@@ -15,10 +15,16 @@ export default function ProductDetail() {
   if (!id) return <div className="min-h-screen bg-cream"></div>;
 
   const product = products.find(p => p.id === id);
+  const displayName = product && (typeof product.name === 'object'
+    ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
+    : product.name);
+  const displayDesc = product && (typeof product.description === 'object'
+    ? (product.description[locale] || product.description.fr || Object.values(product.description)[0])
+    : product.description);
   const category = categories.find(c => c.slug === product?.categorySlug);
   const sub = category?.subcategories.find(s => s.slug === product?.subCategorySlug);
 
-  const pageTitle = product?.name || 'Produit';
+  const pageTitle = displayName || 'Produit';
   const categoryPath = product ? `/products/${product.categorySlug}${product.subCategorySlug ? '/' + product.subCategorySlug : ''}` : '/products';
 
   return (
@@ -70,7 +76,7 @@ export default function ProductDetail() {
 
           <div className="flex flex-col">
             <h1 className="text-3xl font-extrabold text-choco uppercase">{pageTitle}</h1>
-            <p className="mt-4 text-gray-700">{product?.description}</p>
+            <p className="mt-4 text-gray-700">{displayDesc}</p>
 
             {product?.specs && (
               <div className="mt-8">
@@ -102,4 +108,3 @@ export default function ProductDetail() {
     </div>
   );
 }
-

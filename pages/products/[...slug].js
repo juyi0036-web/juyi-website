@@ -68,7 +68,14 @@ export default function ProductCategory() {
         {/* 产品列表 */}
         {categoryProducts.length > 0 ? (
           <div className="grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
-            {categoryProducts.map((product) => (
+            {categoryProducts.map((product) => {
+              const displayName = typeof product.name === 'object'
+                ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
+                : product.name;
+              const displayDesc = typeof product.description === 'object'
+                ? (product.description[locale] || product.description.fr || Object.values(product.description)[0])
+                : product.description;
+              return (
               <div key={product.id} className="group bg-white border border-[#EAD8C0] rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                 
                 {/* 图片区 */}
@@ -96,11 +103,11 @@ export default function ProductCategory() {
                 <div className="p-6 flex-1 flex flex-col">
                   <Link href={`/product/${product.id}`} className="no-underline">
                     <h3 className="text-lg font-bold text-choco mb-2 group-hover:text-red-700 transition">
-                      {product.name}
+                      {displayName}
                     </h3>
                   </Link>
                   <p className="text-sm text-gray-500 mb-4 line-clamp-2">
-                    {product.description}
+                    {displayDesc}
                   </p>
 
                   {/* 简要参数 */}
@@ -120,7 +127,7 @@ export default function ProductCategory() {
                   </a>
                 </div>
               </div>
-            ))}
+            );})}
           </div>
         ) : (
           <div className="text-center py-20 bg-white rounded-xl border border-dashed border-choco">

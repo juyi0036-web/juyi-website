@@ -72,19 +72,33 @@ export default function ProductCategory() {
               <div key={product.id} className="group bg-white border border-[#EAD8C0] rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                 
                 {/* 图片区 */}
-                <div className="relative w-full h-64 bg-white p-4 flex items-center justify-center border-b border-gray-100">
-                  <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition"
-                  />
-                </div>
+                <Link href={`/product/${product.id}`} className="no-underline">
+                  <div className="relative w-full h-64 bg-white p-4 flex items-center justify-center border-b border-gray-100">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="max-h-full max-w-full object-contain group-hover:scale-105 transition"
+                      loading="lazy"
+                      onError={(e) => {
+                        const img = e.currentTarget;
+                        if (!img.dataset.fallbackAttempted && img.src.includes('bl-e10-blast-freezer')) {
+                          img.dataset.fallbackAttempted = '1';
+                          img.src = '/bl-e10-blast-freezer.jpg';
+                        } else {
+                          img.src = '/products/petrin-test.jpg';
+                        }
+                      }}
+                    />
+                  </div>
+                </Link>
 
                 {/* 内容区 */}
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-lg font-bold text-choco mb-2 group-hover:text-red-700 transition">
-                    {product.name}
-                  </h3>
+                  <Link href={`/product/${product.id}`} className="no-underline">
+                    <h3 className="text-lg font-bold text-choco mb-2 group-hover:text-red-700 transition">
+                      {product.name}
+                    </h3>
+                  </Link>
                   <p className="text-sm text-gray-500 mb-4 line-clamp-2">
                     {product.description}
                   </p>

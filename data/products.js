@@ -55,22 +55,22 @@ export const products = [
       es: "Abatidor de congelación BL-E10"
     },
     description: {
-      fr: "Surgélation à -45°C, 5 niveaux GN 1/1 (EN 600×400), inox 304, sonde alimentaire, contrôleur 4 modes.",
-      en: "-45°C blast freezing, 5 GN 1/1 levels (EN 600×400), stainless steel 304, food probe, four-mode controller.",
-      es: "Congelación rápida a -45°C, 5 niveles GN 1/1 (EN 600×400), acero inoxidable 304, sonda alimentaria, controlador de 4 modos."
+      fr: "Surgélation à -45°C, 10 niveaux GN 1/1 (EN 600×400), inox 304, sonde alimentaire, contrôleur 4 modes.",
+      en: "-45°C blast freezing, 10 GN 1/1 levels (EN 600×400), stainless steel 304, food probe, four-mode controller.",
+      es: "Congelación rápida a -45°C, 10 niveles GN 1/1 (EN 600×400), acero inoxidable 304, sonda alimentaria, controlador de 4 modos."
     },
     image: "/products/bl-e10-blast-freezer.jpg",
     specs: {
       "Modèle": "BL-E10",
       "Température": "-45°C",
       "Compresseur": "1.5 HP",
-      "Capacité": "130 L",
-      "Plateaux": "5 x GN 1/1",
+      "Capacité": "250 L",
+      "Plateaux": "10 x GN 1/1",
       "Dimension Interne": "EN 600 x 400 mm",
       "Voltage": "220V / 50Hz",
-      "Puissance": "1300 W",
-      "Dimensions (Externe)": "800 x 810 x 960 mm",
-      "Poids": "120 kg",
+      "Puissance": "2700 W",
+      "Dimensions (Externe)": "800 x 870 x 1570 mm",
+      "Poids": "230 kg",
       "Sonde Alimentaire": "Oui",
       "Contrôleur": "4 modes"
     }

@@ -385,4 +385,28 @@ export const products = [
       "Voltage": "220V"
     }
   }
+  ,
+  {
+    id: "grille-inox-304-2tailles",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "plaques",
+    name: {
+      fr: "Grille inox 304 (400×600 & 600×800)",
+      en: "Stainless 304 wire rack (400×600 & 600×800)",
+      es: "Rejilla inox 304 (400×600 y 600×800)"
+    },
+    description: {
+      fr: "Grille pâtissière en inox 304, deux formats avec fils renforcés.",
+      en: "304 stainless pastry wire rack, two sizes with reinforced wires.",
+      es: "Rejilla pastelera de inox 304, dos tamaños con alambres reforzados."
+    },
+    images: [
+      "/products/grill-01.jpg"
+    ],
+    specs: {
+      "Matériau": "Inox 304",
+      "Grille 304 400×600": "Bord 5.0 mm, fil 2.0 mm, pas 13 mm",
+      "Grille 304 600×800": "Bord 6.0 mm, fil 2.4 mm, pas 25 mm"
+    }
+  }
 ];

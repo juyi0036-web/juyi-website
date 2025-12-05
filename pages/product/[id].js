@@ -23,7 +23,8 @@ export default function ProductDetail({ product: productProp }) {
   const sub = category?.subcategories.find(s => s.slug === product?.subCategorySlug);
 
   const pageTitle = displayName || 'Produit';
-  const categoryPath = product ? `/products/${product.categorySlug}${product.subCategorySlug ? '/' + product.subCategorySlug : ''}` : '/products';
+  const categoryPath = product ? `/products/${product.categorySlug}` : '/products';
+  const subCategoryPath = product?.subCategorySlug ? `/products/${product.categorySlug}/${product.subCategorySlug}` : null;
 
   if (!product) {
     return (
@@ -59,7 +60,7 @@ export default function ProductDetail({ product: productProp }) {
           {sub && (
             <>
               <span className="mx-2">/</span>
-              <Link href={categoryPath} className="hover:text-red-700">
+              <Link href={subCategoryPath || categoryPath} className="hover:text-red-700">
                 {(sub.name && (sub.name[locale] || sub.name.fr)) || sub.name}
               </Link>
             </>

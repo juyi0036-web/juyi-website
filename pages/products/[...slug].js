@@ -49,11 +49,15 @@ export default function ProductCategory() {
         <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-red-700">{t.nav_home}</Link>
           <span className="mx-2">/</span>
-          <span className="capitalize">{(currentCategory?.name && (currentCategory.name[locale] || currentCategory.name.fr)) || currentCategory?.name || categorySlug}</span>
+          <Link href={`/products/${categorySlug}`} className="hover:text-red-700 capitalize">
+            {(currentCategory?.name && (currentCategory.name[locale] || currentCategory.name.fr)) || currentCategory?.name || categorySlug}
+          </Link>
           {currentSubCategory && (
             <>
               <span className="mx-2">/</span>
-              <span className="font-bold text-choco">{(currentSubCategory.name && (currentSubCategory.name[locale] || currentSubCategory.name.fr)) || currentSubCategory.name}</span>
+              <Link href={`/products/${categorySlug}/${subCategorySlug}`} className="hover:text-red-700 font-bold text-choco">
+                {(currentSubCategory.name && (currentSubCategory.name[locale] || currentSubCategory.name.fr)) || currentSubCategory.name}
+              </Link>
             </>
           )}
         </nav>

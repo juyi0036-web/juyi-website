@@ -38,7 +38,7 @@ export const products = [
     subCategorySlug: "petrins",
     name: "Pétrin à Spirale 80kg - Série Pro",
     description: "Cuve inox 304, double vitesse, timer et inverseur. Conçu pour production continue.",
-    image: "/products/chariot.jpg",
+    image: "/products/chariot.jpg?v=20251205",
     specs: {
       "Capacité Farine": "80 kg",
       "Puissance": "6.0 kW",
@@ -259,18 +259,18 @@ export const products = [
       es: "Carro pastelero 20 niveles (600×400)"
     },
     description: {
-      fr: "Inox 201, tubes 25×25, rails en L. 20 plaques 600×400. Roues Ø125 avec pare-chocs, 2 freins.",
-      en: "Stainless 201, 25×25 tubes, L-side rails. 20 trays 600×400. Ø125 wheels with bumpers, 2 brakes.",
-      es: "Acero inoxidable 201, tubos 25×25, carriles en L. 20 bandejas 600×400. Ruedas Ø125 con parachoques, 2 frenos."
+      fr: "Inox 304, tubes 25×25, rails en L. 20 plaques 600×400. 4 roues, 2 freins.",
+      en: "Stainless 304, 25×25 tubes, L-side rails. 20 trays 600×400. 4 wheels, 2 brakes.",
+      es: "Acero inoxidable 304, tubos 25×25, carriles en L. 20 bandejas 600×400. 4 ruedas, 2 frenos."
     },
-    image: "/products/petrin-test.jpg",
+    image: "/products/chariot.jpg",
     specs: {
       "Dimensions": "460 x 636 x 1765 mm",
-      "Inox": "Acier inoxydable 201",
+      "Inox": "Acier inoxydable 304",
       "Tube": "25×25 mm, épaisseur 0.9 mm",
-      "Rails latéraux": "Forme L, longueur 22 mm, épaisseur 1.2 mm",
+      "Rails latéraux": "Forme L, épaisseur 1.2 mm",
       "Plateaux": "20 x EN 600×400 mm",
-      "Roues": "4 roues, 2 freins, Ø125 mm, 4 pare-chocs",
+      "Roues": "4 roues, 2 freins",
       "Poids Net": "24 kg",
       "Poids Brut": "26.08 kg",
       "Emballage": "1.75×0.715×0.087 m (0.109 CBM)"

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
@@ -25,6 +26,10 @@ export default function ProductDetail({ product: productProp }) {
   const pageTitle = displayName || 'Produit';
   const categoryPath = product ? `/products/${product.categorySlug}` : '/products';
   const subCategoryPath = product?.subCategorySlug ? `/products/${product.categorySlug}/${product.subCategorySlug}` : null;
+  const images = (Array.isArray(product?.images) && product.images.length > 0)
+    ? product.images
+    : [product?.image].filter(Boolean);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   if (!product) {
     return (
@@ -70,22 +75,38 @@ export default function ProductDetail({ product: productProp }) {
         </nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl border border-[#EAD8C0] shadow-sm p-8">
-          <div className="relative w-full h-[460px] bg-white p-4 flex items-center justify-center border border-gray-100 rounded-xl">
-            <img
-              src={product?.image}
-              alt={pageTitle}
-              className="max-h-full max-w-full object-contain"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget;
-                if (!img.dataset.fallbackAttempted && (img.src.includes('bl-e10-blast-freezer') || img.src.includes('/products/'))) {
-                  img.dataset.fallbackAttempted = '1';
-                  img.src = '/bl-e10-blast-freezer.jpg';
-                } else {
-                  img.src = '/products/petrin-test.jpg';
-                }
-              }}
-            />
+          <div className="relative w-full">
+            <div className="h-[460px] bg-white p-4 flex items-center justify-center border border-gray-100 rounded-xl">
+              <img
+                src={images[activeIndex]}
+                alt={pageTitle}
+                className="max-h-full max-w-full object-contain"
+                loading="lazy"
+                onError={(e) => {
+                  const img = e.currentTarget;
+                  if (!img.dataset.fallbackAttempted && (img.src.includes('/products/'))) {
+                    img.dataset.fallbackAttempted = '1';
+                    img.src = '/products/petrin-test.jpg';
+                  } else {
+                    img.src = '/products/petrin-test.jpg';
+                  }
+                }}
+              />
+            </div>
+            {images.length > 1 && (
+              <div className="mt-4 grid grid-cols-5 gap-3">
+                {images.map((src, idx) => (
+                  <button
+                    key={src + idx}
+                    aria-label={`image-${idx+1}`}
+                    className={`relative w-full h-20 border rounded-lg overflow-hidden ${activeIndex === idx ? 'border-red-700' : 'border-gray-200'}`}
+                    onClick={() => setActiveIndex(idx)}
+                  >
+                    <img src={src} alt={`thumb-${idx+1}`} className="w-full h-full object-cover" loading="lazy" />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="flex flex-col">

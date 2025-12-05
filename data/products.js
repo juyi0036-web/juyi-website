@@ -104,7 +104,9 @@ export const products = [
       en: "3 decks, 12 trays 40×60, red stone and steam, up to 300°C.",
       es: "3 niveles, 12 bandejas 40×60, piedra roja y vapor, hasta 300°C."
     },
-    image: "/products/four-01.jpg",
+    images: [
+      "/products/four-01.jpg"
+    ],
     specs: {
       "Modèle": "HBFO-4003-ZS3 (PCB)",
       "Poids Net": "890 kg",

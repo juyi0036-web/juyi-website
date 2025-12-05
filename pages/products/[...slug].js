@@ -81,6 +81,7 @@ export default function ProductCategory() {
               const displayDesc = typeof product.description === 'object'
                 ? (product.description[locale] || product.description.fr || Object.values(product.description)[0])
                 : product.description;
+              const primaryImage = Array.isArray(product.images) && product.images.length ? product.images[0] : product.image;
               return (
               <div key={product.id} className="group bg-white border border-[#EAD8C0] rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                 
@@ -88,7 +89,7 @@ export default function ProductCategory() {
                 <Link href={`/product/${product.id}`} className="no-underline">
                   <div className="relative w-full h-64 bg-white p-4 flex items-center justify-center border-b border-gray-100">
                     <img
-                      src={product.image}
+                      src={primaryImage}
                       alt={product.name}
                       className="max-h-full max-w-full object-contain group-hover:scale-105 transition"
                       loading="lazy"

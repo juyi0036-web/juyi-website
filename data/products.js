@@ -78,7 +78,7 @@ export const products = [
   ,
   {
     id: "four-soles-4x6",
-    categorySlug: "boulangerie-patisserie",
+    categorySlug: "chaud",
     subCategorySlug: "fours",
     name: "Four à soles 4x600",
     description: "Chambres indépendantes, vapeur intégrée, pierres réfractaires haute performance.",
@@ -92,7 +92,7 @@ export const products = [
   },
   {
     id: "four-hbfo-4003-zs3",
-    categorySlug: "boulangerie-patisserie",
+    categorySlug: "chaud",
     subCategorySlug: "fours",
     name: {
       fr: "Four à soles 3 niveaux avec chargeur",
@@ -123,7 +123,7 @@ export const products = [
   },
   {
     id: "four-4deck-electric-16trays",
-    categorySlug: "boulangerie-patisserie",
+    categorySlug: "chaud",
     subCategorySlug: "fours",
     name: {
       fr: "Four à soles 4 niveaux (Électrique)",
@@ -204,7 +204,7 @@ export const products = [
   },
   {
     id: "chambre-fermentation-16n",
-    categorySlug: "boulangerie-patisserie",
+    categorySlug: "froid",
     subCategorySlug: "fermentation",
     name: {
       fr: "Chambre de fermentation 16 niveaux",
@@ -250,7 +250,7 @@ export const products = [
   },
   {
     id: "trancheuse-pain-450",
-    categorySlug: "preparation",
+    categorySlug: "boulangerie-patisserie",
     subCategorySlug: "trancheuses",
     name: {
       fr: "Trancheuse à pain 450",
@@ -274,7 +274,7 @@ export const products = [
   },
   {
     id: "batteur-20l-pro",
-    categorySlug: "preparation",
+    categorySlug: "boulangerie-patisserie",
     subCategorySlug: "batteurs",
     name: "Batteur Mélangeur 20L - Pro",
     description: "3 vitesses, cuve inox 304, fouet/batteur/crochet inclus.",
@@ -288,7 +288,7 @@ export const products = [
   },
   {
     id: "friteuse-double-2x16l",
-    categorySlug: "preparation",
+    categorySlug: "chaud",
     subCategorySlug: "friteuses-grills",
     name: "Friteuse double 2x16L",
     description: "Cuves indépendantes, robinet de vidange, inox 304, chauffage rapide.",
@@ -358,7 +358,7 @@ export const products = [
   },
   {
     id: "ligne-cuisine-modulaire-800",
-    categorySlug: "inox-mobilier",
+    categorySlug: "chaud",
     subCategorySlug: "ligne-chaude",
     name: {
       fr: "Ligne de cuisine modulaire 800",

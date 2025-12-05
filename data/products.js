@@ -95,9 +95,9 @@ export const products = [
     categorySlug: "boulangerie-patisserie",
     subCategorySlug: "fours",
     name: {
-      fr: "Four à soles 3 niveaux (HBFO-4003-ZS3) avec chargeur",
-      en: "Deck oven 3-deck (HBFO-4003-ZS3) with loader",
-      es: "Horno de pisos 3 niveles (HBFO-4003-ZS3) con cargador"
+      fr: "Four à soles 3 niveaux avec chargeur",
+      en: "Deck oven 3 decks with loader",
+      es: "Horno de pisos 3 niveles con cargador"
     },
     description: {
       fr: "3 niveaux, 12 plaques 40×60, pierre rouge et vapeur, jusqu'à 300°C.",
@@ -108,19 +108,17 @@ export const products = [
       "/products/four-01.jpg"
     ],
     specs: {
-      "Modèle": "HBFO-4003-ZS3 (PCB)",
+      "Énergie": "Électrique",
+      "Plateaux": "3 decks, 12 plaques",
+      "Voltage": "380V",
+      "Puissance": "28.5 kW",
+      "Taille des plaques": "400×600 mm",
       "Poids Net": "890 kg",
       "Poids Brut": "954 kg",
-      "Voltage": "380V (Personnalisable)",
-      "Puissance": "28.5 kW",
-      "Plateaux": "3 decks, 12 plaques (vertical)",
-      "Taille des plaques": "40×60 cm",
-      "Température": "Indoor ~ 300°C",
-      "Chambre de cuisson": "W850×D1300×H210 mm",
-      "Dimensions (Sans chargeur)": "W1400×D1740×H2200 mm",
-      "Dimensions (Avec chargeur)": "W1400×D3400×H2200 mm",
-      "Pierre": "Pierre rouge",
-      "Vapeur": "Oui"
+      "Dimensions": "W1400×D3400×H2200 mm",
+      "Pierre": "Oui",
+      "Vapeur": "Oui",
+      "Chargeur": "Avec chargeur"
     }
   },
   {

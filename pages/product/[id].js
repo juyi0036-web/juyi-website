@@ -77,11 +77,11 @@ export default function ProductDetail({ product: productProp }) {
             {images.length > 1 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {images.map((src, idx) => (
-                  <div key={src + idx} className="h-[460px] bg-white p-4 flex items-center justify-center border border-gray-100 rounded-xl">
+                  <div key={src + idx} className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
                     <img
                       src={src}
                       alt={`${pageTitle}-${idx+1}`}
-                      className="max-h-full max-w-full object-contain"
+                      className="w-full h-full object-cover"
                       loading="lazy"
                       onError={(e) => {
                         const img = e.currentTarget;
@@ -97,11 +97,11 @@ export default function ProductDetail({ product: productProp }) {
                 ))}
               </div>
             ) : (
-              <div className="h-[460px] bg-white p-4 flex items-center justify-center border border-gray-100 rounded-xl">
+              <div className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
                 <img
                   src={images[0]}
                   alt={pageTitle}
-                  className="max-h-full max-w-full object-contain"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   onError={(e) => {
                     const img = e.currentTarget;
@@ -135,9 +135,9 @@ export default function ProductDetail({ product: productProp }) {
             )}
 
             <div className="mt-10">
-              <a href="https://wa.me/85269724241" target="_blank" className="inline-block bg-choco text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition uppercase text-sm tracking-wide no-underline">
+              <Link href="/contact" className="inline-block bg-choco text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition uppercase text-sm tracking-wide no-underline">
                 {t.ask_price}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

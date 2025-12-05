@@ -74,22 +74,8 @@ export const products = [
       "Sonde Alimentaire": "Oui",
       "Contrôleur": "4 modes"
     }
-  }
-  ,
-  {
-    id: "four-soles-4x6",
-    categorySlug: "chaud",
-    subCategorySlug: "fours",
-    name: "Four à soles 4x600",
-    description: "Chambres indépendantes, vapeur intégrée, pierres réfractaires haute performance.",
-    image: "/products/chariot.jpg",
-    specs: {
-      "Capacité": "4 x 600mm",
-      "Puissance": "18 kW",
-      "Alimentation": "380V",
-      "Vapeur": "Oui"
-    }
   },
+  
   {
     id: "four-hbfo-4003-zs3",
     categorySlug: "chaud",

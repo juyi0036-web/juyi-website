@@ -346,7 +346,10 @@ export const products = [
     subCategorySlug: "vitrines",
     name: "Vitrine réfrigérée 1.5m",
     description: "Éclairage LED, vitrage anti-buée, froid ventilé pour pâtisserie.",
-    image: "/products/petrin-test.jpg",
+    images: [
+      "/products/vitrine-01.jpg",
+      "/products/vitrine-02.jpg"
+    ],
     specs: {
       "Longueur": "1500 mm",
       "Température": "+2°C / +8°C",

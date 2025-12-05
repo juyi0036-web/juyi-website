@@ -357,6 +357,36 @@ export const products = [
     }
   },
   {
+    id: "ligne-cuisine-modulaire-800",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "ligne-chaude",
+    name: {
+      fr: "Ligne de cuisine modulaire 800",
+      en: "Modular cooking line 800",
+      es: "Línea de cocina modular 800"
+    },
+    description: {
+      fr: "Bloc de cuisson 800 mm en inox 304. Modules: friteuse électrique, bac de salage, fourneau 4 feux gaz avec four, plaque de cuisson, cuiseur à pâtes, élément neutre.",
+      en: "800 mm stainless 304 cooking block. Modules: electric fryer, brine basin, 4-burner gas range with oven, griddle plate, pasta cooker, neutral element.",
+      es: "Bloque de cocción de 800 mm en inox 304. Módulos: freidora eléctrica, cuba de salmuera, cocina de 4 fuegos a gas con horno, plancha, cocedor de pasta, elemento neutro."
+    },
+    images: [
+      "/products/line-cuisine.jpg",
+      "/products/line-cuisine-01.jpg"
+    ],
+    specs: {
+      "Largeur de module": "800 mm (400 mm pour 1/2)",
+      "Friteuse électrique": "B88F-EC, 12 kW ×2, 60–190°C, 2×23.8 L",
+      "Bac de salage": "B84B-EC, 3 kW, 30–85°C",
+      "Fourneau 4 feux (gaz)": "B88R-GE, 5 kW×2 + 7.5 kW×2, four 4.8 kW",
+      "Plaque de cuisson": "B88G-EO, 9 kW, 50–300°C, zone 795×535",
+      "Cuiseur à pâtes": "B84N-EC, 12 kW, 30–100°C, cuve 26 L, 2 paniers",
+      "Élément neutre": "Inox 304",
+      "Dimensions typiques": "800 × 800 × 850 mm (socle +70 mm)",
+      "Alimentation": "AC3N380V (gaz pour fourneau)"
+    }
+  },
+  {
     id: "tour-patissier-2portes",
     categorySlug: "froid",
     subCategorySlug: "tours-patissiers",

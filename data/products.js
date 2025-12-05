@@ -124,6 +124,39 @@ export const products = [
     }
   },
   {
+    id: "four-4deck-electric-16trays",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "fours",
+    name: {
+      fr: "Four à soles 4 niveaux (Électrique)",
+      en: "Deck oven 4 decks (Electric)",
+      es: "Horno de pisos 4 niveles (Eléctrico)"
+    },
+    description: {
+      fr: "4 niveaux, 16 plaques 40×60, 60 kW, vapeur & pierre, chargeur, démarrage automatique J+1.",
+      en: "4 decks, 16 trays 40×60, 60 kW, steam & stone, loader, next-day auto start.",
+      es: "4 niveles, 16 bandejas 40×60, 60 kW, vapor y piedra, cargador, encendido automático al día siguiente."
+    },
+    images: [
+      "/products/four-04-01.jpg",
+      "/products/four-04-02.jpg"
+    ],
+    specs: {
+      "Énergie": "Électrique",
+      "Plateaux": "4 decks, 16 plaques",
+      "Voltage": "380V",
+      "Puissance": "60 kW",
+      "Taille des plaques": "400×600 mm",
+      "Poids Net": "1900 kg",
+      "Poids Brut": "1950 kg",
+      "Dimensions": "2195 x 2830 x 2405 mm",
+      "Pierre": "Oui",
+      "Vapeur": "Oui (toutes les chambres)",
+      "Chargeur": "Semi-automatique (levage manuel)",
+      "Fonctions": "Pierre, chargeur à pain, vapeur tous niveaux, démarrage auto J+1"
+    }
+  },
+  {
     id: "moulder-450",
     categorySlug: "boulangerie-patisserie",
     subCategorySlug: "diviseuses-faconneuses",

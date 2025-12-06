@@ -24,7 +24,7 @@ export const categories = [
     subcategories: [
       { name: { fr: "Fours (Rotatifs/Soles)", en: "Ovens (Rotary/Deck)", es: "Hornos (Rotativos/De solera)" }, slug: "fours" },
       { name: { fr: "Ligne Chaude", en: "Hot Line", es: "Línea caliente" }, slug: "ligne-chaude" },
-      { name: { fr: "Friteuses & Grills", en: "Fryers & Grills", es: "Freidoras y Parrillas" }, slug: "friteuses-grills" }
+      { name: { fr: "Friteuses & Grills", en: "Fryers & Grills", es: "Freidoras y Parrillas" }, slug: "friteuses" }
     ]
   },
   {

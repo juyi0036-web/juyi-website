@@ -339,7 +339,7 @@ export const products = [
   {
     id: "friteuse-double-2x16l",
     categorySlug: "chaud",
-    subCategorySlug: "friteuses-grills",
+    subCategorySlug: "friteuses",
     name: "Friteuse double 2x16L",
     description: "Cuves indépendantes, robinet de vidange, inox 304, chauffage rapide.",
     image: "/products/petrin-test.jpg",

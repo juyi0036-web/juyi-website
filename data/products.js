@@ -33,6 +33,33 @@ export const products = [
   // 已清空该子分类产品
   ,
   {
+    id: "frigo-1door-gn",
+    categorySlug: "froid",
+    subCategorySlug: "armoires-refrigerees",
+    name: {
+      fr: "Armoire réfrigérée 1 porte (simple)",
+      en: "Single-door refrigerated cabinet",
+      es: "Armario refrigerado de 1 puerta"
+    },
+    description: {
+      fr: "Armoire verticale 1 porte. Inox 304 interne/externe. Deux gammes de température disponibles (TN/BT).",
+      en: "Upright single-door cabinet. 304 stainless inside/out. Two temperature ranges available (TN/BT).",
+      es: "Armario vertical de una puerta. Inox 304 interior/exterior. Dos rangos de temperatura disponibles (TN/BT)."
+    },
+    images: [
+      "/products/frigo-1-01.jpg"
+    ],
+    specs: {
+      "Température (TN)": "+2°C / +8°C",
+      "Température (BT)": "-18°C / -22°C",
+      "Voltage": "230V / 50Hz",
+      "Réfrigérant": "R290",
+      "Refroidissement": "Ventilé",
+      "Matériau Interne": "Inox 304",
+      "Matériau Externe": "Inox 304"
+    }
+  },
+  {
     id: "petrin-80-pro",
     categorySlug: "boulangerie-patisserie",
     subCategorySlug: "petrins",

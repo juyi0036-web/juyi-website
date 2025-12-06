@@ -471,7 +471,7 @@ export const products = [
   {
     id: "grille-inox-304-2tailles",
     categorySlug: "chaud",
-    subCategorySlug: "fours",
+    subCategorySlug: "friteuses-grills",
     name: {
       fr: "Grille inox 304 (400×600 & 600×800)",
       en: "Stainless 304 wire rack (400×600 & 600×800)",

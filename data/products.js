@@ -510,7 +510,7 @@ export const products = [
       es: "Horno de convección para bandejas EN 600×400. Rango de temperatura 25–300°C. Disponible en 5 o 10 niveles."
     },
     images: [
-      "/products/fours-5-10-01.jpg"
+      "/products/four5-10-01.jpg"
     ],
     specs: {
       "Dimensions (Externe)": "738 × 850 × 620 mm",
@@ -520,6 +520,9 @@ export const products = [
       "Température": "25–300°C",
       "Capacité (5 niveaux)": "5 × EN 600×400 mm",
       "Capacité (10 niveaux)": "10 × EN 600×400 mm",
+      "Dimensions (10 niveaux)": "1160 × 900 × 1430 mm",
+      "Puissance (10 niveaux)": "18 kW",
+      "Voltage (10 niveaux)": "380V / 50Hz",
       "Matériau": "Acier inoxydable 201",
       "Poids Net (5 niveaux)": "150 kg",
       "Poids Brut (5 niveaux)": "180 kg"

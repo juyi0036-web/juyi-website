@@ -437,7 +437,8 @@ export const products = [
       es: "Carro bajo con estante superior. Inox 201, tubos 25×25, 9 niveles EN 600×400, 4 ruedas (2 frenos)."
     },
     images: [
-      "/products/echelle bas avec dessus-01.jpg"
+      "/products/echelle basse avec dessus-01.jpg",
+      "/products/echelle basse avec dessus-02.jpg"
     ],
     specs: {
       "Dimensions": "660 × 460 × 875 mm",

@@ -495,11 +495,11 @@ export const products = [
   {
     id: "moules-toast-box",
     categorySlug: "chaud",
-    subCategorySlug: "fours",
+    subCategorySlug: "moules",
     name: {
-      fr: "Moules pain de mie (toast box)",
-      en: "Toast box moulds",
-      es: "Moldes para pan de molde"
+      fr: "Moules",
+      en: "Moulds",
+      es: "Moldes"
     },
     description: {
       fr: "Série de moules en acier aluminisé avec revêtement téflon double face. Nombreuses tailles disponibles. Formes et dimensions personnalisables selon besoin.",
@@ -507,6 +507,7 @@ export const products = [
       es: "Serie de moldes de acero aluminizado con recubrimiento de teflón a doble cara. Muchas talla disponibles. Formas y dimensiones personalizables a pedido."
     },
     images: [
+      "/products/moules-01.jpg",
       "/products/moules-01.jpg"
     ],
     specs: {

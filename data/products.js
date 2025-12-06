@@ -408,8 +408,8 @@ export const products = [
       es: "Estantería de reposo para masa, estructura inox 304, varios niveles para bandejas 600×400."
     },
     images: [
-      "/products/repose paton-01.jpg",
-      "/products/repose paton-02.jpg"
+      "/products/repose paton-01.jpg?v=2",
+      "/products/repose paton-02.jpg?v=2"
     ],
     specs: {
       "Dimensions": "900 × 600 × 1700 mm",
@@ -437,8 +437,8 @@ export const products = [
       es: "Carro bajo con estante superior. Inox 201, tubos 25×25, 9 niveles EN 600×400, 4 ruedas (2 frenos)."
     },
     images: [
-      "/products/echelle basse avec dessus-01.jpg",
-      "/products/echelle basse avec dessus-02.jpg"
+      "/products/echelle basse avec dessus-01.jpg?v=2",
+      "/products/echelle basse avec dessus-02.jpg?v=2"
     ],
     specs: {
       "Dimensions": "660 × 460 × 875 mm",

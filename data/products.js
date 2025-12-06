@@ -496,6 +496,36 @@ export const products = [
   }
   ,
   {
+    id: "four-convection-5-10",
+    categorySlug: "chaud",
+    subCategorySlug: "fours",
+    name: {
+      fr: "Four à convection (5/10 niveaux)",
+      en: "Convection oven (5/10 levels)",
+      es: "Horno de convección (5/10 niveles)"
+    },
+    description: {
+      fr: "Four à convection pour plaques EN 600×400. Plage de température 25–300°C. Versions 5 ou 10 niveaux.",
+      en: "Convection oven for EN 600×400 trays. Temperature range 25–300°C. Available in 5 or 10 levels.",
+      es: "Horno de convección para bandejas EN 600×400. Rango de temperatura 25–300°C. Disponible en 5 o 10 niveles."
+    },
+    images: [
+      "/products/fours-5-10-01.jpg"
+    ],
+    specs: {
+      "Dimensions (Externe)": "738 × 850 × 620 mm",
+      "Puissance": "5.4 kW",
+      "Voltage": "380V / 50Hz",
+      "Plateaux": "EN 600×400 mm",
+      "Température": "25–300°C",
+      "Capacité (5 niveaux)": "5 × EN 600×400 mm",
+      "Capacité (10 niveaux)": "10 × EN 600×400 mm",
+      "Matériau": "Acier inoxydable 201",
+      "Poids Net (5 niveaux)": "150 kg",
+      "Poids Brut (5 niveaux)": "180 kg"
+    }
+  },
+  {
     id: "moules-toast-box",
     categorySlug: "chaud",
     subCategorySlug: "moules",

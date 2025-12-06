@@ -6,9 +6,18 @@ import { translations } from '../data/translations';
 
 export default function Navbar() {
   const [isProductOpen, setIsProductOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const router = useRouter();
   const { locale, locales, asPath } = router;
   const t = translations[locale] || translations.fr;
+  const searchPlaceholder = locale === 'fr' ? 'Rechercher...' : (locale === 'es' ? 'Buscar...' : 'Search...');
+
+  const onSearchSubmit = (e) => {
+    e.preventDefault();
+    const q = (searchQuery || '').trim();
+    if (!q) return;
+    router.push(`/search?q=${encodeURIComponent(q)}`);
+  };
 
   return (
     // 关键修改：去掉了 'sticky top-0'，现在它是静态的 (static)，不会跟着滚动
@@ -85,6 +94,19 @@ export default function Navbar() {
             <Link href="/contact" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
               {t.nav_contact}
             </Link>
+          </div>
+
+          {/* 搜索 */}
+          <div className="flex items-center mr-0 md:mr-2">
+            <form onSubmit={onSearchSubmit} className="flex items-center">
+              <input
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder={searchPlaceholder}
+                className="w-40 sm:w-56 md:w-64 px-4 py-2 bg-white border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco transition"
+              />
+            </form>
           </div>
 
           {/* 语言切换 + WhatsApp */}

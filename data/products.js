@@ -553,4 +553,33 @@ export const products = [
       "Tailles avec couvercle": "180×90×70, 250×90×70, 270×104×100, 290×106×110 mm"
     }
   }
+  ,
+  {
+    id: "four-pizza-italien",
+    categorySlug: "chaud",
+    subCategorySlug: "fours",
+    name: {
+      fr: "Four à pizza italien",
+      en: "Italian pizza oven",
+      es: "Horno de pizza italiano"
+    },
+    description: {
+      fr: "Four convoyeur électrique pour pizza. Température RT–300°C. Zone de chauffe 50×81.5 cm. Alimentation 380V 3PH 22A. Consommation 5.8–6.8 kWh. Dimensions machine 1817×1155×1140 mm (avec support). Emballage 2000×1280×890 mm, poids brut 350 kg.",
+      en: "Electric conveyor pizza oven. Temperature RT–300°C. Heating zone 50×81.5 cm. Power 380V 3PH 22A. Consumption 5.8–6.8 kWh. Machine size 1817×1155×1140 mm (with stand). Packing 2000×1280×890 mm, gross weight 350 kg.",
+      es: "Horno de pizza de cinta eléctrico. Temperatura RT–300°C. Zona de calentamiento 50×81.5 cm. Alimentación 380V 3PH 22A. Consumo 5.8–6.8 kWh. Tamaño de máquina 1817×1155×1140 mm (con base). Embalaje 2000×1280×890 mm, peso bruto 350 kg."
+    },
+    images: [
+      "/products/italian-pizza-oven.jpg"
+    ],
+    specs: {
+      "Type": "Four convoyeur électrique",
+      "Température": "RT–300°C",
+      "Zone de chauffe (D×W)": "50 cm × 81.5 cm",
+      "Alimentation": "380V 3PH 22A",
+      "Consommation": "5.8–6.8 kWh",
+      "Dimensions (machine)": "1817 × 1155 × 1140 mm",
+      "Emballage": "2000 × 1280 × 890 mm",
+      "Poids Brut": "350 kg"
+    }
+  }
 ];

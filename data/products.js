@@ -582,4 +582,38 @@ export const products = [
       "Poids Brut": "350 kg"
     }
   }
+  ,
+  {
+    id: "fermentation-single-door",
+    categorySlug: "froid",
+    subCategorySlug: "fermentation",
+    name: {
+      fr: "Chambre de fermentation (simple porte)",
+      en: "Proofing cabinet (single door)",
+      es: "Cámara de fermentación (puerta simple)"
+    },
+    description: {
+      fr: "Chambre de fermentation simple porte, chauffe homogène et contrôle stable.",
+      en: "Single-door proofing cabinet with even heating and stable control.",
+      es: "Cámara de fermentación de una puerta, calentamiento uniforme y control estable."
+    },
+    images: [
+      "/products/fermatation simple-01.jpg"
+    ],
+    specs: {
+      "Dimensions (Externe)": "780 × 1150 × 2105 mm",
+      "Température": "15–38°C",
+      "Réfrigération": "2–5°C",
+      "Étages": "20 niveaux, espacement 70 mm",
+      "Grilles": "600×800 (20 pièces)",
+      "Compresseur": "SECOP SC18MLX",
+      "Condenseur": "Beifeng, 4×10×380 mm",
+      "Ventilateur": "EBM (origine Allemagne)",
+      "Puissance": "2300 W (réfrigération)",
+      "Matériau": "Acier inox 201 motif croisé, épaisseur 0.7 mm",
+      "Matériau Interne": "Fond intérieur en inox 304",
+      "Réfrigérant": "R404A",
+      "Emballage": "123 × 82 × 125.5 cm"
+    }
+  }
 ];

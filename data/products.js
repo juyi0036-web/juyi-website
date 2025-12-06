@@ -193,23 +193,26 @@ export const products = [
     categorySlug: "froid",
     subCategorySlug: "fermentation",
     name: {
-      fr: "Chambre de fermentation 16 niveaux",
-      en: "Proofing cabinet 16 levels",
-      es: "Cámara de fermentación 16 niveles"
+      fr: "Chambre de fermentation pour pâte – 2 chariots (64 plateaux)",
+      en: "Dough proofing chamber – 2 trolleys (64 trays)",
+      es: "Cámara de fermentación de masa – 2 carros (64 bandejas)"
     },
     description: {
-      fr: "Contrôle d'humidité et température, compatible plaques 600×400.",
-      en: "Humidity and temperature control, fits 600×400 trays.",
-      es: "Control de humedad y temperatura, compatible bandejas 600×400."
+      fr: "Système de pulvérisation mousse, contrôleur numérique Taisheng. Chauffage Springfield, ventilateur EBM, contacteur Schneider.",
+      en: "Foam spray system with Taisheng digital controller. Springfield heating, EBM fan, Schneider contactor.",
+      es: "Sistema de pulverización de espuma con controlador digital Taisheng. Calefacción Springfield, ventilador EBM, contactor Schneider."
     },
-    image: "/products/petrin-test.jpg",
+    image: "/products/chambre-de-fermatation-01.jpg",
     specs: {
-      "Niveaux": "16",
-      "Température": "+20°C / +45°C",
-      "Humidité": "60%–95%",
-      "Puissance": "2.0 kW",
-      "Voltage": "220V / 50Hz",
-      "Dimensions": "800 x 900 x 2000 mm"
+      "Capacité": "2 chariots",
+      "Plateaux": "64 plateaux",
+      "Dimensions": "1720 x 1240 x 2130 mm",
+      "Puissance": "2800 W",
+      "Voltage": "220V / 50Hz / 1 phase",
+      "Poids Net": "223 kg",
+      "Température": "Jusqu'à 38°C (sans compresseur)",
+      "Contrôleur": "Numérique Taisheng",
+      "Principaux composants": "Résistance chauffante Springfield; ventilateur EBM (Allemagne); contacteur Schneider"
     }
   },
   {

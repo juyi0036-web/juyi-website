@@ -202,7 +202,7 @@ export const products = [
       en: "Foam spray system with Taisheng digital controller. Springfield heating, EBM fan, Schneider contactor.",
       es: "Sistema de pulverización de espuma con controlador digital Taisheng. Calefacción Springfield, ventilador EBM, contactor Schneider."
     },
-    image: "/products/chambre-de-fermatation-01.jpg",
+    image: "/products/chambre de fermatation-01.jpg",
     specs: {
       "Capacité": "2 chariots",
       "Plateaux": "64 plateaux",

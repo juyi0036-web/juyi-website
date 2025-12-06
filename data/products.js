@@ -394,6 +394,35 @@ export const products = [
     }
   },
   {
+    id: "repose-paton-inox",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "repose-paton",
+    name: {
+      fr: "Repose pâton inox",
+      en: "Stainless dough resting rack",
+      es: "Repose de masa en inox"
+    },
+    description: {
+      fr: "Étagère de repos pour pâtons, structure inox 304, niveaux multiples pour plaques 600×400.",
+      en: "Dough resting rack, 304 stainless frame, multiple levels for 600×400 trays.",
+      es: "Estantería de reposo para masa, estructura inox 304, varios niveles para bandejas 600×400."
+    },
+    images: [
+      "/products/repose paton-01.jpg",
+      "/products/repose paton-02.jpg"
+    ],
+    specs: {
+      "Dimensions": "900 × 600 × 1700 mm",
+      "Inox": "Acier inoxydable 304",
+      "Niveaux": "20 niveaux",
+      "Plateaux": "EN 600×400 mm",
+      "Rails latéraux": "Forme L, épaisseur 1.2 mm",
+      "Roues": "4 roues, 2 freins",
+      "Poids Net": "30 kg",
+      "Poids Brut": "32 kg"
+    }
+  },
+  {
     id: "vitrine-refrigee-1500",
     categorySlug: "froid",
     subCategorySlug: "vitrines",

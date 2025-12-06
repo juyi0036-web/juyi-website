@@ -396,6 +396,38 @@ export const products = [
   }
   ,
   {
+    id: "meuble-bas-3",
+    categorySlug: "froid",
+    subCategorySlug: "tours-patissiers",
+    name: {
+      fr: "Meuble bas réfrigéré 3 portes GN",
+      en: "Refrigerated low counter 3 doors GN",
+      es: "Mueble bajo refrigerado 3 puertas GN"
+    },
+    description: {
+      fr: "Comptoir bas 3 portes. Matériau interne/externe en inox 304. Référence PA3100TN.",
+      en: "Three-door low refrigerated counter. Internal/external material 304 stainless. Reference PA3100TN.",
+      es: "Mostrador bajo refrigerado de tres puertas. Material interno/externo inox 304. Referencia PA3100TN."
+    },
+    images: [
+      "/products/meuble bas-3-01.jpg",
+      "/products/meuble bas-3-02.jpg"
+    ],
+    specs: {
+      "Modèle": "PA3100TN",
+      "Classification": "Chiller",
+      "Température": "+2°C / +8°C",
+      "Voltage": "230V / 50Hz",
+      "Dimension Interne": "1455 × 680 × 589 mm",
+      "Dimensions (Externe)": "2020 × 800 × 960 mm",
+      "Volume": "635 L",
+      "Poids Net": "132 kg",
+      "Poids Brut": "150 kg",
+      "Matériau Interne": "Inox 304",
+      "Matériau Externe": "Inox 304"
+    }
+  },
+  {
     id: "grille-inox-304-2tailles",
     categorySlug: "inox-mobilier",
     subCategorySlug: "plaques",

@@ -29,6 +29,7 @@ export default function ProductDetail({ product: productProp }) {
     ? product.images
     : [product?.image].filter(Boolean);
   const primaryImage = images.length ? images[0] : null;
+  const displayImages = images.slice(0, 2);
   const header5 = locale === 'en' ? '5 levels' : (locale === 'es' ? '5 niveles' : '5 niveaux');
   const header10 = locale === 'en' ? '10 levels' : (locale === 'es' ? '10 niveles' : '10 niveaux');
   const net5 = product?.specs ? product.specs['Poids Net (5 niveaux)'] : undefined;
@@ -86,11 +87,11 @@ export default function ProductDetail({ product: productProp }) {
         </nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl border border-[#EAD8C0] shadow-sm p-8">
-          <div className="relative w-full">
-            <div className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
-              {primaryImage && (
+          <div className="relative w-full space-y-4">
+            {displayImages.map((imgSrc, idx) => (
+              <div key={idx} className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
                 <img
-                  src={primaryImage}
+                  src={imgSrc}
                   alt={pageTitle}
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -104,8 +105,8 @@ export default function ProductDetail({ product: productProp }) {
                     }
                   }}
                 />
-              )}
-            </div>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-col">

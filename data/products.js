@@ -423,6 +423,35 @@ export const products = [
     }
   },
   {
+    id: "echelle-basse-avec-dessus",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "echelles-chariots",
+    name: {
+      fr: "Échelle basse avec dessus",
+      en: "Low rack with top",
+      es: "Carro bajo con encimera"
+    },
+    description: {
+      fr: "Chariot bas avec plateau supérieur. Inox 201, tubes 25×25, 9 niveaux EN 600×400, 4 roues dont 2 avec freins.",
+      en: "Low trolley with top shelf. Stainless 201, 25×25 tubes, 9 levels EN 600×400, 4 wheels (2 brakes).",
+      es: "Carro bajo con estante superior. Inox 201, tubos 25×25, 9 niveles EN 600×400, 4 ruedas (2 frenos)."
+    },
+    images: [
+      "/products/chariot.jpg"
+    ],
+    specs: {
+      "Dimensions": "660 × 460 × 875 mm",
+      "Matériau": "Inox 201",
+      "Tube": "25×25 mm, épaisseur 1.0 mm",
+      "Épaisseur": "1.2 mm",
+      "Plateaux": "9 × EN 600×400 mm",
+      "Roues": "4 roues, 2 freins",
+      "Poids Net": "12 kg",
+      "Poids Brut": "15 kg",
+      "Emballage": "0.80 × 0.90 × 0.87 m (0.626 CBM)"
+    }
+  },
+  {
     id: "vitrine-refrigee-1500",
     categorySlug: "froid",
     subCategorySlug: "vitrines",

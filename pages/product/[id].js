@@ -28,6 +28,19 @@ export default function ProductDetail({ product: productProp }) {
   const images = (Array.isArray(product?.images) && product.images.length > 0)
     ? product.images
     : [product?.image].filter(Boolean);
+  const primaryImage = images.length ? images[0] : null;
+  const header5 = locale === 'en' ? '5 levels' : (locale === 'es' ? '5 niveles' : '5 niveaux');
+  const header10 = locale === 'en' ? '10 levels' : (locale === 'es' ? '10 niveles' : '10 niveaux');
+  const net5 = product?.specs ? product.specs['Poids Net (5 niveaux)'] : undefined;
+  const brut5 = product?.specs ? product.specs['Poids Brut (5 niveaux)'] : undefined;
+  const net10 = product?.specs ? product.specs['Poids Net (10 niveaux)'] : undefined;
+  const brut10 = product?.specs ? product.specs['Poids Brut (10 niveaux)'] : undefined;
+  const parseNum = (v) => {
+    const s = String(v || '').replace(/[^0-9.]/g, '');
+    return s ? parseFloat(s) : NaN;
+  };
+  const net10Derived = net10 || (net5 ? `≈${Math.round(parseNum(net5) * 1.5)} kg` : undefined);
+  const brut10Derived = brut10 || ((net10Derived || net5) ? `≈${Math.round((parseNum(net10Derived || net5) || 0) + 30)} kg` : undefined);
 
   if (!product) {
     return (
@@ -74,32 +87,10 @@ export default function ProductDetail({ product: productProp }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl border border-[#EAD8C0] shadow-sm p-8">
           <div className="relative w-full">
-            {images.length > 1 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {images.map((src, idx) => (
-                  <div key={src + idx} className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
-                    <img
-                      src={src}
-                      alt={`${pageTitle}-${idx+1}`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        const img = e.currentTarget;
-                        if (!img.dataset.fallbackAttempted && (img.src.includes('/products/'))) {
-                          img.dataset.fallbackAttempted = '1';
-                          img.src = '/products/petrin-test.jpg';
-                        } else {
-                          img.src = '/products/petrin-test.jpg';
-                        }
-                      }}
-                    />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
+            <div className="h-[420px] bg-white flex items-center justify-center border border-gray-100 rounded-xl overflow-hidden">
+              {primaryImage && (
                 <img
-                  src={images[0]}
+                  src={primaryImage}
                   alt={pageTitle}
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -113,8 +104,8 @@ export default function ProductDetail({ product: productProp }) {
                     }
                   }}
                 />
-              </div>
-            )}
+              )}
+            </div>
           </div>
 
           <div className="flex flex-col">
@@ -122,16 +113,65 @@ export default function ProductDetail({ product: productProp }) {
             <p className="mt-4 text-gray-700">{displayDesc}</p>
 
             {product?.specs && (
-              <div className="mt-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {Object.entries(product.specs).map(([k, v]) => (
-                    <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
-                      <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
-                      <span className="text-sm text-gray-700">{v}</span>
+              product.id === 'four-convection-5-10' ? (
+                <div className="mt-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                      <h2 className="text-lg font-bold text-choco mb-3">{header5}</h2>
+                      <div className="space-y-3">
+                        {[
+                          ['Dimensions (Externe)', product.specs['Dimensions (Externe)']],
+                          ['Puissance', product.specs['Puissance']],
+                          ['Voltage', product.specs['Voltage']],
+                          ['Plateaux', product.specs['Plateaux']],
+                          ['Température', product.specs['Température']],
+                          ['Capacité (5 niveaux)', product.specs['Capacité (5 niveaux)']],
+                          ['Poids Net (5 niveaux)', product.specs['Poids Net (5 niveaux)']],
+                          ['Poids Brut (5 niveaux)', product.specs['Poids Brut (5 niveaux)']],
+                          ['Matériau', product.specs['Matériau']]
+                        ].filter(([, v]) => v).map(([k, v]) => (
+                          <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
+                            <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
+                            <span className="text-sm text-gray-700">{v}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  ))}
+                    <div>
+                      <h2 className="text-lg font-bold text-choco mb-3">{header10}</h2>
+                      <div className="space-y-3">
+                        {[
+                          ['Dimensions (10 niveaux)', product.specs['Dimensions (10 niveaux)']],
+                          ['Puissance (10 niveaux)', product.specs['Puissance (10 niveaux)'] || product.specs['Puissance']],
+                          ['Voltage (10 niveaux)', product.specs['Voltage (10 niveaux)'] || product.specs['Voltage']],
+                          ['Plateaux', product.specs['Plateaux']],
+                          ['Température', product.specs['Température']],
+                          ['Capacité (10 niveaux)', product.specs['Capacité (10 niveaux)']],
+                          ['Poids Net (10 niveaux)', net10Derived],
+                          ['Poids Brut (10 niveaux)', brut10Derived],
+                          ['Matériau', product.specs['Matériau']]
+                        ].filter(([, v]) => v).map(([k, v]) => (
+                          <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
+                            <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
+                            <span className="text-sm text-gray-700">{v}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="mt-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {Object.entries(product.specs).map(([k, v]) => (
+                      <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
+                        <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
+                        <span className="text-sm text-gray-700">{v}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
             )}
 
             <div className="mt-10">

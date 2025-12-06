@@ -264,8 +264,8 @@ export const products = [
       es: "Sistema de pulverización de espuma con controlador digital Taisheng. Calefacción Springfield, ventilador EBM, contactor Schneider."
     },
     images: [
-      "/products/chambre de fermatation-02.jpg",
-      "/products/chambre de fermatation-01.jpg"
+      "/products/chambre-de-fermatation-02.jpg",
+      "/products/chambre-de-fermatation-01.jpg"
     ],
     specs: {
       "Capacité": "2 chariots",
@@ -455,8 +455,8 @@ export const products = [
       es: "Mostrador bajo refrigerado de tres puertas. Material interno/externo inox 304."
     },
     images: [
-      "/products/meuble bas-3-01.jpg",
-      "/products/meuble bas-3-02.jpg"
+      "/products/meuble-bas-3-01.jpg",
+      "/products/meuble-bas-3-02.jpg"
     ],
     specs: {
       "Classification": "Chiller",
@@ -543,7 +543,6 @@ export const products = [
       es: "Serie de moldes de acero aluminizado con recubrimiento de teflón a doble cara. Muchas talla disponibles. Formas y dimensiones personalizables a pedido."
     },
     images: [
-      "/products/moules-01.jpg",
       "/products/moules-01.jpg"
     ],
     specs: {
@@ -598,7 +597,7 @@ export const products = [
       es: "Cámara de fermentación de una puerta, calentamiento uniforme y control estable."
     },
     images: [
-      "/products/fermatation simple-01.jpg"
+      "/products/fermentation-single-01.jpg"
     ],
     specs: {
       "Dimensions (Externe)": "780 × 1150 × 2105 mm",

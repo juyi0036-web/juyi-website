@@ -137,6 +137,15 @@ export const translations = {
       "Dégivrage": "Dégivrage",
       "Réfrigérant": "Réfrigérant",
       "Refroidissement": "Refroidissement"
+      ,
+      "Poids à vide": "Poids à vide",
+      "Auges": "Auges",
+      "Nombre d'augues totales": "Nombre d'augues totales",
+      "Longueur/largeur des auges": "Longueur/largeur des auges",
+      "Capacité pâtons 350g": "Capacité pâtons 350g",
+      "Capacité pâtons 550g": "Capacité pâtons 550g",
+      "Type d'alimentation": "Type d'alimentation",
+      "Options": "Options"
     }
   },
 
@@ -273,6 +282,15 @@ export const translations = {
       "Dégivrage": "Defrost Type",
       "Réfrigérant": "Refrigerant",
       "Refroidissement": "Cooling"
+      ,
+      "Poids à vide": "Empty Weight",
+      "Auges": "Troughs",
+      "Nombre d'augues totales": "Total Troughs",
+      "Longueur/largeur des auges": "Trough Length/Width",
+      "Capacité pâtons 350g": "Capacity (350g dough)",
+      "Capacité pâtons 550g": "Capacity (550g dough)",
+      "Type d'alimentation": "Power Supply",
+      "Options": "Options"
     }
   },
 
@@ -409,6 +427,15 @@ export const translations = {
       "Dégivrage": "Desescarche",
       "Réfrigérant": "Refrigerante",
       "Refroidissement": "Refrigeración"
+      ,
+      "Poids à vide": "Peso en vacío",
+      "Auges": "Cubetas",
+      "Nombre d'augues totales": "Cubetas totales",
+      "Longueur/largeur des auges": "Longitud/anchura de cubetas",
+      "Capacité pâtons 350g": "Capacidad (masa 350g)",
+      "Capacité pâtons 550g": "Capacidad (masa 550g)",
+      "Type d'alimentation": "Alimentación",
+      "Options": "Opciones"
     }
   }
 };

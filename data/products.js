@@ -412,14 +412,16 @@ export const products = [
       "/products/repose paton-02.jpg?v=2"
     ],
     specs: {
-      "Dimensions": "900 × 600 × 1700 mm",
-      "Inox": "Acier inoxydable 304",
-      "Niveaux": "20 niveaux",
-      "Plateaux": "EN 600×400 mm",
-      "Rails latéraux": "Forme L, épaisseur 1.2 mm",
-      "Roues": "4 roues, 2 freins",
-      "Poids Net": "30 kg",
-      "Poids Brut": "32 kg"
+      "Modèle": "MB300 / MB300L",
+      "Dimensions": "1610 × 1210 × 1200 mm",
+      "Poids à vide": "317 kg",
+      "Auges": "Standards, Larges",
+      "Nombre d'augues totales": "33 / 26",
+      "Longueur/largeur des auges": "136 × 14 cm (Std) / 136 × 16 cm (Large)",
+      "Capacité pâtons 350g": "297 (Std) / 234 (Large)",
+      "Capacité pâtons 550g": "264 (Std) / 208 (Large)",
+      "Type d'alimentation": "230V Triphasé / 400V Triphasé",
+      "Options": "Lampe UV germicide, extracteur d’air, commande au pied, auges tissu synthétique, auges silicone"
     }
   },
   {

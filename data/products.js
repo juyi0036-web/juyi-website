@@ -569,8 +569,7 @@ export const products = [
       es: "Horno de pizza de cinta. Calentamiento uniforme, rendimiento estable, fácil mantenimiento."
     },
     images: [
-      "/products/italian-pizza-oven-01.jpg",
-      "/products/italian-pizza-oven.jpg"
+      "/products/italian-pizza-oven-01.jpg"
     ],
     specs: {
       "Type": "Four convoyeur électrique",

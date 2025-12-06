@@ -471,7 +471,7 @@ export const products = [
   {
     id: "grille-inox-304-2tailles",
     categorySlug: "chaud",
-    subCategorySlug: "friteuses-grills",
+    subCategorySlug: "friteuses",
     name: {
       fr: "Grille inox 304 (400×600 & 600×800)",
       en: "Stainless 304 wire rack (400×600 & 600×800)",
@@ -489,6 +489,31 @@ export const products = [
       "Matériau": "Inox 304",
       "Grille 304 400×600": "Bord 5.0 mm, fil 2.0 mm, pas 13 mm",
       "Grille 304 600×800": "Bord 6.0 mm, fil 2.4 mm, pas 25 mm"
+    }
+  }
+  ,
+  {
+    id: "moules-toast-box",
+    categorySlug: "chaud",
+    subCategorySlug: "fours",
+    name: {
+      fr: "Moules pain de mie (toast box)",
+      en: "Toast box moulds",
+      es: "Moldes para pan de molde"
+    },
+    description: {
+      fr: "Série de moules en acier aluminisé avec revêtement téflon double face. Nombreuses tailles disponibles. Formes et dimensions personnalisables selon besoin.",
+      en: "Series of aluminized steel moulds with double-sided Teflon coating. Many sizes available. Shapes and dimensions customizable on request.",
+      es: "Serie de moldes de acero aluminizado con recubrimiento de teflón a doble cara. Muchas talla disponibles. Formas y dimensiones personalizables a pedido."
+    },
+    images: [
+      "/products/moules-01.jpg"
+    ],
+    specs: {
+      "Matériau": "Acier aluminisé",
+      "Revêtement": "Téflon (double face)",
+      "Tailles sans couvercle": "160×90×70, 180×90×70, 200×90×70, 220×90×70 mm",
+      "Tailles avec couvercle": "180×90×70, 250×90×70, 270×104×100, 290×106×110 mm"
     }
   }
 ];

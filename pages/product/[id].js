@@ -22,7 +22,7 @@ export default function ProductDetail({ product: productProp }) {
   const category = categories.find(c => c.slug === product?.categorySlug);
   const sub = category?.subcategories.find(s => s.slug === product?.subCategorySlug);
 
-  const pageTitle = displayName || 'Produit';
+  const pageTitle = ((displayName || 'Produit') + (product?.id === 'frigo-2door-gn' ? '（double）' : ''));
   const categoryPath = product ? `/products/${product.categorySlug}` : '/products';
   const subCategoryPath = product?.subCategorySlug ? `/products/${product.categorySlug}/${product.subCategorySlug}` : null;
   const images = (Array.isArray(product?.images) && product.images.length > 0)

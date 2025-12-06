@@ -60,6 +60,33 @@ export const products = [
     }
   },
   {
+    id: "frigo-2door-gn",
+    categorySlug: "froid",
+    subCategorySlug: "armoires-refrigerees",
+    name: {
+      fr: "Armoire réfrigérée 2 portes",
+      en: "Two-door refrigerated cabinet",
+      es: "Armario refrigerado de 2 puertas"
+    },
+    description: {
+      fr: "Armoire verticale 2 portes. Inox 304 interne/externe. Deux gammes de température disponibles (TN/BT).",
+      en: "Upright two-door cabinet. 304 stainless inside/out. Two temperature ranges available (TN/BT).",
+      es: "Armario vertical de dos puertas. Inox 304 interior/exterior. Dos rangos de temperatura disponibles (TN/BT)."
+    },
+    images: [
+      "/products/frigo-2-01.jpg"
+    ],
+    specs: {
+      "Température (TN)": "+2°C / +8°C",
+      "Température (BT)": "-18°C / -22°C",
+      "Voltage": "230V / 50Hz",
+      "Réfrigérant": "R290",
+      "Refroidissement": "Ventilé",
+      "Matériau Interne": "Inox 304",
+      "Matériau Externe": "Inox 304"
+    }
+  },
+  {
     id: "petrin-80-pro",
     categorySlug: "boulangerie-patisserie",
     subCategorySlug: "petrins",

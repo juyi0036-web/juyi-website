@@ -183,7 +183,6 @@ export const products = [
       "/products/laminoir-02.jpg"
     ],
     specs: {
-      "Modèle": "JDR520B",
       "Largeur utile": "520 mm",
       "Épaisseur minimale": "0.5 mm",
       "Matériau": "Inox 304",
@@ -405,16 +404,15 @@ export const products = [
       es: "Mueble bajo refrigerado 3 puertas GN"
     },
     description: {
-      fr: "Comptoir bas 3 portes. Matériau interne/externe en inox 304. Référence PA3100TN.",
-      en: "Three-door low refrigerated counter. Internal/external material 304 stainless. Reference PA3100TN.",
-      es: "Mostrador bajo refrigerado de tres puertas. Material interno/externo inox 304. Referencia PA3100TN."
+      fr: "Comptoir bas 3 portes. Matériau interne/externe en inox 304.",
+      en: "Three-door low refrigerated counter. Internal/external material 304 stainless.",
+      es: "Mostrador bajo refrigerado de tres puertas. Material interno/externo inox 304."
     },
     images: [
       "/products/meuble bas-3-01.jpg",
       "/products/meuble bas-3-02.jpg"
     ],
     specs: {
-      "Modèle": "PA3100TN",
       "Classification": "Chiller",
       "Température": "+2°C / +8°C",
       "Voltage": "230V / 50Hz",

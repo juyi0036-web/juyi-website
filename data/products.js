@@ -510,7 +510,7 @@ export const products = [
       es: "Horno de convección para bandejas EN 600×400. Rango de temperatura 25–300°C. Disponible en 5 o 10 niveles."
     },
     images: [
-      "/products/fours-5:10-01.jpg"
+      "/products/fours-5-10-01.jpg"
     ],
     specs: {
       "Dimensions (Externe)": "738 × 850 × 620 mm",

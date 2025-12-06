@@ -178,12 +178,18 @@ export const products = [
       en: "Foldable table, 520 mm working width, variable speed.",
       es: "Mesa abatible, ancho útil 520 mm, velocidad variable."
     },
-    image: "/products/petrin-test.jpg",
+    images: [
+      "/products/laminoir-01.jpg",
+      "/products/laminoir-02.jpg"
+    ],
     specs: {
+      "Modèle": "JDR520B",
       "Largeur utile": "520 mm",
       "Épaisseur minimale": "0.5 mm",
+      "Matériau": "Inox 304",
+      "Rouleaux": "Inox 304",
       "Puissance": "0.75 kW",
-      "Voltage": "220V / 50Hz",
+      "Voltage": "380V / 50Hz / 3PH",
       "Dimensions": "2300 x 950 x 1200 mm",
       "Poids": "190 kg"
     }

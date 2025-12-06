@@ -615,4 +615,38 @@ export const products = [
       "Emballage": "123 × 82 × 125.5 cm"
     }
   }
+  ,
+  {
+    id: "fermentation-double-door",
+    categorySlug: "froid",
+    subCategorySlug: "fermentation",
+    name: {
+      fr: "Chambre de fermentation (double porte)",
+      en: "Proofing cabinet (double door)",
+      es: "Cámara de fermentación (doble puerta)"
+    },
+    description: {
+      fr: "Chambre de fermentation double porte, capacité accrue et contrôle stable.",
+      en: "Double-door proofing cabinet with increased capacity and stable control.",
+      es: "Cámara de fermentación de doble puerta, mayor capacidad y control estable."
+    },
+    images: [
+      "/products/fermatation double-01.jpg"
+    ],
+    specs: {
+      "Dimensions (Externe)": "1560 × 1150 × 2105 mm",
+      "Température": "15–38°C",
+      "Réfrigération": "2–5°C",
+      "Étages": "40 niveaux, espacement 70 mm",
+      "Grilles": "600×800 (40 pièces)",
+      "Compresseur": "SECOP SC18MLX ×2",
+      "Condenseur": "Beifeng, 4×10×380 mm ×2",
+      "Ventilateur": "EBM (origine Allemagne) ×2",
+      "Puissance": "4600 W (réfrigération)",
+      "Matériau": "Acier inox 201 motif croisé, épaisseur 0.7 mm",
+      "Matériau Interne": "Fond intérieur en inox 304",
+      "Réfrigérant": "R404A",
+      "Emballage": "180 × 120 × 130 cm"
+    }
+  }
 ];

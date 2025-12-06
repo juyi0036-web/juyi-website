@@ -42,14 +42,15 @@ export const products = [
       es: "Armario refrigerado de 1 puerta"
     },
     description: {
-      fr: "Armoire verticale 1 porte. Inox 304 interne/externe. Deux gammes de température disponibles (TN/BT).",
-      en: "Upright single-door cabinet. 304 stainless inside/out. Two temperature ranges available (TN/BT).",
-      es: "Armario vertical de una puerta. Inox 304 interior/exterior. Dos rangos de temperatura disponibles (TN/BT)."
+      fr: "Armoire verticale 1 porte. Inox 304 interne/externe. Deux gammes de température disponibles (TN/BT). Compatible plaques EN 600×400.",
+      en: "Upright single-door cabinet. 304 stainless inside/out. Two temperature ranges available (TN/BT). Fits EN 600×400 trays.",
+      es: "Armario vertical de una puerta. Inox 304 interior/exterior. Dos rangos de temperatura disponibles (TN/BT). Compatible bandejas EN 600×400."
     },
     images: [
       "/products/frigo-1-01.jpg"
     ],
     specs: {
+      "Dimension Interne": "624 × 700 × 1396 mm",
       "Température (TN)": "+2°C / +8°C",
       "Température (BT)": "-18°C / -22°C",
       "Voltage": "230V / 50Hz",
@@ -69,14 +70,15 @@ export const products = [
       es: "Armario refrigerado de 2 puertas"
     },
     description: {
-      fr: "Armoire verticale 2 portes. Inox 304 interne/externe. Deux gammes de température disponibles (TN/BT).",
-      en: "Upright two-door cabinet. 304 stainless inside/out. Two temperature ranges available (TN/BT).",
-      es: "Armario vertical de dos puertas. Inox 304 interior/exterior. Dos rangos de temperatura disponibles (TN/BT)."
+      fr: "Armoire verticale 2 portes. Inox 304 interne/externe. Deux gammes de température disponibles (TN/BT). Compatible plaques EN 600×400.",
+      en: "Upright two-door cabinet. 304 stainless inside/out. Two temperature ranges available (TN/BT). Fits EN 600×400 trays.",
+      es: "Armario vertical de dos puertas. Inox 304 interior/exterior. Dos rangos de temperatura disponibles (TN/BT). Compatible bandejas EN 600×400."
     },
     images: [
       "/products/frigo-2-01.jpg"
     ],
     specs: {
+      "Dimension Interne": "1364 × 700 × 1396 mm",
       "Température (TN)": "+2°C / +8°C",
       "Température (BT)": "-18°C / -22°C",
       "Voltage": "230V / 50Hz",
@@ -434,20 +436,7 @@ export const products = [
       "Alimentation": "AC3N380V (gaz pour fourneau)"
     }
   },
-  {
-    id: "tour-patissier-2portes",
-    categorySlug: "froid",
-    subCategorySlug: "tours-patissiers",
-    name: "Tour pâtissier 2 portes GN",
-    description: "Plan de travail inox, tiroirs GN optionnels, groupe tropicalisé.",
-    image: "/products/petrin-test.jpg",
-    specs: {
-      "Format": "GN 1/1",
-      "Température": "-2°C / +8°C",
-      "Voltage": "220V"
-    }
-  }
-  ,
+  
   {
     id: "meuble-bas-3",
     categorySlug: "froid",

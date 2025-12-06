@@ -569,7 +569,7 @@ export const products = [
       es: "Horno de pizza de cinta eléctrico. Temperatura RT–300°C. Zona de calentamiento 50×81.5 cm. Alimentación 380V 3PH 22A. Consumo 5.8–6.8 kWh. Tamaño de máquina 1817×1155×1140 mm (con base). Embalaje 2000×1280×890 mm, peso bruto 350 kg."
     },
     images: [
-      "/products/italian-pizza-oven.jpg"
+      "/products/italian-pizza-oven.jpg?v=20251206"
     ],
     specs: {
       "Type": "Four convoyeur électrique",

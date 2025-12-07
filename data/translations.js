@@ -147,6 +147,10 @@ export const translations = {
       "Capacité pâtons 550g": "Capacité pâtons 550g",
       "Type d'alimentation": "Type d'alimentation",
       "Options": "Options"
+      ,
+      "Forme de glace": "Forme de glace",
+      "Production journalière": "Production journalière",
+      "Stock de glace": "Stock de glace"
     }
   },
 
@@ -293,6 +297,10 @@ export const translations = {
       "Capacité pâtons 550g": "Capacity (550g dough)",
       "Type d'alimentation": "Power Supply",
       "Options": "Options"
+      ,
+      "Forme de glace": "Ice shape",
+      "Production journalière": "Daily production",
+      "Stock de glace": "Ice storage"
     }
   },
 
@@ -439,6 +447,10 @@ export const translations = {
       "Capacité pâtons 550g": "Capacidad (masa 550g)",
       "Type d'alimentation": "Alimentación",
       "Options": "Opciones"
+      ,
+      "Forme de glace": "Forma de hielo",
+      "Production journalière": "Producción diaria",
+      "Stock de glace": "Depósito de hielo"
     }
   }
 };

@@ -743,5 +743,61 @@ export const products = [
       "Réfrigérant": "R404A",
       "Emballage": "180 × 120 × 130 cm"
     }
+  },
+  {
+    id: "machine-a-glacons-50kg",
+    categorySlug: "froid",
+    subCategorySlug: "glace",
+    name: {
+      fr: "Machine à glaçons (cube)",
+      en: "Ice maker (cube)",
+      es: "Máquina de hielo (cubo)"
+    },
+    description: {
+      fr: "Machine à glaçons professionnelle. Production quotidienne stable, bac de stockage intégré, refroidissement à air.",
+      en: "Professional ice maker. Stable daily production, integrated storage bin, air-cooled.",
+      es: "Máquina de hielo profesional. Producción diaria estable, depósito integrado, enfriamiento por aire."
+    },
+    images: [
+      "/products/glacon-01.jpg"
+    ],
+    specs: {
+      "Forme de glace": "Cube",
+      "Production journalière": "50 kg/24h",
+      "Stock de glace": "15 kg",
+      "Refroidissement": "Air",
+      "Réfrigérant": "R290",
+      "Voltage": "220–240V / 50Hz",
+      "Puissance": "300 W",
+      "Dimensions (Externe)": "500 × 580 × 830 mm",
+      "Poids Net": "35 kg",
+      "Matériau Externe": "Inox 304"
+    }
+  },
+  {
+    id: "faconneuse-baguette-inox",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "faconneuses-baguettes",
+    name: {
+      fr: "Façonneuse baguette (2 cuves, 2 paniers)",
+      en: "Baguette moulder (2 tanks, 2 baskets)",
+      es: "Formadora de baguettes (2 cubas, 2 canastas)"
+    },
+    description: {
+      fr: "Machine inox pour mise en forme de baguettes. Configuration 2 cuves 2 paniers.",
+      en: "Stainless machine for baguette shaping. Configuration: 2 tanks, 2 baskets.",
+      es: "Máquina de inox para formar baguettes. Configuración: 2 cubas, 2 canastas."
+    },
+    images: [
+      "/products/facon-01.jpg"
+    ],
+    specs: {
+      "Configuration": "2 cuves, 2 paniers",
+      "Voltage": "220V / 380V",
+      "Puissance": "0.75 kW",
+      "Dimensions": "1000 × 970 × 1580 mm",
+      "Poids": "302 kg",
+      "Plage de poids de pâte": "50–1200 g / pièce"
+    }
   }
 ];

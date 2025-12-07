@@ -695,7 +695,7 @@ export const products = [
       "/products/tissu-01.jpg"
     ],
     specs: {
-      "Dimensions": "175 × 60 cm",
+      "Dimensions": "Tailles multiples disponibles",
       "Matériau": "Lin 10A",
       "Coutures": "Tout autour",
       "Logo": "Sur commande",

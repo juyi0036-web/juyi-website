@@ -373,20 +373,7 @@ export const products = [
       "Accessoires": "3"
     }
   },
-  {
-    id: "friteuse-double-2x16l",
-    categorySlug: "chaud",
-    subCategorySlug: "friteuses",
-    name: "Friteuse double 2x16L",
-    description: "Cuves indépendantes, robinet de vidange, inox 304, chauffage rapide.",
-    image: "/products/petrin-test.jpg",
-    specs: {
-      "Capacité": "2 x 16 L",
-      "Puissance": "2 x 6 kW",
-      "Alimentation": "380V",
-      "Température": "50–200°C"
-    }
-  },
+  
   {
     id: "evier-double-1200",
     categorySlug: "inox-mobilier",

@@ -8,7 +8,7 @@ export const categories = [
     slug: "boulangerie-patisserie",
     subcategories: [
       { name: { fr: "Pétrins (Spirale/Fourche)", en: "Mixers (Spiral/Fork)", es: "Amasadoras (Espiral/Horquilla)" }, slug: "petrins" },
-      { name: { fr: "Diviseuses & Façonneuses", en: "Dividers & Moulders", es: "Divisoras y Formadoras" }, slug: "diviseuses-faconneuses" },
+      { name: { fr: "Diviseuses", en: "Dividers", es: "Divisoras" }, slug: "diviseuses" },
       { name: { fr: "Laminoirs", en: "Sheeters", es: "Laminadoras" }, slug: "laminoirs" },
       { name: { fr: "Trancheuses à Pain", en: "Bread Slicers", es: "Cortadoras de pan" }, slug: "trancheuses" },
       { name: { fr: "Batteurs Mélangeurs", en: "Planetary Mixers", es: "Batidoras mezcladoras" }, slug: "batteurs" }

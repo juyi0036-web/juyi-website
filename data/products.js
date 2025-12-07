@@ -248,7 +248,7 @@ export const products = [
   {
     id: "moulder-450",
     categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "diviseuses-faconneuses",
+    subCategorySlug: "diviseuses",
     name: {
       fr: "Façonneuse à pain 450",
       en: "Bread moulder 450",

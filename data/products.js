@@ -387,14 +387,14 @@ export const products = [
     categorySlug: "inox-mobilier",
     subCategorySlug: "plonges",
     name: {
-      fr: "Plonge simple 1000mm",
-      en: "Single-basin sink 1000mm",
-      es: "Fregadero una cubeta 1000mm"
+      fr: "Évier inox simple 1000mm",
+      en: "Stainless steel sink (single) 1000mm",
+      es: "Fregadero de acero inoxidable (una cubeta) 1000mm"
     },
     description: {
-      fr: "Bac profond avec dosseret, inox 304, étagère basse renforcée.",
-      en: "Deep basin with backsplash, stainless 304, reinforced lower shelf.",
-      es: "Cuba profunda con salpicadero, acero inox 304, estante inferior reforzado."
+      fr: "Évier en acier inoxydable 304, bac profond avec dosseret, étagère basse renforcée.",
+      en: "Stainless steel 304 sink, deep basin with backsplash, reinforced lower shelf.",
+      es: "Fregadero de acero inoxidable 304, cuba profunda con salpicadero, estante inferior reforzado."
     },
     images: [
       "/products/evier.jpg"

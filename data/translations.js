@@ -142,7 +142,10 @@ export const translations = {
       "Isolation": "Isolation",
       "Dégivrage": "Dégivrage",
       "Réfrigérant": "Réfrigérant",
-      "Refroidissement": "Refroidissement"
+      "Refroidissement": "Refroidissement",
+      "Bacs": "Bacs",
+      "Dosseret": "Dosseret",
+      "Évacuation": "Évacuation"
       ,
       "Poids à vide": "Poids à vide",
       "Auges": "Auges",
@@ -303,7 +306,10 @@ export const translations = {
       "Isolation": "Insulation",
       "Dégivrage": "Defrost Type",
       "Réfrigérant": "Refrigerant",
-      "Refroidissement": "Cooling"
+      "Refroidissement": "Cooling",
+      "Bacs": "Basins",
+      "Dosseret": "Backsplash",
+      "Évacuation": "Drain"
       ,
       "Poids à vide": "Empty Weight",
       "Auges": "Troughs",
@@ -464,7 +470,10 @@ export const translations = {
       "Isolation": "Aislamiento",
       "Dégivrage": "Desescarche",
       "Réfrigérant": "Refrigerante",
-      "Refroidissement": "Refrigeración"
+      "Refroidissement": "Refrigeración",
+      "Bacs": "Cubetas",
+      "Dosseret": "Salpicadero",
+      "Évacuation": "Desagüe"
       ,
       "Poids à vide": "Peso en vacío",
       "Auges": "Cubetas",

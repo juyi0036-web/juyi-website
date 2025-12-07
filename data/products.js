@@ -14,6 +14,34 @@ export const products = [
     }
   },
   {
+    id: "diviseuse-30-140",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "diviseuses",
+    name: {
+      fr: "Diviseuse (30–140 g)",
+      en: "Dough divider (30–140 g)",
+      es: "Divisora (30–140 g)"
+    },
+    description: {
+      fr: "Diviseuse pour pâte, options manuelle et électrique. Paramètres basés sur des références standards.",
+      en: "Dough divider with manual and electric options. Parameters based on standard references.",
+      es: "Divisora de masa con opciones manual y eléctrica. Parámetros basados en referencias estándar."
+    },
+    images: [
+      "/products/Diviseuse-01.jpg"
+    ],
+    specs: {
+      "Poids des pâtons": "30–140 g / pièce",
+      "Capacité": "30 pièces / cycle",
+      "Dimensions": "530 × 460 × 1620 mm",
+      "Voltage": "220V / 50Hz",
+      "Puissance": "0.75 kW",
+      "Matériau": "Inox 304",
+      "Poids Net": "120 kg",
+      "Poids Brut": "140 kg"
+    }
+  },
+  {
     id: "echelle-a-bac",
     categorySlug: "inox-mobilier",
     subCategorySlug: "echelles-chariots",

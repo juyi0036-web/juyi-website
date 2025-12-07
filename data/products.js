@@ -273,30 +273,7 @@ export const products = [
       "Fonctions": "Pierre, chargeur à pain, vapeur tous niveaux, démarrage auto J+1"
     }
   },
-  {
-    id: "moulder-450",
-    categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "diviseuses",
-    name: {
-      fr: "Façonneuse à pain 450",
-      en: "Bread moulder 450",
-      es: "Formadora de pan 450"
-    },
-    description: {
-      fr: "Rouleaux réglables, convoyeur 450 mm. Idéale pour baguettes et pains.",
-      en: "Adjustable rollers, 450 mm conveyor. Ideal for baguettes and loaves.",
-      es: "Rodillos ajustables, cinta de 450 mm. Ideal para baguettes y panes."
-    },
-    image: "/products/petrin-test.jpg",
-    specs: {
-      "Largeur bande": "450 mm",
-      "Épaisseur laminage": "2–30 mm",
-      "Puissance": "1.1 kW",
-      "Voltage": "220V / 50Hz",
-      "Dimensions": "800 x 700 x 1200 mm",
-      "Poids": "180 kg"
-    }
-  },
+  
   {
     id: "laminoir-520",
     categorySlug: "boulangerie-patisserie",

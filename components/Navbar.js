@@ -60,9 +60,12 @@ export default function Navbar() {
                     <div className="absolute inset-0 bg-cream opacity-20 z-0"></div>
                     {categories.map((cat) => (
                       <div key={cat.slug} className="relative z-10">
-                        <h3 className="text-base font-extrabold text-choco uppercase tracking-widest mb-4 border-b-2 border-choco pb-2">
+                        <Link
+                          href={`/products/${cat.slug}`}
+                          className="text-base font-extrabold text-choco uppercase tracking-widest mb-4 border-b-2 border-choco pb-2 block no-underline hover:text-red-700"
+                        >
                           {cat.name?.[locale] || cat.name?.fr || cat.name}
-                        </h3>
+                        </Link>
                         <ul className="space-y-3 list-none p-0 m-0">
                           {cat.subcategories.map((sub) => (
                             <li key={sub.slug}>

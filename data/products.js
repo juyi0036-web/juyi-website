@@ -14,6 +14,36 @@ export const products = [
     }
   },
   {
+    id: "trancheuse-automatique",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "trancheuses",
+    name: {
+      fr: "Trancheuse à pain automatique",
+      en: "Automatic bread slicer",
+      es: "Cortadora de pan automática"
+    },
+    description: {
+      fr: "Alimentation automatique, épaisseur de coupe réglable, rendement élevé pour boulangeries.",
+      en: "Automatic feed, adjustable slice thickness, high throughput for bakeries.",
+      es: "Alimentación automática, espesor de corte ajustable, alto rendimiento para panaderías."
+    },
+    images: [
+      "/products/coupeuse.jpg"
+    ],
+    specs: {
+      "Épaisseur coupe": "8–18 mm (réglable)",
+      "Largeur max": "450 mm",
+      "Hauteur max": "160 mm",
+      "Longueur pain": "≤ 400 mm",
+      "Débit": "60–120 pains/h",
+      "Puissance": "0.75 kW",
+      "Voltage": "220V / 50Hz",
+      "Dimensions": "700 × 900 × 1200 mm",
+      "Poids": "140 kg",
+      "Matériau": "Inox 304"
+    }
+  },
+  {
     id: "diviseuse-30-140",
     categorySlug: "boulangerie-patisserie",
     subCategorySlug: "diviseuses",

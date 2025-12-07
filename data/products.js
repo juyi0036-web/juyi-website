@@ -588,6 +588,35 @@ export const products = [
   }
   ,
   {
+    id: "ampoules-comparatif",
+    categorySlug: "chaud",
+    subCategorySlug: "friteuses",
+    name: {
+      fr: "Ampoules transparentes (comparatif)",
+      en: "Transparent bulbs (comparison)",
+      es: "Bombillas transparentes (comparación)"
+    },
+    description: {
+      fr: "Modèles A60, G45, ST22, T22; culots E27/E14; multiples voltages et puissances.",
+      en: "A60, G45, ST22, T22 models; E27/E14 caps; multiple voltages and powers.",
+      es: "Modelos A60, G45, ST22, T22; casquillos E27/E14; múltiples voltajes y potencias."
+    },
+    images: [
+      "/products/ampoule.jpg"
+    ],
+    compare: {
+      attributes: ["Dimensions", "Voltage", "Puissance", "Culot", "Transparence"],
+      models: [
+        { label: "A60", Dimensions: "60×106 mm", Voltage: ["24V", "230V"], Puissance: ["60W", "75W"], Culot: "E27", Transparence: "Transparent" },
+        { label: "G45 (E27)", Dimensions: "45×70 mm", Voltage: ["24V", "230V"], Puissance: ["40W", "50W"], Culot: "E27", Transparence: "Transparent" },
+        { label: "G45 (E14)", Dimensions: "45×72 mm", Voltage: ["230V"], Puissance: ["40W"], Culot: "E14", Transparence: "Transparent" },
+        { label: "ST22", Dimensions: "22×50 mm", Voltage: ["230V"], Puissance: ["15W", "25W"], Culot: "E14", Transparence: "Transparent" },
+        { label: "T22", Dimensions: "22×56 mm", Voltage: ["24V"], Puissance: ["25W"], Culot: "E14", Transparence: "Transparent" }
+      ]
+    }
+  }
+  ,
+  {
     id: "four-convection-5-10",
     categorySlug: "chaud",
     subCategorySlug: "fours",

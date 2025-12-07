@@ -210,6 +210,33 @@ export default function ProductDetail({ product: productProp }) {
                     </div>
                   </div>
                 </div>
+              ) : product.id === 'ampoules-comparatif' ? (
+                <div className="mt-8 overflow-x-auto">
+                  <table className="min-w-full bg-white border border-gray-200 rounded-xl overflow-hidden">
+                    <thead className="bg-cream/60">
+                      <tr>
+                        <th className="px-4 py-3 text-left text-xs font-bold text-choco uppercase tracking-wide">{t.spec_labels && t.spec_labels['Modèle'] || 'Modèle'}</th>
+                        {((product.compare && product.compare.models) || []).map((m, idx) => (
+                          <th key={idx} className="px-4 py-3 text-left text-xs font-bold text-choco uppercase tracking-wide">{m.label}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(((product.compare && product.compare.attributes) || [])).map((attr) => (
+                        <tr key={attr} className="border-t">
+                          <td className="px-4 py-3 text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[attr]) || attr}</td>
+                          {((product.compare && product.compare.models) || []).map((m, idx) => {
+                            const v = m && m[attr];
+                            const s = Array.isArray(v) ? v.join(' / ') : (v || '');
+                            return (
+                              <td key={idx} className="px-4 py-3 text-sm text-gray-700">{s}</td>
+                            );
+                          })}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               ) : (
                 <div className="mt-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

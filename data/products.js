@@ -62,6 +62,34 @@ export const products = [
       "Étagère": "Oui, basse renforcée"
     }
   },
+  {
+    id: "table-inox-gamme-pro",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "tables-inox",
+    name: {
+      fr: "Table inox (gamme pro, multi-dimensions)",
+      en: "Stainless work table (pro range, multi-sizes)",
+      es: "Mesa de trabajo inox (gama pro, múltiples tamaños)"
+    },
+    description: {
+      fr: "Table de travail inox pour laboratoire. Plateau renforcé, étagère basse, pieds réglables. Options 201/304.",
+      en: "Stainless prep table for lab use. Reinforced top, lower shelf, adjustable feet. 201/304 options.",
+      es: "Mesa de trabajo inox para laboratorio. Encimera reforzada, estante inferior, patas ajustables. Opciones 201/304."
+    },
+    images: [
+      "/products/inox-01.jpg",
+      "/products/inox-02.jpg"
+    ],
+    specs: {
+      "Dimensions": "1200×700×850 / 1500×700×850 / 2000×700×850 mm",
+      "Matériau": "Inox 201 ou Inox 304",
+      "Épaisseur": "Plan 1.2 mm (renforcé)",
+      "Étagère": "Étagère basse pleine (renforcée)",
+      "Tube": "Pieds Ø40 mm, traverses renforcées",
+      "Charge (table)": "≥150 kg uniforme",
+      "Options": "Avec/ sans dosseret; versions évier embouti disponibles"
+    }
+  },
 
   // 3. 冷柜 (Froid -> Armoires)
   // 已清空该子分类产品
@@ -313,28 +341,7 @@ export const products = [
       "Principaux composants": "Résistance chauffante Springfield; ventilateur EBM (Allemagne); contacteur Schneider"
     }
   },
-  {
-    id: "etagere-murale-1200",
-    categorySlug: "inox-mobilier",
-    subCategorySlug: "rangements",
-    name: {
-      fr: "Étagère murale inox 1200",
-      en: "Wall shelf stainless 1200",
-      es: "Estante mural inox 1200"
-    },
-    description: {
-      fr: "Inox 304, renforts soudés, dosseret, charge 80 kg.",
-      en: "304 stainless, welded reinforcements, backsplash, 80 kg load.",
-      es: "Inox 304, refuerzos soldados, alzaprimas, carga 80 kg."
-    },
-    image: "/products/petrin-test.jpg",
-    specs: {
-      "Dimensions": "1200 x 300 x 300 mm",
-      "Matériau": "Inox 304",
-      "Charge": "80 kg",
-      "Épaisseur": "1.2 mm"
-    }
-  },
+  
   {
     id: "trancheuse-pain-450",
     categorySlug: "boulangerie-patisserie",
@@ -374,17 +381,33 @@ export const products = [
     }
   },
   
+  
   {
-    id: "evier-double-1200",
+    id: "evier-simple-1000",
     categorySlug: "inox-mobilier",
     subCategorySlug: "plonges",
-    name: "Plonge double 1200mm",
-    description: "Bacs profonds, dosseret anti-éclaboussures, structure en inox AISI 304.",
-    image: "/products/petrin-test.jpg",
+    name: {
+      fr: "Plonge simple 1000mm",
+      en: "Single-basin sink 1000mm",
+      es: "Fregadero una cubeta 1000mm"
+    },
+    description: {
+      fr: "Bac profond avec dosseret, inox 304, étagère basse renforcée.",
+      en: "Deep basin with backsplash, stainless 304, reinforced lower shelf.",
+      es: "Cuba profunda con salpicadero, acero inox 304, estante inferior reforzado."
+    },
+    images: [
+      "/products/evier.jpg"
+    ],
     specs: {
-      "Dimensions": "1200 x 600 x 850 mm",
+      "Dimensions": "1000 × 600 × 850 mm",
       "Matériau": "Inox 304",
-      "Bacs": "2"
+      "Bacs": "1",
+      "Dosseret": "100 mm",
+      "Épaisseur": "Plan 1.2 mm",
+      "Étagère": "Étagère basse pleine",
+      "Tube": "Pieds Ø40 mm",
+      "Évacuation": "Ø50 mm, bonde incluse"
     }
   },
   {
@@ -813,6 +836,36 @@ export const products = [
       "Dimensions": "1000 × 970 × 1580 mm",
       "Poids": "302 kg",
       "Plage de poids de pâte": "50–1200 g / pièce"
+    }
+  }
+  ,
+  {
+    id: "lave-vaisselle-700-800-1450",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "lave-vaisselle",
+    name: {
+      fr: "Lave-vaisselle industriel",
+      en: "Industrial dishwasher",
+      es: "Lavavajillas industrial"
+    },
+    description: {
+      fr: "Tunnel/armoire de lavage professionnel, inox 304, cycle rapide, double circuit lavage/rinçage.",
+      en: "Professional washing cabinet, stainless 304, fast cycle, dual wash/rinse circuits.",
+      es: "Cabina de lavado profesional, acero inox 304, ciclo rápido, doble circuito de lavado/enjuague."
+    },
+    images: [
+      "/products/lave vaisselle.jpg"
+    ],
+    specs: {
+      "Dimensions": "700 × 800 × 1450 mm",
+      "Voltage": "220V / 50Hz",
+      "Puissance": "9.8 kW",
+      "Puissance (lavage)": "3 kW",
+      "Puissance (rinçage)": "6 kW",
+      "Température de lavage": "55–60°C",
+      "Température de rinçage": "82–90°C",
+      "Vitesse": "60 pcs/h",
+      "Consommation d'eau": "2.3 L/pc"
     }
   }
 ];

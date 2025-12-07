@@ -156,6 +156,12 @@ export const translations = {
       "Forme de glace": "Forme de glace",
       "Production journalière": "Production journalière",
       "Stock de glace": "Stock de glace"
+      ,
+      "Puissance (lavage)": "Puissance (lavage)",
+      "Puissance (rinçage)": "Puissance (rinçage)",
+      "Température de rinçage": "Température de rinçage",
+      "Vitesse": "Vitesse",
+      "Consommation d'eau": "Consommation d'eau"
     }
   },
 
@@ -311,6 +317,12 @@ export const translations = {
       "Forme de glace": "Ice shape",
       "Production journalière": "Daily production",
       "Stock de glace": "Ice storage"
+      ,
+      "Puissance (lavage)": "Washing power",
+      "Puissance (rinçage)": "Rinsing power",
+      "Température de rinçage": "Rinsing temperature",
+      "Vitesse": "Throughput",
+      "Consommation d'eau": "Water consumption"
     }
   },
 
@@ -466,6 +478,12 @@ export const translations = {
       "Forme de glace": "Forma de hielo",
       "Production journalière": "Producción diaria",
       "Stock de glace": "Depósito de hielo"
+      ,
+      "Puissance (lavage)": "Potencia de lavado",
+      "Puissance (rinçage)": "Potencia de enjuague",
+      "Température de rinçage": "Temperatura de enjuague",
+      "Vitesse": "Velocidad",
+      "Consommation d'eau": "Consumo de agua"
     }
   }
 };

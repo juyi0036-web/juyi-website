@@ -55,6 +55,7 @@ export const categories = [
     subcategories: [
       { name: { fr: "Tables de Travail (Inox)", en: "Work Tables (Stainless)", es: "Mesas de trabajo (Inox)" }, slug: "tables-inox" },
       { name: { fr: "Plonges & Éviers", en: "Sinks & Basins", es: "Fregaderos y Cubas" }, slug: "plonges" },
+      { name: { fr: "Lave-vaisselle", en: "Dishwashers", es: "Lavavajillas" }, slug: "lave-vaisselle" },
       { name: { fr: "Échelles & Chariots", en: "Racks & Trolleys", es: "Carros y Estanterías" }, slug: "echelles-chariots" },
       { name: { fr: "Rangements Muraux", en: "Wall Storage", es: "Almacenamiento mural" }, slug: "rangements" },
       { name: { fr: "Repose pâton", en: "Dough resting", es: "Reposo de masa" }, slug: "repose-paton" },

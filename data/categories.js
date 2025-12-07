@@ -24,7 +24,7 @@ export const categories = [
     subcategories: [
       { name: { fr: "Fours (Rotatifs/Soles)", en: "Ovens (Rotary/Deck)", es: "Hornos (Rotativos/De solera)" }, slug: "fours" },
       { name: { fr: "Ligne Chaude", en: "Hot Line", es: "Línea caliente" }, slug: "ligne-chaude" },
-      { name: { fr: "Ampoules", en: "Bulbs", es: "Bombillas" }, slug: "friteuses" },
+      { name: { fr: "Ampoules & Grills", en: "Bulbs & Grills", es: "Bombillas y Parrillas" }, slug: "friteuses" },
       { name: { fr: "Moules", en: "Moulds", es: "Moldes" }, slug: "moules" },
       { name: { fr: "Tissu à pâtons", en: "Proofing cloth", es: "Tela de fermentación" }, slug: "tissu" }
     ]

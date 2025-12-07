@@ -678,6 +678,34 @@ export const products = [
   }
   ,
   {
+    id: "tissu-proofing-cloth",
+    categorySlug: "chaud",
+    subCategorySlug: "tissu",
+    name: {
+      fr: "Tissu à pâtons",
+      en: "Proofing cloth",
+      es: "Tela de fermentación"
+    },
+    description: {
+      fr: "Tissu de panification pour repose/fermentation. Coutures tout autour, logo sur commande.",
+      en: "Bakery proofing cloth for resting/proofing. Seams all around, logo on request.",
+      es: "Tela de panificación para reposo/fermentación. Costuras alrededor, logo bajo pedido."
+    },
+    images: [
+      "/products/tissu-01.jpg"
+    ],
+    specs: {
+      "Dimensions": "175 × 60 cm",
+      "Matériau": "Lin 10A",
+      "Coutures": "Tout autour",
+      "Logo": "Sur commande",
+      "Lavable": "Oui",
+      "Température de lavage": "≤60°C",
+      "Compatibilité": "Bacs à pâtons standards"
+    }
+  }
+  ,
+  {
     id: "fermentation-single-door",
     categorySlug: "froid",
     subCategorySlug: "fermentation",

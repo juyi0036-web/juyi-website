@@ -32,6 +32,8 @@ export default function ProductDetail({ product: productProp }) {
   const displayImages = images.slice(0, 2);
   const header5 = locale === 'en' ? '5 levels' : (locale === 'es' ? '5 niveles' : '5 niveaux');
   const header10 = locale === 'en' ? '10 levels' : (locale === 'es' ? '10 niveles' : '10 niveaux');
+  const headerSimple = locale === 'en' ? 'Single' : (locale === 'es' ? 'Simple' : 'Simple');
+  const headerDouble = locale === 'en' ? 'Double' : (locale === 'es' ? 'Doble' : 'Double');
   const net5 = product?.specs ? product.specs['Poids Net (5 niveaux)'] : undefined;
   const brut5 = product?.specs ? product.specs['Poids Brut (5 niveaux)'] : undefined;
   const net10 = product?.specs ? product.specs['Poids Net (10 niveaux)'] : undefined;
@@ -151,6 +153,53 @@ export default function ProductDetail({ product: productProp }) {
                           ['Poids Net (10 niveaux)', net10Derived],
                           ['Poids Brut (10 niveaux)', brut10Derived],
                           ['Matériau', product.specs['Matériau']]
+                        ].filter(([, v]) => v).map(([k, v]) => (
+                          <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
+                            <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
+                            <span className="text-sm text-gray-700">{v}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : product.id === 'echelle-a-bac' ? (
+                <div className="mt-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                      <h2 className="text-lg font-bold text-choco mb-3">{headerSimple}</h2>
+                      <div className="space-y-3">
+                        {[
+                          ['Dimensions', product.specs['Dimensions (simple)']],
+                          ['Matériau', product.specs['Matériau']],
+                          ['Tube', product.specs['Tube']],
+                          ['Épaisseur', product.specs['Épaisseur']],
+                          ['Plateaux', product.specs['Plateaux']],
+                          ['Roues', product.specs['Roues']],
+                          ['Poids Net', product.specs['Poids Net (simple)']],
+                          ['Poids Brut', product.specs['Poids Brut (simple)']],
+                          ['Emballage', product.specs['Emballage (simple)']]
+                        ].filter(([, v]) => v).map(([k, v]) => (
+                          <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
+                            <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>
+                            <span className="text-sm text-gray-700">{v}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <h2 className="text-lg font-bold text-choco mb-3">{headerDouble}</h2>
+                      <div className="space-y-3">
+                        {[
+                          ['Dimensions', product.specs['Dimensions (double)']],
+                          ['Matériau', product.specs['Matériau']],
+                          ['Tube', product.specs['Tube']],
+                          ['Épaisseur', product.specs['Épaisseur']],
+                          ['Plateaux', product.specs['Plateaux']],
+                          ['Roues', product.specs['Roues']],
+                          ['Poids Net', product.specs['Poids Net (double)']],
+                          ['Poids Brut', product.specs['Poids Brut (double)']],
+                          ['Emballage', product.specs['Emballage (double)']]
                         ].filter(([, v]) => v).map(([k, v]) => (
                           <div key={k} className="flex justify-between items-center bg-cream/50 rounded-lg px-4 py-3 border border-gray-100">
                             <span className="text-sm font-semibold text-choco">{(t.spec_labels && t.spec_labels[k]) || k}</span>

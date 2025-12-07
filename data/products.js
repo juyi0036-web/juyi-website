@@ -13,6 +13,40 @@ export const products = [
       "Voltage": "380V Triphasé"
     }
   },
+  {
+    id: "echelle-a-bac",
+    categorySlug: "inox-mobilier",
+    subCategorySlug: "echelles-chariots",
+    name: {
+      fr: "Échelle à bac (simple/double)",
+      en: "Basin rack (single/double)",
+      es: "Carro con bac (simple/doble)"
+    },
+    description: {
+      fr: "Chariot porte-bac pour ateliers. Version simple ou double, inox 201, tubes 25×25, 8 niveaux EN 600×400, 4 roues dont 2 avec freins.",
+      en: "Basin holding trolley for workshop use. Single or double version, stainless 201, 25×25 tubes, 8 EN 600×400 levels, 4 wheels (2 brakes).",
+      es: "Carro porta-bac para taller. Versión simple o doble, inox 201, tubos 25×25, 8 niveles EN 600×400, 4 ruedas (2 frenos)."
+    },
+    images: [
+      "/products/echelle basin simple-01.jpg",
+      "/products/echelle basin double-01.jpg"
+    ],
+    specs: {
+      "Matériau": "Inox 201",
+      "Tube": "25×25 mm, épaisseur 1.0 mm",
+      "Épaisseur": "1.2 mm",
+      "Plateaux": "8 × EN 600×400 mm",
+      "Roues": "4 roues, 2 freins",
+      "Dimensions (simple)": "660 × 470 × 1780 mm",
+      "Poids Net (simple)": "18 kg",
+      "Poids Brut (simple)": "22 kg",
+      "Emballage (simple)": "1.80 × 0.715 × 0.087 m (0.111 CBM)",
+      "Dimensions (double)": "810 × 610 × 1780 mm",
+      "Poids Net (double)": "20 kg",
+      "Poids Brut (double)": "24 kg",
+      "Emballage (double)": "1.80 × 0.715 × 0.087 m (0.110 CBM)"
+    }
+  },
 
   // 2. 不锈钢工作台 (Inox -> Tables Inox)
   {

@@ -50,19 +50,6 @@ export const products = [
 
   // 2. 不锈钢工作台 (Inox -> Tables Inox)
   {
-    id: "table-inox-180",
-    categorySlug: "inox-mobilier",
-    subCategorySlug: "tables-inox", // 必须对应 categories.js
-    name: "Table Centrale Inox 1800mm",
-    description: "Table de préparation robuste en inox alimentaire. Idéale pour laboratoire de pâtisserie.",
-    image: "/products/petrin-test.jpg", // 暂时先用这张图占位
-    specs: {
-      "Dimensions": "1800 x 700 x 850 mm",
-      "Matériau": "Inox AISI 304",
-      "Étagère": "Oui, basse renforcée"
-    }
-  },
-  {
     id: "table-inox-gamme-pro",
     categorySlug: "inox-mobilier",
     subCategorySlug: "tables-inox",

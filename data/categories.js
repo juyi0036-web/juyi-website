@@ -58,6 +58,7 @@ export const categories = [
       { name: { fr: "Échelles & Chariots", en: "Racks & Trolleys", es: "Carros y Estanterías" }, slug: "echelles-chariots" },
       { name: { fr: "Rangements Muraux", en: "Wall Storage", es: "Almacenamiento mural" }, slug: "rangements" },
       { name: { fr: "Repose pâton", en: "Dough resting", es: "Reposo de masa" }, slug: "repose-paton" },
+      { name: { fr: "Façonneuses Baguettes", en: "Baguette Moulders", es: "Formadoras de Baguettes" }, slug: "faconneuses-baguettes" },
       
     ]
   }

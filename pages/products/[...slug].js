@@ -90,7 +90,7 @@ export default function ProductCategory() {
                   <div className="relative w-full h-64 bg-white p-4 flex items-center justify-center border-b border-gray-100">
                     <img
                       src={primaryImage}
-                      alt={product.name}
+                      alt={displayName}
                       className="max-h-full max-w-full object-contain group-hover:scale-105 transition"
                       loading="lazy"
                       onError={(e) => {

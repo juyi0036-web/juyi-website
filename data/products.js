@@ -364,30 +364,7 @@ export const products = [
     }
   },
   
-  {
-    id: "trancheuse-pain-450",
-    categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "trancheuses",
-    name: {
-      fr: "Trancheuse à pain 450",
-      en: "Bread slicer 450",
-      es: "Cortadora de pan 450"
-    },
-    description: {
-      fr: "Épaisseur réglable, grande sécurité, débit élevé.",
-      en: "Adjustable slice thickness, high safety, high throughput.",
-      es: "Espesor de corte ajustable, alta seguridad, alto rendimiento."
-    },
-    image: "/products/petrin-test.jpg",
-    specs: {
-      "Largeur max": "450 mm",
-      "Épaisseur coupe": "8–16 mm",
-      "Puissance": "0.75 kW",
-      "Voltage": "220V / 50Hz",
-      "Dimensions": "700 x 900 x 1200 mm",
-      "Poids": "140 kg"
-    }
-  },
+  
   {
     id: "batteur-20l-pro",
     categorySlug: "boulangerie-patisserie",

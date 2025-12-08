@@ -223,24 +223,29 @@ export const products = [
     categorySlug: "boulangerie-patisserie",
     subCategorySlug: "petrins",
     name: {
-      fr: "Pétrin à spirale 50–200L",
-      en: "Spiral mixer 50–200L",
-      es: "Amasadora espiral 50–200L"
+      fr: "Pétrin à Spirale 200L",
+      en: "Spiral Mixer 200L",
+      es: "Amasadora espiral 200L"
     },
     description: {
-      fr: "Contrôle manuel (double minuterie), parties en contact inox 304, couvercle de sécurité et protection contre surcharges; moteur fil de cuivre.",
-      en: "Manual control (dual timer), food-contact parts stainless 304, safety lid and overload protection; copper-wound motor.",
-      es: "Control manual (doble temporizador), piezas en contacto de acero 304, tapa de seguridad y protección de sobrecarga; motor con bobinado de cobre."
+      fr: "Cuve inox 304, double vitesse avec double minuterie, couvercle de sécurité et protection surcharge.",
+      en: "304 stainless bowl, dual speed with dual timer, safety guard and overload protection.",
+      es: "Cuba de acero 304, doble velocidad con doble temporizador, protector de seguridad y protección contra sobrecarga."
     },
     image: "/products/petrin-01.jpg",
     specs: {
-      "Volume": "50–200 L",
-      "Capacité Farine": "20–75 kg",
-      "Puissance": "2.5–9 kW",
-      "Voltage": "380V / 50Hz / 1P",
-      "Vitesse de la tige": "≈250 / 140 tr/min",
-      "Matériau": "Inox 304 (contact alimentaire)",
-      "Emballage": "Cadre en bois"
+      "Volume": "200 L",
+      "Capacité Farine": "75 kg",
+      "Capacité Pâte": "≈120 kg",
+      "Vitesse de la tige": "100 / 180 tr/min",
+      "Vitesse du bol": "10 / 15 tr/min",
+      "Puissance": "9.0 kW",
+      "Voltage": "380V / 50Hz / 3PH",
+      "Matériau": "Inox 304 (cuve, spirale)",
+      "Minuterie": "Double minuterie (1ère/2ème vitesse)",
+      "Transmission": "Courroie, boîte à bain d'huile",
+      "Dimensions": "1100 × 700 × 1200 mm",
+      "Poids": "≈520 kg"
     }
   },
   {

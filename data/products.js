@@ -3,14 +3,18 @@ export const products = [
   {
     id: "petrin-50",
     categorySlug: "boulangerie-patisserie", 
-    subCategorySlug: "petrins", // 必须对应 categories.js
+    subCategorySlug: "petrins",
     name: "Pétrin à Spirale 50kg - Série Gold",
-    description: "Conçu pour les usages intensifs. Cuve en acier inoxydable 304, double vitesse, silence de fonctionnement.",
-    image: "/products/petrin-test.jpg", 
+    description: "Contrôle manuel (double minuterie), parties en contact inox 304, couvercle de sécurité et protection contre surcharges; moteur fil de cuivre.",
+    image: "/products/petrin-01.jpg", 
     specs: { 
-      "Capacité Farine": "50 kg",
-      "Puissance": "4.5 kW",
-      "Voltage": "380V Triphasé"
+      "Volume": "50 L",
+      "Capacité Farine": "20 kg",
+      "Puissance": "2.5 kW",
+      "Voltage": "380V / 50Hz / 1P",
+      "Vitesse de la tige": "≈250 / 140 tr/min",
+      "Matériau": "Inox 304 (contact alimentaire)",
+      "Emballage": "Cadre en bois"
     }
   },
   {
@@ -391,20 +395,6 @@ export const products = [
   },
   
   
-  {
-    id: "batteur-20l-pro",
-    categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "batteurs",
-    name: "Batteur Mélangeur 20L - Pro",
-    description: "3 vitesses, cuve inox 304, fouet/batteur/crochet inclus.",
-    image: "/products/petrin-test.jpg",
-    specs: {
-      "Capacité": "20 L",
-      "Puissance": "1.1 kW",
-      "Voltage": "220V",
-      "Accessoires": "3"
-    }
-  },
 
   {
     id: "batteur-planetary-20-40",

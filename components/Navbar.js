@@ -95,7 +95,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-3">
             <Link href="/contact" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
               {t.nav_contact}
             </Link>
@@ -120,18 +120,15 @@ export default function Navbar() {
               Sophie (Export)
             </a>
 
-            <div className="flex items-center space-x-1 text-xs font-bold text-choco">
+            <select
+              value={locale}
+              onChange={(e) => router.push(asPath, asPath, { locale: e.target.value })}
+              className="px-2 py-2 bg-white border border-gray-300 rounded-full text-sm text-choco focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco"
+            >
               {locales.map((l) => (
-                <Link 
-                  key={l} 
-                  href={asPath} 
-                  locale={l}
-                  className={`px-2 py-1 rounded hover:bg-choco hover:text-cream transition no-underline ${locale === l ? 'bg-choco text-cream' : ''}`}
-                >
-                  {l.toUpperCase()}
-                </Link>
+                <option key={l} value={l}>{l.toUpperCase()}</option>
               ))}
-            </div>
+            </select>
           </div>
         </div>
       </div>

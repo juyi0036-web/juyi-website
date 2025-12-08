@@ -208,6 +208,32 @@ export const products = [
       "Voltage": "380V Triphasé"
     }
   },
+
+  {
+    id: "petrin-50-200",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "petrins",
+    name: {
+      fr: "Pétrin à spirale 50–200L",
+      en: "Spiral mixer 50–200L",
+      es: "Amasadora espiral 50–200L"
+    },
+    description: {
+      fr: "Contrôle manuel (double minuterie), parties en contact inox 304, couvercle de sécurité et protection contre surcharges; moteur fil de cuivre.",
+      en: "Manual control (dual timer), food-contact parts stainless 304, safety lid and overload protection; copper-wound motor.",
+      es: "Control manual (doble temporizador), piezas en contacto de acero 304, tapa de seguridad y protección de sobrecarga; motor con bobinado de cobre."
+    },
+    image: "/products/petrin-01.jpg",
+    specs: {
+      "Volume": "50–200 L",
+      "Capacité Farine": "20–75 kg",
+      "Puissance": "2.5–9 kW",
+      "Voltage": "380V / 50Hz / 1P",
+      "Vitesse de la tige": "≈250 / 140 tr/min",
+      "Matériau": "Inox 304 (contact alimentaire)",
+      "Emballage": "Cadre en bois"
+    }
+  },
   {
     id: "blast-freezer-bl-e10",
     categorySlug: "froid",

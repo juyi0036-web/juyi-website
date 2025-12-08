@@ -35,7 +35,7 @@ export default function Navbar() {
           </div>
 
           {/* 菜单 */}
-          <div className="hidden md:flex space-x-6 items-center">
+          <div className="hidden md:flex space-x-10 items-center">
             <Link href="/" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
               {t.nav_home}
             </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={searchPlaceholder}
-                className="w-28 sm:w-32 md:w-40 px-2 py-1.5 bg-white border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco transition"
+                className="w-24 sm:w-28 md:w-32 px-2 py-1 bg-white border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco transition"
               />
             </form>
 

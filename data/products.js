@@ -379,6 +379,35 @@ export const products = [
       "Accessoires": "3"
     }
   },
+
+  {
+    id: "batteur-planetary-20-40",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "batteurs",
+    name: {
+      fr: "Batteur mélangeur planétaire (compatible 20/40L)",
+      en: "Planetary Mixer (compatible 20/40L)",
+      es: "Batidora planetaria (compatible 20/40L)"
+    },
+    description: {
+      fr: "Compatible 20/40L. Accessoires standard: cuve, crochet, fouet, batteur.",
+      en: "Compatible 20/40L. Standard accessories: bowl, hook, whisk, beater.",
+      es: "Compatible 20/40L. Accesorios estándar: cuba, gancho, batidor, pala."
+    },
+    image: "/products/batteur-01.jpg",
+    specs: {
+      "Type": "Planetary Mixer",
+      "Puissance": "2.2 kW",
+      "Voltage": "380V",
+      "Capacité": "20L / 40L",
+      "Poids Net": "310 kg",
+      "Vitesse crochet": "110 / 215 / 430 rpm",
+      "Vitesse cuve": "34 / 66 / 131 rpm",
+      "Dimensions": "625 × 870 × 1480 mm",
+      "Accessoires": "Cuve / Crochet / Fouet / Batteur",
+      "Compatibilité": "20/40 L"
+    }
+  },
   
   
   {

@@ -5,16 +5,21 @@ export const products = [
     categorySlug: "boulangerie-patisserie", 
     subCategorySlug: "petrins",
     name: "Pétrin à Spirale 50kg - Série Gold",
-    description: "Contrôle manuel (double minuterie), parties en contact inox 304, couvercle de sécurité et protection contre surcharges; moteur fil de cuivre.",
+    description: "Cuve inox 304, double vitesse avec double minuterie, couvercle de sécurité et protection surcharge.",
     image: "/products/petrin-01.jpg", 
     specs: { 
       "Volume": "50 L",
       "Capacité Farine": "20 kg",
-      "Puissance": "2.5 kW",
-      "Voltage": "380V / 50Hz / 1P",
-      "Vitesse de la tige": "≈250 / 140 tr/min",
-      "Matériau": "Inox 304 (contact alimentaire)",
-      "Emballage": "Cadre en bois"
+      "Capacité Pâte": "≈32 kg",
+      "Vitesse de la tige": "150 / 200 tr/min",
+      "Vitesse du bol": "15 / 20 tr/min",
+      "Puissance": "2.2 kW",
+      "Voltage": "220V / 50Hz / 1P",
+      "Matériau": "Inox 304 (cuve, spirale)",
+      "Minuterie": "Double minuterie (1ère/2ème vitesse)",
+      "Transmission": "Courroie, boîte à bain d'huile",
+      "Dimensions": "700 × 530 × 800 mm",
+      "Poids": "≈125 kg"
     }
   },
   {
@@ -422,6 +427,37 @@ export const products = [
       "Dimensions": "625 × 870 × 1480 mm",
       "Accessoires": "Cuve / Crochet / Fouet / Batteur",
       "Compatibilité": "20/40 L"
+    }
+  },
+  {
+    id: "batteur-7l",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "batteurs",
+    name: {
+      fr: "Batteur Mélangeur 7L",
+      en: "Planetary Mixer 7L",
+      es: "Batidora mezcladora 7L"
+    },
+    description: {
+      fr: "Batteur planétaire 7L pour pâtisserie et cuisine, 3 vitesses, accessoires inclus (cuve/crochet/fouet/batteur).",
+      en: "7L planetary mixer for pastry and kitchen, 3 speeds, accessories included (bowl/hook/whisk/beater).",
+      es: "Batidora planetaria 7L para pastelería y cocina, 3 velocidades, accesorios incluidos (cuba/gancho/batidor/pala)."
+    },
+    image: "/products/batteur-7L.jpg",
+    specs: {
+      "Type": "Planetary Mixer",
+      "Capacité": "7 L",
+      "Capacité Farine": "1.5–2 kg",
+      "Capacité Pâte": "≈2.5–3.5 kg",
+      "Puissance": "0.45 kW",
+      "Voltage": "220V / 50Hz",
+      "Vitesse crochet": "90 / 160 / 300 rpm",
+      "Vitesse fouet": "200 / 400 / 700 rpm",
+      "Vitesse batteur": "150 / 300 / 600 rpm",
+      "Accessoires": "Cuve / Crochet / Fouet / Batteur",
+      "Matériau": "Inox 304 (cuve)",
+      "Dimensions": "380 × 240 × 430 mm",
+      "Poids": "≈22 kg"
     }
   },
   

@@ -109,7 +109,7 @@ export default function Home() {
             </div>
 
             <div className="mt-16">
-              <Link href="/products/boulangerie-patisserie/petrins" className="inline-flex items-center justify-center px-10 py-4 border border-white/50 text-base font-bold rounded-full text-white hover:bg-white hover:text-choco transition duration-300 backdrop-blur-sm uppercase tracking-widest no-underline">
+              <Link href="/products" className="inline-flex items-center justify-center px-10 py-4 border border-white/50 text-base font-bold rounded-full text-white hover:bg-white hover:text-choco transition duration-300 backdrop-blur-sm uppercase tracking-widest no-underline">
                 {t.hero_btn_catalog}
               </Link>
             </div>

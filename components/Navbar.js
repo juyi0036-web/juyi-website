@@ -82,7 +82,7 @@ export default function Navbar() {
                     ))}
                   </div>
                   <div className="bg-choco px-8 py-4 text-right">
-                    <Link href="/products/boulangerie-patisserie/petrins" className="text-sm font-bold text-cream hover:text-white no-underline uppercase tracking-wider">
+                    <Link href="/products" className="text-sm font-bold text-cream hover:text-white no-underline uppercase tracking-wider">
                       {t.nav_view_catalog} &rarr;
                     </Link>
                   </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-4">
             <Link href="/contact" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
               {t.nav_contact}
             </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={searchPlaceholder}
-                className="w-36 sm:w-40 md:w-48 px-2 py-2 bg-white border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco transition"
+                className="w-28 sm:w-32 md:w-40 px-2 py-1.5 bg-white border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco transition"
               />
             </form>
 
@@ -123,7 +123,7 @@ export default function Navbar() {
             <select
               value={locale}
               onChange={(e) => router.push(asPath, asPath, { locale: e.target.value })}
-              className="px-2 py-2 bg-white border border-gray-300 rounded-full text-sm text-choco focus:outline-none focus:ring-2 focus:ring-choco focus:border-choco"
+              className="px-1 py-1 bg-transparent text-sm text-choco focus:outline-none"
             >
               {locales.map((l) => (
                 <option key={l} value={l}>{l.toUpperCase()}</option>

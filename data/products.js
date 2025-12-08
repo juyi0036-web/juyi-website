@@ -4,7 +4,7 @@ export const products = [
     id: "petrin-50",
     categorySlug: "boulangerie-patisserie", 
     subCategorySlug: "petrins",
-    name: "Pétrin à Spirale 50kg - Série Gold",
+    name: "Pétrin à Spirale 50L",
     description: "Cuve inox 304, double vitesse avec double minuterie, couvercle de sécurité et protection surcharge.",
     image: "/products/petrin-01.jpg", 
     specs: { 
@@ -204,19 +204,7 @@ export const products = [
       "Matériau Externe": "Inox 304"
     }
   },
-  {
-    id: "petrin-80-pro",
-    categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "petrins",
-    name: "Pétrin à Spirale 80kg - Série Pro",
-    description: "Cuve inox 304, double vitesse, timer et inverseur. Conçu pour production continue.",
-    image: "/products/chariot.jpg?v=20251205",
-    specs: {
-      "Capacité Farine": "80 kg",
-      "Puissance": "6.0 kW",
-      "Voltage": "380V Triphasé"
-    }
-  },
+  
 
   {
     id: "petrin-50-200",
@@ -246,6 +234,36 @@ export const products = [
       "Transmission": "Courroie, boîte à bain d'huile",
       "Dimensions": "1100 × 700 × 1200 mm",
       "Poids": "≈520 kg"
+    }
+  },
+  {
+    id: "petrin-80-pro",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "petrins",
+    name: {
+      fr: "Pétrin à Spirale 80L",
+      en: "Spiral Mixer 80L",
+      es: "Amasadora espiral 80L"
+    },
+    description: {
+      fr: "Cuve inox 304, double vitesse avec double minuterie, couvercle de sécurité et protection surcharge.",
+      en: "304 stainless bowl, dual speed with dual timer, safety guard and overload protection.",
+      es: "Cuba de acero 304, doble velocidad con doble temporizador, protector de seguridad y protección contra sobrecarga."
+    },
+    image: "/products/petrin-01.jpg",
+    specs: {
+      "Volume": "80 L",
+      "Capacité Farine": "30 kg",
+      "Capacité Pâte": "≈50 kg",
+      "Vitesse de la tige": "100 / 180 tr/min",
+      "Vitesse du bol": "10 / 15 tr/min",
+      "Puissance": "5.5 kW",
+      "Voltage": "380V / 50Hz / 3PH",
+      "Matériau": "Inox 304 (cuve, spirale)",
+      "Minuterie": "Double minuterie (1ère/2ème vitesse)",
+      "Transmission": "Courroie, boîte à bain d'huile",
+      "Dimensions": "950 × 650 × 1150 mm",
+      "Poids": "≈320 kg"
     }
   },
   {

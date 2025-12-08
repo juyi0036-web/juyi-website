@@ -96,6 +96,10 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-2">
+            <Link href="/contact" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
+              {t.nav_contact}
+            </Link>
+
             <form onSubmit={onSearchSubmit} className="flex items-center">
               <input
                 type="search"
@@ -128,10 +132,6 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-
-            <Link href="/contact" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
-              {t.nav_contact}
-            </Link>
           </div>
         </div>
       </div>

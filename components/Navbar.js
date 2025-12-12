@@ -12,6 +12,23 @@ export default function Navbar() {
   const t = translations[locale] || translations.fr;
   const searchPlaceholder = locale === 'fr' ? 'Rechercher...' : (locale === 'es' ? 'Buscar...' : 'Search...');
 
+  const curated = [
+    {
+      slug: 'inox-mobilier',
+      label: locale === 'fr' ? 'Arts de la Table' : (locale === 'es' ? 'Artes de la Mesa' : 'Tableware')
+    },
+    {
+      slug: 'chaud',
+      label: locale === 'fr' ? 'Cuisine & Préparation' : (locale === 'es' ? 'Cocina y Preparación' : 'Kitchenware & Preparation')
+    },
+    {
+      slug: 'froid',
+      label: locale === 'fr' ? 'Buffet & Présentation' : (locale === 'es' ? 'Buffet y Presentación' : 'Buffet & Presentation')
+    }
+  ];
+
+  const findCat = (slug) => categories.find((c) => c.slug === slug);
+
   const onSearchSubmit = (e) => {
     e.preventDefault();
     const q = (searchQuery || '').trim();
@@ -58,13 +75,16 @@ export default function Navbar() {
                 <div className="absolute left-0 top-full mt-0 w-[700px] bg-white border border-[#EAD8C0] shadow-xl rounded-b-lg overflow-hidden p-0 z-50">
                   <div className="grid grid-cols-2 gap-8 p-8 bg-white relative">
                     <div className="absolute inset-0 bg-cream opacity-20 z-0"></div>
-                    {categories.map((cat) => (
+                    {curated.map((c) => {
+                      const cat = findCat(c.slug);
+                      if (!cat) return null;
+                      return (
                       <div key={cat.slug} className="relative z-10">
                         <Link
                           href={`/products/${cat.slug}`}
                           className="text-base font-extrabold text-choco uppercase tracking-widest mb-4 border-b-2 border-choco pb-2 block no-underline hover:text-red-700"
                         >
-                          {cat.name?.[locale] || cat.name?.fr || cat.name}
+                          {c.label}
                         </Link>
                         <ul className="space-y-3 list-none p-0 m-0">
                           {cat.subcategories.map((sub) => (
@@ -79,7 +99,7 @@ export default function Navbar() {
                           ))}
                         </ul>
                       </div>
-                    ))}
+                    );})}
                   </div>
                   <div className="bg-choco px-8 py-4 text-right">
                     <Link href="/products" className="text-sm font-bold text-cream hover:text-white no-underline uppercase tracking-wider">

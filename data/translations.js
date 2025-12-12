@@ -3,9 +3,10 @@ export const translations = {
   fr: {
     // 导航栏
     nav_home: "Accueil",
-    nav_products: "Nos Produits",
-    nav_about: "Qui sommes-nous",
-    nav_contact: "Contact",
+    nav_products: "Nos Collections",
+    nav_about: "Notre Maison",
+    nav_services: "Solutions & Services",
+    nav_contact: "Contactez-nous",
     nav_view_catalog: "Voir tout le catalogue",
     
     // 首页 Hero
@@ -177,9 +178,10 @@ export const translations = {
   // === 英语 ===
   en: {
     nav_home: "Home",
-    nav_products: "Our Products",
-    nav_about: "About Us",
-    nav_contact: "Contact",
+    nav_products: "Our Collections",
+    nav_about: "Our Maison",
+    nav_services: "Solutions & Services",
+    nav_contact: "Contact Us",
     nav_view_catalog: "View Full Catalog",
 
     hero_tag: "Since 2010 • Global CHR Expert",
@@ -344,9 +346,10 @@ export const translations = {
   // === 西班牙语 ===
   es: {
     nav_home: "Inicio",
-    nav_products: "Nuestros Productos",
-    nav_about: "Quiénes Somos",
-    nav_contact: "Contacto",
+    nav_products: "Nuestras Colecciones",
+    nav_about: "Nuestra Maison",
+    nav_services: "Soluciones y Servicios",
+    nav_contact: "Contáctenos",
     nav_view_catalog: "Ver Catálogo Completo",
 
     hero_tag: "Desde 2010 • Experto Global CHR",

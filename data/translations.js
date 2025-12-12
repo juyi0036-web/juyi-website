@@ -92,12 +92,58 @@ export const translations = {
     about_story_p2: "Nous ne vendons pas simplement des produits ; nous sécurisons votre chaîne d'approvisionnement.",
     about_story_p3: "",
     about_section_production_title: "Production & Logistique",
-    about_adv1_title: "Direct Usine",
-    about_adv1_desc: "Aucun grossiste intermédiaire. Vous accédez directement aux prix de sortie d'usine avec un contrôle qualité rigoureux.",
-    about_adv2_title: "Équipe Française",
-    about_adv2_desc: "Connaissance parfaite des standards CHR. Notre équipe en France facilite vos échanges et comprend vos exigences techniques.",
-    about_adv3_title: "Logistique Maîtrisée",
-    about_adv3_desc: "De l'emballage à l'expédition, nous gérons toute la chaîne d'approvisionnement jusqu'à votre entrepôt.",
+    about_adv1_title: "Optimisation de la Supply Chain",
+    about_adv1_desc: "Consolidation multi-usines en un seul conteneur et 30 jours de stockage gratuit à Shanghai.",
+    about_adv2_title: "Contrôle & Personnalisation",
+    about_adv2_desc: "QC AQL II avant expédition. Private Label, marquage laser, emballages et moules sur mesure.",
+    about_adv3_title: "Accélérateur de Vente",
+    about_adv3_desc: "Photos HD et fiches produits, conciergerie sourcing 48h et hub d'échantillons.",
+
+    services_cols: [
+      {
+        headline: "Optimisation de la Supply Chain",
+        items: [
+          {
+            title: "Smart Consolidation",
+            desc: "Nous regroupons vos commandes de plusieurs usines (Vaisselle, Cuisine, Buffet) dans un seul conteneur. Une seule facture, un seul dédouanement."
+          },
+          {
+            title: "Stockage Gratuit",
+            desc: "Profitez de 30 jours de stockage gratuit dans notre entrepôt de Shanghai pour synchroniser vos expéditions."
+          }
+        ]
+      },
+      {
+        headline: "Contrôle & Personnalisation",
+        items: [
+          {
+            title: "Contrôle Qualité (QC)",
+            desc: "Inspection physique systématique avant expédition (Standard AQL Niveau II). Zéro mauvaise surprise à l'arrivée."
+          },
+          {
+            title: "Private Label (OEM)",
+            desc: "Créez votre propre marque. Marquage laser, emballages personnalisés et développement de moules sur mesure."
+          }
+        ]
+      },
+      {
+        headline: "Accélérateur de Vente",
+        items: [
+          {
+            title: "Pack Marketing Digital",
+            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en ligne."
+          },
+          {
+            title: "Service Conciergerie",
+            desc: "Vous cherchez un produit introuvable ? Envoyez une photo, notre équipe locale le source en 48h."
+          },
+          {
+            title: "Hub Échantillons",
+            desc: "Recevez les échantillons de 5 usines en un seul colis express."
+          }
+        ]
+      }
+    ],
 
     contact_meta_title: "Contactez-nous | JUYI CHR",
     contact_hero_h1: "Parlons de votre projet",
@@ -272,12 +318,58 @@ export const translations = {
     about_story_p2: "With our operational base at the heart of production zones in China and our technical team based in France (with over 40 years of cumulative CHR market experience), we guarantee not only the best price, but above all quality and local service.",
     about_story_p3: "We are not just sellers. We are your industrial partners.",
     about_section_production_title: "Production & Logistics",
-    about_adv1_title: "Direct from Factory",
-    about_adv1_desc: "No intermediary wholesalers. You access direct factory prices with rigorous quality control.",
-    about_adv2_title: "French Team",
-    about_adv2_desc: "Perfect knowledge of CHR standards. Our team in France facilitates exchanges and understands your technical requirements.",
-    about_adv3_title: "Controlled Logistics",
-    about_adv3_desc: "From packaging to shipping, we manage the entire supply chain to your warehouse.",
+    about_adv1_title: "Supply Chain Optimization",
+    about_adv1_desc: "Multi-factory consolidation into one container and 30 days free storage in Shanghai.",
+    about_adv2_title: "Quality Control & Customization",
+    about_adv2_desc: "AQL II QC before shipment. Private Label, laser marking, custom packaging and bespoke moulds.",
+    about_adv3_title: "Sales Accelerator",
+    about_adv3_desc: "HD photos and product sheets, 48h concierge sourcing and sample hub.",
+
+    services_cols: [
+      {
+        headline: "Supply Chain Optimization",
+        items: [
+          {
+            title: "Smart Consolidation",
+            desc: "We group your orders from multiple factories (Tableware, Kitchen, Buffet) into a single container. One invoice, one customs clearance."
+          },
+          {
+            title: "Free Storage",
+            desc: "Enjoy 30 days of free storage in our Shanghai warehouse to synchronize your shipments."
+          }
+        ]
+      },
+      {
+        headline: "Quality Control & Customization",
+        items: [
+          {
+            title: "Quality Control (QC)",
+            desc: "Systematic physical inspection before shipment (AQL Level II standard). Zero bad surprises upon arrival."
+          },
+          {
+            title: "Private Label (OEM)",
+            desc: "Create your own brand. Laser marking, custom packaging and bespoke mould development."
+          }
+        ]
+      },
+      {
+        headline: "Sales Accelerator",
+        items: [
+          {
+            title: "Digital Marketing Pack",
+            desc: "We provide HD photos and product sheets for your website. Save time on publishing."
+          },
+          {
+            title: "Concierge Service",
+            desc: "Looking for a hard-to-find product? Send a photo, our local team sources it within 48h."
+          },
+          {
+            title: "Sample Hub",
+            desc: "Receive samples from 5 factories in a single express parcel."
+          }
+        ]
+      }
+    ],
 
     contact_meta_title: "Contact Us | JUYI CHR",
     contact_hero_h1: "Let’s Talk About Your Project",
@@ -451,12 +543,58 @@ export const translations = {
     about_story_p2: "Con nuestra base operativa en el corazón de las zonas de producción en China y nuestro equipo técnico en Francia (con más de 40 años de experiencia acumulada en el mercado CHR), garantizamos no solo el mejor precio, sino sobre todo la calidad y el servicio de proximidad.",
     about_story_p3: "No somos simples vendedores. Somos sus socios industriales.",
     about_section_production_title: "Producción y Logística",
-    about_adv1_title: "Precio Directo de Fábrica",
-    about_adv1_desc: "Sin mayoristas intermediarios. Accede directamente a precios de fábrica con control de calidad riguroso.",
-    about_adv2_title: "Equipo Francés",
-    about_adv2_desc: "Conocimiento perfecto de los estándares CHR. Nuestro equipo en Francia facilita los intercambios y comprende sus requisitos técnicos.",
-    about_adv3_title: "Logística Controlada",
-    about_adv3_desc: "Desde el embalaje hasta el envío, gestionamos toda la cadena de suministro hasta su almacén.",
+    about_adv1_title: "Optimización de la Cadena de Suministro",
+    about_adv1_desc: "Consolidación multi-fábrica en un solo contenedor y 30 días de almacenamiento gratuito en Shanghai.",
+    about_adv2_title: "Control de Calidad y Personalización",
+    about_adv2_desc: "QC AQL II antes del envío. Marca propia, marcado láser, embalajes y moldes a medida.",
+    about_adv3_title: "Acelerador de Ventas",
+    about_adv3_desc: "Fotos HD y fichas de producto, concierge de sourcing en 48h y hub de muestras.",
+
+    services_cols: [
+      {
+        headline: "Optimización de la Cadena de Suministro",
+        items: [
+          {
+            title: "Consolidación Inteligente",
+            desc: "Agrupamos sus pedidos de varias fábricas (Vajilla, Cocina, Buffet) en un solo contenedor. Una sola factura, un solo despacho aduanero."
+          },
+          {
+            title: "Almacenamiento Gratuito",
+            desc: "Disfrute de 30 días de almacenamiento gratuito en nuestro almacén de Shanghai para sincronizar sus envíos."
+          }
+        ]
+      },
+      {
+        headline: "Control de Calidad y Personalización",
+        items: [
+          {
+            title: "Control de Calidad (QC)",
+            desc: "Inspección física sistemática antes del envío (Estándar AQL Nivel II). Cero sorpresas a la llegada."
+          },
+          {
+            title: "Marca Propia (OEM)",
+            desc: "Cree su propia marca. Marcado láser, embalajes personalizados y desarrollo de moldes a medida."
+          }
+        ]
+      },
+      {
+        headline: "Acelerador de Ventas",
+        items: [
+          {
+            title: "Pack de Marketing Digital",
+            desc: "Proporcionamos fotos HD y fichas de producto para su web. Ahorre tiempo en la publicación."
+          },
+          {
+            title: "Servicio de Conserjería",
+            desc: "¿Busca un producto difícil de encontrar? Envíe una foto, nuestro equipo local lo encuentra en 48h."
+          },
+          {
+            title: "Hub de Muestras",
+            desc: "Reciba muestras de 5 fábricas en un solo paquete express."
+          }
+        ]
+      }
+    ],
 
     contact_meta_title: "Contáctenos | JUYI CHR",
     contact_hero_h1: "Hablemos de su proyecto",

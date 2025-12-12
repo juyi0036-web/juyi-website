@@ -1,9 +1,9 @@
 export const categories = [
   {
     name: {
-      fr: "Boulangerie (Magasin)",
-      en: "Bakery Shop",
-      es: "Panadería (Tienda)",
+      fr: "L'Art de la Boulangerie",
+      en: "The Art of Bakery",
+      es: "El Arte de la Panadería",
     },
     slug: "boulangerie-patisserie",
     subcategories: [
@@ -18,7 +18,7 @@ export const categories = [
     name: {
       fr: "Fours & Ligne Chaude",
       en: "Ovens & Hot Line",
-      es: "Hornos y Línea caliente",
+      es: "Hornos & Línea caliente",
     },
     slug: "chaud",
     subcategories: [
@@ -31,9 +31,9 @@ export const categories = [
   },
   {
     name: {
-      fr: "Froid & Réfrigération",
-      en: "Cold & Refrigeration",
-      es: "Frío y Refrigeración",
+      fr: "Froid & Glace",
+      en: "Cold & Ice",
+      es: "Frío y Hielo",
     },
     slug: "froid",
     subcategories: [
@@ -47,9 +47,9 @@ export const categories = [
   },
   {
     name: {
-      fr: "Inox & Mobilier",
-      en: "Stainless & Furniture",
-      es: "Inox y Mobiliario",
+      fr: "Espace & Hygiène",
+      en: "Space & Hygiene",
+      es: "Espacio e Higiene",
     },
     slug: "inox-mobilier",
     subcategories: [

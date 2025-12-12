@@ -140,7 +140,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            {slides.map((slide, index) => (
+            {slides.filter((s) => s.link && s.link.startsWith('/products')).map((slide, index) => (
               <Link href={slide.link} key={index} className="group relative h-[400px] overflow-hidden rounded-none shadow-2xl block">
                 {/* 图片 */}
                 {slide.fit === 'contain' ? (

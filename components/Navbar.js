@@ -12,20 +12,12 @@ export default function Navbar() {
   const t = translations[locale] || translations.fr;
   const searchPlaceholder = locale === 'fr' ? 'Rechercher...' : (locale === 'es' ? 'Buscar...' : 'Search...');
 
-  const curated = [
-    {
-      slug: 'inox-mobilier',
-      label: locale === 'fr' ? 'Arts de la Table' : (locale === 'es' ? 'Artes de la Mesa' : 'Tableware')
-    },
-    {
-      slug: 'chaud',
-      label: locale === 'fr' ? 'Cuisine & Préparation' : (locale === 'es' ? 'Cocina y Preparación' : 'Kitchenware & Preparation')
-    },
-    {
-      slug: 'froid',
-      label: locale === 'fr' ? 'Buffet & Présentation' : (locale === 'es' ? 'Buffet y Presentación' : 'Buffet & Presentation')
-    }
-  ];
+  const curatedSlugs = ['boulangerie-patisserie', 'chaud', 'inox-mobilier', 'froid'];
+  const curated = curatedSlugs.map((slug) => {
+    const cat = categories.find((c) => c.slug === slug);
+    const label = (cat && (cat.name?.[locale] || cat.name?.fr)) || slug;
+    return { slug, label };
+  });
 
   const findCat = (slug) => categories.find((c) => c.slug === slug);
 
@@ -72,8 +64,8 @@ export default function Navbar() {
 
               {/* 下拉内容 */}
               {isProductOpen && (
-                <div className="absolute left-0 top-full mt-0 w-[700px] bg-white border border-[#EAD8C0] shadow-xl rounded-b-lg overflow-hidden p-0 z-50">
-                  <div className="grid grid-cols-2 gap-8 p-8 bg-white relative">
+                <div className="absolute left-0 top-full mt-0 w-[1000px] bg-white border border-[#EAD8C0] shadow-xl rounded-b-lg overflow-hidden p-0 z-50">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-white relative">
                     <div className="absolute inset-0 bg-cream opacity-20 z-0"></div>
                     {curated.map((c) => {
                       const cat = findCat(c.slug);
@@ -112,6 +104,10 @@ export default function Navbar() {
 
             <Link href="/about" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
               {t.nav_about}
+            </Link>
+
+            <Link href="/services" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
+              {t.nav_services}
             </Link>
           </div>
 

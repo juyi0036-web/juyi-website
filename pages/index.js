@@ -41,17 +41,7 @@ export default function Home() {
         
         <div className={`relative bg-choco text-cream min-h-screen flex items-center justify-center overflow-hidden`}>
 
-          {locale === 'fr' && t.hero_bg_image ? (
-            <>
-              <img
-                src={t.hero_bg_image}
-                alt="Hero Background"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/40"></div>
-            </>
-          ) : (
-          slides.map((slide, index) => (
+          {slides.map((slide, index) => (
             <div 
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
@@ -87,53 +77,37 @@ export default function Home() {
                   : 'bg-black/40'
               }`}></div>
             </div>
-          ))
-          )}
+          ))}
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span className="inline-block py-2 px-4 rounded-full bg-white/10 text-white text-sm font-bold tracking-[0.2em] mb-8 uppercase backdrop-blur-md border border-white/20">
               {t.hero_tag}
             </span>
 
-            {locale === 'fr' ? (
-              <>
-                <h1 className="text-5xl tracking-tight font-extrabold sm:text-7xl md:text-8xl uppercase text-white drop-shadow-2xl">
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EAD8C0] via-white to-[#EAD8C0]">
-                    {t.hero_h1}
-                  </span>
-                </h1>
-                <p className="mt-8 max-w-3xl mx-auto text-xl text-gray-100 sm:text-2xl font-light leading-relaxed drop-shadow-lg">
-                  {t.hero_subtitle}
-                </p>
-              </>
-            ) : (
-              <>
-                <h1 className="text-5xl tracking-tight font-extrabold sm:text-7xl md:text-8xl uppercase text-white drop-shadow-2xl">
-                  <span className="block mb-2">{t.home_inspirer || 'Inspire'}</span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EAD8C0] via-white to-[#EAD8C0]">
-                    {slides[currentSlide].title}
-                  </span>
-                </h1>
-                <p className="mt-8 max-w-2xl mx-auto text-xl text-gray-100 sm:text-2xl font-light leading-relaxed drop-shadow-lg">
-                  {slides[currentSlide].subtitle}
-                </p>
-              </>
-            )}
+            <>
+              <h1 className="text-5xl tracking-tight font-extrabold sm:text-7xl md:text-8xl uppercase text-white drop-shadow-2xl">
+                <span className="block mb-2">{t.home_inspirer || 'Inspire'}</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#EAD8C0] via-white to-[#EAD8C0]">
+                  {slides[currentSlide].title}
+                </span>
+              </h1>
+              <p className="mt-8 max-w-2xl mx-auto text-xl text-gray-100 sm:text-2xl font-light leading-relaxed drop-shadow-lg">
+                {slides[currentSlide].subtitle}
+              </p>
+            </>
             
             {/* 底部滑动条 */}
-            {locale !== 'fr' && (
-              <div className="flex justify-center gap-4 mt-12">
-                {slides.map((_, index) => (
-                  <button 
-                    key={index}
-                    onClick={() => setCurrentSlide(index)}
-                    className={`h-1 rounded-full transition-all duration-500 ${
-                      index === currentSlide ? 'w-16 bg-[#EAD8C0]' : 'w-8 bg-white/30 hover:bg-white/60'
-                    }`}
-                  />
-                ))}
-              </div>
-            )}
+            <div className="flex justify-center gap-4 mt-12">
+              {slides.map((_, index) => (
+                <button 
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`h-1 rounded-full transition-all duration-500 ${
+                    index === currentSlide ? 'w-16 bg-[#EAD8C0]' : 'w-8 bg-white/30 hover:bg-white/60'
+                  }`}
+                />
+              ))}
+            </div>
 
             <div className="mt-16">
               <Link href="/products" className="inline-flex items-center justify-center px-10 py-4 border border-white/50 text-base font-bold rounded-full text-white hover:bg-white hover:text-choco transition duration-300 backdrop-blur-sm uppercase tracking-widest no-underline">

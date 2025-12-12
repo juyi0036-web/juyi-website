@@ -15,7 +15,7 @@ export const translations = {
     hero_h1: "L'Alliance du Savoir-Faire Chinois et de l'Excellence Européenne",
     hero_subtitle: "Votre bureau d'achat stratégique à Shanghai. Une sélection rigoureuse par des experts du métier.",
     hero_btn_catalog: "Découvrir nos Collections",
-    hero_bg_image: "/hero-fine-dining.jpg",
+    hero_bg_image: "/hero-bakery-pro.jpg",
     hero_btn_contact: "Contact Export",
     home_inspirer: "Inspirer",
     home_meta_description: "Fournisseur d'équipement professionnel CHR. Direct Usine Chine-France.",
@@ -43,6 +43,14 @@ export const translations = {
     no_products: "Aucun produit pour le moment",
     catalog_updating: "Catalogue en cours de mise à jour.",
     home_slides: [
+      {
+        title: "Votre Partenaire Industriel",
+        subtitle: "Votre bureau d'achat stratégique à Shanghai. Une sélection rigoureuse par des experts du métier.",
+        link: "/about",
+        image: "/hero-01.jpg",
+        fit: "cover",
+        position: "center"
+      },
       {
         title: "L'Art de la Boulangerie",
         subtitle: "La tradition artisanale rencontre la précision industrielle.",
@@ -187,6 +195,9 @@ export const translations = {
 
     hero_tag: "Since 2010 • Global CHR Expert",
     hero_title_1: "Your Industrial Partner",
+    hero_h1: "The Alliance of Chinese Know-How and European Excellence",
+    hero_subtitle: "Your strategic buying office in Shanghai. A rigorous selection by industry experts.",
+    hero_bg_image: "/hero-bakery-pro.jpg",
     hero_btn_catalog: "View Catalog",
     hero_btn_contact: "Export Contact",
     home_inspirer: "Inspire",
@@ -212,6 +223,14 @@ export const translations = {
     no_products: "No products at the moment",
     catalog_updating: "Catalog currently being updated.",
     home_slides: [
+      {
+        title: "Your Industrial Partner",
+        subtitle: "Your strategic buying office in Shanghai. A rigorous selection by industry experts.",
+        link: "/about",
+        image: "/hero-01.jpg",
+        fit: "cover",
+        position: "center"
+      },
       {
         title: "The Art of Bakery",
         subtitle: "Artisanal tradition meets industrial precision.",
@@ -347,7 +366,6 @@ export const translations = {
 
   // === 西班牙语 ===
   es: {
-    nav_home: "Inicio",
     nav_products: "Nuestras Colecciones",
     nav_about: "Nuestra Maison",
     nav_services: "Soluciones y Servicios",
@@ -356,6 +374,9 @@ export const translations = {
 
     hero_tag: "Desde 2010 • Experto Global CHR",
     hero_title_1: "Su Socio Industrial",
+    hero_h1: "La alianza del saber hacer chino y la excelencia europea",
+    hero_subtitle: "Su oficina de compras estratégica en Shanghai. Una selección rigurosa por expertos del sector.",
+    hero_bg_image: "/hero-bakery-pro.jpg",
     hero_btn_catalog: "Ver Catálogo",
     hero_btn_contact: "Contacto Exportación",
     home_inspirer: "Inspirar",
@@ -381,6 +402,14 @@ export const translations = {
     no_products: "No hay productos por el momento",
     catalog_updating: "Catálogo en proceso de actualización.",
     home_slides: [
+      {
+        title: "Su Socio Industrial",
+        subtitle: "Su oficina de compras estratégica en Shanghai. Una selección rigurosa por expertos del sector.",
+        link: "/about",
+        image: "/hero-01.jpg",
+        fit: "cover",
+        position: "center"
+      },
       {
         title: "El Arte de la Panadería",
         subtitle: "La tradición artesanal se une a la precisión industrial.",

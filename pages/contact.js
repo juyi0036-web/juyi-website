@@ -46,7 +46,14 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-choco">{t.contact_whatsapp_title}</h3>
-                  <p className="mt-1 text-lg text-gray-800 font-medium">+852 6972 4241</p>
+                  <a
+                    href="https://wa.me/85269724241"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-block text-lg text-gray-800 font-medium hover:text-red-700 no-underline"
+                  >
+                    +852 6972 4241
+                  </a>
                   <p className="text-sm text-gray-500">{t.contact_whatsapp_note}</p>
                 </div>
               </div>
@@ -60,8 +67,11 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-choco">{t.contact_email_title}</h3>
-                  <a href="#contact-form" className="mt-1 inline-block text-lg font-bold text-red-700 hover:text-red-800 no-underline">
-                    {t.contact_email_cta}
+                  <a
+                    href="mailto:contact@juyi-chr.com"
+                    className="mt-1 inline-block text-lg font-bold text-red-700 hover:text-red-800 no-underline"
+                  >
+                    contact@juyi-chr.com
                   </a>
                   <p className="text-sm text-gray-500">{t.contact_email_note}</p>
                 </div>

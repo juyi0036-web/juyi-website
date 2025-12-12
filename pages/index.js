@@ -208,7 +208,7 @@ export default function Home() {
       
       <footer className="bg-choco text-white/40 py-12 border-t border-white/5 text-center">
         <p className="text-xs uppercase tracking-widest">
-          © 2025 Juyi CHR • Guangzhou & France
+          © 2025 Juyi CHR Supply Chain Management • Shanghai, China
         </p>
       </footer>
     </div>

@@ -51,7 +51,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Email */}
+              {/* Email / Form CTA */}
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-full bg-choco text-cream">
@@ -60,7 +60,9 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-choco">{t.contact_email_title}</h3>
-                  <p className="mt-1 text-lg text-gray-800 font-medium">contact@juyi-chr.com</p>
+                  <a href="#contact-form" className="mt-1 inline-block text-lg font-bold text-red-700 hover:text-red-800 no-underline">
+                    {t.contact_email_cta}
+                  </a>
                   <p className="text-sm text-gray-500">{t.contact_email_note}</p>
                 </div>
               </div>
@@ -86,7 +88,7 @@ export default function Contact() {
              <h2 className="text-2xl font-bold text-choco mb-8 uppercase tracking-wide border-l-4 border-red-700 pl-4">
               {t.contact_form_title}
             </h2>
-            <form className="bg-white p-8 rounded-xl shadow-2xl border border-[#EAD8C0] space-y-6">
+            <form id="contact-form" className="bg-white p-8 rounded-xl shadow-2xl border border-[#EAD8C0] space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-bold text-choco">
                   {t.contact_form_name_label}
@@ -136,7 +138,7 @@ export default function Contact() {
       <footer className="bg-white border-t border-[#EAD8C0] mt-auto">
         <div className="max-w-7xl mx-auto py-8 px-4 text-center">
             <p className="text-sm text-gray-400">
-                &copy; 2025 Juyi CHR Supply Chain Management.
+                &copy; 2025 Juyi CHR Supply Chain Management • Shanghai, China
             </p>
         </div>
       </footer>

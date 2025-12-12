@@ -11,7 +11,10 @@ export const translations = {
     // 首页 Hero
     hero_tag: "Depuis 2010 • Expert CHR Global",
     hero_title_1: "Votre Partenaire Industriel",
-    hero_btn_catalog: "Voir le Catalogue",
+    hero_h1: "L'Alliance du Savoir-Faire Chinois et de l'Excellence Européenne",
+    hero_subtitle: "Votre bureau d'achat stratégique à Shanghai. Une sélection rigoureuse par des experts du métier.",
+    hero_btn_catalog: "Découvrir nos Collections",
+    hero_bg_image: "/hero-fine-dining.jpg",
     hero_btn_contact: "Contact Export",
     home_inspirer: "Inspirer",
     home_meta_description: "Fournisseur d'équipement professionnel CHR. Direct Usine Chine-France.",

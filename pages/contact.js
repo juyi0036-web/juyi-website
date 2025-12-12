@@ -60,7 +60,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-choco">{t.contact_email_title}</h3>
-                  <p className="mt-1 text-lg text-gray-800 font-medium">juyi0036@gmail.com</p>
+                  <p className="mt-1 text-lg text-gray-800 font-medium">contact@juyi-chr.com</p>
                   <p className="text-sm text-gray-500">{t.contact_email_note}</p>
                 </div>
               </div>

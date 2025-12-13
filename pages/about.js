@@ -8,7 +8,7 @@ export default function About() {
   const t = translations[locale] || translations.fr;
   const cols = (t.services_cols || translations.fr.services_cols || []).map((c, i) => ({
     ...c,
-    photo: i === 0 ? '/products/equip-01.jpg' : i === 1 ? '/services/real/qc.jpg' : '/services/rocket.svg',
+    photo: i === 0 ? '/p-01.jpg' : i === 1 ? '/p-02.jpg' : '/p-03.jpg',
     icon: i === 0 ? '/services/factory.svg' : i === 1 ? '/services/qc.svg' : '/services/rocket.svg'
   }))
   return (
@@ -80,7 +80,7 @@ export default function About() {
                 <img 
                   src={col.photo}
                   alt={col.headline}
-                  className={`${idx===2 ? 'absolute inset-0 w-16 h-16 object-contain mx-auto my-12' : 'absolute inset-0 w-full h-full object-cover'}`}
+                  className={'absolute inset-0 w-full h-full object-cover'}
                   onError={(e) => { e.currentTarget.src = col.icon; e.currentTarget.className = 'absolute inset-0 w-12 h-12 object-contain mx-auto my-14'; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>

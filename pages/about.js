@@ -8,7 +8,9 @@ export default function About() {
   const t = translations[locale] || translations.fr;
   const cols = (t.services_cols || translations.fr.services_cols || []).map((c, i) => ({
     ...c,
-    img: i === 0 ? '/services/factory.svg' : i === 1 ? '/services/qc.svg' : '/services/rocket.svg'
+    // 优先使用实拍照片，失败时回退到矢量图标
+    photo: i === 0 ? '/services/real/supply-chain.jpg' : i === 1 ? '/services/real/qc.jpg' : '/services/real/sales.jpg',
+    icon: i === 0 ? '/services/factory.svg' : i === 1 ? '/services/qc.svg' : '/services/rocket.svg'
   }))
   return (
     <div className="min-h-screen bg-cream font-sans">
@@ -79,18 +81,28 @@ export default function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {cols.map((col, idx) => (
-            <div key={idx} className={`bg-white p-8 rounded-lg shadow-md border-t-4 ${idx===1 ? 'border-red-700' : 'border-choco'} hover:transform hover:-translate-y-2 transition duration-300`}>
-              <div className="text-center">
-                <img src={col.img} alt={col.headline} className="h-12 w-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-choco mb-6">{col.headline}</h3>
+            <div key={idx} className={`bg-white rounded-lg shadow-md border-t-4 ${idx===1 ? 'border-red-700' : 'border-choco'} hover:transform hover:-translate-y-2 transition duration-300 overflow-hidden`}>
+              <div className="relative h-40 w-full">
+                <img 
+                  src={col.photo}
+                  alt={col.headline}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.src = col.icon; e.currentTarget.className = 'absolute inset-0 w-12 h-12 object-contain mx-auto my-14'; }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-4">
+                  <h3 className="text-lg font-extrabold text-white tracking-wider uppercase">{col.headline}</h3>
+                </div>
               </div>
-              <div className="space-y-5 text-left">
-                {col.items.map((item, i) => (
-                  <div key={i}>
-                    <div className="text-base font-extrabold text-choco mb-1">{item.title}</div>
-                    <p className="text-gray-700 text-sm">{item.desc}</p>
-                  </div>
-                ))}
+              <div className="p-8">
+                <div className="space-y-5 text-left">
+                  {col.items.map((item, i) => (
+                    <div key={i}>
+                      <div className="text-base font-extrabold text-choco mb-1">{item.title}</div>
+                      <p className="text-gray-700 text-sm">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

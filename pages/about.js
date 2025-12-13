@@ -50,24 +50,20 @@ export default function About() {
               <h2 className="text-3xl font-bold text-choco mb-6 uppercase tracking-wide border-l-4 border-red-700 pl-4">
                 {t.about_story_title}
               </h2>
+              <div className="text-lg text-gray-700 space-y-6 leading-relaxed">
+                <p>{t.about_story_p1}</p>
+                <p>{t.about_story_p2}</p>
+                <p>{t.about_story_p3}</p>
+              </div>
             </div>
             
-            <div className="mt-10 lg:mt-0 relative h-64 sm:h-72 md:h-96 lg:h-full border-4 border-[#EAD8C0] rounded-xl shadow-xl overflow-hidden">
+            <div className="mt-10 lg:mt-0 relative h-80 sm:h-96 md:h-[420px] lg:h-[520px] bg-white border-4 border-[#EAD8C0] rounded-xl shadow-xl overflow-hidden">
                <img 
                  src="/equip-01.jpg"
                  alt="Production & Équipements"
                  className="absolute inset-0 w-full h-full object-cover"
                  onError={(e) => { e.currentTarget.src = '/hero-bakery-pro.jpg'; }}
                />
-               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-               <div className="absolute bottom-0 left-0 p-8">
-                 <h3 className="text-2xl font-extrabold text-white uppercase tracking-wide mb-4">{t.about_story_title}</h3>
-                 <div className="space-y-4 text-white/90 text-sm md:text-base max-w-2xl">
-                   <p>{t.about_story_p1}</p>
-                   <p>{t.about_story_p2}</p>
-                   <p>{t.about_story_p3}</p>
-                 </div>
-               </div>
             </div>
           </div>
         </div>

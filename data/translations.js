@@ -44,7 +44,7 @@ export const translations = {
     catalog_updating: "Catalogue en cours de mise à jour.",
     home_slides: [
       {
-        title: "Votre Partenaire Industriel",
+        title: "L'Alliance du Savoir-Faire Chinois et de l'Excellence Européenne",
         subtitle: "Votre bureau d'achat stratégique à Shanghai. Une sélection rigoureuse par des experts du métier.",
         link: "/about",
         image: "/hero-01.jpg",

@@ -84,13 +84,13 @@ export const translations = {
         position: "center"
       }
     ],
-    about_meta_title: "Notre Maison | JUYI CHR",
-    about_h1: "Une Vision Française, Une Exécution Chinoise.",
-    about_tagline: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
-    about_story_title: "Notre Histoire",
-    about_story_p1: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
-    about_story_p2: "Notre stratégie est dirigée par une équipe de direction française chevronnée, apportant plus de 40 ans d'expertise cumulée dans les arts de la table et l'équipement hôtelier professionnel. Cette double culture nous permet de comprendre parfaitement vos exigences (Design, Normes, Finitions) et de les traduire techniquement auprès de nos usines partenaires.",
-    about_story_p3: "Nous ne vendons pas simplement des produits ; nous sécurisons et simplifions votre chaîne d'approvisionnement globale.",
+    about_meta_title: "About Us | JUYI CHR",
+    about_h1: "Excellence in Equipment",
+    about_tagline: "The direct bridge between cutting-edge industry and your bakery.",
+    about_story_title: "Our Story",
+    about_story_p1: "JUYI CHR Supply Chain Management was born from a simple ambition: remove unnecessary intermediaries between high-quality bakery equipment manufacturers and French artisans.",
+    about_story_p2: "With our operational base at the heart of production zones in China and our technical team based in France (with over 40 years of cumulative CHR market experience), we guarantee not only the best price, but above all quality and local service.",
+    about_story_p3: "We are not just sellers. We are your industrial partners.",
     about_section_production_title: "Production & Logistique",
     about_adv1_title: "Optimisation de la Supply Chain",
     about_adv1_desc: "Consolidation multi-usines en un seul conteneur et 30 jours de stockage gratuit à Shanghai.",
@@ -450,6 +450,7 @@ export const translations = {
 
   // === 西班牙语 ===
   es: {
+    nav_home: "Inicio",
     nav_products: "Nuestras Colecciones",
     nav_about: "Nuestra Maison",
     nav_services: "Soluciones y Servicios",
@@ -527,13 +528,13 @@ export const translations = {
         position: "center"
       }
     ],
-    about_meta_title: "Notre Maison | JUYI CHR",
-    about_h1: "Une Vision Française, Une Exécution Chinoise.",
-    about_tagline: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
-    about_story_title: "Notre Histoire",
-    about_story_p1: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
-    about_story_p2: "Notre stratégie est dirigée par une équipe de direction française chevronnée, apportant plus de 40 ans d'expertise cumulée dans les arts de la table et l'équipement hôtelier professionnel. Cette double culture nous permet de comprendre parfaitement vos exigences (Design, Normes, Finitions) et de les traduire techniquement auprès de nos usines partenaires.",
-    about_story_p3: "Nous ne vendons pas simplement des produits ; nous sécurisons et simplifions votre chaîne d'approvisionnement globale.",
+    about_meta_title: "Quiénes Somos | JUYI CHR",
+    about_h1: "Excelencia en Equipos",
+    about_tagline: "El puente directo entre la industria de vanguardia y su panadería.",
+    about_story_title: "Nuestra Historia",
+    about_story_p1: "JUYI CHR Supply Chain Management nació con una ambición simple: eliminar intermediarios innecesarios entre fabricantes de equipos de panadería de alta calidad y artesanos franceses.",
+    about_story_p2: "Con nuestra base operativa en el corazón de las zonas de producción en China y nuestro equipo técnico en Francia (con más de 40 años de experiencia acumulada en el mercado CHR), garantizamos no solo el mejor precio, sino sobre todo la calidad y el servicio de proximidad.",
+    about_story_p3: "No somos simples vendedores. Somos sus socios industriales.",
     about_section_production_title: "Producción y Logística",
     about_adv1_title: "Optimización de la Cadena de Suministro",
     about_adv1_desc: "Consolidación multi-fábrica en un solo contenedor y 30 días de almacenamiento gratuito en Shanghai.",

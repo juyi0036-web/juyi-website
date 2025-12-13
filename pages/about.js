@@ -5,7 +5,7 @@ import { translations } from '../data/translations';
 
 export default function About() {
   const { locale } = useRouter();
-  const t = translations.fr;
+  const t = translations[locale] || translations.fr;
   const cols = (t.services_cols || translations.fr.services_cols || []).map((c, i) => ({
     ...c,
     photo: i === 0 ? '/p-01.jpg' : i === 1 ? '/p-02.jpg' : '/p-03.jpg',
@@ -25,11 +25,11 @@ export default function About() {
           {/* Logo 图片区域 */}
           <div className="mb-8 flex justify-center">
              {/* 关键修改：确保 public 文件夹里有 logo.png */}
-             <img 
-               src="/logo.png" 
-               alt="JUYI CHR Emblème" 
-               className="h-48 w-auto bg-cream rounded-full p-4 border-4 border-[#EAD8C0] shadow-2xl" 
-             />
+            <img 
+              src="/logo.png" 
+              alt="JUYI CHR Emblème" 
+              className="h-96 w-auto bg-cream rounded-full p-4 border-4 border-[#EAD8C0] shadow-2xl" 
+            />
           </div>
 
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl uppercase">

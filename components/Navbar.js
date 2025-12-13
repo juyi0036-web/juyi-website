@@ -9,13 +9,13 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
   const router = useRouter();
   const { locale, locales, asPath } = router;
-  const t = translations.fr;
-  const searchPlaceholder = 'Rechercher...';
+  const t = translations[locale] || translations.fr;
+  const searchPlaceholder = locale === 'fr' ? 'Rechercher...' : (locale === 'es' ? 'Buscar...' : 'Search...');
 
   const curatedSlugs = ['boulangerie-patisserie', 'chaud', 'inox-mobilier', 'froid'];
   const curated = curatedSlugs.map((slug) => {
     const cat = categories.find((c) => c.slug === slug);
-    const label = (cat && cat.name?.fr) || slug;
+    const label = (cat && (cat.name?.[locale] || cat.name?.fr)) || slug;
     return { slug, label };
   });
 
@@ -85,7 +85,7 @@ export default function Navbar() {
                                 href={`/products/${cat.slug}/${sub.slug}`} 
                                 className="text-sm text-gray-700 hover:text-red-700 hover:translate-x-1 transform transition block no-underline font-medium"
                               >
-                                {sub.name?.fr || sub.name}
+                                {sub.name?.[locale] || sub.name?.fr || sub.name}
                                 </Link>
                             </li>
                           ))}

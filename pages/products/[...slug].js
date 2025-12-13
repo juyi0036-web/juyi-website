@@ -10,7 +10,7 @@ export default function ProductCategory() {
   const router = useRouter();
   const { slug } = router.query; 
   const { locale } = router;
-  const t = translations.fr;
+  const t = translations[locale] || translations.fr;
 
   // 防止页面刷新时报错，等待数据加载
   if (!slug) return <div className="min-h-screen bg-cream"></div>;
@@ -33,8 +33,8 @@ export default function ProductCategory() {
     });
 
   const pageTitle = currentSubCategory
-    ? (currentSubCategory.name?.fr || currentSubCategory.name)
-    : (currentCategory ? (currentCategory.name?.fr || currentCategory.name) : t.nav_products);
+    ? (currentSubCategory.name?.[locale] || currentSubCategory.name?.fr || currentSubCategory.name)
+    : (currentCategory ? (currentCategory.name?.[locale] || currentCategory.name?.fr || currentCategory.name) : t.nav_products);
 
   return (
     <div className="min-h-screen bg-cream font-sans">
@@ -50,13 +50,13 @@ export default function ProductCategory() {
           <Link href="/" className="hover:text-red-700">{t.nav_home}</Link>
           <span className="mx-2">/</span>
           <Link href={`/products/${categorySlug}`} className="hover:text-red-700 capitalize">
-            {(currentCategory?.name && (currentCategory.name.fr)) || currentCategory?.name || categorySlug}
+            {(currentCategory?.name && (currentCategory.name[locale] || currentCategory.name.fr)) || currentCategory?.name || categorySlug}
           </Link>
           {currentSubCategory && (
             <>
               <span className="mx-2">/</span>
               <Link href={`/products/${categorySlug}/${subCategorySlug}`} className="hover:text-red-700 font-bold text-choco">
-                {(currentSubCategory.name && (currentSubCategory.name.fr)) || currentSubCategory.name}
+                {(currentSubCategory.name && (currentSubCategory.name[locale] || currentSubCategory.name.fr)) || currentSubCategory.name}
               </Link>
             </>
           )}
@@ -76,10 +76,10 @@ export default function ProductCategory() {
           <div className="grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
             {categoryProducts.map((product) => {
               const displayName = typeof product.name === 'object'
-                ? (product.name.fr || Object.values(product.name)[0])
+                ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
                 : product.name;
               const displayDesc = typeof product.description === 'object'
-                ? (product.description.fr || Object.values(product.description)[0])
+                ? (product.description[locale] || product.description.fr || Object.values(product.description)[0])
                 : product.description;
               const primaryImage = Array.isArray(product.images) && product.images.length ? product.images[0] : product.image;
               return (

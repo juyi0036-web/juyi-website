@@ -28,7 +28,7 @@ export default function About() {
             <img 
               src="/logo.png" 
               alt="JUYI CHR Emblème" 
-              className="h-96 w-auto bg-cream rounded-full p-4 border-4 border-[#EAD8C0] shadow-2xl" 
+              className="h-48 w-auto bg-cream rounded-full p-4 border-4 border-[#EAD8C0] shadow-2xl" 
             />
           </div>
 

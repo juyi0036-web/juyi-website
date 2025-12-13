@@ -10,7 +10,7 @@ export default function SearchPage() {
   const router = useRouter()
   const { q } = router.query
   const { locale } = router
-  const t = translations.fr
+  const t = translations[locale] || translations.fr
 
   const query = Array.isArray(q) ? q.join(' ') : (q || '')
   const qLower = query.trim().toLowerCase()
@@ -22,7 +22,7 @@ export default function SearchPage() {
   const getDisplayText = (obj) => {
     if (!obj) return ''
     if (typeof obj === 'object') {
-      return obj.fr || Object.values(obj)[0] || ''
+      return obj[locale] || obj.fr || Object.values(obj)[0] || ''
     }
     return obj
   }

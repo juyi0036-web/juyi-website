@@ -5,7 +5,7 @@ import { translations } from '../data/translations';
 
 export default function Contact() {
   const { locale } = useRouter();
-  const t = translations.fr;
+  const t = translations[locale] || translations.fr;
   return (
     <div className="min-h-screen bg-cream font-sans flex flex-col">
       <Head>

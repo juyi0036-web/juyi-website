@@ -10,14 +10,14 @@ export default function ProductDetail({ product: productProp }) {
   const router = useRouter();
   const { id } = router.query;
   const { locale } = router;
-  const t = translations.fr;
+  const t = translations[locale] || translations.fr;
 
   const product = productProp || products.find(p => p && (p.id === id || p.id === router.asPath.split('/').pop()));
   const displayName = product && (typeof product.name === 'object'
-    ? (product.name.fr || Object.values(product.name)[0])
+    ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
     : product.name);
   const displayDesc = product && (typeof product.description === 'object'
-    ? (product.description.fr || Object.values(product.description)[0])
+    ? (product.description[locale] || product.description.fr || Object.values(product.description)[0])
     : product.description);
   const category = categories.find(c => c.slug === product?.categorySlug);
   const sub = category?.subcategories.find(s => s.slug === product?.subCategorySlug);
@@ -74,13 +74,13 @@ export default function ProductDetail({ product: productProp }) {
           <Link href="/" className="hover:text-red-700">{t.nav_home}</Link>
           <span className="mx-2">/</span>
             <Link href={categoryPath} className="hover:text-red-700">
-            {(category?.name && category.name.fr) || category?.name || product?.categorySlug}
+            {(category?.name && (category.name[locale] || category.name.fr)) || category?.name || product?.categorySlug}
             </Link>
           {sub && (
             <>
               <span className="mx-2">/</span>
               <Link href={subCategoryPath || categoryPath} className="hover:text-red-700">
-                {(sub.name && sub.name.fr) || sub.name}
+                {(sub.name && (sub.name[locale] || sub.name.fr)) || sub.name}
               </Link>
             </>
           )}

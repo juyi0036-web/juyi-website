@@ -323,41 +323,41 @@ export const translations = {
 
     services_cols: [
       {
-        headline: "Logistique & Consolidation",
+        headline: "Logistics & Consolidation",
         items: [
           {
             title: "Smart Consolidation",
-            desc: "Nous regroupons vos commandes de plusieurs usines (Vaisselle, Cuisine, Buffet) dans un seul conteneur. Une seule facture, un seul dédouanement."
+            desc: "We group your orders from multiple factories (Tableware, Kitchen, Buffet) into a single container. One invoice, one customs clearance."
           },
           {
-            title: "Stockage Gratuit",
-            desc: "Profitez de 30 jours de stockage gratuit dans notre entrepôt de Shanghai pour synchroniser vos expéditions."
+            title: "Free Storage",
+            desc: "Enjoy 30 days of free storage in our Shanghai warehouse to synchronize your shipments."
           }
         ]
       },
       {
-        headline: "Qualité & Image de Marque",
+        headline: "Quality & Brand Image",
         items: [
           {
-            title: "Contrôle Qualité (QC)",
-            desc: "Inspection physique systématique avant expédition (Standard AQL Niveau II). Zéro mauvaise surprise à l'arrivée."
+            title: "Quality Control (QC)",
+            desc: "Systematic physical inspection before shipment (AQL Level II). No surprises upon arrival."
           },
           {
             title: "Private Label (OEM)",
-            desc: "Créez votre propre marque. Marquage laser, emballages personnalisés et développement de moules sur mesure."
+            desc: "Create your own brand. Laser marking, custom packaging and bespoke mould development."
           }
         ]
       },
       {
-        headline: "Support Commercial",
+        headline: "Sales Support",
         items: [
           {
-            title: "Pack Marketing Digital",
-            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en vente."
+            title: "Digital Marketing Pack",
+            desc: "We provide HD photos and product sheets for your website. Save time on listing."
           },
           {
-            title: "Service Conciergerie & Échantillons",
-            desc: "Sourcing sur mesure en 48h sur simple photo, et centralisation de vos échantillons en un seul envoi."
+            title: "Concierge Service & Samples",
+            desc: "Tailor-made sourcing within 48h from a simple photo, and centralize your samples into a single shipment."
           }
         ]
       }
@@ -545,41 +545,41 @@ export const translations = {
 
     services_cols: [
       {
-        headline: "Logistique & Consolidation",
+        headline: "Logística y Consolidación",
         items: [
           {
-            title: "Smart Consolidation",
-            desc: "Nous regroupons vos commandes de plusieurs usines (Vaisselle, Cuisine, Buffet) dans un seul conteneur. Une seule facture, un seul dédouanement."
+            title: "Consolidación Inteligente",
+            desc: "Agrupamos sus pedidos de múltiples fábricas (Vajilla, Cocina, Buffet) en un solo contenedor. Una factura, un solo despacho aduanero."
           },
           {
-            title: "Stockage Gratuit",
-            desc: "Profitez de 30 jours de stockage gratuit dans notre entrepôt de Shanghai pour synchroniser vos expéditions."
+            title: "Almacenamiento Gratuito",
+            desc: "Disfrute de 30 días de almacenamiento gratuito en nuestro almacén de Shanghai para sincronizar sus envíos."
           }
         ]
       },
       {
-        headline: "Qualité & Image de Marque",
+        headline: "Calidad e Imagen de Marca",
         items: [
           {
-            title: "Contrôle Qualité (QC)",
-            desc: "Inspection physique systématique avant expédition (Standard AQL Niveau II). Zéro mauvaise surprise à l'arrivée."
+            title: "Control de Calidad (QC)",
+            desc: "Inspección física sistemática antes del envío (AQL Nivel II). Cero sorpresas a la llegada."
           },
           {
-            title: "Private Label (OEM)",
-            desc: "Créez votre propre marque. Marquage laser, emballages personnalisés et développement de moules sur mesure."
+            title: "Marca Propia (OEM)",
+            desc: "Cree su propia marca. Marcado láser, embalajes personalizados y desarrollo de moldes a medida."
           }
         ]
       },
       {
-        headline: "Support Commercial",
+        headline: "Soporte Comercial",
         items: [
           {
-            title: "Pack Marketing Digital",
-            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en vente."
+            title: "Pack de Marketing Digital",
+            desc: "Proporcionamos fotos HD y fichas de producto para su web. Ahorre tiempo en la publicación."
           },
           {
-            title: "Service Conciergerie & Échantillons",
-            desc: "Sourcing sur mesure en 48h sur simple photo, et centralisation de vos échantillons en un seul envoi."
+            title: "Servicio de Concierge y Muestras",
+            desc: "Sourcing a medida en 48h a partir de una simple foto, y centralización de sus muestras en un único envío."
           }
         ]
       }

@@ -67,10 +67,15 @@ export default function About() {
           </div>
         </div>
 
-        {/* 三大优势 */}
+        {/* 服务与支持 */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-extrabold text-choco uppercase tracking-widest">{t.nav_services}</h2>
+          <div className="w-16 h-1 bg-[#EAD8C0] mx-auto mt-4"></div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-choco text-center hover:transform hover:-translate-y-2 transition duration-300">
-            <div className="text-5xl mb-4">🏭</div>
+            <img src="/services/factory.svg" alt="Supply Chain" className="h-12 w-12 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-choco mb-3">{t.about_adv1_title}</h3>
             <p className="text-gray-600">
               {t.about_adv1_desc}
@@ -78,7 +83,7 @@ export default function About() {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-red-700 text-center hover:transform hover:-translate-y-2 transition duration-300">
-            <div className="text-5xl mb-4">🇫🇷</div>
+            <img src="/services/qc.svg" alt="Quality & Customization" className="h-12 w-12 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-choco mb-3">{t.about_adv2_title}</h3>
             <p className="text-gray-600">
               {t.about_adv2_desc}
@@ -86,7 +91,7 @@ export default function About() {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-choco text-center hover:transform hover:-translate-y-2 transition duration-300">
-            <div className="text-5xl mb-4">🚀</div>
+            <img src="/services/rocket.svg" alt="Sales Accelerator" className="h-12 w-12 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-choco mb-3">{t.about_adv3_title}</h3>
             <p className="text-gray-600">
               {t.about_adv3_desc}

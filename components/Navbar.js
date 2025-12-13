@@ -106,9 +106,7 @@ export default function Navbar() {
               {t.nav_about}
             </Link>
 
-            <Link href="/services" className="text-choco hover:text-red-700 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
-              {t.nav_services}
-            </Link>
+            
           </div>
 
           <div className="hidden md:flex items-center space-x-4">

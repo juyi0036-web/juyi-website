@@ -6,6 +6,10 @@ import { translations } from '../data/translations';
 export default function About() {
   const { locale } = useRouter();
   const t = translations[locale] || translations.fr;
+  const cols = (t.services_cols || translations.fr.services_cols || []).map((c, i) => ({
+    ...c,
+    img: i === 0 ? '/services/factory.svg' : i === 1 ? '/services/qc.svg' : '/services/rocket.svg'
+  }))
   return (
     <div className="min-h-screen bg-cream font-sans">
       <Head>
@@ -74,29 +78,22 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-choco text-center hover:transform hover:-translate-y-2 transition duration-300">
-            <img src="/services/factory.svg" alt="Supply Chain" className="h-12 w-12 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-choco mb-3">{t.about_adv1_title}</h3>
-            <p className="text-gray-600">
-              {t.about_adv1_desc}
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-red-700 text-center hover:transform hover:-translate-y-2 transition duration-300">
-            <img src="/services/qc.svg" alt="Quality & Customization" className="h-12 w-12 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-choco mb-3">{t.about_adv2_title}</h3>
-            <p className="text-gray-600">
-              {t.about_adv2_desc}
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-choco text-center hover:transform hover:-translate-y-2 transition duration-300">
-            <img src="/services/rocket.svg" alt="Sales Accelerator" className="h-12 w-12 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-choco mb-3">{t.about_adv3_title}</h3>
-            <p className="text-gray-600">
-              {t.about_adv3_desc}
-            </p>
-          </div>
+          {cols.map((col, idx) => (
+            <div key={idx} className={`bg-white p-8 rounded-lg shadow-md border-t-4 ${idx===1 ? 'border-red-700' : 'border-choco'} hover:transform hover:-translate-y-2 transition duration-300`}>
+              <div className="text-center">
+                <img src={col.img} alt={col.headline} className="h-12 w-12 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-choco mb-6">{col.headline}</h3>
+              </div>
+              <div className="space-y-5 text-left">
+                {col.items.map((item, i) => (
+                  <div key={i}>
+                    <div className="text-base font-extrabold text-choco mb-1">{item.title}</div>
+                    <p className="text-gray-700 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </main>
     </div>

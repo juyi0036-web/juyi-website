@@ -10,19 +10,19 @@ export default function SearchPage() {
   const router = useRouter()
   const { q } = router.query
   const { locale } = router
-  const t = translations[locale] || translations.fr
+  const t = translations.fr
 
   const query = Array.isArray(q) ? q.join(' ') : (q || '')
   const qLower = query.trim().toLowerCase()
 
-  const title = locale === 'fr' ? 'Recherche' : (locale === 'es' ? 'Búsqueda' : 'Search')
-  const resultWord = locale === 'fr' ? 'résultats' : (locale === 'es' ? 'resultados' : 'results')
-  const enterKeyword = locale === 'fr' ? 'Veuillez entrer un mot-clé' : (locale === 'es' ? 'Por favor ingrese una palabra clave' : 'Please enter a keyword')
+  const title = 'Recherche'
+  const resultWord = 'résultats'
+  const enterKeyword = 'Veuillez entrer un mot-clé'
 
   const getDisplayText = (obj) => {
     if (!obj) return ''
     if (typeof obj === 'object') {
-      return obj[locale] || obj.fr || Object.values(obj)[0] || ''
+      return obj.fr || Object.values(obj)[0] || ''
     }
     return obj
   }

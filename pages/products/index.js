@@ -8,7 +8,7 @@ import { translations } from '../../data/translations';
 export default function AllProducts() {
   const router = useRouter();
   const { locale } = router;
-  const t = translations[locale] || translations.fr;
+  const t = translations.fr;
 
   const allProducts = products.filter(Boolean);
   const pageTitle = t.nav_products;
@@ -35,10 +35,10 @@ export default function AllProducts() {
           <div className="grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
             {allProducts.map((product) => {
               const displayName = typeof product.name === 'object'
-                ? (product.name[locale] || product.name.fr || Object.values(product.name)[0])
+                ? (product.name.fr || Object.values(product.name)[0])
                 : product.name;
               const displayDesc = typeof product.description === 'object'
-                ? (product.description[locale] || product.description.fr || Object.values(product.description)[0])
+                ? (product.description.fr || Object.values(product.description)[0])
                 : product.description;
               const primaryImage = Array.isArray(product.images) && product.images.length ? product.images[0] : product.image;
               return (

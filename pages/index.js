@@ -8,7 +8,7 @@ import { translations } from '../data/translations';
 export default function Home() {
   const router = useRouter();
   const { locale } = router;
-  const t = translations[locale] || translations.fr;
+  const t = translations.fr;
 
   const slides = (t.home_slides || []).map((s) => ({
     image: s.image,

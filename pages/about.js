@@ -5,7 +5,7 @@ import { translations } from '../data/translations';
 
 export default function About() {
   const { locale } = useRouter();
-  const t = translations[locale] || translations.fr;
+  const t = translations.fr;
   const cols = (t.services_cols || translations.fr.services_cols || []).map((c, i) => ({
     ...c,
     photo: i === 0 ? '/p-01.jpg' : i === 1 ? '/p-02.jpg' : '/p-03.jpg',

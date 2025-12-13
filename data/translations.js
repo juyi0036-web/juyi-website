@@ -306,13 +306,13 @@ export const translations = {
         position: "center"
       }
     ],
-    about_meta_title: "About Us | JUYI CHR",
-    about_h1: "Excellence in Equipment",
-    about_tagline: "The direct bridge between cutting-edge industry and your bakery.",
-    about_story_title: "Our Story",
-    about_story_p1: "JUYI CHR Supply Chain Management was born from a simple ambition: remove unnecessary intermediaries between high-quality bakery equipment manufacturers and French artisans.",
-    about_story_p2: "With our operational base at the heart of production zones in China and our technical team based in France (with over 40 years of cumulative CHR market experience), we guarantee not only the best price, but above all quality and local service.",
-    about_story_p3: "We are not just sellers. We are your industrial partners.",
+    about_meta_title: "Notre Maison | JUYI CHR",
+    about_h1: "Une Vision Française, Une Exécution Chinoise.",
+    about_tagline: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
+    about_story_title: "Notre Histoire",
+    about_story_p1: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
+    about_story_p2: "Notre stratégie est dirigée par une équipe de direction française chevronnée, apportant plus de 40 ans d'expertise cumulée dans les arts de la table et l'équipement hôtelier professionnel. Cette double culture nous permet de comprendre parfaitement vos exigences (Design, Normes, Finitions) et de les traduire techniquement auprès de nos usines partenaires.",
+    about_story_p3: "Nous ne vendons pas simplement des produits ; nous sécurisons et simplifions votre chaîne d'approvisionnement globale.",
     about_section_production_title: "Production & Logistics",
     about_adv1_title: "Supply Chain Optimization",
     about_adv1_desc: "Multi-factory consolidation into one container and 30 days free storage in Shanghai.",
@@ -323,45 +323,41 @@ export const translations = {
 
     services_cols: [
       {
-        headline: "Supply Chain Optimization",
+        headline: "Logistique & Consolidation",
         items: [
           {
             title: "Smart Consolidation",
-            desc: "We group your orders from multiple factories (Tableware, Kitchen, Buffet) into a single container. One invoice, one customs clearance."
+            desc: "Nous regroupons vos commandes de plusieurs usines (Vaisselle, Cuisine, Buffet) dans un seul conteneur. Une seule facture, un seul dédouanement."
           },
           {
-            title: "Free Storage",
-            desc: "Enjoy 30 days of free storage in our Shanghai warehouse to synchronize your shipments."
+            title: "Stockage Gratuit",
+            desc: "Profitez de 30 jours de stockage gratuit dans notre entrepôt de Shanghai pour synchroniser vos expéditions."
           }
         ]
       },
       {
-        headline: "Quality Control & Customization",
+        headline: "Qualité & Image de Marque",
         items: [
           {
-            title: "Quality Control (QC)",
-            desc: "Systematic physical inspection before shipment (AQL Level II standard). Zero bad surprises upon arrival."
+            title: "Contrôle Qualité (QC)",
+            desc: "Inspection physique systématique avant expédition (Standard AQL Niveau II). Zéro mauvaise surprise à l'arrivée."
           },
           {
             title: "Private Label (OEM)",
-            desc: "Create your own brand. Laser marking, custom packaging and bespoke mould development."
+            desc: "Créez votre propre marque. Marquage laser, emballages personnalisés et développement de moules sur mesure."
           }
         ]
       },
       {
-        headline: "Sales Accelerator",
+        headline: "Support Commercial",
         items: [
           {
-            title: "Digital Marketing Pack",
-            desc: "We provide HD photos and product sheets for your website. Save time on publishing."
+            title: "Pack Marketing Digital",
+            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en vente."
           },
           {
-            title: "Concierge Service",
-            desc: "Looking for a hard-to-find product? Send a photo, our local team sources it within 48h."
-          },
-          {
-            title: "Sample Hub",
-            desc: "Receive samples from 5 factories in a single express parcel."
+            title: "Service Conciergerie & Échantillons",
+            desc: "Sourcing sur mesure en 48h sur simple photo, et centralisation de vos échantillons en un seul envoi."
           }
         ]
       }
@@ -531,13 +527,13 @@ export const translations = {
         position: "center"
       }
     ],
-    about_meta_title: "Quiénes Somos | JUYI CHR",
-    about_h1: "Excelencia en Equipos",
-    about_tagline: "El puente directo entre la industria de vanguardia y su panadería.",
-    about_story_title: "Nuestra Historia",
-    about_story_p1: "JUYI CHR Supply Chain Management nació con una ambición simple: eliminar intermediarios innecesarios entre fabricantes de equipos de panadería de alta calidad y artesanos franceses.",
-    about_story_p2: "Con nuestra base operativa en el corazón de las zonas de producción en China y nuestro equipo técnico en Francia (con más de 40 años de experiencia acumulada en el mercado CHR), garantizamos no solo el mejor precio, sino sobre todo la calidad y el servicio de proximidad.",
-    about_story_p3: "No somos simples vendedores. Somos sus socios industriales.",
+    about_meta_title: "Notre Maison | JUYI CHR",
+    about_h1: "Une Vision Française, Une Exécution Chinoise.",
+    about_tagline: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
+    about_story_title: "Notre Histoire",
+    about_story_p1: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
+    about_story_p2: "Notre stratégie est dirigée par une équipe de direction française chevronnée, apportant plus de 40 ans d'expertise cumulée dans les arts de la table et l'équipement hôtelier professionnel. Cette double culture nous permet de comprendre parfaitement vos exigences (Design, Normes, Finitions) et de les traduire techniquement auprès de nos usines partenaires.",
+    about_story_p3: "Nous ne vendons pas simplement des produits ; nous sécurisons et simplifions votre chaîne d'approvisionnement globale.",
     about_section_production_title: "Producción y Logística",
     about_adv1_title: "Optimización de la Cadena de Suministro",
     about_adv1_desc: "Consolidación multi-fábrica en un solo contenedor y 30 días de almacenamiento gratuito en Shanghai.",
@@ -548,45 +544,41 @@ export const translations = {
 
     services_cols: [
       {
-        headline: "Optimización de la Cadena de Suministro",
+        headline: "Logistique & Consolidation",
         items: [
           {
-            title: "Consolidación Inteligente",
-            desc: "Agrupamos sus pedidos de varias fábricas (Vajilla, Cocina, Buffet) en un solo contenedor. Una sola factura, un solo despacho aduanero."
+            title: "Smart Consolidation",
+            desc: "Nous regroupons vos commandes de plusieurs usines (Vaisselle, Cuisine, Buffet) dans un seul conteneur. Une seule facture, un seul dédouanement."
           },
           {
-            title: "Almacenamiento Gratuito",
-            desc: "Disfrute de 30 días de almacenamiento gratuito en nuestro almacén de Shanghai para sincronizar sus envíos."
+            title: "Stockage Gratuit",
+            desc: "Profitez de 30 jours de stockage gratuit dans notre entrepôt de Shanghai pour synchroniser vos expéditions."
           }
         ]
       },
       {
-        headline: "Control de Calidad y Personalización",
+        headline: "Qualité & Image de Marque",
         items: [
           {
-            title: "Control de Calidad (QC)",
-            desc: "Inspección física sistemática antes del envío (Estándar AQL Nivel II). Cero sorpresas a la llegada."
+            title: "Contrôle Qualité (QC)",
+            desc: "Inspection physique systématique avant expédition (Standard AQL Niveau II). Zéro mauvaise surprise à l'arrivée."
           },
           {
-            title: "Marca Propia (OEM)",
-            desc: "Cree su propia marca. Marcado láser, embalajes personalizados y desarrollo de moldes a medida."
+            title: "Private Label (OEM)",
+            desc: "Créez votre propre marque. Marquage laser, emballages personnalisés et développement de moules sur mesure."
           }
         ]
       },
       {
-        headline: "Acelerador de Ventas",
+        headline: "Support Commercial",
         items: [
           {
-            title: "Pack de Marketing Digital",
-            desc: "Proporcionamos fotos HD y fichas de producto para su web. Ahorre tiempo en la publicación."
+            title: "Pack Marketing Digital",
+            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en vente."
           },
           {
-            title: "Servicio de Conserjería",
-            desc: "¿Busca un producto difícil de encontrar? Envíe una foto, nuestro equipo local lo encuentra en 48h."
-          },
-          {
-            title: "Hub de Muestras",
-            desc: "Reciba muestras de 5 fábricas en un solo paquete express."
+            title: "Service Conciergerie & Échantillons",
+            desc: "Sourcing sur mesure en 48h sur simple photo, et centralisation de vos échantillons en un seul envoi."
           }
         ]
       }

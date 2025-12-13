@@ -8,8 +8,7 @@ export default function About() {
   const t = translations[locale] || translations.fr;
   const cols = (t.services_cols || translations.fr.services_cols || []).map((c, i) => ({
     ...c,
-    // 优先使用实拍照片，失败时回退到矢量图标
-    photo: i === 0 ? '/services/real/supply-chain.jpg' : i === 1 ? '/services/real/qc.jpg' : '/services/real/sales.jpg',
+    photo: i === 0 ? '/products/equip-01.jpg' : i === 1 ? '/services/real/qc.jpg' : '/services/rocket.svg',
     icon: i === 0 ? '/services/factory.svg' : i === 1 ? '/services/qc.svg' : '/services/rocket.svg'
   }))
   return (
@@ -59,7 +58,7 @@ export default function About() {
             
             <div className="mt-10 lg:mt-0 relative h-80 sm:h-96 md:h-[420px] lg:h-[520px] bg-white border-4 border-[#EAD8C0] rounded-xl shadow-xl overflow-hidden">
                <img 
-                 src="/equip-01.jpg"
+                 src="/products/equip-01.jpg"
                  alt="Production & Équipements"
                  className="absolute inset-0 w-full h-full object-cover"
                  onError={(e) => { e.currentTarget.src = '/hero-bakery-pro.jpg'; }}
@@ -81,7 +80,7 @@ export default function About() {
                 <img 
                   src={col.photo}
                   alt={col.headline}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className={`${idx===2 ? 'absolute inset-0 w-16 h-16 object-contain mx-auto my-12' : 'absolute inset-0 w-full h-full object-cover'}`}
                   onError={(e) => { e.currentTarget.src = col.icon; e.currentTarget.className = 'absolute inset-0 w-12 h-12 object-contain mx-auto my-14'; }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>

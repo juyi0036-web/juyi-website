@@ -101,7 +101,7 @@ export const translations = {
 
     services_cols: [
       {
-        headline: "Optimisation de la Supply Chain",
+        headline: "Logistique & Consolidation",
         items: [
           {
             title: "Smart Consolidation",
@@ -114,7 +114,7 @@ export const translations = {
         ]
       },
       {
-        headline: "Contrôle & Personnalisation",
+        headline: "Qualité & Image de Marque",
         items: [
           {
             title: "Contrôle Qualité (QC)",
@@ -127,19 +127,15 @@ export const translations = {
         ]
       },
       {
-        headline: "Accélérateur de Vente",
+        headline: "Support Commercial",
         items: [
           {
             title: "Pack Marketing Digital",
-            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en ligne."
+            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en vente."
           },
           {
-            title: "Service Conciergerie",
-            desc: "Vous cherchez un produit introuvable ? Envoyez une photo, notre équipe locale le source en 48h."
-          },
-          {
-            title: "Hub Échantillons",
-            desc: "Recevez les échantillons de 5 usines en un seul colis express."
+            title: "Service Conciergerie & Échantillons",
+            desc: "Sourcing sur mesure en 48h sur simple photo, et centralisation de vos échantillons en un seul envoi."
           }
         ]
       }

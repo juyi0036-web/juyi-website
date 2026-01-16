@@ -11,7 +11,8 @@ export const categories = [
       { name: { fr: "Diviseuses", en: "Dividers", es: "Divisoras" }, slug: "diviseuses" },
       { name: { fr: "Laminoirs", en: "Sheeters", es: "Laminadoras" }, slug: "laminoirs" },
       { name: { fr: "Trancheuses à Pain", en: "Bread Slicers", es: "Cortadoras de pan" }, slug: "trancheuses" },
-      { name: { fr: "Batteurs Mélangeurs", en: "Planetary Mixers", es: "Batidoras mezcladoras" }, slug: "batteurs" }
+      { name: { fr: "Batteurs Mélangeurs", en: "Planetary Mixers", es: "Batidoras mezcladoras" }, slug: "batteurs" },
+      { name: { fr: "Chaussures & Vêtements", en: "Shoes & Clothing", es: "Zapatos y Ropa" }, slug: "chaussures-vetements" }
     ]
   },
   {

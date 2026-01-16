@@ -1001,35 +1001,9 @@ export const products = [
     }
   },
   {
-    id: "vetement-01-pantalon",
-    categorySlug: "boulangerie-patisserie",
-    subCategorySlug: null,
-    name: {
-      fr: "Pantalon de Cuisine",
-      en: "Kitchen Trousers",
-      es: "Pantalones de cocina"
-    },
-    description: {
-      fr: "Pantalon de cuisine ample pour professionnels. Confortable et résistant.",
-      en: "Loose fitting kitchen trousers for professionals. Comfortable and durable.",
-      es: "Pantalones de cocina amplios para profesionales. Cómodos y resistentes."
-    },
-    image: "/products/vetement-01.jpg",
-    specs: {
-      "Tissu": "65% Coton, 35% Polyester",
-      "Longueur": "110 cm",
-      "Largeur bas": "24 cm",
-      "Coloris": "Multi couleurs",
-      "Genre": "Homme",
-      "Type de produit": "Pantalon",
-      "Coupe bas": "Ample",
-      "Idéal pour": "Cuisine, Boucherie, Charcuterie, Traiteur, Boulangerie, Pâtisserie, Fromagerie"
-    }
-  },
-  {
     id: "vetement-02-veste",
     categorySlug: "boulangerie-patisserie",
-    subCategorySlug: null,
+    subCategorySlug: "chaussures-vetements",
     name: {
       fr: "Veste de Cuisine",
       en: "Chef Jacket",
@@ -1038,9 +1012,12 @@ export const products = [
     description: {
       fr: "Veste de cuisine à manches longues pour professionnels. Style classique.",
       en: "Long sleeve chef jacket for professionals. Classic style.",
-      es: "Chaqueta de cocina de manga larga para profesionales. Estilo clásico."
+      es: "Chaqueta de cocina de manga larga para professionnels. Estilo clásico."
     },
-    image: "/products/vetement-02.jpg",
+    images: [
+      "/products/vetement-01.jpg",
+      "/products/vetement-02.jpg"
+    ],
     specs: {
       "Tissu": "65% Polyester, 35% Coton",
       "Longueur": "76 cm",
@@ -1055,7 +1032,7 @@ export const products = [
   {
     id: "chaussure-travail-boulangerie",
     categorySlug: "boulangerie-patisserie",
-    subCategorySlug: null,
+    subCategorySlug: "chaussures-vetements",
     name: {
       fr: "Chaussures de travail boulangerie",
       en: "Bakery work shoes",

@@ -1051,5 +1051,33 @@ export const products = [
       "Style": "Classique",
       "Idéal pour": "Cuisine"
     }
+  },
+  {
+    id: "chaussure-travail-boulangerie",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "vetements",
+    name: {
+      fr: "Chaussures de travail boulangerie",
+      en: "Bakery work shoes",
+      es: "Zapatos de trabajo panadería"
+    },
+    description: {
+      fr: "Chaussures de travail antidérapantes pour ateliers de boulangerie et cuisine.",
+      en: "Non-slip work shoes for bakery and kitchen environments.",
+      es: "Zapatos de trabajo antideslizantes para panadería y cocina."
+    },
+    images: [
+      "/products/chassure-01.jpg",
+      "/products/chassure-02.jpg"
+    ],
+    specs: {
+      "Tissu": "Microfibre",
+      "Genre": "Mixte",
+      "Protection": "Embout sécurité acier ; Semelle antidérapante",
+      "Coloris": "Multi couleurs",
+      "Type de produit": "Chaussures",
+      "Idéal pour": "Cuisine ; Boucherie - Charcuterie - Traiteur ; Boulangerie - Pâtisserie ; Fromagerie",
+      "Matières": "Fibres 100% synthétiques"
+    }
   }
 ];

@@ -1003,7 +1003,7 @@ export const products = [
   {
     id: "vetement-01-pantalon",
     categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "vetements",
+    subCategorySlug: null,
     name: {
       fr: "Pantalon de Cuisine",
       en: "Kitchen Trousers",
@@ -1029,7 +1029,7 @@ export const products = [
   {
     id: "vetement-02-veste",
     categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "vetements",
+    subCategorySlug: null,
     name: {
       fr: "Veste de Cuisine",
       en: "Chef Jacket",
@@ -1055,7 +1055,7 @@ export const products = [
   {
     id: "chaussure-travail-boulangerie",
     categorySlug: "boulangerie-patisserie",
-    subCategorySlug: "vetements",
+    subCategorySlug: null,
     name: {
       fr: "Chaussures de travail boulangerie",
       en: "Bakery work shoes",

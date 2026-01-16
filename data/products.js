@@ -999,5 +999,57 @@ export const products = [
       "Vitesse": "60 pcs/h",
       "Consommation d'eau": "2.3 L/pc"
     }
+  },
+  {
+    id: "vetement-01-pantalon",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "vetements",
+    name: {
+      fr: "Pantalon de Cuisine",
+      en: "Kitchen Trousers",
+      es: "Pantalones de cocina"
+    },
+    description: {
+      fr: "Pantalon de cuisine ample pour professionnels. Confortable et résistant.",
+      en: "Loose fitting kitchen trousers for professionals. Comfortable and durable.",
+      es: "Pantalones de cocina amplios para profesionales. Cómodos y resistentes."
+    },
+    image: "/products/vetement-01.jpg",
+    specs: {
+      "Tissu": "65% Coton, 35% Polyester",
+      "Longueur": "110 cm",
+      "Largeur bas": "24 cm",
+      "Coloris": "Multi couleurs",
+      "Genre": "Homme",
+      "Type de produit": "Pantalon",
+      "Coupe bas": "Ample",
+      "Idéal pour": "Cuisine, Boucherie, Charcuterie, Traiteur, Boulangerie, Pâtisserie, Fromagerie"
+    }
+  },
+  {
+    id: "vetement-02-veste",
+    categorySlug: "boulangerie-patisserie",
+    subCategorySlug: "vetements",
+    name: {
+      fr: "Veste de Cuisine",
+      en: "Chef Jacket",
+      es: "Chaqueta de cocina"
+    },
+    description: {
+      fr: "Veste de cuisine à manches longues pour professionnels. Style classique.",
+      en: "Long sleeve chef jacket for professionals. Classic style.",
+      es: "Chaqueta de cocina de manga larga para profesionales. Estilo clásico."
+    },
+    image: "/products/vetement-02.jpg",
+    specs: {
+      "Tissu": "65% Polyester, 35% Coton",
+      "Longueur": "76 cm",
+      "Coloris": "Multi couleurs",
+      "Genre": "Homme",
+      "Type de produit": "Veste",
+      "Manches": "Longues",
+      "Style": "Classique",
+      "Idéal pour": "Cuisine"
+    }
   }
 ];

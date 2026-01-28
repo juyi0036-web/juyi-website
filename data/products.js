@@ -1039,9 +1039,9 @@ export const products = [
       es: "Zapatos de trabajo panadería"
     },
     description: {
-      fr: "Chaussures de travail antidérapantes pour ateliers de boulangerie et cuisine.",
-      en: "Non-slip work shoes for bakery and kitchen environments.",
-      es: "Zapatos de trabajo antideslizantes para panadería y cocina."
+      fr: "Ne risque pas la chute : adhérence certifiée pour sols gras. Structure ergonomique qui élimine la fatigue, pour que tu restes performant tout au long de la journée.",
+      en: "Don't risk falling: certified grip for greasy floors. Ergonomic structure eliminates fatigue, keeping you performing at your best all day.",
+      es: "No arriesgues caídas: agarre certificado para suelos grasos. Estructura ergonómica que elimina la fatiga para que rindas al máximo todo el día."
     },
     images: [
       "/products/chassure-01.jpg",

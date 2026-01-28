@@ -1,47 +1,72 @@
 export const translations = {
-  // === 法语 (默认) ===
+  // === FRANÇAIS (FR) ===
   fr: {
-    // 导航栏
+    // Navbar
     nav_home: "Accueil",
     nav_products: "Nos Collections",
     nav_about: "Notre Maison",
-    nav_services: "Solutions & Services",
-    nav_contact: "Contactez-nous",
+    nav_services: "Services",
+    nav_contact: "Contact",
     nav_view_catalog: "Voir tout le catalogue",
+    nav_search_placeholder: "Rechercher...",
     
-    // 首页 Hero
-    hero_tag: "Depuis 2010 • Expert CHR Global",
-    hero_title_1: "Votre Partenaire Industriel",
-    hero_h1: "L'Alliance du Savoir-Faire Chinois et de l'Excellence Européenne",
-    hero_subtitle: "Votre bureau d'achat stratégique à Shanghai. Une sélection rigoureuse par des experts du métier.",
-    hero_btn_catalog: "Découvrir nos Collections",
-    hero_bg_image: "/hero-bakery-pro.jpg",
-    hero_btn_contact: "Contact Export",
-    home_inspirer: "Inspirer",
-    home_meta_description: "Fournisseur d'équipement professionnel CHR. Direct Usine Chine-France.",
-    
-    // 信任条
-    trust_ce: "Normes CE & UE",
-    trust_factory: "Prix Direct Usine",
-    trust_response: "Réponse sous 24h",
-    trust_export: "Export Sécurisé",
-    
-    // 首页板块
-    section_univers: "Nos Univers CHR",
-    section_univers_sub: "Tout pour équiper votre établissement, de A à Z.",
-    
-    // 卡片标题
-    card_cooking: "Cuisine Pro",
-    card_cooking_sub: "Fours, Cuisson, Snack... Performance Chef.",
-    card_bakery: "Boulangerie",
-    card_bakery_sub: "Pétrins, Façonneuses... Tradition & Technologie.",
-    card_cold: "Inox & Froid",
-    card_cold_sub: "Armoires, Tables, Plonges... Hygiène et durabilité."
-    ,
-    product_count_label: "référence(s) disponible(s)",
-    ask_price: "Demander un prix",
-    no_products: "Aucun produit pour le moment",
-    catalog_updating: "Catalogue en cours de mise à jour.",
+    // Hero
+    hero_badge: "Prestataire de Services Supply Chain",
+    hero_title_1: "Direct Usine.",
+    hero_title_2: "Zéro Marge Produit.",
+    hero_desc: "Nous ne sommes pas un intermédiaire. Nous sommes votre partenaire transparent en Chine pour les équipements CHR & Boulangerie premium.",
+    hero_btn_catalog: "Voir le Catalogue",
+    hero_btn_sourcing: "Démarrer le Sourcing",
+
+    // Transparency Model
+    trans_title: "Notre Modèle de Transparence",
+    trans_desc: "Nous bousculons le modèle commercial traditionnel. Pas de marges cachées, juste un service pur.",
+    trans_trad_title: "Négociant Traditionnel",
+    trans_trad_1: "Marge Produit Élevée (30-50%)",
+    trans_trad_2: "Information Usine Cachée",
+    trans_trad_3: "Contrôle Qualité Limité",
+    trans_juyi_badge: "MODÈLE JUYI",
+    trans_juyi_title: "Partenaire Supply Chain",
+    trans_juyi_1: "Zéro Marge sur les Produits",
+    trans_juyi_2: "Prix Direct Usine (Transparent)",
+    trans_juyi_3: "Service de Sourcing & QC Pro",
+    trans_juyi_4: "Frais de Service Unique (Clair)",
+
+    // Quality & Compliance
+    qual_title: "Qualité & Conformité",
+    qual_subtitle: "Respect rigoureux des normes européennes.",
+    qual_btn_certs: "Demander les Certificats",
+    qual_ce_title: "Certifié CE",
+    qual_ce_desc: "Chaque équipement subit des tests stricts pour répondre aux exigences européennes de sécurité, santé et environnement.",
+    qual_haccp_title: "Conception HACCP",
+    qual_haccp_desc: "Équipements conçus pour l'hygiène. Surfaces faciles à nettoyer, matériaux alimentaires et conformité aux normes d'analyse des risques.",
+    qual_eco_title: "Éco-Conception & RoHS",
+    qual_eco_desc: "Priorité à l'efficacité énergétique et à la restriction des substances dangereuses. Des solutions durables pour la cuisine moderne.",
+
+    // Trends 2026
+    trend_badge: "Veille Innovation",
+    trend_title: "Tendances Futures 2026",
+    trend_1_title: "Artisanat Mécanisé",
+    trend_1_desc: "Le pont entre qualité artisanale et efficacité industrielle. Pétrins à spirale et diviseuses qui respectent la pâte.",
+    trend_1_link: "Explorer les Pétrins",
+    trend_2_title: "Efficacité Énergétique",
+    trend_2_desc: "La hausse des coûts de l'énergie exige des équipements plus intelligents. Fours et systèmes de refroidissement nouvelle génération.",
+    trend_2_link: "Voir Fours Éco",
+    trend_3_title: "Cuisine Intelligente",
+    trend_3_desc: "Intégration IoT et flux de travail programmables. Panneaux de contrôle numériques assurant la cohérence entre vos franchises.",
+    trend_3_link: "Solutions Smart",
+
+    // CTA
+    cta_title: "Prêt à Optimiser Votre Supply Chain ?",
+    cta_desc: "Arrêtez de payer les marges des intermédiaires. Commencez à sourcer directement auprès d'usines certifiées en toute transparence.",
+    cta_btn: "Devenir Partenaire",
+
+    // Footer
+    footer_rights: "Tous droits réservés.",
+    footer_privacy: "Politique de Confidentialité",
+    footer_terms: "Conditions d'Utilisation",
+
+    // Slides (Data)
     home_slides: [
       {
         title: "L'Alliance du Savoir-Faire Chinois et de l'Excellence Européenne",
@@ -83,198 +108,88 @@ export const translations = {
         fit: "cover",
         position: "center"
       }
-    ],
-    about_meta_title: "Notre Maison | JUYI CHR",
-    about_h1: "Une Vision Française, Une Exécution Chinoise.",
-    about_tagline: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
-    about_story_title: "Notre Histoire",
-    about_story_p1: "Basée à Shanghai, Juyi CHR est bien plus qu'une société de négoce. Nous sommes votre pont stratégique vers l'industrie chinoise.",
-    about_story_p2: "Notre stratégie est dirigée par une équipe de direction française chevronnée, apportant plus de 40 ans d'expertise cumulée dans les arts de la table et l'équipement hôtelier professionnel. Cette double culture nous permet de comprendre parfaitement vos exigences (Design, Normes, Finitions) et de les traduire techniquement auprès de nos usines partenaires.",
-    about_story_p3: "Nous ne vendons pas simplement des produits ; nous sécurisons et simplifions votre chaîne d'approvisionnement globale.",
-    about_section_production_title: "Production & Logistique",
-    about_adv1_title: "Optimisation de la Supply Chain",
-    about_adv1_desc: "Consolidation multi-usines en un seul conteneur et 30 jours de stockage gratuit à Shanghai.",
-    about_adv2_title: "Contrôle & Personnalisation",
-    about_adv2_desc: "QC AQL II avant expédition. Private Label, marquage laser, emballages et moules sur mesure.",
-    about_adv3_title: "Accélérateur de Vente",
-    about_adv3_desc: "Photos HD et fiches produits, conciergerie sourcing 48h et hub d'échantillons.",
-
-    services_cols: [
-      {
-        headline: "Logistique & Consolidation",
-        items: [
-          {
-            title: "Smart Consolidation",
-            desc: "Nous regroupons vos commandes de plusieurs usines (Vaisselle, Cuisine, Buffet) dans un seul conteneur. Une seule facture, un seul dédouanement."
-          },
-          {
-            title: "Stockage Gratuit",
-            desc: "Profitez de 30 jours de stockage gratuit dans notre entrepôt de Shanghai pour synchroniser vos expéditions."
-          }
-        ]
-      },
-      {
-        headline: "Qualité & Image de Marque",
-        items: [
-          {
-            title: "Contrôle Qualité (QC)",
-            desc: "Inspection physique systématique avant expédition (Standard AQL Niveau II). Zéro mauvaise surprise à l'arrivée."
-          },
-          {
-            title: "Private Label (OEM)",
-            desc: "Créez votre propre marque. Marquage laser, emballages personnalisés et développement de moules sur mesure."
-          }
-        ]
-      },
-      {
-        headline: "Support Commercial",
-        items: [
-          {
-            title: "Pack Marketing Digital",
-            desc: "Nous fournissons les photos HD et fiches produits pour votre site web. Gagnez du temps sur la mise en vente."
-          },
-          {
-            title: "Service Conciergerie & Échantillons",
-            desc: "Sourcing sur mesure en 48h sur simple photo, et centralisation de vos échantillons en un seul envoi."
-          }
-        ]
-      }
-    ],
-
-    contact_meta_title: "Contactez-nous | JUYI CHR",
-    contact_hero_h1: "Parlons de votre projet",
-    contact_hero_p: "Une question technique ? Un devis export ? Notre équipe franco-chinoise est là pour vous.",
-    contact_coords_title: "Nos Coordonnées",
-    contact_whatsapp_title: "WhatsApp Service Export",
-    contact_whatsapp_note: "Sophie (Réponse sous 1h)",
-    contact_email_title: "Email Professionnel",
-    contact_email_note: "Pour devis et catalogues",
-    contact_email_cta: "Utiliser le formulaire de contact",
-    contact_address_title: "Siège & Usine",
-    contact_address_city: "Shanghai, China",
-    contact_address_note: "Visite d'usine sur rendez-vous",
-    contact_form_title: "Envoyer un Message",
-    contact_form_name_label: "Nom / Entreprise",
-    contact_form_name_placeholder: "Ex: Boulangerie Le Bon Pain",
-    contact_form_email_label: "Email",
-    contact_form_email_placeholder: "contact@example.com",
-    contact_form_message_label: "Votre Demande",
-    contact_form_message_placeholder: "Bonjour Sophie, je voudrais des informations sur...",
-    contact_form_submit: "Envoyer",
-    contact_form_alert: "Merci ! Pour l'instant, merci de nous contacter via WhatsApp pour une réponse immédiate.",
-    spec_labels: {
-      "Modèle": "Modèle",
-      "Température": "Température",
-      "Compresseur": "Compresseur",
-      "Capacité": "Capacité",
-      "Plateaux": "Plateaux",
-      "Dimension Interne": "Dimension Interne",
-      "Voltage": "Voltage",
-      "Puissance": "Puissance",
-      "Dimensions (Externe)": "Dimensions (Externe)",
-      "Poids": "Poids",
-      "Sonde Alimentaire": "Sonde Alimentaire",
-      "Contrôleur": "Contrôleur",
-      "Volume": "Volume",
-      "Gaz": "Gaz",
-      "Inox": "Inox",
-      "Tube": "Tube",
-      "Épaisseur": "Épaisseur",
-      "Rails latéraux": "Rails latéraux",
-      "Roues": "Roues",
-      "Poids Net": "Poids Net",
-      "Poids Brut": "Poids Brut",
-      "Emballage": "Emballage",
-      "Dimensions": "Dimensions",
-      "Matériau": "Matériau",
-      "Coutures": "Coutures",
-      "Logo": "Logo",
-      "Lavable": "Lavable",
-      "Température de lavage": "Température de lavage",
-      "Compatibilité": "Compatibilité",
-      "Matériau Interne": "Matériau Interne",
-      "Matériau Externe": "Matériau Externe",
-      "Isolation": "Isolation",
-      "Dégivrage": "Dégivrage",
-      "Réfrigérant": "Réfrigérant",
-      "Refroidissement": "Refroidissement",
-      "Bacs": "Bacs",
-      "Dosseret": "Dosseret",
-      "Évacuation": "Évacuation",
-      "Culot": "Culot",
-      "Transparence": "Transparence",
-      "Modèle": "Modèle"
-      ,
-      "Poids à vide": "Poids à vide",
-      "Auges": "Auges",
-      "Nombre d'augues totales": "Nombre d'augues totales",
-      "Longueur/largeur des auges": "Longueur/largeur des auges",
-      "Capacité pâtons 350g": "Capacité pâtons 350g",
-      "Capacité pâtons 550g": "Capacité pâtons 550g",
-      "Type d'alimentation": "Type d'alimentation",
-      "Options": "Options"
-      ,
-      "Forme de glace": "Forme de glace",
-      "Production journalière": "Production journalière",
-      "Stock de glace": "Stock de glace"
-      ,
-      "Puissance (lavage)": "Puissance (lavage)",
-      "Puissance (rinçage)": "Puissance (rinçage)",
-      "Température de rinçage": "Température de rinçage",
-      "Vitesse": "Vitesse",
-      "Consommation d'eau": "Consommation d'eau"
-    }
+    ]
   },
 
-  // === 英语 ===
+  // === ENGLISH (EN) ===
   en: {
+    // Navbar
     nav_home: "Home",
     nav_products: "Our Collections",
-    nav_about: "Our Maison",
-    nav_services: "Solutions & Services",
-    nav_contact: "Contact Us",
+    nav_about: "About Us",
+    nav_services: "Services",
+    nav_contact: "Contact",
     nav_view_catalog: "View Full Catalog",
+    nav_search_placeholder: "Search...",
 
-    hero_tag: "Since 2010 • Global CHR Expert",
-    hero_title_1: "Your Industrial Partner",
-    hero_h1: "The Alliance of Chinese Know-How and European Excellence",
-    hero_subtitle: "Your strategic buying office in Shanghai. A rigorous selection by industry experts.",
-    hero_bg_image: "/hero-bakery-pro.jpg",
+    // Hero
+    hero_badge: "Supply Chain Service Provider",
+    hero_title_1: "Direct from Factory.",
+    hero_title_2: "Zero Markup.",
+    hero_desc: "We are not a middleman. We are your transparent partner in China for premium CHR & Baking equipment.",
     hero_btn_catalog: "View Catalog",
-    hero_btn_contact: "Export Contact",
-    home_inspirer: "Inspire",
-    home_meta_description: "Professional CHR equipment supplier. Direct Factory China-France.",
+    hero_btn_sourcing: "Start Sourcing",
 
-    trust_ce: "CE & EU Standards",
-    trust_factory: "Direct Factory Price",
-    trust_response: "24h Response",
-    trust_export: "Secure Export",
+    // Transparency Model
+    trans_title: "Our Transparency Model",
+    trans_desc: "We disrupt the traditional trading model. No hidden margins, just pure service.",
+    trans_trad_title: "Traditional Trader",
+    trans_trad_1: "High Product Markup (30-50%)",
+    trans_trad_2: "Hidden Factory Information",
+    trans_trad_3: "Limited Quality Control",
+    trans_juyi_badge: "JUYI MODEL",
+    trans_juyi_title: "Supply Chain Partner",
+    trans_juyi_1: "Zero Markup on Products",
+    trans_juyi_2: "Factory Direct Price (Transparent)",
+    trans_juyi_3: "Professional Sourcing & QC Service",
+    trans_juyi_4: "One Service Fee (Clear & Simple)",
 
-    section_univers: "Our CHR Universes",
-    section_univers_sub: "Everything to equip your facility, from A to Z.",
+    // Quality & Compliance
+    qual_title: "Quality & Compliance",
+    qual_subtitle: "Rigorous adherence to EU standards.",
+    qual_btn_certs: "Request Certificates",
+    qual_ce_title: "CE Certified",
+    qual_ce_desc: "Every piece of equipment undergoes strict testing to meet European safety, health, and environmental protection requirements.",
+    qual_haccp_title: "HACCP Design",
+    qual_haccp_desc: "Equipment designed for hygiene. Easy to clean surfaces, food-grade materials, and compliance with hazard analysis standards.",
+    qual_eco_title: "Eco-Design & RoHS",
+    qual_eco_desc: "Focus on energy efficiency and restriction of hazardous substances. Sustainable solutions for the modern kitchen.",
 
-    card_cooking: "Pro Kitchen",
-    card_cooking_sub: "Ovens, Cooking, Snack... Chef Performance.",
-    card_bakery: "Bakery",
-    card_bakery_sub: "Mixers, Moulders... Tradition & Technology.",
-    card_cold: "Stainless & Cold",
-    card_cold_sub: "Cabinets, Tables, Sinks... Hygiene & Durability."
-    ,
-    product_count_label: "item(s) available",
-    ask_price: "Request a Price",
-    no_products: "No products at the moment",
-    catalog_updating: "Catalog currently being updated.",
+    // Trends 2026
+    trend_badge: "Innovation Watch",
+    trend_title: "Future Trends 2026",
+    trend_1_title: "Mechanized Artisan",
+    trend_1_desc: "Bridging the gap between handmade quality and industrial efficiency. Spiral mixers and dividers that respect the dough.",
+    trend_1_link: "Explore Mixers",
+    trend_2_title: "Energy Efficiency",
+    trend_2_desc: "Rising energy costs demand smarter equipment. Next-gen ovens and cooling systems with superior insulation and recovery.",
+    trend_2_link: "View Eco Ovens",
+    trend_3_title: "Smart Kitchen",
+    trend_3_desc: "IoT integration and programmable workflows. Digital control panels that ensure consistency across franchise locations.",
+    trend_3_link: "Smart Solutions",
+
+    // CTA
+    cta_title: "Ready to Optimize Your Supply Chain?",
+    cta_desc: "Stop paying middleman markups. Start sourcing directly from certified factories with full transparency.",
+    cta_btn: "Partner with Us",
+
+    // Footer
+    footer_rights: "All rights reserved.",
+    footer_privacy: "Privacy Policy",
+    footer_terms: "Terms of Service",
+
+    // Slides (Data)
     home_slides: [
       {
-        title: "Your Industrial Partner",
-        subtitle: "Your strategic buying office in Shanghai. A rigorous selection by industry experts.",
+        title: "Alliance of Chinese Know-How & European Excellence",
+        subtitle: "Your strategic purchasing office in Shanghai. Rigorous selection by industry experts.",
         link: "/about",
         image: "/hero-01.jpg",
         fit: "cover",
         position: "center"
       },
       {
-        title: "The Art of Bakery",
+        title: "The Art of Baking",
         subtitle: "Artisanal tradition meets industrial precision.",
         link: "/products/boulangerie-patisserie",
         image: "/hero-bakery-20251204.jpg",
@@ -283,7 +198,7 @@ export const translations = {
       },
       {
         title: "Ovens & Hot Line",
-        subtitle: "Commercial ovens, grills and fryers for pro kitchens.",
+        subtitle: "Ovens, grills, and fryers — professional hot equipment.",
         link: "/products/chaud",
         image: "/hero-hotline-20251204.jpg",
         fit: "cover",
@@ -291,205 +206,95 @@ export const translations = {
       },
       {
         title: "Space & Hygiene",
-        subtitle: "The elegance of stainless steel. Tables, sinks and trolleys.",
+        subtitle: "The elegance of stainless steel. Tables, sinks, and trolleys.",
         link: "/products/inox-mobilier",
         image: "/hero-stainless-20251204.jpg",
         fit: "cover",
         position: "center"
       },
       {
-        title: "Cold & Ice",
-        subtitle: "Ice makers and high-performance refrigerated cabinets.",
+        title: "Refrigeration & Ice",
+        subtitle: "Ice machines and high-performance refrigerated cabinets.",
         link: "/products/froid",
         image: "/hero-cold-20251204.jpg",
         fit: "cover",
         position: "center"
       }
-    ],
-    about_meta_title: "About Us | JUYI CHR",
-    about_h1: "Excellence in Equipment",
-    about_tagline: "The direct bridge between cutting-edge industry and your bakery.",
-    about_story_title: "Our Story",
-    about_story_p1: "JUYI CHR Supply Chain Management was born from a simple ambition: remove unnecessary intermediaries between high-quality bakery equipment manufacturers and French artisans.",
-    about_story_p2: "With our operational base at the heart of production zones in China and our technical team based in France (with over 40 years of cumulative CHR market experience), we guarantee not only the best price, but above all quality and local service.",
-    about_story_p3: "We are not just sellers. We are your industrial partners.",
-    about_section_production_title: "Production & Logistics",
-    about_adv1_title: "Supply Chain Optimization",
-    about_adv1_desc: "Multi-factory consolidation into one container and 30 days free storage in Shanghai.",
-    about_adv2_title: "Quality Control & Customization",
-    about_adv2_desc: "AQL II QC before shipment. Private Label, laser marking, custom packaging and bespoke moulds.",
-    about_adv3_title: "Sales Accelerator",
-    about_adv3_desc: "HD photos and product sheets, 48h concierge sourcing and sample hub.",
-
-    services_cols: [
-      {
-        headline: "Logistics & Consolidation",
-        items: [
-          {
-            title: "Smart Consolidation",
-            desc: "We group your orders from multiple factories (Tableware, Kitchen, Buffet) into a single container. One invoice, one customs clearance."
-          },
-          {
-            title: "Free Storage",
-            desc: "Enjoy 30 days of free storage in our Shanghai warehouse to synchronize your shipments."
-          }
-        ]
-      },
-      {
-        headline: "Quality & Brand Image",
-        items: [
-          {
-            title: "Quality Control (QC)",
-            desc: "Systematic physical inspection before shipment (AQL Level II). No surprises upon arrival."
-          },
-          {
-            title: "Private Label (OEM)",
-            desc: "Create your own brand. Laser marking, custom packaging and bespoke mould development."
-          }
-        ]
-      },
-      {
-        headline: "Sales Support",
-        items: [
-          {
-            title: "Digital Marketing Pack",
-            desc: "We provide HD photos and product sheets for your website. Save time on listing."
-          },
-          {
-            title: "Concierge Service & Samples",
-            desc: "Tailor-made sourcing within 48h from a simple photo, and centralize your samples into a single shipment."
-          }
-        ]
-      }
-    ],
-
-    contact_meta_title: "Contact Us | JUYI CHR",
-    contact_hero_h1: "Let’s Talk About Your Project",
-    contact_hero_p: "Technical question? Export quote? Our Franco-Chinese team is here for you.",
-    contact_coords_title: "Our Contact Details",
-    contact_whatsapp_title: "WhatsApp Export Service",
-    contact_whatsapp_note: "Sophie (Replies within 1h)",
-    contact_email_title: "Professional Email",
-    contact_email_note: "For quotes and catalogs",
-    contact_email_cta: "Use the contact form",
-    contact_address_title: "Head Office & Factory",
-    contact_address_city: "Shanghai, China",
-    contact_address_note: "Factory visits by appointment",
-    contact_form_title: "Send a Message",
-    contact_form_name_label: "Name / Company",
-    contact_form_name_placeholder: "Ex: Le Bon Pain Bakery",
-    contact_form_email_label: "Email",
-    contact_form_email_placeholder: "contact@example.com",
-    contact_form_message_label: "Your Request",
-    contact_form_message_placeholder: "Hello Sophie, I’d like information about...",
-    contact_form_submit: "Send",
-    contact_form_alert: "Thanks! For now, please contact us via WhatsApp for an immediate response.",
-    spec_labels: {
-      "Modèle": "Model",
-      "Température": "Temperature",
-      "Compresseur": "Compressor",
-      "Capacité": "Capacity",
-      "Plateaux": "Trays",
-      "Dimension Interne": "Internal Dimension",
-      "Voltage": "Voltage",
-      "Puissance": "Power",
-      "Dimensions (Externe)": "External Dimensions",
-      "Poids": "Weight",
-      "Sonde Alimentaire": "Food Probe",
-      "Contrôleur": "Controller",
-      "Volume": "Volume",
-      "Gaz": "Refrigerant",
-      "Inox": "Stainless Steel",
-      "Tube": "Tube",
-      "Épaisseur": "Thickness",
-      "Rails latéraux": "Side Rails",
-      "Roues": "Wheels",
-      "Poids Net": "Net Weight",
-      "Poids Brut": "Gross Weight",
-      "Emballage": "Package Size",
-      "Dimensions": "Dimensions",
-      "Matériau": "Material",
-      "Coutures": "Seams",
-      "Logo": "Logo",
-      "Lavable": "Washable",
-      "Température de lavage": "Washing Temperature",
-      "Compatibilité": "Compatibility",
-      "Matériau Interne": "Internal Material",
-      "Matériau Externe": "External Material",
-      "Isolation": "Insulation",
-      "Dégivrage": "Defrost Type",
-      "Réfrigérant": "Refrigerant",
-      "Refroidissement": "Cooling",
-      "Bacs": "Basins",
-      "Dosseret": "Backsplash",
-      "Évacuation": "Drain",
-      "Culot": "Cap",
-      "Transparence": "Transparency",
-      "Modèle": "Model"
-      ,
-      "Poids à vide": "Empty Weight",
-      "Auges": "Troughs",
-      "Nombre d'augues totales": "Total Troughs",
-      "Longueur/largeur des auges": "Trough Length/Width",
-      "Capacité pâtons 350g": "Capacity (350g dough)",
-      "Capacité pâtons 550g": "Capacity (550g dough)",
-      "Type d'alimentation": "Power Supply",
-      "Options": "Options"
-      ,
-      "Forme de glace": "Ice shape",
-      "Production journalière": "Daily production",
-      "Stock de glace": "Ice storage"
-      ,
-      "Puissance (lavage)": "Washing power",
-      "Puissance (rinçage)": "Rinsing power",
-      "Température de rinçage": "Rinsing temperature",
-      "Vitesse": "Throughput",
-      "Consommation d'eau": "Water consumption"
-    }
+    ]
   },
 
-  // === 西班牙语 ===
+  // === ESPAÑOL (ES) ===
   es: {
+    // Navbar
     nav_home: "Inicio",
     nav_products: "Nuestras Colecciones",
-    nav_about: "Nuestra Maison",
-    nav_services: "Soluciones y Servicios",
-    nav_contact: "Contáctenos",
+    nav_about: "Nosotros",
+    nav_services: "Servicios",
+    nav_contact: "Contacto",
     nav_view_catalog: "Ver Catálogo Completo",
+    nav_search_placeholder: "Buscar...",
 
-    hero_tag: "Desde 2010 • Experto Global CHR",
-    hero_title_1: "Su Socio Industrial",
-    hero_h1: "La alianza del saber hacer chino y la excelencia europea",
-    hero_subtitle: "Su oficina de compras estratégica en Shanghai. Una selección rigurosa por expertos del sector.",
-    hero_bg_image: "/hero-bakery-pro.jpg",
+    // Hero
+    hero_badge: "Proveedor de Servicios de Cadena de Suministro",
+    hero_title_1: "Directo de Fábrica.",
+    hero_title_2: "Cero Margen en Productos.",
+    hero_desc: "No somos intermediarios. Somos su socio transparente en China para equipos premium de CHR y Panadería.",
     hero_btn_catalog: "Ver Catálogo",
-    hero_btn_contact: "Contacto Exportación",
-    home_inspirer: "Inspirar",
-    home_meta_description: "Proveedor de equipos profesionales CHR. Precio directo Fábrica China-Francia.",
+    hero_btn_sourcing: "Empezar Sourcing",
 
-    trust_ce: "Normas CE y UE",
-    trust_factory: "Precio Directo Fábrica",
-    trust_response: "Respuesta en 24h",
-    trust_export: "Exportación Segura",
+    // Transparency Model
+    trans_title: "Nuestro Modelo de Transparencia",
+    trans_desc: "Rompemos con el modelo comercial tradicional. Sin márgenes ocultos, solo servicio puro.",
+    trans_trad_title: "Comerciante Tradicional",
+    trans_trad_1: "Alto Margen de Producto (30-50%)",
+    trans_trad_2: "Información de Fábrica Oculta",
+    trans_trad_3: "Control de Calidad Limitado",
+    trans_juyi_badge: "MODELO JUYI",
+    trans_juyi_title: "Socio de Cadena de Suministro",
+    trans_juyi_1: "Cero Margen en Productos",
+    trans_juyi_2: "Precio Directo de Fábrica (Transparente)",
+    trans_juyi_3: "Servicio Profesional de Sourcing y QC",
+    trans_juyi_4: "Tarifa de Servicio Única (Clara)",
 
-    section_univers: "Nuestros Universos CHR",
-    section_univers_sub: "Todo para equipar su establecimiento, de la A a la Z.",
+    // Quality & Compliance
+    qual_title: "Calidad y Cumplimiento",
+    qual_subtitle: "Adherencia rigurosa a las normas de la UE.",
+    qual_btn_certs: "Solicitar Certificados",
+    qual_ce_title: "Certificado CE",
+    qual_ce_desc: "Cada equipo se somete a pruebas estrictas para cumplir con los requisitos europeos de seguridad, salud y protección ambiental.",
+    qual_haccp_title: "Diseño HACCP",
+    qual_haccp_desc: "Equipos diseñados para la higiene. Superficies fáciles de limpiar, materiales de grado alimenticio y cumplimiento con normas de análisis de peligros.",
+    qual_eco_title: "Eco-Diseño y RoHS",
+    qual_eco_desc: "Enfoque en la eficiencia energética y restricción de sustancias peligrosas. Soluciones sostenibles para la cocina moderna.",
 
-    card_cooking: "Cocina Pro",
-    card_cooking_sub: "Hornos, Cocción, Snack... Rendimiento Chef.",
-    card_bakery: "Panadería",
-    card_bakery_sub: "Amasadoras, Formadoras... Tradición y Tecnología.",
-    card_cold: "Inox y Frío",
-    card_cold_sub: "Armarios, Mesas, Fregaderos... Higiene y Durabilidad."
-    ,
-    product_count_label: "referencia(s) disponible(s)",
-    ask_price: "Solicitar precio",
-    no_products: "No hay productos por el momento",
-    catalog_updating: "Catálogo en proceso de actualización.",
+    // Trends 2026
+    trend_badge: "Observatorio de Innovación",
+    trend_title: "Tendencias Futuras 2026",
+    trend_1_title: "Artesano Mecanizado",
+    trend_1_desc: "Uniendo la calidad artesanal y la eficiencia industrial. Amasadoras espirales y divisoras que respetan la masa.",
+    trend_1_link: "Explorar Amasadoras",
+    trend_2_title: "Eficiencia Energética",
+    trend_2_desc: "Los crecientes costos de energía exigen equipos más inteligentes. Hornos y sistemas de refrigeración de próxima generación.",
+    trend_2_link: "Ver Hornos Eco",
+    trend_3_title: "Cocina Inteligente",
+    trend_3_desc: "Integración IoT y flujos de trabajo programables. Paneles de control digitales que aseguran consistencia en sus franquicias.",
+    trend_3_link: "Soluciones Smart",
+
+    // CTA
+    cta_title: "¿Listo para Optimizar su Cadena de Suministro?",
+    cta_desc: "Deje de pagar márgenes de intermediarios. Comience a abastecerse directamente de fábricas certificadas con total transparencia.",
+    cta_btn: "Asociarse con Nosotros",
+
+    // Footer
+    footer_rights: "Todos los derechos reservados.",
+    footer_privacy: "Política de Privacidad",
+    footer_terms: "Términos de Servicio",
+
+    // Slides (Data)
     home_slides: [
       {
-        title: "Su Socio Industrial",
-        subtitle: "Su oficina de compras estratégica en Shanghai. Una selección rigurosa por expertos del sector.",
+        title: "Alianza del Saber Hacer Chino y la Excelencia Europea",
+        subtitle: "Su oficina de compras estratégica en Shanghái. Selección rigurosa por expertos de la industria.",
         link: "/about",
         image: "/hero-01.jpg",
         fit: "cover",
@@ -497,15 +302,15 @@ export const translations = {
       },
       {
         title: "El Arte de la Panadería",
-        subtitle: "La tradición artesanal se une a la precisión industrial.",
+        subtitle: "La tradición artesanal se encuentra con la precisión industrial.",
         link: "/products/boulangerie-patisserie",
         image: "/hero-bakery-20251204.jpg",
         fit: "cover",
         position: "center"
       },
       {
-        title: "Hornos & Línea Caliente",
-        subtitle: "Hornos comerciales, parrillas y freidoras.",
+        title: "Hornos y Línea Caliente",
+        subtitle: "Hornos, parrillas y freidoras — equipos calientes profesionales.",
         link: "/products/chaud",
         image: "/hero-hotline-20251204.jpg",
         fit: "cover",
@@ -513,160 +318,20 @@ export const translations = {
       },
       {
         title: "Espacio e Higiene",
-        subtitle: "La elegancia del inox. Mesas, fregaderos y carros.",
+        subtitle: "La elegancia del acero inoxidable. Mesas, fregaderos y carros.",
         link: "/products/inox-mobilier",
         image: "/hero-stainless-20251204.jpg",
         fit: "cover",
         position: "center"
       },
       {
-        title: "Frío y Hielo",
+        title: "Refrigeración y Hielo",
         subtitle: "Máquinas de hielo y armarios refrigerados de alto rendimiento.",
         link: "/products/froid",
         image: "/hero-cold-20251204.jpg",
         fit: "cover",
         position: "center"
       }
-    ],
-    about_meta_title: "Quiénes Somos | JUYI CHR",
-    about_h1: "Excelencia en Equipos",
-    about_tagline: "El puente directo entre la industria de vanguardia y su panadería.",
-    about_story_title: "Nuestra Historia",
-    about_story_p1: "JUYI CHR Supply Chain Management nació con una ambición simple: eliminar intermediarios innecesarios entre fabricantes de equipos de panadería de alta calidad y artesanos franceses.",
-    about_story_p2: "Con nuestra base operativa en el corazón de las zonas de producción en China y nuestro equipo técnico en Francia (con más de 40 años de experiencia acumulada en el mercado CHR), garantizamos no solo el mejor precio, sino sobre todo la calidad y el servicio de proximidad.",
-    about_story_p3: "No somos simples vendedores. Somos sus socios industriales.",
-    about_section_production_title: "Producción y Logística",
-    about_adv1_title: "Optimización de la Cadena de Suministro",
-    about_adv1_desc: "Consolidación multi-fábrica en un solo contenedor y 30 días de almacenamiento gratuito en Shanghai.",
-    about_adv2_title: "Control de Calidad y Personalización",
-    about_adv2_desc: "QC AQL II antes del envío. Marca propia, marcado láser, embalajes y moldes a medida.",
-    about_adv3_title: "Acelerador de Ventas",
-    about_adv3_desc: "Fotos HD y fichas de producto, concierge de sourcing en 48h y hub de muestras.",
-
-    services_cols: [
-      {
-        headline: "Logística y Consolidación",
-        items: [
-          {
-            title: "Consolidación Inteligente",
-            desc: "Agrupamos sus pedidos de múltiples fábricas (Vajilla, Cocina, Buffet) en un solo contenedor. Una factura, un solo despacho aduanero."
-          },
-          {
-            title: "Almacenamiento Gratuito",
-            desc: "Disfrute de 30 días de almacenamiento gratuito en nuestro almacén de Shanghai para sincronizar sus envíos."
-          }
-        ]
-      },
-      {
-        headline: "Calidad e Imagen de Marca",
-        items: [
-          {
-            title: "Control de Calidad (QC)",
-            desc: "Inspección física sistemática antes del envío (AQL Nivel II). Cero sorpresas a la llegada."
-          },
-          {
-            title: "Marca Propia (OEM)",
-            desc: "Cree su propia marca. Marcado láser, embalajes personalizados y desarrollo de moldes a medida."
-          }
-        ]
-      },
-      {
-        headline: "Soporte Comercial",
-        items: [
-          {
-            title: "Pack de Marketing Digital",
-            desc: "Proporcionamos fotos HD y fichas de producto para su web. Ahorre tiempo en la publicación."
-          },
-          {
-            title: "Servicio de Concierge y Muestras",
-            desc: "Sourcing a medida en 48h a partir de una simple foto, y centralización de sus muestras en un único envío."
-          }
-        ]
-      }
-    ],
-
-    contact_meta_title: "Contáctenos | JUYI CHR",
-    contact_hero_h1: "Hablemos de su proyecto",
-    contact_hero_p: "¿Pregunta técnica? ¿Presupuesto de exportación? Nuestro equipo franco-chino está a su disposición.",
-    contact_coords_title: "Nuestros Datos",
-    contact_whatsapp_title: "Servicio de WhatsApp Export",
-    contact_whatsapp_note: "Sophie (Respuesta en 1h)",
-    contact_email_title: "Email Profesional",
-    contact_email_note: "Para presupuestos y catálogos",
-    contact_email_cta: "Usar el formulario de contacto",
-    contact_address_title: "Sede y Fábrica",
-    contact_address_city: "Shanghai, China",
-    contact_address_note: "Visita a fábrica con cita previa",
-    contact_form_title: "Enviar un Mensaje",
-    contact_form_name_label: "Nombre / Empresa",
-    contact_form_name_placeholder: "Ej: Panadería Le Bon Pain",
-    contact_form_email_label: "Email",
-    contact_form_email_placeholder: "contact@example.com",
-    contact_form_message_label: "Su Solicitud",
-    contact_form_message_placeholder: "Hola Sophie, quisiera información sobre...",
-    contact_form_submit: "Enviar",
-    contact_form_alert: "¡Gracias! Por ahora, contáctenos por WhatsApp para una respuesta inmediata.",
-    spec_labels: {
-      "Modèle": "Modelo",
-      "Température": "Temperatura",
-      "Compresseur": "Compresor",
-      "Capacité": "Capacidad",
-      "Plateaux": "Bandejas",
-      "Dimension Interne": "Dimensión interna",
-      "Voltage": "Voltaje",
-      "Puissance": "Potencia",
-      "Dimensions (Externe)": "Dimensiones externas",
-      "Poids": "Peso",
-      "Sonde Alimentaire": "Sonda alimentaria",
-      "Contrôleur": "Controlador",
-      "Volume": "Volumen",
-      "Gaz": "Refrigerante",
-      "Inox": "Acero inoxidable",
-      "Tube": "Tubo",
-      "Épaisseur": "Espesor",
-      "Rails latéraux": "Guías laterales",
-      "Roues": "Ruedas",
-      "Poids Net": "Peso neto",
-      "Poids Brut": "Peso bruto",
-      "Emballage": "Tamaño del paquete",
-      "Dimensions": "Dimensiones",
-      "Matériau": "Material",
-      "Coutures": "Costuras",
-      "Logo": "Logo",
-      "Lavable": "Lavable",
-      "Température de lavage": "Temperatura de lavado",
-      "Compatibilité": "Compatibilidad",
-      "Matériau Interne": "Material interno",
-      "Matériau Externe": "Material externo",
-      "Isolation": "Aislamiento",
-      "Dégivrage": "Desescarche",
-      "Réfrigérant": "Refrigerante",
-      "Refroidissement": "Refrigeración",
-      "Bacs": "Cubetas",
-      "Dosseret": "Salpicadero",
-      "Évacuation": "Desagüe",
-      "Culot": "Casquillo",
-      "Transparence": "Transparencia",
-      "Modèle": "Modelo"
-      ,
-      "Poids à vide": "Peso en vacío",
-      "Auges": "Cubetas",
-      "Nombre d'augues totales": "Cubetas totales",
-      "Longueur/largeur des auges": "Longitud/anchura de cubetas",
-      "Capacité pâtons 350g": "Capacidad (masa 350g)",
-      "Capacité pâtons 550g": "Capacidad (masa 550g)",
-      "Type d'alimentation": "Alimentación",
-      "Options": "Opciones"
-      ,
-      "Forme de glace": "Forma de hielo",
-      "Production journalière": "Producción diaria",
-      "Stock de glace": "Depósito de hielo"
-      ,
-      "Puissance (lavage)": "Potencia de lavado",
-      "Puissance (rinçage)": "Potencia de enjuague",
-      "Température de rinçage": "Temperatura de enjuague",
-      "Vitesse": "Velocidad",
-      "Consommation d'eau": "Consumo de agua"
-    }
+    ]
   }
 };

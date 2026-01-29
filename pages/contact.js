@@ -9,29 +9,58 @@ export default function Contact() {
   const t = translations[locale] || translations.fr;
   
   // Smart Agent State
-  const [step, setStep] = useState(0); // 0: Start, 1: Category, 2: Volume, 3: Customization, 4: Contact, 5: Done
+  const [step, setStep] = useState(0); // 0: Start, 1: Category, 2: Profile, 3: Customization, 4: Contact, 5: Done
   const [formData, setFormData] = useState({
     category: '',
-    volume: '',
+    profile: '',
     customization: '',
-    contact: ''
+    name: '',
+    email: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleOption = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    if (field === 'category') {
-      setStep(4); // Jump directly to contact form to capture lead
-    } else {
-      setStep(prev => prev + 1);
-    }
+    setStep(prev => prev + 1);
   };
 
-  const submitInquiry = (e) => {
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const submitInquiry = async (e) => {
     e.preventDefault();
-    // Simulate submission
-    setTimeout(() => {
-      setStep(5);
-    }, 1000);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          data: {
+            category: formData.category,
+            profile: formData.profile,
+            customization: formData.customization
+          }
+        }),
+      });
+
+      if (response.ok) {
+        setStep(5);
+      } else {
+        alert("Une erreur s'est produite. Veuillez réessayer.");
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert("Une erreur s'est produite. Veuillez réessayer.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -195,12 +224,78 @@ export default function Contact() {
                   </>
                 )}
 
-                 {/* Step 4: Contact Form (Now Step 2 in flow) */}
-                 {step >= 4 && step < 5 && (
+                {/* Step 2: Profile */}
+                {step >= 2 && (
                   <>
                     <div className="flex justify-end mb-4">
                       <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
                         <p className="text-sm">{formData.category}</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4 animate-fade-in-up">
+                      <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
+                      <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[80%]">
+                        <p className="text-sm text-gray-600 font-bold mb-3">{t.contact_agent_q2}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {(t.contact_agent_q2_opts || []).map(opt => (
+                            <button 
+                              key={opt}
+                              onClick={() => handleOption('profile', opt)}
+                              disabled={step > 2}
+                              className={`text-xs px-3 py-2 rounded-lg border transition ${
+                                formData.profile === opt 
+                                  ? 'bg-brand-blue text-white border-brand-blue' 
+                                  : 'bg-white text-gray-600 border-gray-200 hover:border-brand-orange hover:text-brand-orange'
+                              }`}
+                            >
+                              {opt}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {/* Step 3: Customization */}
+                {step >= 3 && (
+                  <>
+                    <div className="flex justify-end mb-4">
+                      <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
+                        <p className="text-sm">{formData.profile}</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4 animate-fade-in-up">
+                      <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
+                      <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[80%]">
+                        <p className="text-sm text-gray-600 font-bold mb-3">{t.contact_agent_q3}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {(t.contact_agent_q3_opts || []).map(opt => (
+                            <button 
+                              key={opt}
+                              onClick={() => handleOption('customization', opt)}
+                              disabled={step > 3}
+                              className={`text-xs px-3 py-2 rounded-lg border transition ${
+                                formData.customization === opt 
+                                  ? 'bg-brand-blue text-white border-brand-blue' 
+                                  : 'bg-white text-gray-600 border-gray-200 hover:border-brand-orange hover:text-brand-orange'
+                              }`}
+                            >
+                              {opt}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                 {/* Step 4: Contact Form */}
+                 {step >= 4 && step < 5 && (
+                  <>
+                    <div className="flex justify-end mb-4">
+                      <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
+                        <p className="text-sm">{formData.customization}</p>
                       </div>
                     </div>
                     <div className="flex gap-4 animate-fade-in-up">
@@ -213,17 +308,27 @@ export default function Contact() {
                             <input 
                               required 
                               type="text" 
+                              name="name"
+                              value={formData.name}
+                              onChange={handleInputChange}
                               placeholder={t.contact_form_name} 
                               className="w-full text-sm p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-orange"
                             />
                             <input 
                               required 
                               type="email" 
+                              name="email"
+                              value={formData.email}
+                              onChange={handleInputChange}
                               placeholder={t.contact_form_email} 
                               className="w-full text-sm p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-orange"
                             />
-                            <button type="submit" className="w-full bg-brand-blue text-white font-bold py-3 rounded-lg hover:bg-brand-orange transition">
-                              {t.contact_form_btn}
+                            <button 
+                              type="submit" 
+                              disabled={isSubmitting}
+                              className={`w-full bg-brand-blue text-white font-bold py-3 rounded-lg hover:bg-brand-orange transition ${isSubmitting ? 'opacity-70 cursor-wait' : ''}`}
+                            >
+                              {isSubmitting ? 'Envoi...' : t.contact_form_btn}
                             </button>
                           </form>
                        </div>
@@ -277,4 +382,3 @@ export default function Contact() {
     </div>
   );
 }
-

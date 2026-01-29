@@ -608,7 +608,7 @@ export const translations = {
     contact_agent_q1: "1. ¿Qué categoría de productos le interesa?",
     contact_agent_opts: ["Panadería", "Cocina Comercial", "Refrigeración", "Proyecto Completo"],
     contact_agent_q2: "2. ¿Cuál es su tipo de negocio?",
-    contact_agent_q2_opts: ["Usuario Final (Restaurante)", "Distribuidor/Revendedor", "Cadena/Franquicia"],
+    contact_agent_q2_opts: ["Distribuidor/Mayorista", "Cadena/Franquicia", "Contratista/Instalador", "Usuario Final (Restaurante)"],
     contact_agent_q3: "3. ¿Necesita personalización OEM/ODM?",
     contact_agent_q3_opts: ["Sí, Marca Privada", "No, Productos Estándar"],
     contact_agent_q4: "¡Casi listo! Deje su WhatsApp o Email para recibir la cotización:",

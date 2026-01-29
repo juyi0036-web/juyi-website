@@ -187,68 +187,92 @@ export default function Home() {
           </div>
         </section>
 
-        {/* === SECTION 4: FUTURE TRENDS 2026 (Innovation) === */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <span className="text-brand-orange font-bold tracking-widest uppercase text-sm">{t.trend_badge}</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mt-2">{t.trend_title}</h2>
+        {/* === SECTION 4: INDUSTRY TRENDS 2026 (Insights) === */}
+        <section className="py-16 bg-slate-50" id="trends">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-extrabold text-slate-900 font-serif">
+                {t.trend_title}
+              </h2>
+              <p className="mt-4 text-slate-500 max-w-2xl mx-auto">
+                {t.trend_subtitle_main}
+              </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Trend 1 */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
-                <div className="h-48 bg-gray-200 relative overflow-hidden">
-                  {/* Placeholder for trend image - using gradient for now */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
-                  <div className="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
-                    TREND #1
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
+              {/* Trend Card 1: Focus on Automation (Product Strength) */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div className="h-48 bg-slate-200 relative overflow-hidden">
+                  <img src="https://placehold.co/600x400/e2e8f0/475569?text=Automation+Bakery" 
+                       alt="Industrial Bakery Automation" 
+                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    {t.trend_badge_hot}
                   </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-orange transition">{t.trend_1_title}</h3>
-                  <p className="text-gray-500 text-sm mb-4">
+                <div className="p-6">
+                  <div className="text-sm text-slate-400 mb-2">2026 {t.trend_label_prefix} #1</div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
+                    {t.trend_1_title}
+                  </h3>
+                  <p className="text-slate-600 text-sm mb-4">
                     {t.trend_1_desc}
                   </p>
-                  <span className="text-brand-blue font-semibold text-sm border-b border-brand-orange/30 pb-1">{t.trend_1_link}</span>
+                  <Link href="/products" className="inline-flex items-center text-orange-600 font-semibold text-sm hover:underline">
+                    {t.trend_link_supply} <i className="fa-solid fa-arrow-right ml-2"></i>
+                  </Link>
                 </div>
               </div>
 
-              {/* Trend 2 */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
-                <div className="h-48 bg-gray-200 relative overflow-hidden">
-                  {/* Placeholder for trend image - using gradient for now */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-slate-900"></div>
-                  <div className="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
-                    TREND #2
+              {/* Trend Card 2: Focus on Business Model (Service Fee) */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div className="h-48 bg-slate-200 relative overflow-hidden">
+                  <img src="https://placehold.co/600x400/e2e8f0/475569?text=Direct+Sourcing" 
+                       alt="Direct Supply Chain Model" 
+                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    {t.trend_badge_model}
                   </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-orange transition">{t.trend_2_title}</h3>
-                  <p className="text-gray-500 text-sm mb-4">
+                <div className="p-6">
+                  <div className="text-sm text-slate-400 mb-2">2026 {t.trend_label_prefix} #2</div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
+                    {t.trend_2_title}
+                  </h3>
+                  <p className="text-slate-600 text-sm mb-4">
                     {t.trend_2_desc}
                   </p>
-                  <span className="text-brand-blue font-semibold text-sm border-b border-brand-orange/30 pb-1">{t.trend_2_link}</span>
+                  <Link href="/services" className="inline-flex items-center text-orange-600 font-semibold text-sm hover:underline">
+                    {t.trend_link_rates} <i className="fa-solid fa-arrow-right ml-2"></i>
+                  </Link>
                 </div>
               </div>
 
-              {/* Trend 3 */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
-                <div className="h-48 bg-gray-200 relative overflow-hidden">
-                  {/* Placeholder for trend image - using gradient for now */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-900 to-red-900"></div>
-                  <div className="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
-                    TREND #3
+              {/* Trend Card 3: Focus on Compliance (QC/Standards) */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div className="h-48 bg-slate-200 relative overflow-hidden">
+                  <img src="https://placehold.co/600x400/e2e8f0/475569?text=Eco+Design+EU" 
+                       alt="Eco-Design Compliance" 
+                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    {t.trend_badge_compliance}
                   </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-orange transition">{t.trend_3_title}</h3>
-                  <p className="text-gray-500 text-sm mb-4">
+                <div className="p-6">
+                  <div className="text-sm text-slate-400 mb-2">2026 {t.trend_label_prefix} #3</div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
+                    {t.trend_3_title}
+                  </h3>
+                  <p className="text-slate-600 text-sm mb-4">
                     {t.trend_3_desc}
                   </p>
-                  <span className="text-brand-blue font-semibold text-sm border-b border-brand-orange/30 pb-1">{t.trend_3_link}</span>
+                  <Link href="/contact" className="inline-flex items-center text-orange-600 font-semibold text-sm hover:underline">
+                    {t.trend_link_qc} <i className="fa-solid fa-arrow-right ml-2"></i>
+                  </Link>
                 </div>
               </div>
+
             </div>
           </div>
         </section>

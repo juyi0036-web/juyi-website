@@ -31,6 +31,10 @@ export const translations = {
     trans_juyi_2: "Prix Direct Usine (Transparent)",
     trans_juyi_3: "Service de Sourcing & QC Pro",
     trans_juyi_4: "Frais de Service Unique (Clair)",
+    trans_juyi_5: "Accès Direct aux Usines & Catalogues Certifiés",
+    trans_juyi_6: "Support Export Dédié (WhatsApp/Email, 24h)",
+    trans_juyi_7: "Consolidation Multi-Usines & Contrôle d'Expédition (AQL)",
+    trans_juyi_8: "Documents & Conformité UE fournis (CE, RoHS, HACCP)",
 
     // Quality & Compliance
     qual_title: "Qualité & Conformité",
@@ -108,7 +112,89 @@ export const translations = {
         fit: "cover",
         position: "center"
       }
-    ]
+    ],
+    
+    // About
+    about_meta_title: "À Propos de Nous",
+    about_h1: "L'Alliance de l'Expertise",
+    about_tagline: "Votre partenaire stratégique en Chine pour l'équipement CHR.",
+    about_story_title: "Notre Histoire",
+    about_story_p1: "Fondée à Shanghai, JUYI CHR est née d'un constat simple : l'importation d'équipements de boulangerie et de cuisine professionnelle est souvent complexifiée par des intermédiaires inutiles.",
+    about_story_p2: "Nous avons décidé de changer cela en créant un pont direct entre les meilleures usines chinoises et les distributeurs européens.",
+    about_story_p3: "Notre équipe multiculturelle comprend vos exigences de qualité et parle la langue de vos fournisseurs.",
+    services_cols: [
+      {
+        headline: "Sourcing Stratégique",
+        items: [
+          { title: "Audit d'Usine", desc: "Vérification sur site des capacités de production." },
+          { title: "Négociation", desc: "Prix directs sans marge cachée." }
+        ]
+      },
+      {
+        headline: "Contrôle Qualité",
+        items: [
+          { title: "Inspection", desc: "Contrôle rigoureux avant expédition." },
+          { title: "Conformité", desc: "Vérification des normes CE/RoHS." }
+        ]
+      },
+      {
+        headline: "Logistique & Export",
+        items: [
+          { title: "Consolidation", desc: "Regroupement de plusieurs usines." },
+          { title: "Douanes", desc: "Gestion complète des formalités." }
+        ]
+      }
+    ],
+
+    // Contact
+    contact_meta_title: "Contactez-nous",
+    contact_hero_badge: "Support Supply Chain 24/7",
+    contact_hero_title: "Lancez votre Sourcing",
+    contact_hero_desc: "Connectez-vous directement avec notre équipe export. Pas d'intermédiaire, juste une communication efficace.",
+    contact_direct_title: "Canaux Directs",
+    contact_whatsapp_title: "Support WhatsApp",
+    contact_whatsapp_desc: "Réponse instantanée (9:00 - 18:00 UTC+8)",
+    contact_email_title: "Département Export",
+    contact_email_desc: "Pour devis officiels & catalogues",
+    contact_hq_title: "Siège Social",
+    contact_hq_loc: "Shanghai, Chine",
+    contact_hq_desc: "Centre de Gestion Supply Chain",
+    contact_agent_title: "Agent Intelligent",
+    contact_agent_status: "En ligne",
+    contact_agent_intro: "Bonjour ! Je suis votre assistant sourcing. Dites-moi ce que vous cherchez et je vous connecte à l'usine. On commence ?",
+    contact_agent_btn_start: "Démarrer l'Analyse",
+    contact_agent_name: "Assistant Sourcing Juyi",
+    contact_agent_replies: "Répond instantanément",
+    contact_agent_yes: "Oui, allons-y.",
+    contact_agent_q1: "1. Quel type d'équipement recherchez-vous ?",
+    contact_agent_opts: ["Boulangerie & Pâtisserie", "Cuisine Professionnelle", "Réfrigération & Froid", "Projet Clé en Main"],
+    contact_agent_q2: "2. Quel est votre profil d'acheteur ?",
+    contact_agent_q2_opts: ["Distributeur / Importateur", "Chaîne / Franchise", "Installateur / Architecte", "Utilisateur Final"],
+    contact_agent_q3: "3. Avez-vous des besoins de personnalisation ?",
+    contact_agent_q3_opts: ["Oui, OEM / Marque Privée", "Non, Standard Usine"],
+    contact_agent_q4: "Parfait. Pour recevoir la liste de prix usine, laissez vos coordonnées :",
+    contact_agent_placeholder: "Votre contact...",
+    contact_agent_submit: "Envoyer ma demande",
+    contact_agent_thanks: "Merci ! Un expert vous contactera d'ici 24 heures.",
+    contact_agent_success_note: "Vérifiez votre boîte mail dans ~10 mins.",
+    contact_form_name: "Votre Nom",
+    contact_form_email: "Adresse Email",
+    contact_form_btn: "Obtenir mon Devis",
+    contact_agent_select_option: "Sélectionnez une option ci-dessus...",
+    
+    // Products
+    product_count_label: "produits",
+    ask_price: "Demander un prix",
+    no_products: "Aucun produit trouvé",
+    catalog_updating: "Le catalogue est en cours de mise à jour.",
+    spec_labels: {
+      power: "Puissance",
+      voltage: "Tension",
+      dimensions: "Dimensions",
+      weight: "Poids",
+      capacity: "Capacité",
+      temperature: "Température"
+    }
   },
 
   // === ENGLISH (EN) ===
@@ -143,6 +229,10 @@ export const translations = {
     trans_juyi_2: "Factory Direct Price (Transparent)",
     trans_juyi_3: "Professional Sourcing & QC Service",
     trans_juyi_4: "One Service Fee (Clear & Simple)",
+    trans_juyi_5: "Direct Access to Certified Factories & Catalogs",
+    trans_juyi_6: "Dedicated Export Support (WhatsApp/Email, 24h)",
+    trans_juyi_7: "Multi-Factory Consolidation & Pre-Shipment QC (AQL)",
+    trans_juyi_8: "EU Compliance Documents Provided (CE, RoHS, HACCP)",
 
     // Quality & Compliance
     qual_title: "Quality & Compliance",
@@ -220,7 +310,87 @@ export const translations = {
         fit: "cover",
         position: "center"
       }
-    ]
+    ],
+
+    // About
+    about_meta_title: "About Us",
+    about_h1: "The Alliance of Expertise",
+    about_tagline: "Your strategic partner in China for CHR equipment.",
+    about_story_title: "Our Story",
+    about_story_p1: "Founded in Shanghai, JUYI CHR was born from a simple observation: importing bakery and professional kitchen equipment is often complicated by unnecessary middlemen.",
+    about_story_p2: "We decided to change this by creating a direct bridge between the best Chinese factories and European distributors.",
+    about_story_p3: "Our multicultural team understands your quality requirements and speaks the language of your suppliers.",
+    services_cols: [
+      {
+        headline: "Strategic Sourcing",
+        items: [
+          { title: "Factory Audit", desc: "On-site verification of production capabilities." },
+          { title: "Negotiation", desc: "Direct prices with no hidden margin." }
+        ]
+      },
+      {
+        headline: "Quality Control",
+        items: [
+          { title: "Inspection", desc: "Rigorous control before shipment." },
+          { title: "Compliance", desc: "Verification of CE/RoHS standards." }
+        ]
+      },
+      {
+        headline: "Logistics & Export",
+        items: [
+          { title: "Consolidation", desc: "Grouping from multiple factories." },
+          { title: "Customs", desc: "Complete management of formalities." }
+        ]
+      }
+    ],
+
+    // Contact
+    contact_meta_title: "Contact Us",
+    contact_hero_badge: "Supply Chain Support 24/7",
+    contact_hero_title: "Start Your Sourcing",
+    contact_hero_desc: "Connect directly with our export team. No middleman, just efficient communication.",
+    contact_direct_title: "Direct Channels",
+    contact_whatsapp_title: "WhatsApp Support",
+    contact_whatsapp_desc: "Instant reply (9:00 - 18:00 UTC+8)",
+    contact_email_title: "Export Department",
+    contact_email_desc: "For official quotes & catalogs",
+    contact_hq_title: "Headquarters",
+    contact_hq_loc: "Shanghai, China",
+    contact_hq_desc: "Supply Chain Management Center",
+    contact_agent_title: "Smart Inquiry Agent",
+    contact_agent_status: "Online",
+    contact_agent_intro: "Hi! I'm here to cut out the middleman. Let's find your factory-direct match in 3 clicks. Ready to save?",
+    contact_agent_btn_start: "Start Inquiry",
+    contact_agent_name: "Juyi Quick Quote Bot",
+    contact_agent_replies: "Replies instantly",
+    contact_agent_yes: "Yes, find my factory.",
+    contact_agent_q1: "1. What equipment do you need today?",
+    contact_agent_opts: ["Bakery Equipment", "Commercial Kitchen", "Refrigeration", "Full Project / Turnkey"],
+    contact_agent_q2: "2. How would you describe your business?",
+    contact_agent_q2_opts: ["Distributor / Wholesaler", "Chain Store / Franchise", "Contractor / Project Mgr", "End User (Single Shop)"],
+    contact_agent_q3: "3. Do you need custom branding (OEM)?",
+    contact_agent_q3_opts: ["Yes, Private Label", "No, Standard Factory Model"],
+    contact_agent_q4: "Great. Enter your contact details to unlock your factory price list:",
+    contact_agent_placeholder: "Your contact...",
+    contact_agent_submit: "Send my inquiry",
+    contact_agent_thanks: "Thank you! An expert will contact you within 24 hours.",
+    contact_form_name: "Your Name",
+    contact_form_email: "Email Address",
+    contact_form_btn: "Get Factory Quote",
+
+    // Products
+    product_count_label: "products",
+    ask_price: "Ask for Price",
+    no_products: "No products found",
+    catalog_updating: "The catalog is being updated.",
+    spec_labels: {
+      power: "Power",
+      voltage: "Voltage",
+      dimensions: "Dimensions",
+      weight: "Weight",
+      capacity: "Capacity",
+      temperature: "Temperature"
+    }
   },
 
   // === ESPAÑOL (ES) ===
@@ -230,11 +400,12 @@ export const translations = {
     nav_products: "Nuestras Colecciones",
     nav_about: "Nosotros",
     nav_services: "Servicios",
-    nav_contact: "Contacto",
-    nav_view_catalog: "Ver Catálogo Completo",
+    nav_contact: "CONTACTO",
+    nav_view_catalog: "VER CATÁLOGO",
     nav_search_placeholder: "Buscar...",
+    nav_sophie_export: "Sophie (Exportación)",
 
-    // Hero
+    // Home - Hero
     hero_badge: "Proveedor de Servicios de Cadena de Suministro",
     hero_title_1: "Directo de Fábrica.",
     hero_title_2: "Cero Margen en Productos.",
@@ -255,6 +426,10 @@ export const translations = {
     trans_juyi_2: "Precio Directo de Fábrica (Transparente)",
     trans_juyi_3: "Servicio Profesional de Sourcing y QC",
     trans_juyi_4: "Tarifa de Servicio Única (Clara)",
+    trans_juyi_5: "Acceso Directo a Fábricas Certificadas y Catálogos",
+    trans_juyi_6: "Soporte de Exportación Dedicado (WhatsApp/Email, 24h)",
+    trans_juyi_7: "Consolidación Multi-fábrica y Control de Envío (AQL)",
+    trans_juyi_8: "Documentos de Cumplimiento UE (CE, RoHS, HACCP)",
 
     // Quality & Compliance
     qual_title: "Calidad y Cumplimiento",
@@ -332,6 +507,87 @@ export const translations = {
         fit: "cover",
         position: "center"
       }
-    ]
+    ],
+
+    // About
+    about_meta_title: "Sobre Nosotros",
+    about_h1: "La Alianza de la Experiencia",
+    about_tagline: "Su socio estratégico en China para equipos CHR.",
+    about_story_title: "Nuestra Historia",
+    about_story_p1: "Fundada en Shanghái, JUYI CHR nació de una simple observación: la importación de equipos de panadería y cocina profesional a menudo se complica por intermediarios innecesarios.",
+    about_story_p2: "Decidimos cambiar esto creando un puente directo entre las mejores fábricas chinas y los distribuidores europeos.",
+    about_story_p3: "Nuestro equipo multicultural entiende sus requisitos de calidad y habla el idioma de sus proveedores.",
+    services_cols: [
+      {
+        headline: "Sourcing Estratégico",
+        items: [
+          { title: "Auditoría de Fábrica", desc: "Verificación in situ de capacidades de producción." },
+          { title: "Negociación", desc: "Precios directos sin margen oculto." }
+        ]
+      },
+      {
+        headline: "Control de Calidad",
+        items: [
+          { title: "Inspección", desc: "Control riguroso antes del envío." },
+          { title: "Cumplimiento", desc: "Verificación de normas CE/RoHS." }
+        ]
+      },
+      {
+        headline: "Logística y Exportación",
+        items: [
+          { title: "Consolidación", desc: "Agrupación de múltiples fábricas." },
+          { title: "Aduanas", desc: "Gestión completa de trámites." }
+        ]
+      }
+    ],
+
+    // Contact
+    contact_meta_title: "Contáctenos",
+    contact_hero_badge: "Soporte de Cadena de Suministro 24/7",
+    contact_hero_title: "Inicie su Sourcing",
+    contact_hero_desc: "Conéctese directamente con nuestro equipo de exportación. Sin intermediarios, solo comunicación eficiente.",
+    contact_direct_title: "Canales Directos",
+    contact_whatsapp_title: "Soporte WhatsApp",
+    contact_whatsapp_desc: "Respuesta instantánea (9:00 - 18:00 UTC+8)",
+    contact_email_title: "Departamento de Exportación",
+    contact_email_desc: "Para cotizaciones oficiales y catálogos",
+    contact_hq_title: "Sede Central",
+    contact_hq_desc: "Centro de Gestión de Cadena de Suministro",
+    contact_agent_title: "Agente Inteligente",
+    contact_agent_status: "En línea",
+    contact_agent_intro: "¡Hola! Puedo ayudarle a obtener una cotización directa de fábrica. Para conectarle con el especialista adecuado, necesito hacer 3 preguntas rápidas. ¿Listo?",
+    contact_agent_btn_start: "Iniciar",
+    contact_agent_name: "Asistente de Sourcing Juyi",
+    contact_agent_replies: "Responde al instante",
+    contact_agent_yes: "Sí, empecemos.",
+    contact_agent_q1: "1. ¿Qué categoría de productos le interesa?",
+    contact_agent_opts: ["Panadería", "Cocina Comercial", "Refrigeración", "Proyecto Completo"],
+    contact_agent_q2: "2. ¿Cuál es su tipo de negocio?",
+    contact_agent_q2_opts: ["Usuario Final (Restaurante)", "Distribuidor/Revendedor", "Cadena/Franquicia"],
+    contact_agent_q3: "3. ¿Necesita personalización OEM/ODM?",
+    contact_agent_q3_opts: ["Sí, Marca Privada", "No, Productos Estándar"],
+    contact_agent_q4: "¡Casi listo! Deje su WhatsApp o Email para recibir la cotización:",
+    contact_agent_placeholder: "Su contacto...",
+    contact_agent_submit: "Enviar mi consulta",
+    contact_agent_thanks: "¡Gracias! Un experto le contactará en menos de 24 horas.",
+    contact_agent_success_note: "Revise su correo en ~10 mins.",
+    contact_form_name: "Su Nombre",
+    contact_form_email: "Correo Electrónico",
+    contact_form_btn: "Obtener Cotización",
+    contact_agent_select_option: "Seleccione una opción arriba...",
+    
+    // Products
+    product_count_label: "productos",
+    ask_price: "Consultar Precio",
+    no_products: "No se encontraron productos",
+    catalog_updating: "El catálogo se está actualizando.",
+    spec_labels: {
+      power: "Potencia",
+      voltage: "Voltaje",
+      dimensions: "Dimensiones",
+      weight: "Peso",
+      capacity: "Capacidad",
+      temperature: "Temperatura"
+    }
   }
 };

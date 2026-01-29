@@ -97,48 +97,45 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Traditional Model (Contrast) */}
-              <div className="p-8 border border-gray-100 rounded-2xl bg-gray-50 opacity-60 grayscale hover:grayscale-0 transition duration-500">
-                <h3 className="text-xl font-bold text-gray-400 mb-6 uppercase tracking-wider">{t.trans_trad_title}</h3>
-                <ul className="space-y-4 text-gray-500">
-                  <li className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-                    <span>{t.trans_trad_1}</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-                    <span>{t.trans_trad_2}</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-                    <span>{t.trans_trad_3}</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Juyi Model (Hero) */}
-              <div className="relative p-10 border border-brand-orange/20 rounded-2xl bg-white shadow-2xl shadow-brand-blue/5 hover:-translate-y-2 transition duration-300">
+            <div className="flex justify-center">
+              {/* Juyi Model (Centered) */}
+              <div className="relative p-10 border border-brand-orange/20 rounded-2xl bg-white shadow-2xl shadow-brand-blue/5 hover:-translate-y-2 transition duration-300 max-w-3xl w-full text-center">
                 <div className="absolute top-0 right-0 bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
                   {t.trans_juyi_badge}
                 </div>
                 <h3 className="text-2xl font-bold text-brand-blue mb-6 uppercase tracking-wider">{t.trans_juyi_title}</h3>
                 <ul className="space-y-5 text-brand-dark">
-                  <li className="flex items-center gap-4">
+                  <li className="flex justify-center items-center gap-4">
                     <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
                     <span className="font-semibold">{t.trans_juyi_1}</span>
                   </li>
-                  <li className="flex items-center gap-4">
+                  <li className="flex justify-center items-center gap-4">
                     <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
                     <span>{t.trans_juyi_2}</span>
                   </li>
-                  <li className="flex items-center gap-4">
+                  <li className="flex justify-center items-center gap-4">
                     <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
                     <span>{t.trans_juyi_3}</span>
                   </li>
-                  <li className="flex items-center gap-4">
+                  <li className="flex justify-center items-center gap-4">
                     <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
                     <span>{t.trans_juyi_4}</span>
+                  </li>
+                  <li className="flex justify-center items-center gap-4">
+                    <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span>{t.trans_juyi_5}</span>
+                  </li>
+                  <li className="flex justify-center items-center gap-4">
+                    <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span>{t.trans_juyi_6}</span>
+                  </li>
+                  <li className="flex justify-center items-center gap-4">
+                    <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span>{t.trans_juyi_7}</span>
+                  </li>
+                  <li className="flex justify-center items-center gap-4">
+                    <div className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span>{t.trans_juyi_8}</span>
                   </li>
                 </ul>
               </div>

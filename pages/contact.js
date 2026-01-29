@@ -19,7 +19,11 @@ export default function Contact() {
 
   const handleOption = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    setStep(prev => prev + 1);
+    if (field === 'category') {
+      setStep(4); // Jump directly to contact form to capture lead
+    } else {
+      setStep(prev => prev + 1);
+    }
   };
 
   const submitInquiry = (e) => {
@@ -43,12 +47,12 @@ export default function Contact() {
       <div className="bg-brand-blue text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <span className="text-brand-orange font-bold tracking-widest uppercase text-sm mb-4 block">24/7 Supply Chain Support</span>
+          <span className="text-brand-orange font-bold tracking-widest uppercase text-sm mb-4 block">{t.contact_hero_badge}</span>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl uppercase mb-6">
-            Start Your Sourcing
+            {t.contact_hero_title}
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
-            Connect directly with our export team. No middlemen, just efficient communication.
+            {t.contact_hero_desc}
           </p>
         </div>
       </div>
@@ -59,7 +63,7 @@ export default function Contact() {
           {/* Left: Contact Info (Industrial Style) */}
           <div>
             <h2 className="text-2xl font-bold text-brand-blue mb-8 uppercase tracking-wide border-l-4 border-brand-orange pl-4">
-              Direct Channels
+              {t.contact_direct_title}
             </h2>
             
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-10">
@@ -71,11 +75,11 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-5">
-                  <h3 className="text-lg font-bold text-brand-blue">WhatsApp Support</h3>
+                  <h3 className="text-lg font-bold text-brand-blue">{t.contact_whatsapp_title}</h3>
                   <a href="https://wa.me/85269724241" target="_blank" rel="noopener noreferrer" className="mt-1 block text-lg font-medium text-gray-600 group-hover:text-brand-orange transition no-underline">
                     +852 6972 4241
                   </a>
-                  <p className="text-sm text-gray-400 mt-1">Instant reply (9:00 - 18:00 UTC+8)</p>
+                  <p className="text-sm text-gray-400 mt-1">{t.contact_whatsapp_desc}</p>
                 </div>
               </div>
 
@@ -87,11 +91,11 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-5">
-                  <h3 className="text-lg font-bold text-brand-blue">Export Department</h3>
+                  <h3 className="text-lg font-bold text-brand-blue">{t.contact_email_title}</h3>
                   <a href="mailto:contact@juyi-chr.com" className="mt-1 block text-lg font-medium text-gray-600 group-hover:text-brand-orange transition no-underline">
                     contact@juyi-chr.com
                   </a>
-                  <p className="text-sm text-gray-400 mt-1">For official quotes & catalogs</p>
+                  <p className="text-sm text-gray-400 mt-1">{t.contact_email_desc}</p>
                 </div>
               </div>
 
@@ -103,9 +107,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-5">
-                  <h3 className="text-lg font-bold text-brand-blue">Headquarters</h3>
-                  <p className="mt-1 text-base text-gray-600">Shanghai, China</p>
-                  <p className="text-sm text-gray-400 mt-1">Supply Chain Management Center</p>
+                  <h3 className="text-lg font-bold text-brand-blue">{t.contact_hq_title}</h3>
+                  <p className="mt-1 text-base text-gray-600">{t.contact_hq_loc}</p>
+                  <p className="text-sm text-gray-400 mt-1">{t.contact_hq_desc}</p>
                 </div>
               </div>
             </div>
@@ -115,11 +119,11 @@ export default function Contact() {
           <div>
             <div className="flex items-center justify-between mb-8">
                <h2 className="text-2xl font-bold text-brand-blue uppercase tracking-wide border-l-4 border-brand-orange pl-4">
-                Smart Inquiry Agent
+                {t.contact_agent_title}
               </h2>
               <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Online
+                {t.contact_agent_status}
               </span>
             </div>
 
@@ -128,8 +132,8 @@ export default function Contact() {
               <div className="bg-brand-blue p-4 flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xl">🤖</div>
                 <div>
-                  <div className="font-bold text-white">Juyi Sourcing Assistant</div>
-                  <div className="text-xs text-brand-orange">Replies instantly</div>
+                  <div className="font-bold text-white">{t.contact_agent_name}</div>
+                  <div className="text-xs text-brand-orange">{t.contact_agent_replies}</div>
                 </div>
               </div>
 
@@ -141,7 +145,7 @@ export default function Contact() {
                   <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
                   <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[80%]">
                     <p className="text-sm text-gray-600">
-                      Bonjour! I can help you get a factory-direct quote. To connect you with the right specialist, I need to ask 3 quick questions. Ready?
+                      {t.contact_agent_intro}
                     </p>
                   </div>
                 </div>
@@ -153,7 +157,7 @@ export default function Contact() {
                         onClick={() => setStep(1)}
                         className="bg-brand-orange text-white px-6 py-2 rounded-full font-bold hover:bg-orange-700 transition shadow-md"
                       >
-                        Start Inquiry
+                        {t.contact_agent_btn_start}
                       </button>
                    </div>
                 )}
@@ -163,15 +167,15 @@ export default function Contact() {
                   <>
                     <div className="flex justify-end mb-4">
                       <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
-                        <p className="text-sm font-bold">Yes, let's start.</p>
+                        <p className="text-sm font-bold">{t.contact_agent_yes}</p>
                       </div>
                     </div>
                     <div className="flex gap-4 animate-fade-in-up">
                       <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
                       <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[80%]">
-                        <p className="text-sm text-gray-600 font-bold mb-3">1. Which product category are you interested in?</p>
+                        <p className="text-sm text-gray-600 font-bold mb-3">{t.contact_agent_q1}</p>
                         <div className="flex flex-wrap gap-2">
-                          {['Bakery Equipment', 'Commercial Kitchen', 'Refrigeration', 'Full Project'].map(opt => (
+                          {(t.contact_agent_opts || []).map(opt => (
                             <button 
                               key={opt}
                               onClick={() => handleOption('category', opt)}
@@ -191,101 +195,35 @@ export default function Contact() {
                   </>
                 )}
 
-                {/* Step 2: Volume */}
-                {step >= 2 && (
-                  <>
-                     <div className="flex justify-end mb-4">
-                      <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
-                        <p className="text-sm">{formData.category}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 animate-fade-in-up">
-                      <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
-                      <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[80%]">
-                         <p className="text-sm text-gray-600 font-bold mb-3">2. What is your business type/volume?</p>
-                         <div className="flex flex-col gap-2">
-                          {['End User (Single Shop/Restaurant)', 'Distributor/Reseller', 'Chain Store/Franchise'].map(opt => (
-                            <button 
-                              key={opt}
-                              onClick={() => handleOption('volume', opt)}
-                              disabled={step > 2}
-                              className={`text-xs px-3 py-2 rounded-lg border text-left transition ${
-                                formData.volume === opt 
-                                  ? 'bg-brand-blue text-white border-brand-blue' 
-                                  : 'bg-white text-gray-600 border-gray-200 hover:border-brand-orange hover:text-brand-orange'
-                              }`}
-                            >
-                              {opt}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                )}
-
-                 {/* Step 3: Customization */}
-                 {step >= 3 && (
-                  <>
-                     <div className="flex justify-end mb-4">
-                      <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
-                        <p className="text-sm">{formData.volume}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 animate-fade-in-up">
-                      <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
-                      <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 max-w-[80%]">
-                         <p className="text-sm text-gray-600 font-bold mb-3">3. Do you need OEM/ODM customization?</p>
-                         <div className="flex gap-2">
-                          {['Yes, I have my brand', 'No, standard products'].map(opt => (
-                            <button 
-                              key={opt}
-                              onClick={() => handleOption('customization', opt)}
-                              disabled={step > 3}
-                              className={`text-xs px-3 py-2 rounded-lg border transition ${
-                                formData.customization === opt 
-                                  ? 'bg-brand-blue text-white border-brand-blue' 
-                                  : 'bg-white text-gray-600 border-gray-200 hover:border-brand-orange hover:text-brand-orange'
-                              }`}
-                            >
-                              {opt}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                )}
-
-                 {/* Step 4: Contact Form */}
+                 {/* Step 4: Contact Form (Now Step 2 in flow) */}
                  {step >= 4 && step < 5 && (
                   <>
                     <div className="flex justify-end mb-4">
                       <div className="bg-brand-orange/10 text-brand-orange px-4 py-2 rounded-2xl rounded-tr-none">
-                        <p className="text-sm">{formData.customization}</p>
+                        <p className="text-sm">{formData.category}</p>
                       </div>
                     </div>
                     <div className="flex gap-4 animate-fade-in-up">
                        <div className="w-8 h-8 rounded-full bg-brand-blue flex-shrink-0 flex items-center justify-center text-white text-xs">AI</div>
                        <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 w-full">
                           <p className="text-sm text-gray-600 mb-4">
-                            Perfect. I've prepared your profile. Please leave your contact info so our export manager can send you the catalog.
+                            {t.contact_agent_q4}
                           </p>
                           <form onSubmit={submitInquiry} className="space-y-3">
                             <input 
                               required 
                               type="text" 
-                              placeholder="Your Name" 
+                              placeholder={t.contact_form_name} 
                               className="w-full text-sm p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-orange"
                             />
                             <input 
                               required 
                               type="email" 
-                              placeholder="Email Address" 
+                              placeholder={t.contact_form_email} 
                               className="w-full text-sm p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-orange"
                             />
                             <button type="submit" className="w-full bg-brand-blue text-white font-bold py-3 rounded-lg hover:bg-brand-orange transition">
-                              Get Factory Quote
+                              {t.contact_form_btn}
                             </button>
                           </form>
                        </div>
@@ -299,9 +237,9 @@ export default function Contact() {
                       <div className="w-8 h-8 rounded-full bg-green-500 flex-shrink-0 flex items-center justify-center text-white text-xs">✓</div>
                       <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-green-100 max-w-[90%]">
                         <p className="text-sm text-gray-600 font-bold">
-                          Received! Sophie from our team will contact you shortly with a tailored proposal.
+                          {t.contact_agent_thanks}
                         </p>
-                        <p className="text-xs text-gray-400 mt-2">Check your email inbox in ~10 mins.</p>
+                        <p className="text-xs text-gray-400 mt-2">{t.contact_agent_success_note}</p>
                       </div>
                    </div>
                  )}
@@ -314,7 +252,7 @@ export default function Contact() {
                   <input 
                     type="text" 
                     disabled 
-                    placeholder={step < 4 ? "Select an option above..." : "Type your message..."}
+                    placeholder={step < 4 ? t.contact_agent_select_option : t.contact_agent_placeholder}
                     className="w-full bg-gray-50 text-sm pl-4 pr-10 py-3 rounded-full border border-gray-200 focus:outline-none cursor-not-allowed"
                   />
                   <button disabled className="absolute right-2 top-2 w-8 h-8 bg-brand-blue rounded-full text-white flex items-center justify-center opacity-50">

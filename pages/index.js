@@ -212,7 +212,7 @@ export default function Home() {
               >
                 <div className="h-64 overflow-hidden relative">
                   {/* Image: Industrial Dough Mixer / Bakery Line */}
-                  <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=1000&auto=format&fit=crop" 
+                  <img src="https://images.unsplash.com/photo-1615828823573-097560d7b385?q=80&w=800&auto=format&fit=crop" 
                        alt="Industrial Bakery Automation" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
@@ -245,7 +245,7 @@ export default function Home() {
               >
                 <div className="h-64 overflow-hidden relative">
                   {/* Image: Shipping Containers / Global Trade */}
-                  <img src="https://images.unsplash.com/photo-1494412574643-35d32468817e?q=80&w=1000&auto=format&fit=crop" 
+                  <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" 
                        alt="Supply Chain Logistics" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute top-4 left-4 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
@@ -277,7 +277,7 @@ export default function Home() {
               >
                 <div className="h-64 overflow-hidden relative">
                   {/* Image: Eco Friendly Factory / Solar Panels */}
-                  <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1000&auto=format&fit=crop" 
+                  <img src="https://images.unsplash.com/photo-1497435334941-8c899ee7e8f9?q=80&w=800&auto=format&fit=crop" 
                        alt="Eco Design Compliance" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute top-4 left-4 bg-green-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">

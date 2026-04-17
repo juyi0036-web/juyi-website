@@ -35,6 +35,31 @@ export default function Home() {
       <Head>
         <title>JUYI CHR | Supply Chain Partner</title>
         <meta name="description" content="Your transparent supply chain partner for CHR & Baking equipment in China. Zero markup, factory direct prices." />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="JUYI CHR | Supply Chain Partner" />
+        <meta property="og:description" content="Factory-direct CHR & Baking equipment. Zero markup. Professional sourcing and QC in China." />
+        <meta property="og:image" content="/hero-01.jpg" />
+        <meta property="og:url" content="https://www.your-domain.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="JUYI CHR | Supply Chain Partner" />
+        <meta name="twitter:description" content="Factory-direct CHR & Baking equipment. Zero markup." />
+        <meta name="twitter:image" content="/hero-01.jpg" />
+        <link rel="canonical" href="https://www.your-domain.com/" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'JUYI CHR',
+              url: 'https://www.your-domain.com/',
+              logo: 'https://www.your-domain.com/logo.png',
+              sameAs: [
+                'https://www.linkedin.com/company/juyi-chr'
+              ]
+            })
+          }}
+        />
       </Head>
 
       <Navbar />
@@ -313,6 +338,30 @@ export default function Home() {
             <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
               {t.cta_desc}
             </p>
+            <div className="max-w-2xl mx-auto text-left mb-10">
+              <ul className="grid sm:grid-cols-2 gap-3 text-sm text-white/90">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 inline-block w-2 h-2 rounded-full bg-white/90"></span>
+                  <span>{t.trans_juyi_1}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 inline-block w-2 h-2 rounded-full bg-white/90"></span>
+                  <span>{t.trans_juyi_2}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 inline-block w-2 h-2 rounded-full bg-white/90"></span>
+                  <span>{t.trans_juyi_3}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 inline-block w-2 h-2 rounded-full bg-white/90"></span>
+                  <span>{t.trans_juyi_7}</span>
+                </li>
+                <li className="flex items-start gap-2 sm:col-span-2">
+                  <span className="mt-1 inline-block w-2 h-2 rounded-full bg-white/90"></span>
+                  <span>{t.trans_juyi_8}</span>
+                </li>
+              </ul>
+            </div>
             <Link href="/contact" className="inline-block bg-white text-brand-orange px-10 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
               {t.cta_btn}
             </Link>

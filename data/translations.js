@@ -210,6 +210,7 @@ export const translations = {
     contact_form_name: "Votre Nom",
     contact_form_email: "Adresse Email",
     contact_form_btn: "Obtenir mon Devis",
+    contact_form_helper: "Précisez les catégories, besoins OEM, certificats (CE/HACCP), Incoterms, volumes et délais, puis laissez votre WhatsApp ou Email.",
     contact_agent_select_option: "Sélectionnez une option ci-dessus...",
     
     // Products
@@ -437,6 +438,7 @@ export const translations = {
     contact_form_name: "Your Name",
     contact_form_email: "Email Address",
     contact_form_btn: "Get Factory Quote",
+    contact_form_helper: "Describe your categories, OEM/customization needs, required certificates (CE/HACCP), Incoterms, target volumes and timeline, then leave your WhatsApp or Email.",
 
     // Products
     product_count_label: "products",
@@ -664,6 +666,7 @@ export const translations = {
     contact_form_name: "Su Nombre",
     contact_form_email: "Correo Electrónico",
     contact_form_btn: "Obtener Cotización",
+    contact_form_helper: "Describa sus categorías, necesidades de OEM/personalización, certificados requeridos (CE/HACCP), Incoterms, volúmenes y plazos objetivo, y deje su WhatsApp o Email.",
     contact_agent_select_option: "Seleccione una opción arriba...",
     
     // Products

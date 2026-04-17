@@ -47,6 +47,7 @@ export default function SearchPage() {
     <div className="min-h-screen bg-cream font-sans">
       <Head>
         <title>{title} | JUYI CHR</title>
+        <meta name="robots" content="noindex" />
       </Head>
 
       <Navbar />

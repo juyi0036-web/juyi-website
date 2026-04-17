@@ -15,6 +15,11 @@ export default function About() {
     <div className="min-h-screen bg-cream font-sans">
       <Head>
         <title>{t.about_meta_title}</title>
+        <meta name="description" content="JUYI CHR，位于上海的供应链合作伙伴。直接工厂对接、质量控制与合规文件支持。" />
+        <meta property="og:title" content="关于我们 | JUYI CHR" />
+        <meta property="og:description" content="直接工厂价格与专业质控，帮助您在中国高效采购 CHR 与烘焙设备。" />
+        <meta property="og:image" content="/hero-01.jpg" />
+        <link rel="canonical" href="https://www.your-domain.com/about" />
       </Head>
 
       <Navbar />

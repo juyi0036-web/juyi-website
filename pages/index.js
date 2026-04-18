@@ -357,27 +357,14 @@ export default function Home() {
             </div>
             
             <div className="prose prose-slate mx-auto text-slate-600 leading-relaxed">
-              {/* Article Content */}
-              <div className="mb-8">
-                {(
-                  (selectedTrend === 'automation' && t.trend_1_article) ||
-                  (selectedTrend === 'model' && t.trend_2_article) ||
-                  (selectedTrend === 'compliance' && t.trend_3_article) ||
-                  [
-                    selectedTrend === 'automation' ? t.trend_1_desc :
-                    selectedTrend === 'model' ? t.trend_2_desc :
-                    selectedTrend === 'compliance' ? t.trend_3_desc : ""
-                  ]
-                ).map((paragraph, idx) => (
-                  <p key={idx} className="text-lg mb-4 text-justify">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-
+              <p className="text-lg mb-6">
+                {selectedTrend === 'automation' && t.trend_1_desc}
+                {selectedTrend === 'model' && t.trend_2_desc}
+                {selectedTrend === 'compliance' && t.trend_3_desc}
+              </p>
               <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
                 <h4 className="font-bold text-slate-900 mb-2 text-sm uppercase">{t.trend_takeaway_title}</h4>
-                <p className="text-sm font-medium text-slate-700">
+                <p className="text-sm">
                   {selectedTrend === 'automation' && t.trend_1_takeaway}
                   {selectedTrend === 'model' && t.trend_2_takeaway}
                   {selectedTrend === 'compliance' && t.trend_3_takeaway}

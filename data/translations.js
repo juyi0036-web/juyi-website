@@ -60,27 +60,12 @@ export const translations = {
     trend_link_qc: "Vérifier vos normes",
     trend_1_title: "L'Automatisation Intelligente",
     trend_1_desc: "La boulangerie moderne ne sacrifie pas la qualité. Nos lignes de production (pétrins, diviseuses) assurent une texture artisanale à l'échelle industrielle.",
-    trend_1_article: [
-      "Le secteur de la boulangerie européenne fait face à une pénurie critique de main-d'œuvre, avec plus de 30% des postes non pourvus en 2024. La solution n'est pas simplement de 'mécaniser', mais d'adopter une manipulation intelligente de la pâte.",
-      "Les diviseuses modernes 'Stress-Free' (sans stress) que nous sourçons préservent le réseau de gluten exactement comme le ferait un pliage manuel. Contrairement aux machines anciennes qui 'tuent' la pâte, nos lignes maintiennent l'alvéolage et l'hydratation élevée (jusqu'à 80%).",
-      "En passant à l'automatisation intelligente, les fournils peuvent augmenter leur production de 300% sans sacrifier l'étiquette 'Artisan'. C'est l'équilibre parfait entre tradition et volume."
-    ],
     trend_1_link: "Voir Ligne Usine",
     trend_2_title: "Sourcing Direct Usine",
     trend_2_desc: "Arrêtez de payer la 'taxe intermédiaire' de 30-50%. Notre modèle transparent vous donne accès aux prix usine (EXW) sans marge cachée.",
-    trend_2_article: [
-      "Le modèle d'importation traditionnel est cassé. Un four qui sort de l'usine à 1000€ passe par un importateur (+30%), un grossiste (+20%), et une force de vente (+15%) avant d'arriver chez vous à 2200€. Vous payez pour du stockage et des commissions, pas pour la qualité.",
-      "Le modèle JUYI coupe cette chaîne. Vous accédez directement au prix EXW (Sortie Usine) négocié pour les grands comptes. Nous appliquons une 'Service Fee' fixe et transparente pour la gestion logistique et qualité.",
-      "Résultat : Pour le même budget, vous accédez à une gamme supérieure. Au lieu d'acheter un four standard, vous obtenez un four programmable avec injection de vapeur et pierre réfractaire, tout en économisant sur le coût total d'acquisition (TCO)."
-    ],
     trend_2_link: "Voir Modèle de Coût",
     trend_3_title: "Normes Vertes 2026",
     trend_3_desc: "Sécurisez votre avenir face aux directives Green Deal. Nous sourçons uniquement des équipements certifiés Eco-Design pour une conformité durable.",
-    trend_3_article: [
-      "Le Green Deal européen n'est pas une suggestion, c'est la loi. D'ici 2026, le règlement Écoconception (UE) 2019/2024 imposera des barrières strictes à l'entrée pour les équipements de réfrigération énergivores.",
-      "Importer des équipements non conformes aujourd'hui est un risque financier majeur (invendables demain). Notre sourcing filtre strictement les équipements utilisant le gaz réfrigérant naturel R290 (GWP < 3) et atteignant les classes énergétiques C ou D (nouveau label).",
-      "De plus, nous anticipons les normes RoHS 3.0 sur les composants électroniques. Acheter via JUYI, c'est s'assurer que votre parc matériel est 'Future-Proof' pour les 10 prochaines années."
-    ],
     trend_3_link: "Vérifier Conformité",
     trend_label_1: "Ingénierie de Précision",
     trend_label_2: "Modèle Zéro Marge",
@@ -288,27 +273,12 @@ export const translations = {
     trend_link_qc: "Check Standards",
     trend_1_title: "Smart Automation & Scale",
     trend_1_desc: "The artisanal bakery revolution isn't about hand-kneading—it's about precision. Our spiral mixers and dividers scale your output while maintaining the handmade texture.",
-    trend_1_article: [
-      "The European bakery sector is facing a critical labor shortage, with over 30% of positions unfilled in 2024. The solution is not just 'machines', but 'intelligent dough handling'.",
-      "Modern 'Stress-Free' dividers we source preserve the gluten network exactly as hand-folding would. Unlike older machines that 'kill' the dough, our lines maintain open crumb structure and high hydration (up to 80%).",
-      "By switching to smart automation, bakeries can increase output by 300% without sacrificing the 'Artisan' label. It is the perfect balance between tradition and volume."
-    ],
     trend_1_link: "See Factory Line",
     trend_2_title: "Factory Direct Sourcing",
     trend_2_desc: "Stop paying the 30-50% 'middleman tax'. Our Service-Fee model gives you direct access to EXW factory prices with zero hidden markups.",
-    trend_2_article: [
-      "The traditional import model is broken. An oven leaving the factory at €1000 passes through an importer (+30%), a wholesaler (+20%), and a sales force (+15%) before reaching you at €2200. You are paying for storage and commissions, not quality.",
-      "The JUYI model cuts this chain. You get direct access to the EXW (Ex Works) price negotiated for major accounts. We apply a fixed, transparent 'Service Fee' for logistics and quality management.",
-      "Result: For the same budget, you access a superior range. Instead of buying a standard oven, you get a programmable oven with steam injection and refractory stone, while saving on Total Cost of Ownership (TCO)."
-    ],
     trend_2_link: "View Cost Model",
     trend_3_title: "Green Standards 2026",
     trend_3_desc: "Future-proof your business against EU Green Deal regulations. We source only Eco-Design certified equipment to ensure long-term compliance.",
-    trend_3_article: [
-      "The European Green Deal is not a suggestion; it is the law. By 2026, the Ecodesign Regulation (EU) 2019/2024 will impose strict market access barriers for energy-hungry refrigeration equipment.",
-      "Importing non-compliant equipment today is a major financial risk (unsellable tomorrow). Our sourcing strictly filters equipment using natural R290 refrigerant (GWP < 3) and reaching Energy Class C or D (new label).",
-      "Furthermore, we anticipate RoHS 3.0 standards on electronic components. Buying via JUYI ensures your equipment fleet is 'Future-Proof' for the next 10 years."
-    ],
     trend_3_link: "Check Compliance",
     trend_label_1: "Precision Engineering",
     trend_label_2: "Zero Markup Model",
@@ -515,27 +485,12 @@ export const translations = {
     trend_link_qc: "Verificar Normas",
     trend_1_title: "Automatización Inteligente",
     trend_1_desc: "La panadería moderna no sacrifica la calidad. Nuestras líneas de producción (amasadoras, divisoras) escalan su volumen manteniendo la textura artesanal.",
-    trend_1_article: [
-      "El sector de la panadería europea enfrenta una escasez crítica de mano de obra, con más del 30% de los puestos vacantes en 2024. La solución no es solo 'mecanizar', sino adoptar una manipulación inteligente de la masa.",
-      "Las divisoras modernas 'Stress-Free' que obtenemos preservan la red de gluten exactamente como lo haría un plegado manual. A diferencia de las máquinas antiguas que 'matan' la masa, nuestras líneas mantienen el alveolado y la alta hidratación (hasta un 80%).",
-      "Al cambiar a la automatización inteligente, los obradores pueden aumentar su producción en un 300% sin sacrificar la etiqueta 'Artesano'. Es el equilibrio perfecto entre tradición y volumen."
-    ],
     trend_1_link: "Ver Línea de Fábrica",
     trend_2_title: "Sourcing Directo de Fábrica",
     trend_2_desc: "Deje de pagar el 'impuesto de intermediario' del 30-50%. Nuestro modelo de tarifa de servicio le da acceso a precios de fábrica EXW sin márgenes ocultos.",
-    trend_2_article: [
-      "El modelo de importación tradicional está roto. Un horno que sale de fábrica a 1000€ pasa por un importador (+30%), un mayorista (+20%) y una fuerza de ventas (+15%) antes de llegar a usted a 2200€. Usted paga por almacenamiento y comisiones, no por calidad.",
-      "El modelo JUYI corta esta cadena. Usted accede directamente al precio EXW (Ex Works) negociado para grandes cuentas. Aplicamos una 'Service Fee' fija y transparente para la gestión logística y de calidad.",
-      "Resultado: Por el mismo presupuesto, accede a una gama superior. En lugar de comprar un horno estándar, obtiene un horno programable con inyección de vapor y piedra refractaria, ahorrando en el Costo Total de Propiedad (TCO)."
-    ],
     trend_2_link: "Ver Modelo de Costos",
     trend_3_title: "Estándares Verdes 2026",
     trend_3_desc: "Asegure su futuro frente a las normativas del Pacto Verde UE. Solo obtenemos equipos certificados Eco-Design para un cumplimiento a largo plazo.",
-    trend_3_article: [
-      "El Pacto Verde Europeo no es una sugerencia, es la ley. Para 2026, el Reglamento de Ecodiseño (UE) 2019/2024 impondrá barreras estrictas de acceso al mercado para equipos de refrigeración de alto consumo.",
-      "Importar equipos no conformes hoy es un riesgo financiero mayor (invendibles mañana). Nuestro sourcing filtra estrictamente equipos que usan refrigerante natural R290 (GWP < 3) y alcanzan la Clase Energética C o D (nueva etiqueta).",
-      "Además, anticipamos las normas RoHS 3.0 sobre componentes electrónicos. Comprar a través de JUYI es asegurar que su flota de equipos sea 'Future-Proof' para los próximos 10 años."
-    ],
     trend_3_link: "Verificar Cumplimiento",
     trend_label_1: "Ingeniería de Precisión",
     trend_label_2: "Modelo Cero Margen",

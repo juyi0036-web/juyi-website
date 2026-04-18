@@ -212,7 +212,7 @@ export default function Home() {
               >
                 <div className="h-64 overflow-hidden relative">
                   {/* Image: Industrial Dough Mixer / Bakery Line */}
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+                  <img src="https://images.unsplash.com/photo-1615828823573-097560d7b385?q=80&w=800&auto=format&fit=crop" 
                        alt="Industrial Bakery Automation" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
@@ -277,7 +277,7 @@ export default function Home() {
               >
                 <div className="h-64 overflow-hidden relative">
                   {/* Image: Eco Friendly Factory / Solar Panels */}
-                  <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop" 
+                  <img src="https://images.unsplash.com/photo-1497435334941-8c899ee7e8f9?q=80&w=800&auto=format&fit=crop" 
                        alt="Eco Design Compliance" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute top-4 left-4 bg-green-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">

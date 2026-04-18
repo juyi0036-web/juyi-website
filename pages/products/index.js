@@ -17,11 +17,6 @@ export default function AllProducts() {
     <div className="min-h-screen bg-cream font-sans">
       <Head>
         <title>{pageTitle} | JUYI CHR</title>
-        <meta name="description" content="精选 CHR 与烘焙设备产品目录。工厂直达、透明价格、专业质检。" />
-        <meta property="og:title" content="产品目录 | JUYI CHR" />
-        <meta property="og:description" content="浏览我们的 CHR 与烘焙设备集合。工厂直供与合规保障。" />
-        <meta property="og:image" content="/hero-stainless-20251204.jpg" />
-        <link rel="canonical" href="https://www.your-domain.com/products" />
       </Head>
 
       <Navbar />

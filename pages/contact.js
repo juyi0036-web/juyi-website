@@ -304,11 +304,6 @@ export default function Contact() {
                           <p className="text-sm text-gray-600 mb-4">
                             {t.contact_agent_q4}
                           </p>
-                          {t.contact_form_helper && (
-                            <p className="text-xs text-gray-400 mb-3">
-                              {t.contact_form_helper}
-                            </p>
-                          )}
                           <form onSubmit={submitInquiry} className="space-y-3">
                             <input 
                               required 

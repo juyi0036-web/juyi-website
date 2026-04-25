@@ -28,7 +28,7 @@ export default async function handler(req, res) {
   try {
     await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
-      to: '79745983@qq.com',
+      to: 'contact@juyi-chr.com',
       subject: `New Lead from Juyi Website: ${name}`,
       text: `
         New Lead Details:

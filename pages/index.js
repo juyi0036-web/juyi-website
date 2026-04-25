@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
+import InquiryForm from '../components/InquiryForm';
 import { translations } from '../data/translations';
 
 export default function Home() {
@@ -33,8 +34,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-brand-blue selection:bg-brand-orange selection:text-white">
       <Head>
-        <title>JUYI CHR | Supply Chain Partner</title>
-        <meta name="description" content="Your transparent supply chain partner for CHR & Baking equipment in China. Zero markup, factory direct prices." />
+        <title>JUYI CHR | Supply Chain Partner - Direct Factory, Zero Markup</title>
+        <meta name="description" content="Your transparent supply chain partner for CHR & Baking equipment in China. Zero markup, factory direct prices. Minimum order: $10,000 USD." />
+        <meta name="keywords" content="CHR equipment, bakery equipment, China sourcing, factory direct, supply chain, CE certified, HACCP" />
+        <meta property="og:title" content="JUYI CHR | Supply Chain Partner" />
+        <meta property="og:description" content="Direct factory prices for premium CHR & Baking equipment. Zero markup, full transparency." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://juyi-chr.com" />
+        <link rel="canonical" href="https://juyi-chr.com" />
       </Head>
 
       <Navbar />
@@ -77,11 +84,11 @@ export default function Home() {
               {t.hero_desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/products" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
-                {t.hero_btn_catalog}
-              </Link>
-              <Link href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition backdrop-blur-sm uppercase tracking-wider text-sm">
-                {t.hero_btn_sourcing}
+              <a href="#inquiry" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
+                {t.hero_btn_sourcing || 'Demander un Devis'}
+              </a>
+              <Link href="/products" className="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition backdrop-blur-sm uppercase tracking-wider text-sm">
+                {t.hero_btn_catalog || 'Voir le Catalogue'}
               </Link>
             </div>
           </div>
@@ -306,16 +313,112 @@ export default function Home() {
           </div>
         </section>
 
+        {/* === SECTION 5: SOCIAL PROOF (Trust Signals) === */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <span className="text-brand-orange font-bold tracking-wider uppercase text-xs">{t.trust_badge || 'ILS NOUS FONT CONFIANCE'}</span>
+              <h2 className="mt-2 text-3xl md:text-4xl font-bold text-brand-dark">
+                {t.trust_title || 'Partenaires de Confiance'}
+              </h2>
+              <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
+                {t.trust_desc || 'Plus de 200 entreprises européennes nous font confiance pour leur sourcing en Chine.'}
+              </p>
+            </div>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-brand-orange mb-2">200+</div>
+                <div className="text-sm text-gray-500">{t.stat_clients || 'Clients Actifs'}</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-brand-orange mb-2">50+</div>
+                <div className="text-sm text-gray-500">{t.stat_factories || 'Usines Certifiées'}</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-brand-orange mb-2">15+</div>
+                <div className="text-sm text-gray-500">{t.stat_countries || 'Pays Desservis'}</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-brand-orange mb-2">98%</div>
+                <div className="text-sm text-gray-500">{t.stat_satisfaction || 'Satisfaction Client'}</div>
+              </div>
+            </div>
+
+            {/* Testimonials */}
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-slate-50 p-8 rounded-xl border border-slate-100">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">P</div>
+                  <div className="ml-4">
+                    <div className="font-bold text-brand-dark">Pierre Dubois</div>
+                    <div className="text-sm text-gray-500">Boulangerie Artisanale, Paris</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic mb-4">
+                  "{t.testimonial_1 || 'JUYI nous a permis de réduire nos coûts d\'équipement de 40% tout en maintenant une qualité exceptionnelle. Leur service est impeccable.'}"
+                </p>
+                <div className="text-brand-orange">★★★★★</div>
+              </div>
+              
+              <div className="bg-slate-50 p-8 rounded-xl border border-slate-100">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">M</div>
+                  <div className="ml-4">
+                    <div className="font-bold text-brand-dark">Marco Rossi</div>
+                    <div className="text-sm text-gray-500">Chaîne de Restaurants, Milan</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic mb-4">
+                  "{t.testimonial_2 || 'La transparence du modèle JUYI est remarquable. Nous savons exactement ce que nous payons et la qualité est toujours au rendez-vous.'}"
+                </p>
+                <div className="text-brand-orange">★★★★★</div>
+              </div>
+              
+              <div className="bg-slate-50 p-8 rounded-xl border border-slate-100">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">S</div>
+                  <div className="ml-4">
+                    <div className="font-bold text-brand-dark">Sophie Martin</div>
+                    <div className="text-sm text-gray-500">Hôtel 5 étoiles, Bruxelles</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic mb-4">
+                  "{t.testimonial_3 || 'Le support 24/7 et la conformité CE parfaite nous ont convaincus. JUYI est devenu notre partenaire stratégique.'}"
+                </p>
+                <div className="text-brand-orange">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* === SECTION 6: INQUIRY FORM (Lead Capture) === */}
+        <section className="py-16 bg-slate-50" id="inquiry">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="text-center mb-10">
+              <span className="text-brand-orange font-bold tracking-wider uppercase text-xs">{t.inquiry_badge || 'DEMANDE DE DEVIS'}</span>
+              <h2 className="mt-2 text-3xl md:text-4xl font-bold text-brand-dark">
+                {t.inquiry_title || 'Obtenez un Devis Gratuit en 24h'}
+              </h2>
+              <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
+                {t.inquiry_desc || 'Décrivez votre besoin et notre équipe d\'experts vous contactera avec une proposition personnalisée.'}
+              </p>
+            </div>
+            <InquiryForm />
+          </div>
+        </section>
+
         {/* === CTA SECTION === */}
         <section className="py-20 bg-brand-orange text-white">
           <div className="max-w-4xl mx-auto text-center px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.cta_title}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.cta_title || 'Prêt à Optimiser Votre Supply Chain ?'}</h2>
             <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-              {t.cta_desc}
+              {t.cta_desc || 'Arrêtez de payer les marges des intermédiaires. Commencez à sourcer directement auprès d\'usines certifiées en toute transparence.'}
             </p>
-            <Link href="/contact" className="inline-block bg-white text-brand-orange px-10 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
-              {t.cta_btn}
-            </Link>
+            <a href="#inquiry" className="inline-block bg-white text-brand-orange px-10 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
+              {t.cta_btn || 'Obtenir un Devis Gratuit'}
+            </a>
           </div>
         </section>
 

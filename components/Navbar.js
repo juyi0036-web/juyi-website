@@ -106,6 +106,10 @@ export default function Navbar() {
               {t.nav_about}
             </Link>
 
+            <Link href="/blog" className="text-brand-blue hover:text-brand-orange px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
+              {t.nav_blog || 'Blog'}
+            </Link>
+
             <Link href="/contact" className="text-brand-blue hover:text-brand-orange px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition">
               {t.nav_contact}
             </Link>

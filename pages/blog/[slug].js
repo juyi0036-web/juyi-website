@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
-import { blogPosts } from '../../data/blogPosts';
+import blogPosts from '../../data/blogPosts';
 
 export default function BlogPost() {
   const router = useRouter();
@@ -29,116 +29,135 @@ export default function BlogPost() {
   }
 
   const title = post.title[t] || post.title.fr;
-  const excerpt = post.excerpt[t] || post.excerpt.fr;
+  const subtitle = post.subtitle[t] || post.subtitle.fr;
   const content = post.content[t] || post.content.fr;
 
-  // Simple markdown to HTML conversion
-  const htmlContent = content
-    .replace(/## (.*?)(\n|$)/g, '<h2 class="text-2xl font-bold text-brand-dark mt-8 mb-4">$1</h2>')
-    .replace(/### (.*?)(\n|$)/g, '<h3 class="text-xl font-bold text-brand-dark mt-6 mb-3">$1</h3>')
-    .replace(/#### (.*?)(\n|$)/g, '<h4 class="text-lg font-bold text-brand-dark mt-4 mb-2">$1</h4>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\n\n/g, '</p><p class="mb-4">')
-    .replace(/\n/g, '<br/>');
-
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-brand-blue">
+    <div className="min-h-screen bg-white font-sans text-brand-blue">
       <Head>
         <title>{title} | JUYI CHR Blog</title>
-        <meta name="description" content={excerpt} />
+        <meta name="description" content={subtitle} />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={excerpt} />
+        <meta property="og:description" content={subtitle} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content={post.image.main} />
       </Head>
 
       <Navbar />
 
-      {/* Hero Header */}
-      <div className="bg-brand-blue text-white py-12 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <Link href="/blog" className="inline-flex items-center text-brand-orange mb-6 hover:text-orange-300 transition-colors">
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            {t === 'en' ? 'Back to Blog' : t === 'es' ? 'Volver al Blog' : 'Retour au Blog'}
-          </Link>
-          <div className="flex items-center gap-4 mb-4">
-            <span className="bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">
-              {post.category}
-            </span>
-            <span className="text-gray-300 text-sm">{post.date}</span>
+      {/* Hero Image */}
+      <div className="relative h-[50vh] min-h-[400px] overflow-hidden">
+        <img 
+          src={post.image.main} 
+          alt={post.image.alt}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <span className={`bg-${post.category.color}-600 text-white text-xs font-bold px-3 py-1 rounded-full`}>
+                {post.category.label}
+              </span>
+              <span className="text-white/80 text-sm">{post.date}</span>
+              <span className="text-white/80 text-sm">• {post.readTime}</span>
+            </div>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+              {title}
+            </h1>
+            <p className="text-white/80 text-lg max-w-3xl">
+              {subtitle}
+            </p>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
-          <p className="text-gray-300 text-lg">{excerpt}</p>
         </div>
       </div>
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Featured Image */}
-        <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+        {/* Author Info */}
+        <div className="flex items-center gap-4 mb-12 pb-8 border-b border-gray-200">
           <img 
-            src={post.image} 
-            alt={title}
-            className="w-full h-64 md:h-96 object-cover"
+            src={post.author.avatar} 
+            alt={post.author.name}
+            className="w-14 h-14 rounded-full object-cover"
           />
+          <div>
+            <div className="font-bold text-brand-dark">{post.author.name}</div>
+            <div className="text-sm text-gray-500">{post.author.role}</div>
+          </div>
+          <div className="ml-auto text-sm text-gray-400">
+            {post.readTime} {t === 'en' ? 'read' : t === 'es' ? 'de lectura' : 'de lecture'}
+          </div>
         </div>
 
         {/* Article Content */}
-        <article className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 md:p-12">
-          <div 
-            className="prose prose-lg max-w-none text-gray-700"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
-          />
-        </article>
+        <article 
+          className="prose prose-lg max-w-none text-gray-700"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+
+        {/* Share & CTA */}
+        <div className="mt-16 pt-8 border-t border-gray-200">
+          <div className="bg-brand-blue rounded-2xl p-8 md:p-12 text-center text-white">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              {t === 'en' ? 'Need Compliant Equipment?' : t === 'es' ? '¿Necesita Equipos Conformes?' : 'Besoin d\'Équipements Conformes ?'}
+            </h2>
+            <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+              {t === 'en' ? 'Our expert team can help you choose equipment adapted to your needs and budget.' : t === 'es' ? 'Nuestro equipo de expertos puede ayudarle a elegir los equipos adaptados a sus necesidades y presupuesto.' : 'Notre équipe d\'experts peut vous aider à choisir les équipements adaptés à vos besoins et à votre budget.'}
+            </p>
+            <Link 
+              href="/contact"
+              className="inline-block bg-brand-orange text-white px-8 py-4 rounded font-bold hover:bg-orange-700 transition shadow-xl uppercase tracking-wider"
+            >
+              {t === 'en' ? 'Request a Free Quote' : t === 'es' ? 'Solicitar Presupuesto Gratis' : 'Demander un Devis Gratuit'}
+            </Link>
+          </div>
+        </div>
 
         {/* Related Articles */}
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold text-brand-dark mb-6">
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-brand-dark mb-8">
             {t === 'en' ? 'Related Articles' : t === 'es' ? 'Artículos Relacionados' : 'Articles Connexes'}
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {blogPosts
               .filter(p => p.id !== post.id)
               .slice(0, 2)
               .map((relatedPost) => {
                 const relatedTitle = relatedPost.title[t] || relatedPost.title.fr;
+                const relatedSubtitle = relatedPost.subtitle[t] || relatedPost.subtitle.fr;
                 return (
                   <Link 
                     key={relatedPost.id}
                     href={`/blog/${relatedPost.slug}`}
-                    className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300"
+                    className="group"
                   >
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="bg-brand-orange/10 text-brand-orange text-xs font-bold px-3 py-1 rounded-full">
-                        {relatedPost.category}
-                      </span>
-                      <span className="text-gray-400 text-sm">{relatedPost.date}</span>
+                    <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src={relatedPost.image.main} 
+                          alt={relatedPost.image.alt}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span className={`bg-${relatedPost.category.color}-100 text-${relatedPost.category.color}-600 text-xs font-bold px-3 py-1 rounded-full`}>
+                            {relatedPost.category.label}
+                          </span>
+                          <span className="text-gray-400 text-sm">{relatedPost.readTime}</span>
+                        </div>
+                        <h3 className="text-lg font-bold text-brand-dark mb-2 group-hover:text-brand-orange transition-colors">
+                          {relatedTitle}
+                        </h3>
+                        <p className="text-gray-600 text-sm line-clamp-2">
+                          {relatedSubtitle}
+                        </p>
+                      </div>
                     </div>
-                    <h3 className="text-lg font-bold text-brand-dark mb-2">{relatedTitle}</h3>
-                    <p className="text-gray-600 text-sm line-clamp-2">
-                      {(relatedPost.excerpt[t] || relatedPost.excerpt.fr).substring(0, 100)}...
-                    </p>
                   </Link>
                 );
               })}
           </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="mt-12 bg-brand-orange rounded-2xl p-8 md:p-12 text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            {t === 'en' ? 'Need Compliant Equipment?' : t === 'es' ? '¿Necesita Equipos Conformes?' : 'Besoin d\'Équipements Conformes ?'}
-          </h2>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            {t === 'en' ? 'Contact us for a free quote on EU-compliant CHR equipment.' : t === 'es' ? 'Contáctenos para un presupuesto gratuito de equipos CHR conformes con la UE.' : 'Contactez-nous pour un devis gratuit sur des équipements CHR conformes UE.'}
-          </p>
-          <Link 
-            href="/contact"
-            className="inline-block bg-white text-brand-orange px-8 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider"
-          >
-            {t === 'en' ? 'Get a Free Quote' : t === 'es' ? 'Obtener Presupuesto Gratis' : 'Obtenir un Devis Gratuit'}
-          </Link>
         </div>
       </main>
 

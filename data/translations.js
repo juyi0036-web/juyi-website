@@ -81,6 +81,21 @@ export const translations = {
     cta_desc: "Arrêtez de payer les marges des intermédiaires. Commencez à sourcer directement auprès d'usines certifiées en toute transparence.",
     cta_btn: "Obtenir un Devis Gratuit",
     
+    // Insights Section (Homepage)
+    insights_title: "Tendances & Perspectives 2026",
+    insights_desc: "Anticiper les évolutions du marché européen pour sécuriser votre avantage concurrentiel.",
+    badge_regulation: "Réglementation",
+    badge_energy: "Énergie",
+    badge_trend: "Tendance",
+    article_refrigerant_title: "2026 : L'UE Interdit Certains Fluides Frigorigènes",
+    article_refrigerant_desc: "Découvrez les nouvelles restrictions sur les fluides frigorigènes et comment vous préparer.",
+    article_energy_title: "Normes Énergétiques UE 2026 : Nouveaux Labels",
+    article_energy_desc: "L'UE renforce ses exigences énergétiques. Découvrez les nouveaux labels et exigences.",
+    article_automation_title: "Automatisation CHR 2026 : La Technologie",
+    article_automation_desc: "L'automatisation devient incontournable dans le secteur CHR. Découvrez les solutions.",
+    read_more: "Lire l'article",
+    view_all_articles: "Voir Tous les Articles",
+    
     // Trust & Social Proof
     trust_badge: "ILS NOUS FONT CONFIANCE",
     trust_title: "Partenaires de Confiance",
@@ -373,6 +388,21 @@ export const translations = {
     cta_desc: "Stop paying middleman markups. Start sourcing directly from certified factories with full transparency.",
     cta_btn: "Get a Free Quote",
     
+    // Insights Section (Homepage)
+    insights_title: "Trends & Outlook 2026",
+    insights_desc: "Anticipate European market evolutions to secure your competitive advantage.",
+    badge_regulation: "Regulation",
+    badge_energy: "Energy",
+    badge_trend: "Trend",
+    article_refrigerant_title: "2026: EU Bans Certain Refrigerants",
+    article_refrigerant_desc: "Learn about new refrigerant restrictions and how to prepare.",
+    article_energy_title: "EU 2026 Energy Standards: New Labels",
+    article_energy_desc: "The EU strengthens energy requirements. Discover new labels and standards.",
+    article_automation_title: "CHR Automation 2026: Technology",
+    article_automation_desc: "Automation is becoming essential in CHR. Discover the solutions.",
+    read_more: "Read Article",
+    view_all_articles: "View All Articles",
+    
     // Trust & Social Proof
     trust_badge: "TRUSTED BY INDUSTRY LEADERS",
     trust_title: "Trusted Partners",
@@ -663,6 +693,21 @@ export const translations = {
     cta_title: "¿Listo para Optimizar su Cadena de Suministro?",
     cta_desc: "Deje de pagar márgenes de intermediarios. Comience a abastecerse directamente de fábricas certificadas con total transparencia.",
     cta_btn: "Obtener Presupuesto Gratis",
+    
+    // Insights Section (Homepage)
+    insights_title: "Tendencias y Perspectivas 2026",
+    insights_desc: "Anticipe las evoluciones del mercado europeo para asegurar su ventaja competitiva.",
+    badge_regulation: "Regulación",
+    badge_energy: "Energía",
+    badge_trend: "Tendencia",
+    article_refrigerant_title: "2026: La UE Prohíbe Ciertos Refrigerantes",
+    article_refrigerant_desc: "Descubra las nuevas restricciones sobre refrigerantes y cómo prepararse.",
+    article_energy_title: "Estándares Energéticos UE 2026: Nuevos Etiquetados",
+    article_energy_desc: "La UE refuerza los requisitos energéticos. Descubra los nuevos etiquetados.",
+    article_automation_title: "Automatización CHR 2026: Tecnología",
+    article_automation_desc: "La automatización se vuelve esencial en CHR. Descubra las soluciones.",
+    read_more: "Leer Artículo",
+    view_all_articles: "Ver Todos los Artículos",
     
     // Trust & Social Proof
     trust_badge: "CONFIANZA DE LÍDERES DE LA INDUSTRIA",

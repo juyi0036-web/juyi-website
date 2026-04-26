@@ -22,7 +22,6 @@ export default function Home() {
   }));
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [selectedTrend, setSelectedTrend] = useState(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -195,120 +194,94 @@ export default function Home() {
           </div>
         </section>
 
-        {/* === SECTION 4: INDUSTRY TRENDS 2026 (Insights) === */}
-        <section className="py-16 lg:py-24 bg-slate-50" id="trends">
+        {/* === SECTION 4: LATEST INSIGHTS (Link to Blog) === */}
+        <section className="py-16 lg:py-24 bg-slate-50" id="insights">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="text-center mb-16">
-              <span className="text-orange-600 font-bold tracking-wider uppercase text-xs">{t.trend_badge}</span>
+              <span className="text-orange-600 font-bold tracking-wider uppercase text-xs">{t.trend_badge || 'MARKET INTELLIGENCE'}</span>
               <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-slate-900 font-serif">
-                {t.trend_title}
+                {t.insights_title || 'Tendances & Perspectives 2026'}
               </h2>
               <p className="mt-4 text-slate-500 max-w-2xl mx-auto text-lg font-light">
-                {t.trend_subtitle_main}
+                {t.insights_desc || 'Anticiper les évolutions du marché européen pour sécuriser votre avantage concurrentiel.'}
               </p>
             </div>
 
-            {/* Cards Grid */}
+            {/* Featured Blog Posts */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              
-              {/* Card 1: Automation (Real Bakery Factory Image) */}
-              <article 
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" 
-                onClick={() => setSelectedTrend('automation')}
-              >
-                <div className="h-64 overflow-hidden relative">
-                  {/* Image: Industrial Dough Mixer / Bakery Line */}
-                  <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=1000&auto=format&fit=crop" 
-                       alt="Industrial Bakery Automation" 
+              <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-slate-100">
+                <div className="h-48 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" 
+                       alt="EU 2026 Refrigerant Regulations" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
-                    {t.trend_badge_hot}
+                  <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
+                    {t.badge_regulation || 'Réglementation'}
                   </div>
-                  {/* Dark Gradient Overlay for text contrast if needed */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center text-xs text-orange-600 mb-3 font-semibold">
-                    <i className="fa-solid fa-robot mr-2"></i> {t.trend_label_1}
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
-                    {t.trend_1_title}
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
+                    {t.article_refrigerant_title || '2026 : L\'UE Interdit Certains Fluides Frigorigènes'}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    {t.trend_1_desc}
+                  <p className="text-slate-600 text-sm mb-4 line-clamp-2">
+                    {t.article_refrigerant_desc || 'Découvrez les nouvelles restrictions sur les fluides frigorigènes et comment vous préparer.'}
                   </p>
-                  <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-medium text-slate-900 group-hover:text-orange-600 transition-colors">
-                    <span>{t.trend_link_supply}</span>
-                    <i className="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
-                  </div>
+                  <Link href="/blog/eu-2026-refrigerant-ban" className="text-orange-600 font-semibold text-sm hover:text-orange-700 transition-colors">
+                    {t.read_more || 'Lire l\'article'} →
+                  </Link>
                 </div>
               </article>
 
-              {/* Card 2: Direct Model (Supply Chain/Logistics Image) */}
-              <article 
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" 
-                onClick={() => setSelectedTrend('model')}
-              >
-                <div className="h-64 overflow-hidden relative">
-                  {/* Image: Shipping Containers / Global Trade */}
-                  <img src="https://images.unsplash.com/photo-1494412574643-35d32468817e?q=80&w=1000&auto=format&fit=crop" 
-                       alt="Supply Chain Logistics" 
+              <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-slate-100">
+                <div className="h-48 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800" 
+                       alt="EU Energy Standards 2026" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
-                    {t.trend_badge_model}
+                  <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
+                    {t.badge_energy || 'Énergie'}
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center text-xs text-blue-700 mb-3 font-semibold">
-                    <i className="fa-solid fa-handshake mr-2"></i> {t.trend_label_2}
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">
-                    {t.trend_2_title}
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
+                    {t.article_energy_title || 'Normes Énergétiques UE 2026 : Nouveaux Labels'}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    {t.trend_2_desc}
+                  <p className="text-slate-600 text-sm mb-4 line-clamp-2">
+                    {t.article_energy_desc || 'L\'UE renforce ses exigences énergétiques. Découvrez les nouveaux labels et exigences.'}
                   </p>
-                  <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-medium text-slate-900 group-hover:text-blue-700 transition-colors">
-                    <span>{t.trend_link_rates}</span>
-                    <i className="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
-                  </div>
+                  <Link href="/blog/eu-2026-energy-standards" className="text-orange-600 font-semibold text-sm hover:text-orange-700 transition-colors">
+                    {t.read_more || 'Lire l\'article'} →
+                  </Link>
                 </div>
               </article>
 
-              {/* Card 3: Compliance (Eco/Green Tech Image) */}
-              <article 
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" 
-                onClick={() => setSelectedTrend('compliance')}
-              >
-                <div className="h-64 overflow-hidden relative">
-                  {/* Image: Eco Friendly Factory / Solar Panels */}
-                  <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1000&auto=format&fit=crop" 
-                       alt="Eco Design Compliance" 
+              <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-slate-100">
+                <div className="h-48 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=800" 
+                       alt="CHR Automation Trends" 
                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 bg-green-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
-                    {t.trend_badge_compliance}
+                  <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-lg">
+                    {t.badge_trend || 'Tendance'}
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <div className="flex items-center text-xs text-green-700 mb-3 font-semibold">
-                    <i className="fa-solid fa-leaf mr-2"></i> {t.trend_label_3}
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-green-700 transition-colors">
-                    {t.trend_3_title}
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
+                    {t.article_automation_title || 'Automatisation CHR 2026 : La Technologie'}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    {t.trend_3_desc}
+                  <p className="text-slate-600 text-sm mb-4 line-clamp-2">
+                    {t.article_automation_desc || 'L\'automatisation devient incontournable dans le secteur CHR. Découvrez les solutions.'}
                   </p>
-                  <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-medium text-slate-900 group-hover:text-green-700 transition-colors">
-                    <span>{t.trend_link_qc}</span>
-                    <i className="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
-                  </div>
+                  <Link href="/blog/chr-automation-trends-2026" className="text-orange-600 font-semibold text-sm hover:text-orange-700 transition-colors">
+                    {t.read_more || 'Lire l\'article'} →
+                  </Link>
                 </div>
               </article>
+            </div>
 
+            {/* View All Button */}
+            <div className="text-center mt-12">
+              <Link href="/blog" className="inline-block bg-brand-blue text-white px-8 py-4 rounded font-bold hover:bg-brand-orange transition shadow-lg uppercase tracking-wider text-sm">
+                {t.view_all_articles || 'Voir Tous les Articles'}
+              </Link>
             </div>
           </div>
         </section>
@@ -435,54 +408,7 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Simple Modal Overlay */}
-      {selectedTrend && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm" onClick={() => setSelectedTrend(null)}>
-          <div className="bg-white rounded-2xl max-w-2xl w-full p-8 shadow-2xl relative animate-fadeIn" onClick={e => e.stopPropagation()}>
-            <button 
-              onClick={() => setSelectedTrend(null)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            
-            <div className="text-center mb-6">
-              <span className="inline-block py-1 px-3 bg-slate-100 text-slate-600 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
-                {t.trend_badge}
-              </span>
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 font-serif">
-                {selectedTrend === 'automation' && t.trend_1_title}
-                {selectedTrend === 'model' && t.trend_2_title}
-                {selectedTrend === 'compliance' && t.trend_3_title}
-              </h3>
-            </div>
-            
-            <div className="prose prose-slate mx-auto text-slate-600 leading-relaxed">
-              <p className="text-lg mb-6">
-                {selectedTrend === 'automation' && t.trend_1_desc}
-                {selectedTrend === 'model' && t.trend_2_desc}
-                {selectedTrend === 'compliance' && t.trend_3_desc}
-              </p>
-              <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <h4 className="font-bold text-slate-900 mb-2 text-sm uppercase">{t.trend_takeaway_title}</h4>
-                <p className="text-sm">
-                  {selectedTrend === 'automation' && t.trend_1_takeaway}
-                  {selectedTrend === 'model' && t.trend_2_takeaway}
-                  {selectedTrend === 'compliance' && t.trend_3_takeaway}
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 text-center">
-              <Link href="/contact" className="inline-block bg-orange-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-700 transition shadow-lg shadow-orange-600/20">
-                {t.hero_btn_sourcing}
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }

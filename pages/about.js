@@ -27,36 +27,12 @@ export default function About() {
       fallback: "S"
     },
     {
-      name: "Marc Laurent",
-      role: t.team_marc_role || "Directeur Logistique Europe",
-      experience: "25 ans d'expérience",
-      description: t.team_marc_desc || "Expert en logistique et entreposage en Europe. Gère notre réseau de distribution et nos entrepôts stratégiques.",
-      image: "/team/Marc-Laurent.jpg",
-      fallback: "M"
-    },
-    {
       name: "Nathalie Garnier",
       role: t.team_nathalie_role || "Directrice Commerciale",
       experience: "20 ans d'expérience",
       description: t.team_nathalie_desc || "Leader expérimentée en distribution et développement commercial. Dirige notre équipe de vente européenne.",
       image: "/team/Nathalie-Garnier.jpg",
       fallback: "N"
-    },
-    {
-      name: "Li Ming",
-      role: t.team_liming_role || "Directeur Régional Chine",
-      experience: "15 ans d'expérience",
-      description: t.team_liming_desc || "Supervise nos opérations en Chine, gère les relations avec nos 50+ usines partenaires et assure la qualité de production.",
-      image: "/team/li-ming.jpg",
-      fallback: "L"
-    },
-    {
-      name: "Jean-Pierre Moreau",
-      role: t.team_jp_role || "Directeur Régional Amériques",
-      experience: "28 ans d'expérience",
-      description: t.team_jp_desc || "Basé aux États-Unis, il supervise l'ensemble de nos opérations sur le continent américain, couvrant 15 pays.",
-      image: "/team/jp.jpg",
-      fallback: "J"
     }
   ];
 

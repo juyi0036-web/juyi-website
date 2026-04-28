@@ -35,12 +35,12 @@ export default function About() {
       fallback: "M"
     },
     {
-      name: "Sophie Martin",
-      role: t.team_sophie_role || "Directrice Commerciale",
+      name: "Nathalie Garnier",
+      role: t.team_nathalie_role || "Directrice Commerciale",
       experience: "20 ans d'expérience",
-      description: t.team_sophie_desc || "Leader expérimentée en distribution et développement commercial. Dirige notre équipe de vente européenne.",
-      image: "/team/sophie.jpg",
-      fallback: "S"
+      description: t.team_nathalie_desc || "Leader expérimentée en distribution et développement commercial. Dirige notre équipe de vente européenne.",
+      image: "/team/Nathalie-Garnier.jpg",
+      fallback: "N"
     },
     {
       name: "Li Ming",

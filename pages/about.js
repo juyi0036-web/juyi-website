@@ -170,7 +170,7 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="h-48 bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center relative overflow-hidden">
+                <div className="h-52 bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center relative overflow-hidden">
                   <img 
                     src={member.image}
                     alt={member.name}

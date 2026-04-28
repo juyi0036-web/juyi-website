@@ -47,7 +47,7 @@ export default function About() {
       role: t.team_liming_role || "Directeur Régional Chine",
       experience: "15 ans d'expérience",
       description: t.team_liming_desc || "Supervise nos opérations en Chine, gère les relations avec nos 50+ usines partenaires et assure la qualité de production.",
-      image: "/team/liming.jpg",
+      image: "/team/li-ming.jpg",
       fallback: "L"
     },
     {

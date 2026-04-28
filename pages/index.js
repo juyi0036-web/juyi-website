@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import SmartAssistant from '../components/SmartAssistant';
@@ -22,6 +22,11 @@ export default function Home() {
   }));
 
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  // 确保页面加载时始终从顶部开始渲染
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {

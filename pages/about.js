@@ -23,7 +23,7 @@ export default function About() {
       role: t.team_sheng_role || "Directeur Supply Chain Chine",
       experience: "12 ans d'expertise",
       description: t.team_sheng_desc || "Spécialiste de l'intégration de la chaîne d'approvisionnement CHR en Chine. 12 ans d'expertise en sourcing.",
-      image: "/team/sheng yu.jpg",
+      image: "/team/sheng-yu.jpg",
       fallback: "S"
     },
     {

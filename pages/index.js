@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState, useEffect, useLayoutEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
-import SmartAssistant from '../components/SmartAssistant';
 import { translations } from '../data/translations';
 
 export default function Home() {
@@ -88,7 +87,7 @@ export default function Home() {
               {t.hero_desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#assistant" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
+              <a href="#contact" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
                 {t.hero_btn_sourcing || 'Parler à l\'Assistant'}
               </a>
               <Link href="/products" className="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition backdrop-blur-sm uppercase tracking-wider text-sm">
@@ -294,21 +293,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* === SECTION 4: SMART ASSISTANT (Inquiry & Contact) === */}
-        <section className="py-16 bg-slate-50" id="assistant">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="text-center mb-10">
-              <span className="text-brand-orange font-bold tracking-wider uppercase text-xs">{t.assistant_badge || 'ASSISTANT IA'}</span>
-              <h2 className="mt-2 text-3xl md:text-4xl font-bold text-brand-dark">
-                {t.assistant_section_title || 'Votre Expert CHR Personnel'}
-              </h2>
-              <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-                {t.assistant_section_desc || 'Posez vos questions, obtenez un devis, ou contactez notre équipe. Notre assistant IA vous répond instantanément.'}
-              </p>
-            </div>
-            <SmartAssistant />
-          </div>
-        </section>
 
         {/* === CTA SECTION === */}
         <section className="py-20 bg-brand-orange text-white">

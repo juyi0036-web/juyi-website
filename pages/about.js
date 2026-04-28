@@ -106,7 +106,7 @@ export default function About() {
                <img 
                  src="/products/equip-01.jpg"
                  alt="Production & Équipements"
-                 className="absolute inset-0 w-full h-full object-top"
+                 className="absolute inset-0 w-full h-full object-cover object-top"
                  onError={(e) => { e.currentTarget.src = '/hero-stainless-20251204.jpg'; }}
                />
             </div>
@@ -174,7 +174,7 @@ export default function About() {
                   <img 
                     src={member.image}
                     alt={member.name}
-                    className="absolute inset-0 w-full h-full object-top"
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       e.currentTarget.parentElement.querySelector('.fallback-avatar').style.display = 'flex';

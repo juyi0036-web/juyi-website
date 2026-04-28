@@ -52,9 +52,9 @@ export default function About() {
     },
     {
       name: "Jean-Pierre Moreau",
-      role: t.team_jp_role || "Directeur Régional Europe",
-      experience: "22 ans d'expérience",
-      description: t.team_jp_desc || "Basé à Paris, il supervise nos opérations européennes et nos relations clients à travers 15 pays.",
+      role: t.team_jp_role || "Directeur Régional Amériques",
+      experience: "28 ans d'expérience",
+      description: t.team_jp_desc || "Basé aux États-Unis, il supervise nos opérations en Amérique et nos relations clients à travers 15 pays.",
       image: "/team/jp.jpg",
       fallback: "J"
     }

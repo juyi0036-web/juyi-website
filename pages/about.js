@@ -54,7 +54,7 @@ export default function About() {
       name: "Jean-Pierre Moreau",
       role: t.team_jp_role || "Directeur Régional Amériques",
       experience: "28 ans d'expérience",
-      description: t.team_jp_desc || "Basé aux États-Unis, il supervise nos opérations en Amérique et nos relations clients à travers 15 pays.",
+      description: t.team_jp_desc || "Basé aux États-Unis, il supervise l'ensemble de nos opérations sur le continent américain, couvrant 15 pays.",
       image: "/team/jp.jpg",
       fallback: "J"
     }
@@ -170,7 +170,7 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="h-52 bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center relative overflow-hidden">
+                <div className="h-50 bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center relative overflow-hidden">
                   <img 
                     src={member.image}
                     alt={member.name}

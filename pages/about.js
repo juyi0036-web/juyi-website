@@ -15,7 +15,7 @@ export default function About() {
       role: t.team_philippe_role || "Fondateur & Directeur Général",
       experience: "38 ans d'expérience",
       description: t.team_philippe_desc || "Expert reconnu dans l'industrie CHR européenne. A occupé des postes de direction dans les plus grands groupes de restauration avant de fonder JUYI.",
-      image: "/team/philippe-dubois.jpg",
+      image: "/team/Philippe Dubois.jpg",
       fallback: "P"
     },
     {

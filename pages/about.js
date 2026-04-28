@@ -31,7 +31,7 @@ export default function About() {
       role: t.team_marc_role || "Directeur Logistique Europe",
       experience: "25 ans d'expérience",
       description: t.team_marc_desc || "Expert en logistique et entreposage en Europe. Gère notre réseau de distribution et nos entrepôts stratégiques.",
-      image: "/team/marc.jpg",
+      image: "/team/Marc-Laurent.jpg",
       fallback: "M"
     },
     {

@@ -19,12 +19,12 @@ export default function About() {
       fallback: "P"
     },
     {
-      name: "Chen Wei",
-      role: t.team_chen_role || "Directeur Supply Chain Chine",
-      experience: "12 ans d'expérience",
-      description: t.team_chen_desc || "Spécialiste de l'intégration de la chaîne d'approvisionnement CHR en Chine. Expert en sourcing et contrôle qualité.",
-      image: "/team/chen.jpg",
-      fallback: "C"
+      name: "Sheng YU",
+      role: t.team_sheng_role || "Directeur Supply Chain Chine",
+      experience: "12 ans d'expertise",
+      description: t.team_sheng_desc || "Spécialiste de l'intégration de la chaîne d'approvisionnement CHR en Chine. 12 ans d'expertise en sourcing.",
+      image: "/team/sheng yu.jpg",
+      fallback: "S"
     },
     {
       name: "Marc Laurent",

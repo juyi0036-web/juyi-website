@@ -15,11 +15,11 @@ export default function About() {
       role: t.team_philippe_role || "Fondateur & Directeur Général",
       experience: "38 ans d'expérience",
       description: t.team_philippe_desc || "Expert reconnu dans l'industrie CHR européenne. A occupé des postes de direction dans les plus grands groupes de restauration avant de fonder JUYI.",
-      image: "/team/philippe.jpg",
+      image: "/team/philippe-dubois.jpg",
       fallback: "P"
     },
     {
-      name: "Sheng YU",
+      name: "sheng yu",
       role: t.team_sheng_role || "Directeur Supply Chain Chine",
       experience: "12 ans d'expertise",
       description: t.team_sheng_desc || "Spécialiste de l'intégration de la chaîne d'approvisionnement CHR en Chine. 12 ans d'expertise en sourcing.",

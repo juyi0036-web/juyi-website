@@ -9,7 +9,7 @@ How to push to GitHub (from ~/juyi-website):
 git add .
 git commit -m "Add multi-page site scaffold"
 git branch -M main
-git push -u origin main
+git push -u origin main 
 
 Deploy to Vercel:
 1. Create a GitHub repo and push the project.

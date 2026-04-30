@@ -112,7 +112,7 @@ export default function AllProducts() {
       </main>
 
       {/* CTA Banner */}
-      <CTABanner />
+      <CTABanner link="/contact#contact" />
     </div>
   );
 }

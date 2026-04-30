@@ -164,7 +164,7 @@ export default function BlogPost() {
       </main>
 
       {/* CTA Banner */}
-      <CTABanner />
+      <CTABanner link="/contact#contact" />
 
       <footer className="bg-brand-dark text-slate-400 py-12 border-t border-white/5 text-center text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">

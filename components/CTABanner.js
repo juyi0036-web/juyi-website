@@ -1,16 +1,12 @@
-import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { translations } from '../data/translations';
-import NewsletterModal from './NewsletterModal';
 
-export default function CTABanner({ compact = false, link = null, buttonText = null, title = null, subtitle = null }) {
+export default function CTABanner({ link = null, buttonText = null, title = null, subtitle = null }) {
   const router = useRouter();
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // 多语言文案 — 未传入自定义值时使用默认订阅文案
+  // 订阅横幅文案（不再使用，保留结构便于扩展）
   const defaultContent = {
     fr: {
       title: 'Restez Informé',
@@ -29,7 +25,7 @@ export default function CTABanner({ compact = false, link = null, buttonText = n
     }
   };
 
-  // 首页专用文案（如果传入）
+  // 首页专用文案
   const homeContent = {
     fr: {
       title: "Prêt à Commencer ?",
@@ -55,9 +51,6 @@ export default function CTABanner({ compact = false, link = null, buttonText = n
     button: buttonText !== null ? buttonText : (base[locale] || base.fr).button
   };
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
   return (
     <>
       {/* 橙色横幅 */}
@@ -70,7 +63,7 @@ export default function CTABanner({ compact = false, link = null, buttonText = n
             {msg.subtitle}
           </p>
 
-          {/* 根据 props 决定按钮行为：链接或打开模态 */}
+          {/* 按钮：如果传入 link，跳转到该链接；否则打开模态窗口（订阅功能已移除） */}
           {link ? (
             <a
               href={link}
@@ -80,17 +73,14 @@ export default function CTABanner({ compact = false, link = null, buttonText = n
             </a>
           ) : (
             <button
-              onClick={openModal}
-              className="inline-block bg-white text-brand-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl uppercase tracking-wider"
+              disabled
+              className="inline-block bg-white/50 text-brand-orange/50 px-8 py-4 rounded-lg font-bold text-lg cursor-not-allowed uppercase tracking-wider"
             >
-              {msg.button}
+              {msg.button} (bientôt)
             </button>
           )}
         </div>
       </div>
-
-      {/* 订阅模态窗口 */}
-      <NewsletterModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

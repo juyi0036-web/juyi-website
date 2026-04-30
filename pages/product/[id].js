@@ -60,7 +60,7 @@ export default function ProductDetail({ product: productProp }) {
         </main>
 
       {/* CTA Banner */}
-      <CTABanner />
+      <CTABanner link="/contact#contact" />
       </div>
     );
   }

@@ -112,7 +112,7 @@ export default function SearchPage() {
         )}
       </main>
 
-      <CTABanner />
+      <CTABanner link="/contact#contact" />
     </div>
   )
 }

@@ -8,7 +8,7 @@ export default function CTABanner({ link = null, buttonText = null, title = null
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  // 订阅横幅文案（默认模式：无 link 参数）
+  // 订阅横幅文案（默认模式：无 link 参数）-> 深蓝色背景
   const defaultContent = {
     fr: {
       title: 'Restez Informé',
@@ -27,7 +27,7 @@ export default function CTABanner({ link = null, buttonText = null, title = null
     }
   };
 
-  // 首页专用文案（有 link 参数）
+  // 首页专用文案（有 link 参数）-> 橙色背景
   const homeContent = {
     fr: {
       title: "Prêt à Commencer ?",
@@ -59,8 +59,8 @@ export default function CTABanner({ link = null, buttonText = null, title = null
 
   return (
     <>
-      {/* 橙色横幅 */}
-      <div className="bg-brand-orange py-16">
+      {/* 横幅容器：首页橙色，订阅深蓝色 */}
+      <div className={isHomeMode ? "bg-brand-orange py-16" : "bg-slate-800 py-16"}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {msg.title}
@@ -71,7 +71,7 @@ export default function CTABanner({ link = null, buttonText = null, title = null
 
           {/* 按钮逻辑 */}
           {isHomeMode ? (
-            // 首页模式：跳转到联系页面
+            // 首页模式：跳转到联系页面（白底橙字按钮）
             <a
               href={link}
               className="inline-block bg-white text-brand-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl uppercase tracking-wider"
@@ -79,10 +79,10 @@ export default function CTABanner({ link = null, buttonText = null, title = null
               {msg.button}
             </a>
           ) : (
-            // 订阅模式：打开弹窗
+            // 订阅模式：打开弹窗（橙底白字按钮）
             <button
               onClick={() => setShowModal(true)}
-              className="inline-block bg-white text-brand-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl uppercase tracking-wider"
+              className="inline-block bg-brand-orange text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-lg hover:shadow-xl uppercase tracking-wider"
             >
               {msg.button}
             </button>

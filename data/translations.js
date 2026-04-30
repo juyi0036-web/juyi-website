@@ -200,6 +200,13 @@ export const translations = {
     form_success_title: "Merci pour votre demande !",
     form_success_desc: "Notre équipe vous contactera dans les 24 heures.",
     form_again: "Envoyer une autre demande",
+
+    // Newsletter Modal
+    newsletter_title: "Restez Informé",
+    newsletter_desc: "Abonnez-vous à notre newsletter pour les dernières perspectives de l'industrie et les mises à jour réglementaires.",
+    newsletter_button: "CONTACTEZ-NOUS",
+    newsletter_success_title: "Merci !",
+    newsletter_success_desc: "Vous êtes maintenant abonné à notre newsletter.",
     form_error: "Une erreur s'est produite. Veuillez réessayer.",
 
     // Footer
@@ -248,11 +255,6 @@ export const translations = {
         image: "/hero-cold-20251204.jpg",
         fit: "cover",
         position: "center"
-
-    privacy_title: "Politique de Confidentialité",
-    privacy_last_update: "Dernière mise à jour : avril 2026",
-    terms_title: "Conditions d'Utilisation",
-    terms_last_update: "Dernière mise à jour : avril 2026",
       }
     ],
     
@@ -338,6 +340,10 @@ export const translations = {
       temperature: "Température"
     }
   },
+    privacy_title: "Politique de Confidentialité",
+    privacy_last_update: "Dernière mise à jour : avril 2026",
+    terms_title: "Conditions d'Utilisation",
+    terms_last_update: "Dernière mise à jour : avril 2026",
 
   // === ENGLISH (EN) ===
   en: {
@@ -540,6 +546,13 @@ export const translations = {
     form_success_title: "Thank you for your request!",
     form_success_desc: "Our team will contact you within 24 hours.",
     form_again: "Submit another request",
+
+    // Newsletter Modal
+    newsletter_title: "Stay Informed",
+    newsletter_desc: "Subscribe to our newsletter for the latest industry insights and regulatory updates.",
+    newsletter_button: "CONTACT US",
+    newsletter_success_title: "Thank you!",
+    newsletter_success_desc: "You are now subscribed to our newsletter.",
     form_error: "An error occurred. Please try again.",
 
     // Footer
@@ -588,11 +601,6 @@ export const translations = {
         image: "/hero-cold-20251204.jpg",
         fit: "cover",
         position: "center"
-
-    privacy_title: "Privacy Policy",
-    privacy_last_update: "Last updated: April 2026",
-    terms_title: "Terms of Use",
-    terms_last_update: "Last updated: April 2026",
       }
     ],
 
@@ -676,6 +684,10 @@ export const translations = {
       temperature: "Temperature"
     }
   },
+    privacy_title: "Privacy Policy",
+    privacy_last_update: "Last updated: April 2026",
+    terms_title: "Terms of Use",
+    terms_last_update: "Last updated: April 2026",
 
   // === ESPAÑOL (ES) ===
   es: {
@@ -879,6 +891,13 @@ export const translations = {
     form_success_title: "¡Gracias por su solicitud!",
     form_success_desc: "Nuestro equipo lo contactará dentro de 24 horas.",
     form_again: "Enviar otra solicitud",
+
+    // Newsletter Modal
+    newsletter_title: "Manténgase Informado",
+    newsletter_desc: "Suscríbase a nuestro boletín para las últimas perspectivas de la industria y actualizaciones regulatorias.",
+    newsletter_button: "CONTÁCTENOS",
+    newsletter_success_title: "¡Gracias!",
+    newsletter_success_desc: "Ahora está suscrito a nuestro boletín.",
     form_error: "Ocurrió un error. Por favor, inténtelo de nuevo.",
 
     // Footer
@@ -927,11 +946,6 @@ export const translations = {
         image: "/hero-cold-20251204.jpg",
         fit: "cover",
         position: "center"
-
-    privacy_title: "Política de Privacidad",
-    privacy_last_update: "Última actualización: abril 2026",
-    terms_title: "Condiciones de Uso",
-    terms_last_update: "Última actualización: abril 2026",
       }
     ],
 
@@ -1016,4 +1030,8 @@ export const translations = {
       temperature: "Temperatura"
     }
   }
+    privacy_title: "Política de Privacidad",
+    privacy_last_update: "Última actualización: abril 2026",
+    terms_title: "Condiciones de Uso",
+    terms_last_update: "Última actualización: abril 2026",
 };

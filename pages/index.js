@@ -88,7 +88,7 @@ export default function Home() {
               {t.hero_desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
+              <a href="/contact#contact" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
                 {t.hero_btn_sourcing || 'Parler à l\'Assistant'}
               </a>
               <Link href="/products" className="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition backdrop-blur-sm uppercase tracking-wider text-sm">

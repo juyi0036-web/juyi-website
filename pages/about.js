@@ -5,6 +5,8 @@ import InquiryForm from '../components/InquiryForm';
 import { useRouter } from 'next/router';
 import { translations } from '../data/translations';
 
+import CTABanner from '../components/CTABanner';
+
 export default function About() {
   const { locale } = useRouter();
   const t = translations[locale] || translations.fr;
@@ -190,6 +192,9 @@ export default function About() {
           <InquiryForm />
         </div>
       </main>
+
+      {/* CTA Banner */}
+      <CTABanner />
 
       <footer className="bg-brand-dark text-slate-400 py-12 border-t border-white/5 text-center text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">

@@ -5,6 +5,8 @@ import Navbar from '../../components/Navbar';
 import { products } from '../../data/products';
 import { translations } from '../../data/translations';
 
+import CTABanner from '../../components/CTABanner';
+
 export default function AllProducts() {
   const router = useRouter();
   const { locale } = router;
@@ -108,6 +110,9 @@ export default function AllProducts() {
           </div>
         )}
       </main>
+
+      {/* CTA Banner */}
+      <CTABanner />
     </div>
   );
 }

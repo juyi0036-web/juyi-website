@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
 import blogPosts from '../../data/blogPosts';
 
+import CTABanner from '../../components/CTABanner';
+
 export default function Blog() {
   const { locale } = useRouter();
   const t = locale === 'en' ? 'en' : locale === 'es' ? 'es' : 'fr';
@@ -145,6 +147,9 @@ export default function Blog() {
           </Link>
         </div>
       </main>
+
+      {/* CTA Banner */}
+      <CTABanner />
 
       <footer className="bg-brand-dark text-slate-400 py-12 border-t border-white/5 text-center text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">

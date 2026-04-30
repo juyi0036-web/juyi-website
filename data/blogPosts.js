@@ -581,7 +581,120 @@ const blogPosts = [
 </p>
       `
     }
+  },
+  {
+    id: 'eu-2026-energy-standards',
+    slug: 'eu-2026-energy-standards',
+    date: '2026-05-01',
+    readTime: '10 min',
+    author: {
+      name: 'Philippe Dubois',
+      role: 'Fondateur & Expert CHR',
+      avatar: '/team/philippe.jpg'
+    },
+    category: {
+      label: 'Réglementation UE',
+      color: 'red'
+    },
+    image: {
+      main: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200',
+      alt: 'Modern commercial kitchen with energy efficient equipment'
+    },
+    title: {
+      fr: 'Nouvelle Étiquette Énergie 2026 : Le Guide Complet pour les Professionnels CHR',
+      en: 'New Energy Label 2026: The Complete Guide for CHR Professionals',
+      es: 'Nueva Etiqueta Energética 2026: La Guía Completa para Profesionales CHR'
+    },
+    subtitle: {
+      fr: "L'échelle A-G remplace A+++. Découvrez comment cette réforme va transformer votre choix d'équipements et réduire vos coûts énergétiques.",
+      en: "The A-G scale replaces A+++. Discover how this reform will transform your equipment choices and reduce your energy costs.",
+      es: "La escala A-G reemplaza A+++. Descubra cómo esta reforma transformará su elección de equipos y reducirá sus costos energéticos."
+    },
+    content: {
+      fr: `
+<p class="text-lg text-gray-600 mb-8 leading-relaxed">
+  À partir de 2026, l'Union européenne impose une réforme majeure de l'étiquetage énergétique pour les équipements CHR. Si vous achetez du matériel de cuisine professionnelle, cette nouvelle réglementation va changer votre façon de commander. Voici ce que tout professionnel doit savoir.
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Pourquoi un Nouveau Système d'Étiquetage ?</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  L'échelle A-G remplace l'ancien système A+++. Plus simple, plus lisible, plus exigeant. Découvrez les Impacts concrets pour votre établissement et comment anticiper dès maintenant.
+</p>
+
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-lg my-8">
+  <p class="text-orange-800 font-medium">
+    💡 <strong>Le saviez-vous ?</strong>  La nouvelle étiquette énergie permet de réduire jusqu'à 20% la consommation d'électricité des équipements en choisissant la classe A au lieu de la classe D.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Calendrier et Équipements Concernés</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  La réforme s'applique à tous les équipements mis sur le marché à partir du 1er mars 2026. Réfrigérateurs, congélateurs, lave-vaisselle, fours... tout est concerné. Préparez votre stock etyour catalogue en conséquence.
+</p>
+
+<p class="text-sm text-gray-500 mt-12">
+  <strong>Sources :</strong> Règlement (UE) 2024/573, Comisión Europea - Regulación F-Gas, Agencia Europea de Medio Ambiente
+</p>
+`,
+      en: `
+<p class="text-lg text-gray-600 mb-8 leading-relaxed">
+  Starting in 2026, the EU is implementing a major energy labeling reform for CHR equipment. If you buy professional kitchen equipment, this new regulation will change how you order. Here's what every professional needs to know.
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Why a New Labeling System?</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  The A-G scale replaces the old A+++ system. Simpler, more readable, more demanding. Discover the concrete impacts on your business and how to prepare now.
+</p>
+
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-lg my-8">
+  <p class="text-orange-800 font-medium">
+    💡 <strong>Did you know?</strong> The new energy label can reduce electricity consumption by up to 20% by choosing class A instead of class D.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Timeline and Affected Equipment</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  The reform applies to all equipment placed on the market from March 1, 2026. Refrigerators, freezers, dishwashers, ovens... all are concerned. Prepare your stock and catalog accordingly.
+</p>
+
+<p class="text-sm text-gray-500 mt-12">
+  <strong>Sources:</strong> Regulation (EU) 2024/573, European Commission - F-Gas Regulation, European Environment Agency
+</p>
+`,
+      es: `
+<p class="text-lg text-gray-600 mb-8 leading-relaxed">
+  A partir de 2026, la UE implementa una reforma mayor del etiquetado energético para equipos CHR. Si compra equipo de cocina profesional, esta nueva regulación cambiará su forma de pedir. Esto es lo que todo profesional debe saber.
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">¿Por Qué un Nuevo Sistema de Etiquetado?</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  La escala A-G reemplaza el antiguo sistema A+++. Más simple, más legible, más exigente. Descubra los impactos concretos para su establecimiento y cómo anticiparse ahora.
+</p>
+
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-lg my-8">
+  <p class="text-orange-800 font-medium">
+    💡 <strong>¿Sabía que?</strong> La nueva etiqueta energética puede reducir el consumo eléctrica hasta un 20% al elegir clase A en lugar de clase D.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Cronograma y Equipos Afectados</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  La reforma se aplica a todos los equipos colocados en el mercado a partir del 1 de marzo de 2026. Refrigeradores, congeladores, lavavajillas, hornos... todo está concernido. Prepare su stock y catálogo en consecuencia.
+</p>
+
+<p class="text-sm text-gray-500 mt-12">
+  <strong>Fuentes:</strong> Reglamento (UE) 2024/573, Comisión Europea - Regulación F-Gas, Agencia Europea de Medio Ambiente
+</p>
+`
+    }
   }
+
 ];
 
 export default blogPosts;

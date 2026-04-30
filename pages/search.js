@@ -6,6 +6,7 @@ import { products } from '../data/products'
 import { categories } from '../data/categories'
 import { translations } from '../data/translations'
 
+import CTABanner from '../components/CTABanner';
 export default function SearchPage() {
   const router = useRouter()
   const { q } = router.query
@@ -110,6 +111,8 @@ export default function SearchPage() {
           </div>
         )}
       </main>
+
+      <CTABanner />
     </div>
   )
 }

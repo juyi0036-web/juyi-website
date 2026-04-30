@@ -148,11 +148,11 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="relative bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center aspect-[4/5] min-h-[280px]">
+                <div className="relative bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center h-80">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-contain bg-gray-50"
+                    className="w-full h-full object-cover bg-gray-50"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       const fallback = e.currentTarget.parentElement.querySelector('.fallback-avatar');

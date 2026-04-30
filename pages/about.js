@@ -1,4 +1,4 @@
-1|     1|import Head from 'next/head';
+import Head from 'next/head';
      2|     2|import Link from 'next/link';
      3|     3|import Navbar from '../components/Navbar';
      4|     4|

@@ -340,10 +340,6 @@ export const translations = {
       temperature: "Température"
     }
   },
-    privacy_title: "Politique de Confidentialité",
-    privacy_last_update: "Dernière mise à jour : avril 2026",
-    terms_title: "Conditions d'Utilisation",
-    terms_last_update: "Dernière mise à jour : avril 2026",
 
   // === ENGLISH (EN) ===
   en: {
@@ -684,10 +680,6 @@ export const translations = {
       temperature: "Temperature"
     }
   },
-    privacy_title: "Privacy Policy",
-    privacy_last_update: "Last updated: April 2026",
-    terms_title: "Terms of Use",
-    terms_last_update: "Last updated: April 2026",
 
   // === ESPAÑOL (ES) ===
   es: {
@@ -1030,8 +1022,4 @@ export const translations = {
       temperature: "Temperatura"
     }
   }
-    privacy_title: "Política de Privacidad",
-    privacy_last_update: "Última actualización: abril 2026",
-    terms_title: "Condiciones de Uso",
-    terms_last_update: "Última actualización: abril 2026",
 };

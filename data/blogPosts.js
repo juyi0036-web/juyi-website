@@ -693,10 +693,7 @@ const blogPosts = [
 </p>
 `
     }
-  }
-
-
-
+  },
   {
     id: 'fr-2026-chr-trends',
     slug: 'fr-2026-chr-trends',
@@ -820,8 +817,7 @@ const blogPosts = [
 </p>
 `
     }
-  }
-
+  },
 ];
 
 export default blogPosts;

@@ -32,8 +32,8 @@ export default function CTABanner({ compact = false, link = null, buttonText = n
   // 首页专用文案（如果传入）
   const homeContent = {
     fr: {
-      title: 'Prêt à Commencer ?',
-      subtitle: 'Contactez-nous dès aujourd'hui pour discuter de votre projet d'équipement.',
+      title: "Prêt à Commencer ?",
+      subtitle: "Contactez-nous dès aujourd'hui pour discuter de votre projet d'équipement.",
       button: 'DEMANDER UN DEVIS'
     },
     en: {

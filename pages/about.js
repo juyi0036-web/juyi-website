@@ -1,7 +1,7 @@
      1|import Head from 'next/head';
      2|import Link from 'next/link';
      3|import Navbar from '../components/Navbar';
-     4|import InquiryForm from '../components/InquiryForm';
+     4|
      5|import { useRouter } from 'next/router';
      6|import { translations } from '../data/translations';
      7|
@@ -174,15 +174,15 @@
    174|          </div>
    175|        </div>
    176|
-   177|        {/* CTA Section */}
-   178|        <div className="bg-brand-orange rounded-2xl p-12 text-center text-white">
+        {/* CTA Section */}
+        <div className="bg-brand-orange rounded-2xl p-12 text-center text-white mt-20">
    179|          <h2 className="text-3xl font-bold mb-4">
    180|            {t.about_cta_title || "Prêt à Commencer ?"}
    181|          </h2>
    182|          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
    183|            {t.about_cta_desc || "Contactez-nous dès aujourd'hui pour discuter de votre projet d'équipement."}
    184|          </p>
-   185|          <a href="#inquiry" className="inline-block bg-white text-brand-orange px-8 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
+   185|            <a href="/contact#contact"className="inline-block bg-white text-brand-orange px-8 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
    186|            {t.about_cta_btn || "Demander un Devis"}
    187|          </a>
    188|        </div>

@@ -64,13 +64,13 @@ export default function About() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Our Story */}
-        <div className="mb-20">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <div className="mb-16">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-10 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-brand-dark mb-6 uppercase tracking-wide border-l-4 border-brand-orange pl-4">
+              <h2 className="text-3xl font-bold text-brand-dark mb-4 uppercase tracking-wide border-l-4 border-brand-orange pl-4">
                 {t.about_story_title || "Notre Histoire"}
               </h2>
-              <div className="text-lg text-gray-700 space-y-6 leading-relaxed">
+                <div className="text-lg text-gray-700 space-y-4 leading-relaxed">
                 <p>{t.about_story_p1 || "Fondée en 2018 à Shanghai, JUYI CHR est née d'une vision simple : éliminer les intermédiaires coûteux dans l'achat d'équipements CHR en Chine."}</p>
                 <p>{t.about_story_p2 || "Notre fondateur, Philippe Dubois, apporte 38 ans d'expérience dans l'industrie CHR européenne. Il a dirigé des opérations pour les plus grands groupes de restauration avant de créer JUYI."}</p>
                 <p>{t.about_story_p3 || "Aujourd'hui, notre équipe de 6 experts combine plus de 100 ans d'expérience, servant plus de 200 clients à travers l'Europe."}</p>
@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         {/* Our Values */}
-        <div className="mb-20">
+        <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-brand-dark mb-4">
               {t.about_values_title || "Nos Valeurs"}
@@ -97,9 +97,9 @@ export default function About() {
             <div className="w-20 h-1 bg-brand-orange mx-auto"></div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-              <div className="text-4xl mb-4">🔍</div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+              <div className="text-4xl mb-3">🔍</div>
               <h3 className="text-xl font-bold text-brand-dark mb-3">
                 {t.about_value_transparency || "Transparence"}
               </h3>
@@ -108,8 +108,8 @@ export default function About() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-              <div className="text-4xl mb-4">✅</div>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+              <div className="text-4xl mb-3">✅</div>
               <h3 className="text-xl font-bold text-brand-dark mb-3">
                 {t.about_value_quality || "Qualité"}
               </h3>
@@ -118,8 +118,8 @@ export default function About() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-              <div className="text-4xl mb-4">🤝</div>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+              <div className="text-4xl mb-3">🤝</div>
               <h3 className="text-xl font-bold text-brand-dark mb-3">
                 {t.about_value_service || "Service"}
               </h3>
@@ -131,18 +131,18 @@ export default function About() {
         </div>
 
         {/* Team Section */}
-        <div className="mb-20">
+        <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-brand-dark mb-4">
               {t.about_team_title || "Notre Équipe d'Experts"}
             </h2>
             <div className="w-20 h-1 bg-brand-orange mx-auto"></div>
-            <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
+            <p className="mt-2 text-gray-500 max-w-2xl mx-auto">
               {t.about_team_desc || "100+ ans d'expérience combinée dans l'industrie CHR, la supply chain et la logistique."}
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <div className="relative bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center aspect-[4/5] min-h-[280px]">
@@ -163,8 +163,8 @@ export default function About() {
                 <div className="p-6">
                   <h3 className="font-bold text-brand-dark text-lg">{member.name}</h3>
                   <p className="text-sm text-brand-orange font-semibold mb-1">{member.role}</p>
-                  <p className="text-xs text-gray-400 mb-3">{member.experience}</p>
-                  <p className="text-sm text-gray-600">{member.description}</p>
+                  <p className="text-xs text-gray-400 mb-2">{member.experience}</p>
+                  <p className="text-sm text-gray-600 mb-2">{member.description}</p>
                 </div>
               </div>
             ))}
@@ -172,11 +172,11 @@ export default function About() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-brand-orange rounded-2xl p-12 text-center text-white">
+        <div className="bg-brand-orange rounded-2xl p-8 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">
             {t.about_cta_title || "Prêt à Commencer ?"}
           </h2>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-white/80 mb-4 max-w-2xl mx-auto">
             {t.about_cta_desc || "Contactez-nous dès aujourd'hui pour discuter de votre projet d'équipement."}
           </p>
           <a href="/contact#contact" className="inline-block bg-white text-brand-orange px-8 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">

@@ -1,0 +1,3 @@
+[submodule "juyi-website"]
+	path = juyi-website
+	url = https://github.com/juyi0036-web/juyi-website.git

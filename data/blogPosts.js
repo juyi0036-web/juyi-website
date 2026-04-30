@@ -718,7 +718,7 @@ const blogPosts = [
       es: 'CHR Francia 2026: 5 Tendencias que Redefinen el Sector'
     },
     subtitle: {
-      fr: 'Entre contraction des marges, explosion de l'expérience et invasion de l'IA, le secteur CHR français traverse une période de transformation profonde. Analyse des 5 mouvements structurants de 2026.',
+      fr: 'Entre contraction des marges, explosion de l\'expérience et invasion de l\'IA, le secteur CHR français traverse une période de transformation profonde. Analyse des 5 mouvements structurants de 2026.',
       en: 'Between margin compression, experience explosion, and AI invasion, the French CHR sector is undergoing profound transformation. Analysis of the 5 structural trends of 2026.',
       es: 'Entre contracción de márgenes, explosión de la experiencia e invasión de la IA, el sector CHR francés está atravesando una transformación profunda. Análisis de las 5 tendencias estructurales de 2026.'
     },
@@ -818,6 +818,129 @@ const blogPosts = [
 `
     }
   },
+  {
+    id: "fr-2026-chr-trends",
+    slug: "fr-2026-chr-trends",
+    date: "2026-05-01",
+    readTime: "10 min",
+    author: {
+      name: "Philippe Dubois",
+      role: "Fondateur & Expert CHR",
+      avatar: "/team/philippe.jpg"
+    },
+    category: {
+      label: "Tendances du marché",
+      color: "blue"
+    },
+    image: {
+      main: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+      alt: "Restaurant terrasse à Paris avec ambiance conviviale"
+    },
+    title: {
+      fr: "CHR France 2026 : 5 Tendances qui Redéfinissent le Secteur",
+      en: "French CHR 2026: 5 Trends Redefining the Sector",
+      es: "CHR Francia 2026: 5 Tendencias que Redefinen el Sector"
+    },
+    subtitle: {
+      fr: "Entre contraction des marges, explosion de l'expérience et invasion de l'IA, le secteur CHR français traverse une période de transformation profonde. Analyse des 5 mouvements structurants de 2026.",
+      en: "Between margin compression, experience explosion, and AI invasion, the French CHR sector is undergoing profound transformation. Analysis of the 5 structural trends of 2026.",
+      es: "Entre contracción de márgenes, explosión de la experiencia e invasión de la IA, el sector CHR francés está atravesando una transformación profunda. Análisis de las 5 tendencias estructurales de 2026."
+    },
+    content: {
+      fr: `<p class="text-lg text-gray-600 mb-8 leading-relaxed">
+  La France, berceau de la gastronomie mondiale, voit son paysage CHR (Café-Hôtel-Restaurant) muter à une vitesse inédite. En 2026, le secteur affiche une <strong>croissance nominale de 3,2%</strong> pour dépasser <strong>1230 milliards d'euros</strong> de chiffre d'affaires, mais cette progression masque une réalité plus sombre : une <strong>déflation du trafic</strong> et une <strong>pression inédite sur les marges</strong>.
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">1. L'Ère de la « Déconsommation » : Moins de Volume, Plus de Valeur</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  Le <strong>Plat du Jour</strong> moyen franchit désormais la barre psychologique des <strong>17,28 euros</strong>. Ce seuil, perçu comme un point de résistance par les consommateurs, provoque un report massif vers les alternatives abordables.
+</p>
+
+<div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg my-8">
+  <p class="text-red-800 font-medium">
+    📉 <strong>Chiffre clé :</strong> 59% des actifs français renoncent au restaurant traditionnel à midi au profit des salades préparées en supermarché (GMS). Pendant ce temps, le taux de faillite dans la restauration rapide bondit de <strong>19%</strong> et de <strong>12%</strong> dans la restauration traditionnelle. L'équation économique est sans pitié : <strong>70-75% de marge sur les solides</strong> et <strong>85% sur les liquides</strong> pour survivre.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">2. L'Apogée de l'Expérience Premium : Manger Mieux, Manger Moins</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  Face à l'inflation, le consommateur français a opéré un <strong>changement de paradigme</strong> : il ne consomme plus en quantité, mais en qualité. Les statistiques montrent que <strong>73% des clients privilégient désormais la salle</strong> (vs. emporter ou livraison), transformant le restaurant en un lieu de <strong>rituel social</strong>.
+</p>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  Sur le plan culinaire, la tendance est au <strong>retour aux sources</strong>. Selon le Michelin 2026, <strong>« Char, Smoke and Flame »</strong> (feu, fumée et flammes) est le mot d'ordre. Les chefs abandonnent les分子料理 trop complexes pour revenir à la cuisson sur feu directe, révélant le goût authentique des produits. Parallèlement, les <strong>recettes de grand-mère</strong> et les <strong>plats « One-Pot »</strong> (tout-en-un) se multiplient, offrant à la fois un réconfort émotionnel et une optimisation des coûts en cuisine.
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">3. L'IA Invisible : Du Buzzword au Muscle Opérationnel</h2>
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+    <h3 class="text-lg font-bold text-blue-800 mb-3">🔍 GEO : La Nouvelle SEO</h3>
+    <p class="text-blue-700 text-sm">
+      <strong>50% des consommateurs</strong> utilisent ChatGPT ou Claude pour choisir un restaurant. La présence digitale doit désormais être structurée pour ces moteurs génératifs : données structurées (NAICS, prix, spécificités), optimisation du Knowledge Graph, prompts-friendly content.
+    </p>
+  </div>
+  <div class="bg-green-50 p-6 rounded-xl border border-green-200">
+    <h3 class="text-lg font-bold text-green-800 mb-3">⚙️ Automatisation Full-Stack</h3>
+    <p class="text-green-700 text-sm">
+      L'IA gère désormais les <strong>alertes de stock</strong>, les <strong>plannings optimisés</strong>, et l'analyse des <strong>marges par plat</strong>. Les chefs utilisent des prompts pour comprendre pourquoi un plat est déficitaire et ajuster en temps réel.
+    </p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">4. La Main-d'Œuvre Polyvalente : Le Tout-En-Un Est la Règle</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  Avec <strong>50% des établissements en difficulté de recrutement</strong>, le modèle de l'employé mono-tâche est en voie d'extinction. En 2026, on recrute des <strong>couteaux suisses</strong> : une même personne peut assurer l'accueil le matin, le service au bar l'après-midi, et gérer la caisse en soirée. Le recrutement s'accélère (parfois <strong>moins de 48 heures</strong> entre l'annonce et l'embauche) et se base désormais sur les <strong>soft skills</strong> (gestion du stress, intelligence émotionnelle) et l'aptitude à maîtriser rapidement les <strong>outils numériques</strong> (PMS, QR codes, back-office de livraison).
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">5. Boissons : La Double Révolution No-Low et RTD</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  La carte des vins française est bouleversée. Deux tendances s'imposent :
+</p>
+
+<ul class="list-disc pl-6 mb-6 text-gray-600 space-y-2">
+  <li><strong>No-Low (Sans/Peu d'Alcool) :</strong> Les bières sans alcool et cocktails low-ABV représentent désormais <strong>18% du CA boissons</strong> en milieu haut de gamme.</li>
+  <li><strong>RTD (Ready-to-Drink) :</strong> Les cocktails en canettes premium affichent une croissance de <strong>35%</strong> en un an, portés par la demande de convenience et de qualité.</li>
+</ul>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  Sur le plan gustatif, les chefs adoptent massivement l'<strong>amertume</strong> (bitterness) et l'<strong>umami</strong> : miso fermenté dans les desserts, tanins de thé dans les cocktails, pamplemousse amer en apéritif.
+</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Conclusion : Ce Que Cela Signifie Pour Vous, Exportateur CHR</h2>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+  Si vous fournissez des équipements au marché français, ces tendances dessinent des opportunités concrètes :
+</p>
+
+<ol class="list-decimal pl-6 mb-8 text-gray-600 space-y-3">
+  <li><strong>Équipements de cuisson multifonctions</strong> : capables de simuler charbon de bois, fumage à froid et cuisson précision.</li>
+  <li><strong>Systèmes de contrôle des coûts intégrés</strong> : balances connectées avec analyse automatisée du food cost par plat.</li>
+  <li><strong>Équipements éco-responsables</strong> : certifications ESG devenues prérequis pour les réseaux hôteliers.</li>
+  <li><strong>Solutions d'automatisation boissons</strong> : machines cocktails RTD, systèmes de dosage précis pour No-Low.</li>
+  <li><strong>Outils d'analyse de données en temps réel</strong> : intégrés PMS, dashboards de rentabilité par plat et par shift.</li>
+</ol>
+
+<div class="bg-brand-blue text-white p-8 rounded-2xl my-10 text-center">
+  <h3 class="text-xl font-bold mb-3">Prêt à anticiper ces mutations ?</h3>
+  <p class="mb-6 max-w-2xl mx-auto">
+    Contactez notre équipe d'experts pour découvrir les équipements qui vous permettront de rester compétitif dans le CHR français de 2026.
+  </p>
+  <a href="/contact" class="inline-block bg-white text-brand-blue px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+    Demander un conseil personnalisé
+  </a>
+</div>
+
+<p class="text-sm text-gray-500 border-t pt-6 mt-12">
+  <strong>Sources :</strong> GNI France, INSEE, NPD Group, Rapport Michelin 2026, Enquête CHR Éco-Conso, Fédération Française de l'Hôtellerie (FFH), DGE
+</p>
+      `
+    }
+  }
 ];
 
 export default blogPosts;

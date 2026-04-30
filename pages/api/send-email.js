@@ -4,9 +4,10 @@ export default async function handler(req, res) {
   }
 
   const { name, email, data } = req.body;
-  // Newsletter subscription (company + email only, no name)
-  if (body.type === 'newsletter') {
-    const { company, email } = body;
+
+  // Newsletter subscription (singleton endpoint: type distinguishes flows)
+  if (req.body.type === 'newsletter') {
+    const { company, email } = req.body;
     if (!company || !email) {
       return res.status(400).json({ error: 'Company and email are required' });
     }
@@ -14,7 +15,7 @@ export default async function handler(req, res) {
       const resp = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer ' + key,
+          'Authorization': 'Bearer ' + process.env.RESEND_API_KEY,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -37,24 +38,22 @@ export default async function handler(req, res) {
     }
   }
 
-  // Contact inquiry (existing logic)
-  const key = process.env.RESEND_API_KEY;
-
-  if (!key) {
+  // Contact inquiry (main flow)
+  if (!process.env.RESEND_API_KEY) {
     return res.status(500).json({ message: 'Missing RESEND_API_KEY' });
   }
 
-  const company = data.company || 'N/A';
-  const phone = data.phone || 'N/A';
-  const category = data.category || 'N/A';
-  const message = data.message || 'N/A';
+  const company = data?.company || 'N/A';
+  const phone = data?.phone || 'N/A';
+  const category = data?.category || 'N/A';
+  const messageText = data?.message || 'N/A';
 
   // Build HTML manually to avoid parser issues
   let html = '<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">';
   html += '<h2 style="color: #ea580c; margin-bottom: 20px;">New Lead Generated</h2>';
   html += '<div style="background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 16px;">';
-  html += '<p><strong>Name:</strong> ' + name + '</p>';
-  html += '<p><strong>Email:</strong> ' + email + '</p>';
+  html += '<p><strong>Name:</strong> ' + (name || 'N/A') + '</p>';
+  html += '<p><strong>Email:</strong> ' + (email || 'N/A') + '</p>';
   html += '</div>';
   html += '<div style="background: #f8fafc; padding: 16px; border-radius: 8px;">';
   html += '<h3 style="margin-top: 0;">Consultation Details</h3>';
@@ -62,29 +61,29 @@ export default async function handler(req, res) {
   html += '<li><strong>Company:</strong> ' + company + '</li>';
   html += '<li><strong>Phone:</strong> ' + phone + '</li>';
   html += '<li><strong>Category:</strong> ' + category + '</li>';
-  html += '<li><strong>Message:</strong><br/>' + message.replace(/\n/g, '<br/>') + '</li>';
+  html += '<li><strong>Message:</strong><br/>' + messageText.replace(/\n/g, '<br/>') + '</li>';
   html += '</ul></div></div>';
 
   // Build text body
   let text = 'New Lead from Juyi Website\n\n';
-  text += 'Name: ' + name + '\n';
-  text += 'Email: ' + email + '\n';
+  text += 'Name: ' + (name || 'N/A') + '\n';
+  text += 'Email: ' + (email || 'N/A') + '\n';
   text += 'Company: ' + company + '\n';
   text += 'Phone: ' + phone + '\n';
   text += 'Category: ' + category + '\n';
-  text += 'Message: ' + message;
+  text += 'Message: ' + messageText;
 
   try {
     const resp = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer ' + key,
+        'Authorization': 'Bearer ' + process.env.RESEND_API_KEY,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         from: 'contact@juyi-chr.com',
         to: ['contact@juyi-chr.com'],
-        subject: '[JUYI CHR] New Lead: ' + name,
+        subject: '[JUYI CHR] New Lead: ' + (name || 'Unknown'),
         text: text,
         html: html
       })

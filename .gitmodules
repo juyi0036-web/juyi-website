@@ -1,3 +1,7 @@
 [submodule "juyi-website"]
 	path = juyi-website
 	url = https://github.com/juyi0036-web/juyi-website.git
+
+[submodule "openclaw"]
+	path = openclaw
+	url = https://github.com/juyi0036-web/openclaw.git

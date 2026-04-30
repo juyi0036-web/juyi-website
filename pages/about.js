@@ -1,4 +1,4 @@
-     1|     1|import Head from 'next/head';
+1|     1|import Head from 'next/head';
      2|     2|import Link from 'next/link';
      3|     3|import Navbar from '../components/Navbar';
      4|     4|
@@ -182,7 +182,7 @@
    182|   182|          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
    183|   183|            {t.about_cta_desc || "Contactez-nous dès aujourd'hui pour discuter de votre projet d'équipement."}
    184|   184|          </p>
-   185|   185|            <a href="/contact#contact"className="inline-block bg-white text-brand-orange px-8 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
+   185|   185|            <a href="/contact#contact" className="inline-block bg-white text-brand-orange px-8 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
    186|   186|            {t.about_cta_btn || "Demander un Devis"}
    187|   187|          </a>
    188|   188|        </div>

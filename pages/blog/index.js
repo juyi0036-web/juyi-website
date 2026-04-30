@@ -131,21 +131,7 @@ export default function Blog() {
           })}
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="mt-16 bg-brand-blue rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">
-            {t === 'en' ? 'Stay Updated' : t === 'es' ? 'Manténgase Actualizado' : 'Restez Informé'}
-          </h2>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            {t === 'en' ? 'Subscribe to our newsletter for the latest industry insights and regulatory updates.' : t === 'es' ? 'Suscríbase a nuestro boletín para las últimas perspectivas de la industria y actualizaciones regulatorias.' : 'Abonnez-vous à notre newsletter pour les dernières perspectives de l\'industrie et les mises à jour réglementaires.'}
-          </p>
-          <Link 
-            href="/contact"
-            className="inline-block bg-brand-orange text-white px-8 py-4 rounded font-bold hover:bg-orange-700 transition shadow-xl uppercase tracking-wider"
-          >
-            {t === 'en' ? 'Contact Us' : t === 'es' ? 'Contáctenos' : 'Contactez-nous'}
-          </Link>
-        </div>
+
       </main>
 
       {/* CTA Banner */}

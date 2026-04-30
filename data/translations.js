@@ -204,7 +204,7 @@ export const translations = {
     // Newsletter Modal
     newsletter_title: "Restez Informé",
     newsletter_desc: "Abonnez-vous à notre newsletter pour les dernières perspectives de l'industrie et les mises à jour réglementaires.",
-    newsletter_button: "CONTACTEZ-NOUS",
+    newsletter_button: "ABONNEZ-VOUS",
     newsletter_success_title: "Merci !",
     newsletter_success_desc: "Vous êtes maintenant abonné à notre newsletter.",
     form_error: "Une erreur s'est produite. Veuillez réessayer.",
@@ -546,7 +546,7 @@ export const translations = {
     // Newsletter Modal
     newsletter_title: "Stay Informed",
     newsletter_desc: "Subscribe to our newsletter for the latest industry insights and regulatory updates.",
-    newsletter_button: "CONTACT US",
+    newsletter_button: "SUBSCRIBE",
     newsletter_success_title: "Thank you!",
     newsletter_success_desc: "You are now subscribed to our newsletter.",
     form_error: "An error occurred. Please try again.",
@@ -887,7 +887,7 @@ export const translations = {
     // Newsletter Modal
     newsletter_title: "Manténgase Informado",
     newsletter_desc: "Suscríbase a nuestro boletín para las últimas perspectivas de la industria y actualizaciones regulatorias.",
-    newsletter_button: "CONTÁCTENOS",
+    newsletter_button: "SUSCRIBIRSE",
     newsletter_success_title: "¡Gracias!",
     newsletter_success_desc: "Ahora está suscrito a nuestro boletín.",
     form_error: "Ocurrió un error. Por favor, inténtelo de nuevo.",

@@ -1,31 +1,33 @@
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { translations } from '../data/translations';
+import NewsletterModal from './NewsletterModal';
 
 export default function CTABanner({ link = null, buttonText = null, title = null, subtitle = null }) {
   const router = useRouter();
   const { locale } = router;
   const t = translations[locale] || translations.fr;
 
-  // 订阅横幅文案（不再使用，保留结构便于扩展）
+  // 订阅横幅文案（默认模式：无 link 参数）
   const defaultContent = {
     fr: {
       title: 'Restez Informé',
       subtitle: "Abonnez-vous à notre newsletter pour les dernières perspectives de l'industrie et les mises à jour réglementaires.",
-      button: 'CONTACTEZ-NOUS'
+      button: 'ABONNEZ-VOUS'
     },
     en: {
       title: 'Stay Informed',
       subtitle: 'Subscribe to our newsletter for the latest industry insights and regulatory updates.',
-      button: 'CONTACT US'
+      button: 'SUBSCRIBE'
     },
     es: {
       title: 'Manténgase Informado',
       subtitle: 'Suscríbase a nuestro boletín para las últimas perspectivas de la industria y actualizaciones regulatorias.',
-      button: 'CONTÁCTENOS'
+      button: 'SUSCRIBIRSE'
     }
   };
 
-  // 首页专用文案
+  // 首页专用文案（有 link 参数）
   const homeContent = {
     fr: {
       title: "Prêt à Commencer ?",
@@ -44,12 +46,16 @@ export default function CTABanner({ link = null, buttonText = null, title = null
     }
   };
 
-  const base = link ? homeContent : defaultContent;
+  const isHomeMode = link !== null;
+  const base = isHomeMode ? homeContent : defaultContent;
   const msg = {
     title: title !== null ? title : (base[locale] || base.fr).title,
     subtitle: subtitle !== null ? subtitle : (base[locale] || base.fr).subtitle,
     button: buttonText !== null ? buttonText : (base[locale] || base.fr).button
   };
+
+  // 订阅弹窗状态（仅在默认模式下启用）
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -63,8 +69,9 @@ export default function CTABanner({ link = null, buttonText = null, title = null
             {msg.subtitle}
           </p>
 
-          {/* 按钮：如果传入 link，跳转到该链接；否则打开模态窗口（订阅功能已移除） */}
-          {link ? (
+          {/* 按钮逻辑 */}
+          {isHomeMode ? (
+            // 首页模式：跳转到联系页面
             <a
               href={link}
               className="inline-block bg-white text-brand-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl uppercase tracking-wider"
@@ -72,15 +79,21 @@ export default function CTABanner({ link = null, buttonText = null, title = null
               {msg.button}
             </a>
           ) : (
+            // 订阅模式：打开弹窗
             <button
-              disabled
-              className="inline-block bg-white/50 text-brand-orange/50 px-8 py-4 rounded-lg font-bold text-lg cursor-not-allowed uppercase tracking-wider"
+              onClick={() => setShowModal(true)}
+              className="inline-block bg-white text-brand-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl uppercase tracking-wider"
             >
-              {msg.button} (bientôt)
+              {msg.button}
             </button>
           )}
         </div>
       </div>
+
+      {/* 订阅弹窗 */}
+      {!isHomeMode && (
+        <NewsletterModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      )}
     </>
   );
 }

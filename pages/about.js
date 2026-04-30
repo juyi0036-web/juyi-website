@@ -149,7 +149,7 @@ export default function About() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-contain bg-gray-50"
+                    className="w-full h-full object-cover bg-gray-50"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       const fallback = e.currentTarget.parentElement.querySelector('.fallback-avatar');

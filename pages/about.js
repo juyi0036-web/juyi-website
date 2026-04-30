@@ -150,15 +150,7 @@ export default function About() {
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover bg-gray-50"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const fallback = e.currentTarget.parentElement.querySelector('.fallback-avatar');
-                      if (fallback) fallback.style.display = 'flex';
-                    }}
                   />
-                  <div className="fallback-avatar hidden w-24 h-24 bg-white rounded-full items-center justify-center text-3xl font-bold text-brand-blue z-10">
-                    {member.fallback}
-                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-brand-dark text-lg">{member.name}</h3>

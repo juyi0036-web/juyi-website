@@ -54,8 +54,8 @@ export default function Blog() {
                       <span className={`bg-${blogPosts[0].category.color}-100 text-${blogPosts[0].category.color}-600 text-xs font-bold px-3 py-1 rounded-full`}>
                         {blogPosts[0].category.label}
                       </span>
-                      <span className="text-gray-400 text-sm">{blogPosts[0].date}</span>
-                      <span className="text-gray-400 text-sm">• {blogPosts[0].readTime}</span>
+                      {/* <span className="text-gray-400 text-sm">{blogPosts[0].date}</span>
+                      <span className="text-gray-400 text-sm">• {blogPosts[0].readTime}</span> */}
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4 group-hover:text-brand-orange transition-colors">
                       {blogPosts[0].title[t] || blogPosts[0].title.fr}
@@ -103,8 +103,8 @@ export default function Blog() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-gray-400 text-sm">{post.date}</span>
-                    <span className="text-gray-400 text-sm">• {post.readTime}</span>
+                    {/* <span className="text-gray-400 text-sm">{post.date}</span>
+                    <span className="text-gray-400 text-sm">• {post.readTime}</span> */}
                   </div>
                   <h2 className="text-xl font-bold text-brand-dark mb-3 line-clamp-2">
                     <Link href={`/blog/${post.slug}`} className="hover:text-brand-orange transition-colors">

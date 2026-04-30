@@ -296,7 +296,7 @@ export default function Home() {
 
 
         {/* CTA Banner - Remplace Assistant IA */}
-        <CTABanner />
+        <CTABanner link="/contact#contact" />
 
       </main>
 

@@ -112,7 +112,7 @@ export default function Contact() {
           </div>
 
           {/* Right: Smart Assistant */}
-          <div>
+          <div id="contact">
             <h2 className="text-2xl font-bold text-brand-blue mb-8 uppercase tracking-wide border-l-4 border-brand-orange pl-4">
               {t.form_title || 'DEMANDE DE DEVIS'}
             </h2>

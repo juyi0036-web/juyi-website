@@ -1,31 +1,31 @@
 import { useState, useEffect } from 'react';
 
 const blogPosts = [
+
   {
     id: 'eu-2026-refrigerant-ban',
     slug: 'eu-2026-refrigerant-ban',
     date: '2026-04-20',
     category: { color: 'brand-orange', label: 'Réglementation UE' },
-    image: { main: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800', alt: 'Article Réglementation UE - JUYI CHR' },
+    image: { main: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200', alt: 'F-Gas 2026 Regulation - JUYI CHR' },
     title: {
-
       fr: '2026 : L\'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
       en: '2026: EU Bans Certain Refrigerants - What You Need to Know',
       es: '2026: La UE Prohíbe Ciertos Refrigerantes - Lo Que Necesita Saber'
-    
+    subtitle: {
+      fr: 'La réglementation F-Gas 2026 impose de nouvelles restrictions sur les fluides frigorigènes à fort PRG. Découvrez les exigences et les nouvelles étiquettes A-G.',
+      en: 'The F-Gas 2026 regulation imposes new restrictions on high-GWP refrigerants. Discover the requirements and the new A-G labels.',
+      es: 'El reglamento F-Gas 2026 impone nuevas restricciones sobre refrigerantes de alto PCA. Descubra los requisitos y las nuevas etiquetas A-G.'
     },
-    subtitle: { fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG).', en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants.', es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP).' },
+    },
     excerpt: {
-
       fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
       en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants. Learn how this affects your cold equipment and how to prepare.',
       es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP). Descubra cómo afecta a sus equipos de frío y cómo prepararse.'
-    
     },
     author: { name: 'Équipe JUYI CHR', role: 'Expert CHR', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' },
     readTime: '8 min',
     content: {
-
       fr: `
 ## Les Nouvelles Restrictions UE sur les Fluides Frigorigènes
 
@@ -161,30 +161,33 @@ En JUYI CHR, todos nuestros equipos de refrigeración ya son conformes con las n
 
 **Contáctenos** para obtener un presupuesto de equipos conformes con las nuevas normas de la UE.
       `
-    
     }
-  },
+  }
   {
+,
     id: 'eu-2026-energy-standards',
     slug: 'eu-2026-energy-standards',
     date: '2026-04-15',
+    category: 'Normes Énergétiques',
     category: { color: 'brand-blue', label: 'Normes Énergétiques' },
     image: { main: 'https://images.unsplash.com/photo-1618556450994-a3963cdcfd1b?w=1200', alt: 'Article Normes Énergétiques - JUYI CHR' },
-    title: {
       fr: 'F-Gas 2026 : Règlementation et Étiquettes A-G pour le CHR',
-      en: 'EU 2026 Energy Standards: New Labels and Requirements for CHR Equipment',
-      es: 'Estándares Energéticos UE 2026: Nuevos Etiquetados y Requisitos para Equipos CHR'
+      en: 'F-Gas 2026: Regulation and A-G Labeling for CHR Equipment',
+      es: 'F-Gas 2026: Regulación y Etiquetas A-G para Equipos CHR',
     },
     subtitle: {
-      fr: 'Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.',
+      fr: 'Le règlement F-Gas 2026 et l'étiquette A-G redéfinissent les normes pour équipements CHR.',
       en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
       es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
     },
+    excerpt: {
+      fr: 'Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.',
+      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
+      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.',
     },
+    content: {
     author: { name: 'Équipe JUYI CHR', role: 'Expert CHR', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' },
     readTime: '10 min',
-    content: {
-
       fr: `
 ## Normes Énergétiques UE 2026 pour les Équipements CHR
 
@@ -353,9 +356,9 @@ Todos nuestros equipos están clasificados A o B según las normas 2026. Proporc
 
 **Solicite nuestro catálogo** con calificaciones energéticas detalladas.
       `
-    
     }
   }
-];
+  {
 
+];
 export default blogPosts;

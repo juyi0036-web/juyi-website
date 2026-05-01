@@ -12,11 +12,11 @@ const blogPosts = [
       fr: '2026 : L\'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
       en: '2026: EU Bans Certain Refrigerants - What You Need to Know',
       es: '2026: La UE Prohíbe Ciertos Refrigerantes - Lo Que Necesita Saber'
+    },
     subtitle: {
       fr: 'La réglementation F-Gas 2026 impose de nouvelles restrictions sur les fluides frigorigènes à fort PRG. Découvrez les exigences et les nouvelles étiquettes A-G.',
       en: 'The F-Gas 2026 regulation imposes new restrictions on high-GWP refrigerants. Discover the requirements and the new A-G labels.',
       es: 'El reglamento F-Gas 2026 impone nuevas restricciones sobre refrigerantes de alto PCA. Descubra los requisitos y las nuevas etiquetas A-G.'
-    },
     },
     excerpt: {
       fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
@@ -175,12 +175,12 @@ En JUYI CHR, todos nuestros equipos de refrigeración ya son conformes con las n
       en: 'F-Gas 2026: Regulation and A-G Labeling for CHR Equipment',
       es: 'F-Gas 2026: Regulación y Etiquetas A-G para Equipos CHR',
     },
+    excerpt: {
     subtitle: {
       fr: 'Le règlement F-Gas 2026 et l'étiquette A-G redéfinissent les normes pour équipements CHR.',
       en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
       es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
     },
-    excerpt: {
       fr: 'Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.',
       en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
       es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.',

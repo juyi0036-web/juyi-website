@@ -5,7 +5,7 @@ const blogPosts = [
     date: '2026-04-30',
     category: { color: 'brand-blue', label: 'Innovation Énergétique' },
     image: { 
-      main: 'https://images.unsplash.com/photo-1595920633112-7039d49e585d?w=1200',
+      main: 'https://images.unsplash.com/photo-1595935906704-d7a6c881e2a6?w=1200',
       alt: 'Pompe à Chaleur Air Eau - JUYI CHR' 
     },
     title: {
@@ -311,7 +311,7 @@ La escala de eficiencia energética cambia de A+++ a G:
     date: '2026-04-10',
     category: { color: 'brand-green', label: 'Tendances' },
     image: { 
-      main: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=1200',
+      main: 'https://images.unsplash.com/photo-1555244643-54d8881ba39d?w=1200',
       alt: 'Automatisation CHR 2026 - JUYI CHR' 
     },
     title: {

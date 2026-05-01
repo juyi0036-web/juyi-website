@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
-import { useRouter } from 'next/router';
 import blogPosts from '../../data/blogPosts';
 
 import CTABanner from '../../components/CTABanner';
@@ -66,7 +65,7 @@ export default function Blog({ blogPosts, t }) {
                   </div>
                   <div className="p-8 md:p-12 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className={`bg-${blogPosts[0].category.color}-100 text-${blogPosts[0].category.color}-600 text-xs font-bold px-3 py-1 rounded-full`}>
+                      <span className="bg-brand-blue-100 text-brand-blue-600 text-xs font-bold px-3 py-1 rounded-full">
                         {blogPosts[0].category.label}
                       </span>
                       {/* <span className="text-gray-400 text-sm">{blogPosts[0].date}</span>
@@ -111,7 +110,7 @@ export default function Blog({ blogPosts, t }) {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className={`bg-${post.category.color}-600 text-white text-xs font-bold px-3 py-1 rounded-full`}>
+                    <span className="bg-brand-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                       {post.category.label}
                     </span>
                   </div>

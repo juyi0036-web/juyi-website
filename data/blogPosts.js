@@ -14,7 +14,7 @@ const blogPosts = [
       es: '2026: La UE Prohíbe Ciertos Refrigerantes - Lo Que Necesita Saber'
     
     },
-    subtitle: { fr: 'À partir de 2026, l'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG).', en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants.', es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP).' },
+    subtitle: { fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG).', en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants.', es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP).' },
     excerpt: {
 
       fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
@@ -176,7 +176,7 @@ En JUYI CHR, todos nuestros equipos de refrigeración ya son conformes con las n
       es: 'Estándares Energéticos UE 2026: Nuevos Etiquetados y Requisitos para Equipos CHR'
     },
     subtitle: {
-      fr: 'Le règlement F-Gas 2026 et l'étiquette A-G redéfinissent les normes pour équipements CHR.',
+      fr: 'Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.',
       en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
       es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
     },

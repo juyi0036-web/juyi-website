@@ -341,7 +341,43 @@ Todos nuestros equipos están clasificados A o B según las normas 2026. Proporc
 **Solicite nuestro catálogo** con calificaciones energéticas detalladas.
       `
     }
-  },
   }
-  ]
-);
+];
+
+export default function BlogPost({ slug, locale }) {
+  const post = blogPosts.find(p => p.slug === slug);
+  
+  if (!post) {
+    return <div>Article non trouvé</div>;
+  }
+
+  const title = post.title[locale] || post.title.fr;
+  const excerpt = post.excerpt[locale] || post.excerpt.fr;
+  const content = post.content[locale] || post.content.fr;
+
+  return (
+    <article className="max-w-4xl mx-auto">
+      <div className="mb-8">
+        <img 
+          src={post.image} 
+          alt={title}
+          className="w-full h-64 object-cover rounded-xl"
+        />
+      </div>
+      <div className="flex items-center gap-4 mb-4">
+        <span className="bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">
+          {post.category}
+        </span>
+        <span className="text-gray-500 text-sm">{post.date}</span>
+      </div>
+      <h1 className="text-3xl font-bold text-brand-dark mb-4">{title}</h1>
+      <p className="text-gray-600 text-lg mb-8">{excerpt}</p>
+      <div 
+        className="prose prose-lg max-w-none"
+        dangerouslySetInnerHTML={{ __html: content.replace(/\n/g, '<br/>').replace(/## /g, '<h2>').replace(/### /g, '<h3>').replace(/#### /g, '<h4>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\| (.*?) \|/g, '<tr><td>$1</td></tr>') }}
+      />
+    </article>
+  );
+}
+
+export { blogPosts };

@@ -24,9 +24,9 @@ const blogPosts = [
       es: 'Las bombas de calor agua-aire son una de las tecnologías más prometedoras para descarbonizar equipos CHR para 2050. Rendimiento, ahorro energético y reducción del impacto ambiental.'
     },
     author: { 
-      name: 'Équipe JUYI CHR', 
-      role: 'Expert CHR', 
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' 
+      name: 'Chen Wei', 
+      role: 'Directeur Supply Chain Chine', 
+      avatar: '/team/chen.jpg' 
     },
     readTime: '10 min',
     content: {
@@ -60,7 +60,7 @@ Fort de notre expertise dans le secteur CHR, nous vous accompagnons dans :
 - La maintenance prédictive et l'optimisation
 
 ---
-*Article technique par l'équipe R&D JUYI CHR.*`,
+*Article technique par Chen Wei, Directeur Supply Chain.*`,
       en: `
 ## Air-to-Water Heat Pumps: The CLIMATE 2050 Technology for CHR
 
@@ -91,7 +91,7 @@ With our expertise in the CHR sector, we support you in:
 - Predictive maintenance and optimization
 
 ---
-*Technical article by JUYI CHR R&D team.*`,
+*Technical article by Chen Wei, Supply Chain Director.*`,
       es: `
 ## Bomba de Calor Agua-Aire: La Tecnología CLIMA 2050 para CHR
 
@@ -99,7 +99,7 @@ Las bombas de calor (BC) agua-aire convierten el calor del aire ambiente en ener
 
 ### Rendimiento Energético Excepcional
 
-Con un COP (Coeficiente de Performance) típico de 3 a 5, las BC agua-aire producen 3 a 5 kWh de calor por 1 kWh de electricidad consumida. Esto representa hasta un 70% de ahorro energético frente a sistemas eléctricos directos.
+Con un COP (Coeficiente de Performance) típico de 3 a 5, las BC agua-aire producen 3 a 5 kWh de calor por 1 kWh de electricidad consumida. Esto representa hasta un 70% de ahorro energético frente a sistemas eléctricos directas.
 
 ### Impacto Ambiental Reducido
 
@@ -122,7 +122,7 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
 - Mantenimiento predictivo y optimización
 
 ---
-*Artículo técnico del equipo de I+D de JUYI CHR.*`
+*Artículo técnico por Chen Wei, Director de Supply Chain.*`
     }
   },
   {
@@ -150,9 +150,9 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
       es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP). Descubra cómo afecta a sus equipos de frío y cómo prepararse.'
     },
     author: { 
-      name: 'Équipe JUYI CHR', 
-      role: 'Expert CHR', 
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' 
+      name: 'Philippe Dubois', 
+      role: 'Fondateur & Directeur Général', 
+      avatar: '/team/philippe.jpg' 
     },
     readTime: '8 min',
     content: {
@@ -190,7 +190,7 @@ Le Règlement F-Gas 2026 limite progressivement l'utilisation des fluides frigor
 - [Nouvelle Étiquette Énergétique](https://energy-label.ec.europa.eu/)
 
 ---
-*Article rédigé par l'équipe technique JUYI CHR, spécialiste des solutions CHR durables.*`,
+*Article rédigé par Philippe Dubois, Fondateur JUYI CHR.*`,
       en: `
 ## EU 2026 Energy Standards for CHR Equipment
 
@@ -225,7 +225,7 @@ The F-Gas Regulation 2026 gradually limits the use of high-GWP refrigerants:
 - [New Energy Label](https://energy-label.ec.europa.eu/)
 
 ---
-*Written by JUYI CHR technical team, specialist in sustainable CHR solutions.*`,
+*Written by Philippe Dubois, Founder & CEO.*`,
       es: `
 ## Normas Energéticas UE 2026 para Equipos CHR
 
@@ -260,7 +260,202 @@ El Reglamento F-Gas 2026 limita gradualmente el uso de refrigerantes de alto PCA
 - [Nueva Etiqueta Energética](https://energy-label.ec.europa.eu/)
 
 ---
-*Artículo redactado por el equipo técnico de JUYI CHR, especialista en soluciones CHR sostenibles.*`
+*Artículo redactado por Philippe Dubois, Fundador y Director General.*`
+    }
+  },
+  {
+    id: 'chr-automation-trends-2026',
+    slug: 'chr-automation-trends-2026',
+    date: '2026-04-10',
+    category: { color: 'brand-green', label: 'Tendances' },
+    image: { 
+      main: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=1200',
+      alt: 'Automatisation CHR 2026 - JUYI CHR' 
+    },
+    title: {
+      fr: 'Automatisation CHR 2026 : Comment la Technologie Transforme la Restauration',
+      en: 'CHR Automation 2026: How Technology is Transforming Catering',
+      es: 'Automatización CHR 2026: Cómo la Tecnología Transforma la Restauración'
+    },
+    subtitle: {
+      fr: 'Découvrez comment l\'automatisation révolutionne le secteur CHR : pénurie de main-d\'œuvre, ROI des équipements, et études de cas concrètes. L\'expertise JUYI CHR pour votre transition numérique.',
+      en: 'Discover how automation is revolutionizing the CHR sector: labor shortage, equipment ROI, and real-world case studies. JUYI CHR\'s expertise for your digital transition.',
+      es: 'Descubra cómo la automatización está revolucionando el sector CHR: escasez de mano de obra, ROI de equipos y estudios de caso reales. La experiencia JUYI CHR para su transición digital.'
+    },
+    excerpt: {
+      fr: 'L\'automatisation devient incontournable pour rester compétitif dans le CHR. Analyse des solutions, retour sur investissement, et bonnes pratiques pour réussir sa transformation.',
+      en: 'Automation is becoming essential to stay competitive in CHR. Analysis of solutions, ROI, and best practices for a successful transformation.',
+      es: 'La automatización se vuelve esencial para mantenerse competitivo en CHR. Análisis de soluciones, ROI y mejores prácticas para una transformación exitosa.'
+    },
+    author: { 
+      name: 'Marc Laurent', 
+      role: 'Directeur Logistique Europe', 
+      avatar: '/team/marc.jpg' 
+    },
+    readTime: '12 min',
+    content: {
+      fr: `
+## L'Automatisation dans le Secteur CHR en 2026
+
+### Un Secteur en Mutation
+
+Le secteur CHR fait face à des défis majeurs :
+- **Pénurie de main-d'œuvre** : 40% des postes non pourvus
+- **Augmentation des coûts** : +15% en 2 ans
+- **Exigences qualité** : Standards toujours plus élevés
+
+### Solutions d'Automatisation
+
+#### 1. Lignes de Production Automatisées
+- **Pétrins spirale** : Capacité de 50 à 300L, minuterie programmable
+- **Diviseuses** : Précision ±1g, cadence 30 pièces/cycle
+- **Façonneuses** : Baguettes, boules, pains spéciaux
+
+#### 2. Fours Intelligents
+- **Programmation** : 100+ programmes de cuisson
+- **Sondes** : Température cœur en temps réel
+- **Connectivité** : Monitoring à distance via app
+
+#### 3. Réfrigération Connectée
+- **Alertes** : Notification en cas de panne
+- **Historique** : Courbes de température
+- **Maintenance** : Prédictive et préventive
+
+### ROI de l'Automatisation
+
+| Investissement | Économie | ROI |
+|----------------|----------|-----|
+| Pétrin automatique | 2h/jour | 18 mois |
+| Four programmable | 15% énergie | 24 mois |
+| Réfrigération connectée | 20% perte | 12 mois |
+
+### Cas Client
+
+**Boulangerie Artisanale - Paris**
+- Investissement : 45,000€
+- Économie annuelle : 28,000€
+- ROI : 19 mois
+- Production : +35%
+
+### Comment Commencer ?
+
+1. **Analysez vos besoins** : Quelles tâches chronophages ?
+2. **Priorisez** : Commencez par le poste le plus critique
+3. **Formez vos équipes** : L'automatisation assiste, ne remplace pas
+4. **Mesurez les résultats** : Suivez les KPIs
+
+### Notre Expertise
+
+JUYI CHR vous accompagne dans votre transition vers l'automatisation. Nous proposons des solutions clé en main adaptées à votre taille et votre budget.
+
+---
+*Article technique par Marc Laurent, Directeur Logistique Europe.*`,
+      en: `
+## CHR Automation 2026: How Technology is Transforming Catering
+
+The CHR sector faces major challenges: labor shortages, rising costs, and increasing quality demands. Automation is no longer optional—it\'s essential for competitiveness.
+
+### Industry Challenges
+
+- **Labor shortage**: 40% of positions unfilled
+- **Cost increase**: +15% in 2 years
+- **Quality standards**: Continuously rising
+
+### Automation Solutions
+
+#### 1. Automated Production Lines
+- **Spiral mixers**: Capacity 50-300L, programmable timer
+- **Dividers**: Precision ±1g, 30 pieces/cycle
+- **Moulders**: Baguettes, balls, specialty breads
+
+#### 2. Smart Ovens
+- **Programming**: 100+ baking programs
+- **Probes**: Real-time core temperature
+- **Connectivity**: Remote monitoring via app
+
+#### 3. Connected Refrigeration
+- **Alerts**: Failure notifications
+- **History**: Temperature curves
+- **Maintenance**: Predictive and preventive
+
+### ROI Analysis
+
+| Investment | Savings | Payback |
+|------------|---------|---------|
+| Automatic mixer | 2h/day | 18 months |
+| Programmable oven | 15% energy | 24 months |
+| Connected refrigeration | 20% waste reduction | 12 months |
+
+### Case Study
+
+**Artisan Bakery - Paris**
+- Investment: €45,000
+- Annual savings: €28,000
+- ROI: 19 months
+- Production: +35%
+
+### Getting Started
+
+1. **Analyze your needs**: Identify time-consuming tasks
+2. **Prioritize**: Start with the most critical station
+3. **Train your teams**: Automation assists, doesn\'t replace
+4. **Measure results**: Track KPIs
+
+---
+*Article by Marc Laurent, Europe Logistics Director.*`,
+      es: `
+## Automatización CHR 2026: Cómo la Tecnología Transforma la Restauración
+
+El sector CHR enfrenta desafíos importantes: escasez de mano de obra, aumento de costes y demandas de calidad crecientes. La automatización ya no es opcional—es esencial para la competitividad.
+
+### Desafíos del Sector
+
+- **Escasez de mano de obra**: 40% de puestos no cubiertos
+- **Aumento de costes**: +15% en 2 años
+- **Estándares de calidad**: Continuamente crecientes
+
+### Soluciones de Automatización
+
+#### 1. Líneas de Producción Automatizadas
+- **Amasadoras espirales**: Capacidad 50-300L, temporizador programable
+- **Divisoras**: Precisión ±1g, 30 piezas/ciclo
+- **Moldadoras**: Baguettes, bolas, panes especiales
+
+#### 2. Hornos Inteligentes
+- **Programación**: +100 programas de cocción
+- **Sondas**: Temperatura núcleo en tiempo real
+- **Conectividad**: Monitoreo remoto via app
+
+#### 3. Refrigeración Conectada
+- **Alertas**: Notificaciones de fallo
+- **Historial**: Curvas de temperatura
+- **Mantenimiento**: Predictivo y preventivo
+
+### Análisis ROI
+
+| Inversión | Ahorro | Retorno |
+|-----------|--------|---------|
+| Amasadora automática | 2h/día | 18 meses |
+| Horno programable | 15% energía | 24 meses |
+| Refrigeración conectada | 20% menos desperdicio | 12 meses |
+
+### Caso de Estudio
+
+**Panadería Artesanal - París**
+- Inversión: 45,000€
+- Ahorro anual: 28,000€
+- ROI: 19 meses
+- Producción: +35%
+
+### Por Dónde Empezar
+
+1. **Analice sus necesidades**: Identifique tareas que consumen tiempo
+2. **Priorice**: Comience por el puesto más crítico
+3. **Forme a sus equipos**: La automatización asiste, no reemplaza
+4. **Mida resultados**: Monitoree KPIs
+
+---
+*Artículo por Marc Laurent, Director Logístico Europa.*`
     }
   }
 ];

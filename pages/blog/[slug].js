@@ -128,10 +128,9 @@ export default function BlogPost({ post, t }) {
         </div>
 
         {/* Article Content */}
-        <article 
-          className="prose prose-lg max-w-none text-gray-700"
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
+        <article className="prose prose-lg max-w-none text-gray-700">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </article>
 
         {/* Share & CTA */}
         <div className="mt-16 pt-8 border-t border-gray-200">

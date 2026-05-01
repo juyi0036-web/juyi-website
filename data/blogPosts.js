@@ -155,21 +155,20 @@ En JUYI CHR, todos nuestros equipos de refrigeración ya son conformes con las n
       `
     }
   },
-
   {
     id: 'eu-2026-energy-standards',
     slug: 'eu-2026-energy-standards',
     date: '2026-04-15',
     category: 'Normes Énergétiques',
+    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800',
     image: 'https://images.unsplash.com/photo-1618556450994-a3963cdcfd1b?w=1200',
     title: {
       fr: 'F-Gas 2026 : Règlementation et Étiquettes A-G pour le CHR',
-      en: 'EU 2026 Energy Standards: New Labels and Requirements for CHR Equipment',
       es: 'Estándares Energéticos UE 2026: Nuevos Etiquetados y Requisitos para Equipos CHR'
     },
     excerpt: {
       fr: 'L\'Union européenne renforce ses exigences énergétiques pour les équipements professionnels. Découvrez les nouveaux labels et comment choisir des équipements économes en énergie.',
-      en: 'The European Union strengthens its energy requirements for professional equipment. Discover the new labels and how to choose energy-efficient equipment.',
+      fr: 'Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.',
       es: 'La Unión Europea refuerza sus requisitos energéticos para equipos profesionales. Descubra las nuevas etiquetas y cómo elegir equipos energéticamente eficientes.'
     },
     content: {
@@ -342,7 +341,7 @@ Todos nuestros equipos están clasificados A o B según las normas 2026. Proporc
 **Solicite nuestro catálogo** con calificaciones energéticas detalladas.
       `
     }
+  },
   }
-]
-
-export default blogPosts;
+  ]
+);

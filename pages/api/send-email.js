@@ -1,5 +1,3 @@
-import nodemailer from 'nodemailer';
-
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
@@ -7,54 +5,99 @@ export default async function handler(req, res) {
 
   const { name, email, data } = req.body;
 
-  // Check for environment variables
-  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
-    console.error('Missing SMTP environment variables');
-    return res.status(500).json({ 
-      message: 'Server configuration error: Missing SMTP credentials. Please configure SMTP_HOST, SMTP_USER, and SMTP_PASS in your environment variables.' 
-    });
+  // Newsletter subscription (singleton endpoint: type distinguishes flows)
+  if (req.body.type === 'newsletter') {
+    const { company, email } = req.body;
+    if (!company || !email) {
+      return res.status(400).json({ error: 'Company and email are required' });
+    }
+    try {
+      const resp = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + process.env.RESEND_API_KEY,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          from: 'contact@juyi-chr.com',
+          to: ['contact@juyi-chr.com'],
+          subject: `[JUYI CHR] Newsletter Subscription: ${company}`,
+          text: `New Newsletter Subscription\nCompany: ${company}\nEmail: ${email}`,
+          html: `<div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+                   <h2 style="color: #ea580c;">Newsletter Subscription</h2>
+                   <p><strong>Company:</strong> ${company}</p>
+                   <p><strong>Email:</strong> ${email}</p>
+                 </div>`
+        })
+      });
+      if (!resp.ok) throw new Error('Resend failed');
+      return res.status(200).json({ success: true });
+    } catch (error) {
+      console.error('Newsletter error:', error);
+      return res.status(500).json({ error: 'Failed to send subscription email' });
+    }
   }
 
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT || 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
+  // Contact inquiry (main flow)
+  if (!process.env.RESEND_API_KEY) {
+    return res.status(500).json({ message: 'Missing RESEND_API_KEY' });
+  }
+
+  const company = data?.company || 'N/A';
+  const phone = data?.phone || 'N/A';
+  const category = data?.category || 'N/A';
+  const messageText = data?.message || 'N/A';
+
+  // Build HTML manually to avoid parser issues
+  let html = '<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">';
+  html += '<h2 style="color: #ea580c; margin-bottom: 20px;">New Lead Generated</h2>';
+  html += '<div style="background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 16px;">';
+  html += '<p><strong>Name:</strong> ' + (name || 'N/A') + '</p>';
+  html += '<p><strong>Email:</strong> ' + (email || 'N/A') + '</p>';
+  html += '</div>';
+  html += '<div style="background: #f8fafc; padding: 16px; border-radius: 8px;">';
+  html += '<h3 style="margin-top: 0;">Consultation Details</h3>';
+  html += '<ul style="line-height: 1.8;">';
+  html += '<li><strong>Company:</strong> ' + company + '</li>';
+  html += '<li><strong>Phone:</strong> ' + phone + '</li>';
+  html += '<li><strong>Category:</strong> ' + category + '</li>';
+  html += '<li><strong>Message:</strong><br/>' + messageText.replace(/\n/g, '<br/>') + '</li>';
+  html += '</ul></div></div>';
+
+  // Build text body
+  let text = 'New Lead from Juyi Website\n\n';
+  text += 'Name: ' + (name || 'N/A') + '\n';
+  text += 'Email: ' + (email || 'N/A') + '\n';
+  text += 'Company: ' + company + '\n';
+  text += 'Phone: ' + phone + '\n';
+  text += 'Category: ' + category + '\n';
+  text += 'Message: ' + messageText;
 
   try {
-    await transporter.sendMail({
-      from: process.env.SMTP_FROM || process.env.SMTP_USER,
-      to: 'contact@juyi-chr.com',
-      subject: `New Lead from Juyi Website: ${name}`,
-      text: `
-        New Lead Details:
-        Name: ${name}
-        Email: ${email}
-        Category: ${data.category}
-        Profile: ${data.profile || 'N/A'}
-        Customization: ${data.customization || 'N/A'}
-      `,
-      html: `
-        <h3>New Lead Generated</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <hr/>
-        <h4>Consultation Details:</h4>
-        <ul>
-          <li><strong>Category:</strong> ${data.category}</li>
-          <li><strong>Profile:</strong> ${data.profile || 'N/A'}</li>
-          <li><strong>Customization:</strong> ${data.customization || 'N/A'}</li>
-        </ul>
-      `,
+    const resp = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + process.env.RESEND_API_KEY,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: 'contact@juyi-chr.com',
+        to: ['contact@juyi-chr.com'],
+        subject: '[JUYI CHR] New Lead: ' + (name || 'Unknown'),
+        text: text,
+        html: html
+      })
     });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      console.error('Resend error:', resp.status, err);
+      return res.status(resp.status || 500).json({ message: 'Error', error: err.message || resp.status });
+    }
 
     res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
-    console.error('Email send error:', error);
-    res.status(500).json({ message: 'Error sending email', error: error.message });
+    console.error('Error:', error.message);
+    res.status(500).json({ message: 'Error', error: error.message });
   }
 }

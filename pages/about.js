@@ -29,7 +29,7 @@ export default function About() {
     {
       name: "Nathalie Garnier",
       role: t.team_nathalie_role || "Directrice Commerciale",
-      experience: "20 ans d'expérience",
+      experience: "28 ans d'expérience",
       description: t.team_nathalie_desc || "Leader expérimentée en distribution et développement commercial. Dirige notre équipe de vente européenne.",
       image: "/team/Nathalie-Garnier.jpg",
       fallback: "N"
@@ -146,14 +146,15 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="h-50 bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center relative overflow-hidden">
-                  <img 
+                <div className="relative bg-gradient-to-br from-brand-blue to-brand-dark flex items-center justify-center aspect-[4/5] min-h-[280px]">
+                  <img
                     src={member.image}
                     alt={member.name}
-                    className="absolute inset-0 w-full h-full object-cover object-top"
+                    className="w-full h-full object-contain bg-gray-50"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
-                      e.currentTarget.parentElement.querySelector('.fallback-avatar').style.display = 'flex';
+                      const fallback = e.currentTarget.parentElement.querySelector('.fallback-avatar');
+                      if (fallback) fallback.style.display = 'flex';
                     }}
                   />
                   <div className="fallback-avatar hidden w-24 h-24 bg-white rounded-full items-center justify-center text-3xl font-bold text-brand-blue z-10">

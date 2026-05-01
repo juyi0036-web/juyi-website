@@ -14,9 +14,9 @@ const blogPosts = [
       es: 'Bomba de Calor Agua-Aire: Solución CLIMA 2050 para CHR'
     },
     subtitle: {
-      fr: 'Découvrez comment les pompes à chaleur air-eau révolutionnent le secteur CHR grâce à une efficacité énergétique exceptionnelle et une réduction significative des émissions de CO₂.',
-      en: 'Discover how air-to-water heat pumps are revolutionizing the CHR sector with exceptional energy efficiency and significant CO₂ emission reduction.',
-      es: 'Descubra cómo las bombas de calor agua-aire están revolucionando el sector CHR con excepcional eficiencia energética y reducción significativa de emisiones de CO₂.'
+      fr: 'Découvrez comment les pompes à chaleur air-eau révolutionnent le secteur CHR grâce à une efficacité énergétique exceptionnelle et une réduction significative des émissions de CO2.',
+      en: 'Discover how air-to-water heat pumps are revolutionizing the CHR sector with exceptional energy efficiency and significant CO2 emission reduction.',
+      es: 'Descubra cómo las bombas de calor agua-aire están revolucionando el sector CHR con excepcional eficiencia energética y reducción significativa de emisiones de CO2.'
     },
     excerpt: {
       fr: 'Les pompes à chaleur air-eau représentent l\'une des technologies les plus prometteuses pour décarboner les équipements CHR d\'ici 2050. Performance, économies d\'énergie, et impact environnemental réduit.',
@@ -33,35 +33,34 @@ const blogPosts = [
       fr: `
 ## Pompe à Chaleur Air Eau : La Technologie CLIMAT 2050 pour le CHR
 
-Les pompes à chaleur (PAC) air-eau transforment la chaleur de l\'air ambiant en energía thermique pour le chauffage et l\'eau chaude sanitaire. Pour le secteur CHR, elles offrent une alternative propre aux chaudières fossilistes.
+Les pompes à chaleur (PAC) air-eau transforment la chaleur de l'air ambiant en energía thermique pour le chauffage et l'eau chaude sanitaire. Pour le secteur CHR, elles offrent une alternative propre aux chaudières fossilistes.
 
 ### Performance Énergétique Exceptionnelle
 
-Avec un COP (Coefficient de Performance) typique de 3 à 5, les PAC air-eau produisent 3 à 5 kWh de chaleur pour 1 kWh d\'électricité consommée. Cela représente jusqu\'à 70% d\'économies d\'énergie par rapport aux systèmes électriques directes.
+Avec un COP (Coefficient de Performance) typique de 3 à 5, les PAC air-eau produisent 3 à 5 kWh de chaleur pour 1 kWh d'électricité consommée. Cela représente jusqu'à 70% d'économies d'énergie par rapport aux systèmes électriques directes.
 
 ### Impact Environnemental Réduit
 
-En utilisant l\'électricité (de plus en plus décarbonée) et en évitant les combustibles fossiles, les PAC contribuent à :
-- Réduire les émissions de CO₂ de 50 à 80%
+En utilisant l'électricité (de plus en plus décarbonée) et en évitant les combustibles fossiles, les PAC contribuent à :
+- Réduire les émissions de CO2 de 50 à 80%
 - Minimiser la dépendance aux énergies importées
 - Respecter les objectifs_climatiques 2050
 
 ### Applications CHR
 
-- **Réseaux de chaleur** : Production d\'eau chaude pour chauffage urbain
+- **Réseaux de chaleur** : Production d'eau chaude pour chauffage urbain
 - **Eau chaude sanitaire** : Hôtels, restaurants, établissements de santé
 - **Chauffage et climatisation** : Bâtiments commerciaux et industriels
 
 ### Pourquoi Choisir JUYI CHR ?
 
 Fort de notre expertise dans le secteur CHR, nous vous accompagnons dans :
-- L\'étude de faisabilité et le dimensionnement
-- L\'installation et la mise en service
-- La maintenance prédictive et l\'optimisation
+- L'étude de faisabilité et le dimensionnement
+- L'installation et la mise en service
+- La maintenance prédictive et l'optimisation
 
 ---
-*Article technique par l\'équipe R&D JUYI CHR.*
-      `,
+*Article technique par l'équipe R&D JUYI CHR.*`,
       en: `
 ## Air-to-Water Heat Pumps: The CLIMATE 2050 Technology for CHR
 
@@ -74,7 +73,7 @@ With a typical COP (Coefficient of Performance) of 3 to 5, air-to-water HPs prod
 ### Reduced Environmental Impact
 
 By using electricity (increasingly decarbonized) and avoiding fossil fuels, HPs contribute to:
-- Reducing CO₂ emissions by 50 to 80%
+- Reducing CO2 emissions by 50 to 80%
 - Minimizing dependence on imported energy
 - Meeting 2050 climate targets
 
@@ -92,8 +91,7 @@ With our expertise in the CHR sector, we support you in:
 - Predictive maintenance and optimization
 
 ---
-*Technical article by JUYI CHR R&D team.*
-      `,
+*Technical article by JUYI CHR R&D team.*`,
       es: `
 ## Bomba de Calor Agua-Aire: La Tecnología CLIMA 2050 para CHR
 
@@ -106,7 +104,7 @@ Con un COP (Coeficiente de Performance) típico de 3 a 5, las BC agua-aire produ
 ### Impacto Ambiental Reducido
 
 Al usar electricidad (cada vez más descarbonizada) y evitar combustibles fósiles, las BC contribuyen a:
-- Reducir las emisiones de CO₂ entre un 50 y 80%
+- Reducir las emisiones de CO2 entre un 50 y 80%
 - Minimizar la dependencia de energías importadas
 - Cumplir los objetivos climáticos 2050
 
@@ -124,8 +122,7 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
 - Mantenimiento predictivo y optimización
 
 ---
-*Artículo técnico del equipo de I+D de JUYI CHR.*
-      `
+*Artículo técnico del equipo de I+D de JUYI CHR.*`
     }
   },
   {
@@ -162,23 +159,23 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
       fr: `
 ## Normes Énergétiques UE 2026 pour les Équipements CHR
 
-À partir de 2026, l\'Union européenne met en place de nouvelles normes énergétiques pour les équipements de la Chaîne du Froid et de la Restauration (CHR). Ces mesures visent à réduire la consommation d\'énergie et les émissions de CO₂.
+À partir de 2026, l'Union européenne met en place de nouvelles normes énergétiques pour les équipements de la Chaîne du Froid et de la Restauration (CHR). Ces mesures visent à réduire la consommation d'énergie et les émissions de CO2.
 
 ### Ce Que Change la Nouvelle Étiquette Énergétique
 
-La nouvelle étiquette énergétique européenne, qui se déploie progressivement depuis 2021, couvrira à partir de 2026 davantage d\'équipements CHR :
+La nouvelle étiquette énergétique européenne, qui se déploie progressivement depuis 2021, couvrira à partir de 2026 davantage d'équipements CHR :
 - Réfrigération commerciale
 - Equipements de cuisson professionnels
 - Machines à laver industrielles
 
-L\'échelle passe de A+++ à G (similaire aux étiquettes électroménagers), avec des_classes A réservées aux_technologies les_plus_vertes comme les_ Pompe à Chaleur Air Eau.
+L'échelle passe de A+++ à G (similaire aux étiquettes électroménagers), avec des_classes A réservées aux_technologies les_plus_vertes comme les_ Pompe à Chaleur Air Eau.
 
 ### Focus sur les Fluides Frigorigènes
 
-Le Règlement F-Gas 2026 limite progressivement l\'utilisation des fluides frigorigènes à fort PRG :
+Le Règlement F-Gas 2026 limite progressivement l'utilisation des fluides frigorigènes à fort PRG :
 - Interdiction de Certains HFC dans les_nouvelles installations
-- Quotas d\'approvisionnement réduits
-- Promotion des fluides naturels (CO₂, NH₃) et des fluides à faible PRG
+- Quotas d'approvisionnement réduits
+- Promotion des fluides naturels (CO2, NH3) et des fluides à faible PRG
 
 ### Comment Se Préparer ?
 
@@ -193,12 +190,11 @@ Le Règlement F-Gas 2026 limite progressivement l\'utilisation des fluides frigo
 - [Nouvelle Étiquette Énergétique](https://energy-label.ec.europa.eu/)
 
 ---
-*Article rédigé par l\'équipe technique JUYI CHR, spécialiste des solutions CHR durables.*
-      `,
+*Article rédigé par l'équipe technique JUYI CHR, spécialiste des solutions CHR durables.*`,
       en: `
 ## EU 2026 Energy Standards for CHR Equipment
 
-Starting in 2026, the European Union is implementing new energy standards for Cold Chain and Catering (CHR) equipment. These measures aim to reduce energy consumption and CO₂ emissions.
+Starting in 2026, the European Union is implementing new energy standards for Cold Chain and Catering (CHR) equipment. These measures aim to reduce energy consumption and CO2 emissions.
 
 ### What Changes with the New Energy Label
 
@@ -214,7 +210,7 @@ The scale ranges from A+++ to G (similar to household appliances), with A_classe
 The F-Gas Regulation 2026 gradually limits the use of high-GWP refrigerants:
 - Ban on Certain HFCs in new installations
 - Reduced supply quotas
-- Promotion of natural refrigerants (CO₂, NH₃) and low-GWP fluids
+- Promotion of natural refrigerants (CO2, NH3) and low-GWP fluids
 
 ### How to Prepare?
 
@@ -229,12 +225,11 @@ The F-Gas Regulation 2026 gradually limits the use of high-GWP refrigerants:
 - [New Energy Label](https://energy-label.ec.europa.eu/)
 
 ---
-*Written by JUYI CHR technical team, specialist in sustainable CHR solutions.*
-      `,
+*Written by JUYI CHR technical team, specialist in sustainable CHR solutions.*`,
       es: `
 ## Normas Energéticas UE 2026 para Equipos CHR
 
-A partir de 2026, la Unión Europea implementa nuevas normas energéticas para equipos de Cadena de Frío y Restauración (CHR). Estas medidas buscan reducir el consumo de energía y las emisiones de CO₂.
+A partir de 2026, la Unión Europea implementa nuevas normas energéticas para equipos de Cadena de Frío y Restauración (CHR). Estas medidas buscan reducir el consumo de energía y las emisiones de CO2.
 
 ### Qué Cambia con la Nueva Etiqueta Energética
 
@@ -250,7 +245,7 @@ La escala va de A+++ a G (similar a electrodomésticos), con clases A reservadas
 El Reglamento F-Gas 2026 limita gradualmente el uso de refrigerantes de alto PCA:
 - Prohibición de Ciertos HFC en nuevas instalaciones
 - Cuotas de suministro reducidas
-- Promoción de refrigerantes naturales (CO₂, NH₃) y fluidos de bajo PCA
+- Promoción de refrigerantes naturales (CO2, NH3) y fluidos de bajo PCA
 
 ### ¿Cómo Prepararse?
 
@@ -265,8 +260,7 @@ El Reglamento F-Gas 2026 limita gradualmente el uso de refrigerantes de alto PCA
 - [Nueva Etiqueta Energética](https://energy-label.ec.europa.eu/)
 
 ---
-*Artículo redactado por el equipo técnico de JUYI CHR, especialista en soluciones CHR sostenibles.*
-      `
+*Artículo redactado por el equipo técnico de JUYI CHR, especialista en soluciones CHR sostenibles.*`
     }
   }
 ];

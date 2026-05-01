@@ -168,12 +168,12 @@ La nouvelle étiquette énergétique européenne, qui se déploie progressivemen
 - Equipements de cuisson professionnels
 - Machines à laver industrielles
 
-L'échelle passe de A+++ à G (similaire aux étiquettes électroménagers), avec des_classes A réservées aux_technologies les_plus_vertes comme les_ Pompe à Chaleur Air Eau.
+L'échelle passe de A+++ à G (similaire aux étiquettes électroménagers), avec des classes A réservées aux technologies les plus_vertes comme les_ Pompe à Chaleur Air Eau.
 
 ### Focus sur les Fluides Frigorigènes
 
 Le Règlement F-Gas 2026 limite progressivement l'utilisation des fluides frigorigènes à fort PRG :
-- Interdiction de Certains HFC dans les_nouvelles installations
+- Interdiction de Certains HFC dans les nouvelles installations
 - Quotas d'approvisionnement réduits
 - Promotion des fluides naturels (CO2, NH3) et des fluides à faible PRG
 
@@ -181,7 +181,7 @@ Le Règlement F-Gas 2026 limite progressivement l'utilisation des fluides frigor
 
 1. **Auditer votre parc** : Identifiez les équipements utilisant des fluides concernés
 2. **Planifier le remplacement** : Anticipez les investissements nécessaires
-3. **Former vos équipes** : Sensibilisez aux nouvelles_règles de manipulation
+3. **Former vos équipes** : Sensibilisez aux nouvelles règles de manipulation
 4. **Choisir des solutions durables** : Privilégiez les équipements basés sur les_Pompes à Chaleur et les fluides naturels
 
 ### Ressources Utiles

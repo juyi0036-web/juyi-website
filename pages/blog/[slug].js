@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import blogPosts from '../../data/blogPosts';
 
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import CTABanner from '../../components/CTABanner';
 
 
@@ -129,7 +130,7 @@ export default function BlogPost({ post, t }) {
 
         {/* Article Content */}
         <article className="prose prose-lg max-w-none text-gray-700">
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </article>
 
         {/* Share & CTA */}

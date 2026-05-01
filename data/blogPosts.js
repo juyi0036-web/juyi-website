@@ -378,4 +378,4 @@ export default function BlogPost({ slug, locale }) {
   );
 }
 
-export { blogPosts };
+export default blogPosts;

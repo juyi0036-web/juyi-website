@@ -1,5 +1,134 @@
 const blogPosts = [
   {
+    id: 'eu-2026-energy-standards',
+    slug: 'eu-2026-energy-standards',
+    date: '2026-04-30',
+    category: { color: 'brand-blue', label: 'Innovation Énergétique' },
+    image: { 
+      main: 'https://images.unsplash.com/photo-1595920633112-7039d49e585d?w=1200&q=80',
+      alt: 'Pompe à Chaleur Air Eau - JUYI CHR' 
+    },
+    title: {
+      fr: 'Pompe à Chaleur Air Eau : Solution CLIMAT 2050 pour le CHR',
+      en: 'Air-to-Water Heat Pumps: CLIMATE 2050 Solution for CHR',
+      es: 'Bomba de Calor Agua-Aire: Solución CLIMA 2050 para CHR'
+    },
+    subtitle: {
+      fr: 'Découvrez comment les pompes à chaleur air-eau révolutionnent le secteur CHR grâce à une efficacité énergétique exceptionnelle et une réduction significative des émissions de CO₂.',
+      en: 'Discover how air-to-water heat pumps are revolutionizing the CHR sector with exceptional energy efficiency and significant CO₂ emission reduction.',
+      es: 'Descubra cómo las bombas de calor agua-aire están revolucionando el sector CHR con excepcional eficiencia energética y reducción significativa de emisiones de CO₂.'
+    },
+    excerpt: {
+      fr: 'Les pompes à chaleur air-eau représentent l\'une des technologies les plus prometteuses pour décarboner les équipements CHR d\'ici 2050. Performance, économies d\'énergie, et impact environnemental réduit.',
+      en: 'Air-to-water heat pumps are one of the most promising technologies for decarbonizing CHR equipment by 2050. Performance, energy savings, and reduced environmental impact.',
+      es: 'Las bombas de calor agua-aire son una de las tecnologías más prometedoras para descarbonizar equipos CHR para 2050. Rendimiento, ahorro energético y reducción del impacto ambiental.'
+    },
+    author: { 
+      name: 'Équipe JUYI CHR', 
+      role: 'Expert CHR', 
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' 
+    },
+    readTime: '10 min',
+    content: {
+      fr: `
+## Pompe à Chaleur Air Eau : La Technologie CLIMAT 2050 pour le CHR
+
+Les pompes à chaleur (PAC) air-eau transforment la chaleur de l\'air ambiant en energía thermique pour le chauffage et l\'eau chaude sanitaire. Pour le secteur CHR, elles offrent une alternative propre aux chaudières fossilistes.
+
+### Performance Énergétique Exceptionnelle
+
+Avec un COP (Coefficient de Performance) typique de 3 à 5, les PAC air-eau produisent 3 à 5 kWh de chaleur pour 1 kWh d\'électricité consommée. Cela représente jusqu\'à 70% d\'économies d\'énergie par rapport aux systèmes électriques directes.
+
+### Impact Environnemental Réduit
+
+En utilisant l\'électricité (de plus en plus décarbonée) et en évitant les combustibles fossiles, les PAC contribuent à :
+- Réduire les émissions de CO₂ de 50 à 80%
+- Minimiser la dépendance aux énergies importées
+- Respecter les objectifs_climatiques 2050
+
+### Applications CHR
+
+- **Réseaux de chaleur** : Production d\'eau chaude pour chauffage urbain
+- **Eau chaude sanitaire** : Hôtels, restaurants, établissements de santé
+- **Chauffage et climatisation** : Bâtiments commerciaux et industriels
+
+### Pourquoi Choisir JUYI CHR ?
+
+Fort de notre expertise dans le secteur CHR, nous vous accompagnons dans :
+- L\'étude de faisabilité et le dimensionnement
+- L\'installation et la mise en service
+- La maintenance prédictive et l\'optimisation
+
+---
+*Article technique par l\'équipe R&D JUYI CHR.*
+      `,
+      en: `
+## Air-to-Water Heat Pumps: The CLIMATE 2050 Technology for CHR
+
+Heat pumps (HP) air-to-water convert heat from ambient air into thermal energy for heating and domestic hot water. For the CHR sector, they offer a clean alternative to fossil-fuel boilers.
+
+### Exceptional Energy Performance
+
+With a typical COP (Coefficient of Performance) of 3 to 5, air-to-water HPs produce 3 to 5 kWh of heat for 1 kWh of electricity consumed. That represents up to 70% energy savings compared to direct electric systems.
+
+### Reduced Environmental Impact
+
+By using electricity (increasingly decarbonized) and avoiding fossil fuels, HPs contribute to:
+- Reducing CO₂ emissions by 50 to 80%
+- Minimizing dependence on imported energy
+- Meeting 2050 climate targets
+
+### CHR Applications
+
+- **District heating** Production of hot water for urban heating
+- **Domestic hot water** Hotels, restaurants, healthcare facilities
+- **Heating and cooling** Commercial and industrial buildings
+
+### Why Choose JUYI CHR?
+
+With our expertise in the CHR sector, we support you in:
+- Feasibility study and sizing
+- Installation and commissioning
+- Predictive maintenance and optimization
+
+---
+*Technical article by JUYI CHR R&D team.*
+      `,
+      es: `
+## Bomba de Calor Agua-Aire: La Tecnología CLIMA 2050 para CHR
+
+Las bombas de calor (BC) agua-aire convierten el calor del aire ambiente en energía térmica para calefacción y agua caliente sanitaria. Para el sector CHR, ofrecen una alternativa limpia a las calderas de combustibles fósiles.
+
+### Rendimiento Energético Excepcional
+
+Con un COP (Coeficiente de Performance) típico de 3 a 5, las BC agua-aire producen 3 a 5 kWh de calor por 1 kWh de electricidad consumida. Esto representa hasta un 70% de ahorro energético frente a sistemas eléctricos directos.
+
+### Impacto Ambiental Reducido
+
+Al usar electricidad (cada vez más descarbonizada) y evitar combustibles fósiles, las BC contribuyen a:
+- Reducir las emisiones de CO₂ entre un 50 y 80%
+- Minimizar la dependencia de energías importadas
+- Cumplir los objetivos climáticos 2050
+
+### Aplicaciones CHR
+
+- **Redes de calor** Producción de agua caliente para calefacción urbana
+- **Agua caliente sanitaria** Hoteles, restaurantes, centros de salud
+- **Calefacción y climatización** Edificios comerciales e industriales
+
+### ¿Por Qué Elegir JUYI CHR?
+
+Con nuestra experiencia en el sector CHR, le acompañamos en:
+- Estudio de viabilidad y dimensionamiento
+- Instalación y puesta en marcha
+- Mantenimiento predictivo y optimización
+
+---
+*Artículo técnico del equipo de I+D de JUYI CHR.*
+      `
+    }
+  },
+  {
     id: 'eu-2026-refrigerant-ban',
     slug: 'eu-2026-refrigerant-ban',
     date: '2026-04-20',
@@ -137,135 +266,6 @@ El Reglamento F-Gas 2026 limita gradualmente el uso de refrigerantes de alto PCA
 
 ---
 *Artículo redactado por el equipo técnico de JUYI CHR, especialista en soluciones CHR sostenibles.*
-      `
-    }
-  },
-  {
-    id: 'eu-2026-energy-standards',
-    slug: 'eu-2026-energy-standards',
-    date: '2026-04-30',
-    category: { color: 'brand-blue', label: 'Innovation Énergétique' },
-    image: { 
-      main: 'https://images.unsplash.com/photo-1595920633112-7039d49e585d?w=1200&q=80',
-      alt: 'Pompe à Chaleur Air Eau - JUYI CHR' 
-    },
-    title: {
-      fr: 'Pompe à Chaleur Air Eau : Solution CLIMAT 2050 pour le CHR',
-      en: 'Air-to-Water Heat Pumps: CLIMATE 2050 Solution for CHR',
-      es: 'Bomba de Calor Agua-Aire: Solución CLIMA 2050 para CHR'
-    },
-    subtitle: {
-      fr: 'Découvrez comment les pompes à chaleur air-eau révolutionnent le secteur CHR grâce à une efficacité énergétique exceptionnelle et une réduction significative des émissions de CO₂.',
-      en: 'Discover how air-to-water heat pumps are revolutionizing the CHR sector with exceptional energy efficiency and significant CO₂ emission reduction.',
-      es: 'Descubra cómo las bombas de calor agua-aire están revolucionando el sector CHR con excepcional eficiencia energética y reducción significativa de emisiones de CO₂.'
-    },
-    excerpt: {
-      fr: 'Les pompes à chaleur air-eau représentent l\'une des technologies les plus prometteuses pour décarboner les équipements CHR d\'ici 2050. Performance, économies d\'énergie, et impact environnemental réduit.',
-      en: 'Air-to-water heat pumps are one of the most promising technologies for decarbonizing CHR equipment by 2050. Performance, energy savings, and reduced environmental impact.',
-      es: 'Las bombas de calor agua-aire son una de las tecnologías más prometedoras para descarbonizar equipos CHR para 2050. Rendimiento, ahorro energético y reducción del impacto ambiental.'
-    },
-    author: { 
-      name: 'Équipe JUYI CHR', 
-      role: 'Expert CHR', 
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' 
-    },
-    readTime: '10 min',
-    content: {
-      fr: `
-## Pompe à Chaleur Air Eau : La Technologie CLIMAT 2050 pour le CHR
-
-Les pompes à chaleur (PAC) air-eau transforment la chaleur de l\'air ambiant en energía thermique pour le chauffage et l\'eau chaude sanitaire. Pour le secteur CHR, elles offrent une alternative propre aux chaudières fossilistes.
-
-### Performance Énergétique Exceptionnelle
-
-Avec un COP (Coefficient de Performance) typique de 3 à 5, les PAC air-eau produisent 3 à 5 kWh de chaleur pour 1 kWh d\'électricité consommée. Cela représente jusqu\'à 70% d\'économies d\'énergie par rapport aux systèmes électriques directes.
-
-### Impact Environnemental Réduit
-
-En utilisant l\'électricité (de plus en plus décarbonée) et en évitant les combustibles fossiles, les PAC contribuent à :
-- Réduire les émissions de CO₂ de 50 à 80%
-- Minimiser la dépendance aux énergies importées
-- Respecter les objectifs_climatiques 2050
-
-### Applications CHR
-
-- **Réseaux de chaleur** : Production d\'eau chaude pour chauffage urbain
-- **Eau chaude sanitaire** : Hôtels, restaurants, établissements de santé
-- **Chauffage et climatisation** : Bâtiments commerciaux et industriels
-
-### Pourquoi Choisir JUYI CHR ?
-
-Fort de notre expertise dans le secteur CHR, nous vous accompagnons dans :
-- L\'étude de faisabilité et le dimensionnement
-- L\'installation et la mise en service
-- La maintenance prédictive et l\'optimisation
-
----
-*Article technique par l\'équipe R&D JUYI CHR.*
-      `,
-      en: `
-## Air-to-Water Heat Pumps: The CLIMATE 2050 Technology for CHR
-
-Heat pumps (HP) air-to-water convert heat from ambient air into thermal energy for heating and domestic hot water. For the CHR sector, they offer a clean alternative to fossil-fuel boilers.
-
-### Exceptional Energy Performance
-
-With a typical COP (Coefficient of Performance) of 3 to 5, air-to-water HPs produce 3 to 5 kWh of heat for 1 kWh of electricity consumed. That represents up to 70% energy savings compared to direct electric systems.
-
-### Reduced Environmental Impact
-
-By using electricity (increasingly decarbonized) and avoiding fossil fuels, HPs contribute to:
-- Reducing CO₂ emissions by 50 to 80%
-- Minimizing dependence on imported energy
-- Meeting 2050 climate targets
-
-### CHR Applications
-
-- **District heating** Production of hot water for urban heating
-- **Domestic hot water** Hotels, restaurants, healthcare facilities
-- **Heating and cooling** Commercial and industrial buildings
-
-### Why Choose JUYI CHR?
-
-With our expertise in the CHR sector, we support you in:
-- Feasibility study and sizing
-- Installation and commissioning
-- Predictive maintenance and optimization
-
----
-*Technical article by JUYI CHR R&D team.*
-      `,
-      es: `
-## Bomba de Calor Agua-Aire: La Tecnología CLIMA 2050 para CHR
-
-Las bombas de calor (BC) agua-aire convierten el calor del aire ambiente en energía térmica para calefacción y agua caliente sanitaria. Para el sector CHR, ofrecen una alternativa limpia a las calderas de combustibles fósiles.
-
-### Rendimiento Energético Excepcional
-
-Con un COP (Coeficiente de Performance) típico de 3 a 5, las BC agua-aire producen 3 a 5 kWh de calor por 1 kWh de electricidad consumida. Esto representa hasta un 70% de ahorro energético frente a sistemas eléctricos directos.
-
-### Impacto Ambiental Reducido
-
-Al usar electricidad (cada vez más descarbonizada) y evitar combustibles fósiles, las BC contribuyen a:
-- Reducir las emisiones de CO₂ entre un 50 y 80%
-- Minimizar la dependencia de energías importadas
-- Cumplir los objetivos climáticos 2050
-
-### Aplicaciones CHR
-
-- **Redes de calor** Producción de agua caliente para calefacción urbana
-- **Agua caliente sanitaria** Hoteles, restaurantes, centros de salud
-- **Calefacción y climatización** Edificios comerciales e industriales
-
-### ¿Por Qué Elegir JUYI CHR?
-
-Con nuestra experiencia en el sector CHR, le acompañamos en:
-- Estudio de viabilidad y dimensionamiento
-- Instalación y puesta en marcha
-- Mantenimiento predictivo y optimización
-
----
-*Artículo técnico del equipo de I+D de JUYI CHR.*
       `
     }
   }

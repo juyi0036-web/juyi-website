@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
 import blogPosts from '../../data/blogPosts';
 
+import ReactMarkdown from 'react-markdown';
 import CTABanner from '../../components/CTABanner';
 
 

@@ -9,7 +9,7 @@ const blogPosts = [
     category: { color: 'brand-orange', label: 'Réglementation UE' },
     image: { main: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200', alt: 'F-Gas 2026 Regulation - JUYI CHR' },
     title: {
-      fr: '2026 : L'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
+      fr: '2026 : L\'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
       en: '2026: EU Bans Certain Refrigerants - What You Need to Know',
       es: '2026: La UE Prohíbe Ciertos Refrigerantes - Lo Que Necesita Saber'
     },
@@ -19,7 +19,7 @@ const blogPosts = [
       es: 'El reglamento F-Gas 2026 impone nuevas restricciones sobre refrigerantes de alto PCA. Descubra los requisitos y las nuevas etiquetas A-G.'
     },
     excerpt: {
-      fr: 'À partir de 2026, l'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
+      fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
       en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants. Learn how this affects your cold equipment and how to prepare.',
       es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP). Descubra cómo afecta a sus equipos de frío y cómo prepararse.'
     },

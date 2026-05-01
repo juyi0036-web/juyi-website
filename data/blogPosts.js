@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const blogPosts = [
 
+const blogPosts = [
   {
     id: 'eu-2026-refrigerant-ban',
     slug: 'eu-2026-refrigerant-ban',
@@ -9,7 +9,7 @@ const blogPosts = [
     category: { color: 'brand-orange', label: 'Réglementation UE' },
     image: { main: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200', alt: 'F-Gas 2026 Regulation - JUYI CHR' },
     title: {
-      fr: '2026 : L\'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
+      fr: '2026 : L'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
       en: '2026: EU Bans Certain Refrigerants - What You Need to Know',
       es: '2026: La UE Prohíbe Ciertos Refrigerantes - Lo Que Necesita Saber'
     },
@@ -19,7 +19,7 @@ const blogPosts = [
       es: 'El reglamento F-Gas 2026 impone nuevas restricciones sobre refrigerantes de alto PCA. Descubra los requisitos y las nuevas etiquetas A-G.'
     },
     excerpt: {
-      fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
+      fr: 'À partir de 2026, l'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',
       en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants. Learn how this affects your cold equipment and how to prepare.',
       es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP). Descubra cómo afecta a sus equipos de frío y cómo prepararse.'
     },
@@ -27,171 +27,9 @@ const blogPosts = [
     readTime: '8 min',
     content: {
       fr: `
-## Les Nouvelles Restrictions UE sur les Fluides Frigorigènes
-
-### Contexte
-Le Règlement (UE) 2024/573 sur les gaz à effet de serre fluorés (F-Gas) entre pleinement en vigueur en 2026. Ce règlement vise à réduire les émissions de gaz à effet de serre provenant des équipements de réfrigération et de climatisation.
-
-### Points Clés
-
-#### 1. Interdiction des Fluides à Haut PRG
-- **R-404A** (PRG 3922) : Interdit dans les nouveaux équipements commerciaux de réfrigération
-- **R-507A** (PRG 3985) : Interdit dans les nouvelles installations fixes
-- **R-134a** (PRG 1430) : Limité dans certaines applications
-
-#### 2. Fluides Alternatifs Recommandés
-| Fluide | PRG | Application |
-|--------|-----|-------------|
-| R-290 (Propane) | 3 | Petites unités |
-| R-600a (Isobutane) | 3 | Vitrines réfrigérées |
-| R-744 (CO2) | 1 | Systèmes centraux |
-| R-454C | 146 | Remplacement R-404A |
-
-#### 3. Impact sur les Équipements CHR
-Les équipements suivants sont concernés :
-- **Armoires réfrigérées** : Doivent utiliser des fluides à PRG < 150
-- **Chambres froides** : Transition progressive vers R-744 ou R-290
-- **Vitrines pâtissières** : Nouveaux modèles avec R-600a
-- **Machines à glace** : R-290 recommandé
-
-### Calendrier de Mise en Œuvre
-- **Janvier 2025** : Interdiction R-404A dans les nouveaux équipements
-- **Janvier 2026** : Extension aux équipements de plus de 12kW
-- **2030** : Réduction de 40% des quotas de HFC
-
-### Comment Se Préparer ?
-
-1. **Inventaire** : Listez vos équipements utilisant des fluides à haut PRG
-2. **Planification** : Prévoyez le remplacement des équipements les plus anciens
-3. **Sourcing** : Choisissez des équipements conformes dès maintenant
-4. **Formation** : Formez vos équipes aux nouveaux fluides
-
-### Notre Engagement
-Chez JUYI CHR, tous nos équipements de réfrigération sont déjà conformes aux normes 2026. Nous proposons une gamme complète d'équipements utilisant des fluides à faible PRG.
-
-**Contactez-nous** pour obtenir un devis sur des équipements conformes aux nouvelles normes UE.
-      `,
-      en: `
-## New EU Restrictions on Refrigerants
-
-### Background
-The EU Regulation 2024/573 on fluorinated greenhouse gases (F-Gas) fully comes into effect in 2026. This regulation aims to reduce greenhouse gas emissions from refrigeration and air conditioning equipment.
-
-### Key Points
-
-#### 1. Ban on High GWP Refrigerants
-- **R-404A** (GWP 3922): Banned in new commercial refrigeration equipment
-- **R-507A** (GWP 3985): Banned in new fixed installations
-- **R-134a** (GWP 1430): Limited in certain applications
-
-#### 2. Recommended Alternative Refrigerants
-| Refrigerant | GWP | Application |
-|-------------|-----|-------------|
-| R-290 (Propane) | 3 | Small units |
-| R-600a (Isobutane) | 3 | Refrigerated display cases |
-| R-744 (CO2) | 1 | Central systems |
-| R-454C | 146 | R-404A replacement |
-
-#### 3. Impact on CHR Equipment
-The following equipment is affected:
-- **Refrigerated cabinets**: Must use refrigerants with GWP < 150
-- **Cold rooms**: Progressive transition to R-744 or R-290
-- **Pastry display cases**: New models with R-600a
-- **Ice machines**: R-290 recommended
-
-### Implementation Timeline
-- **January 2025**: R-404A banned in new equipment
-- **January 2026**: Extended to equipment over 12kW
-- **2030**: 40% reduction in HFC quotas
-
-### How to Prepare?
-
-1. **Inventory**: List your equipment using high GWP refrigerants
-2. **Planning**: Plan replacement of oldest equipment
-3. **Sourcing**: Choose compliant equipment now
-4. **Training**: Train your teams on new refrigerants
-
-### Our Commitment
-At JUYI CHR, all our refrigeration equipment is already 2026 compliant. We offer a complete range of equipment using low GWP refrigerants.
-
-**Contact us** to get a quote on equipment compliant with new EU standards.
-      `,
-      es: `
-## Nuevas Restricciones de la UE sobre Refrigerantes
-
-### Contexto
-El Reglamento (UE) 2024/573 sobre gases fluorados de efecto invernadero (F-Gas) entra plenamente en vigor en 2026. Este reglamento tiene como objetivo reducir las emisiones de gases de efecto invernadero procedentes de equipos de refrigeración y aire acondicionado.
-
-### Puntos Clave
-
-#### 1. Prohibición de Refrigerantes con Alto GWP
-- **R-404A** (GWP 3922): Prohibido en nuevos equipos comerciales de refrigeración
-- **R-507A** (GWP 3985): Prohibido en nuevas instalaciones fijas
-- **R-134a** (GWP 1430): Limitado en ciertas aplicaciones
-
-#### 2. Refrigerantes Alternativos Recomendados
-| Refrigerante | GWP | Aplicación |
-|--------------|-----|------------|
-| R-290 (Propano) | 3 | Unidades pequeñas |
-| R-600a (Isobutano) | 3 | Vitrinas refrigeradas |
-| R-744 (CO2) | 1 | Sistemas centrales |
-| R-454C | 146 | Reemplazo R-404A |
-
-#### 3. Impacto en Equipos CHR
-Los siguientes equipos se ven afectados:
-- **Armarios refrigerados**: Deben usar refrigerantes con GWP < 150
-- **Cámaras frigoríficas**: Transición progresiva a R-744 o R-290
-- **Vitrinas de pastelería**: Nuevos modelos con R-600a
-- **Máquinas de hielo**: R-290 recomendado
-
-### Calendario de Implementación
-- **Enero 2025**: R-404A prohibido en nuevos equipos
-- **Enero 2026**: Extensión a equipos de más de 12kW
-- **2030**: Reducción del 40% en cuotas de HFC
-
-### ¿Cómo Prepararse?
-
-1. **Inventario**: Liste sus equipos que usan refrigerantes con alto GWP
-2. **Planificación**: Planifique el reemplazo de los equipos más antiguos
-3. **Abastecimiento**: Elija equipos conformes ahora
-4. **Capacitación**: Capacite a sus equipos en nuevos refrigerantes
-
-### Nuestro Compromiso
-En JUYI CHR, todos nuestros equipos de refrigeración ya son conformes con las normas 2026. Ofrecemos una gama completa de equipos que utilizan refrigerantes con bajo GWP.
-
-**Contáctenos** para obtener un presupuesto de equipos conformes con las nuevas normas de la UE.
-      `
-    }
-  }
-  {
-,
-    id: 'eu-2026-energy-standards',
-    slug: 'eu-2026-energy-standards',
-    date: '2026-04-15',
-    category: 'Normes Énergétiques',
-    category: { color: 'brand-blue', label: 'Normes Énergétiques' },
-    image: { main: 'https://images.unsplash.com/photo-1618556450994-a3963cdcfd1b?w=1200', alt: 'Article Normes Énergétiques - JUYI CHR' },
-      fr: 'F-Gas 2026 : Règlementation et Étiquettes A-G pour le CHR',
-      en: 'F-Gas 2026: Regulation and A-G Labeling for CHR Equipment',
-      es: 'F-Gas 2026: Regulación y Etiquetas A-G para Equipos CHR',
-    },
-    excerpt: {
-    subtitle: {
-      fr: 'Le règlement F-Gas 2026 et l'étiquette A-G redéfinissent les normes pour équipements CHR.',
-      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
-      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
-    },
-      fr: 'Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.',
-      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
-      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.',
-    },
-    content: {
-    author: { name: 'Équipe JUYI CHR', role: 'Expert CHR', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' },
-    readTime: '10 min',
-      fr: `
 ## Normes Énergétiques UE 2026 pour les Équipements CHR
 
-### Le Nouveau Label Énergétique
+### Le Nouveau Label
 Depuis mars 2021, l'UE a introduit un nouveau système d'étiquetage énergétique. En 2026, les exigences deviennent plus strictes.
 
 ### Changements Majeurs
@@ -208,157 +46,178 @@ Les équipements suivants doivent atteindre au minimum la classe E :
 - Réfrigérateurs et congélateurs
 
 #### 3. Impact sur les Coûts
-| Classe | Consommation | Économie annuelle |
-|--------|--------------|-------------------|
-| A | -40% | 800-1200€ |
-| B | -25% | 500-800€ |
-| C | -10% | 200-400€ |
-| D | Standard | Référence |
+Les équipements anciens peuvent nécessiter des investissements pour se conformer.
 
-### Équipements Concernés
+#### 4. Calendrier
+- **2021** : Introduction du nouveau label
+- **2026** : Exigences minimales en vigueur
 
-#### Fours Professionnels
-- **Classe A** : Fours à convection avec récupération de chaleur
-- **Classe B** : Fours à convection standards
-- **Exigence 2026** : Minimum classe C
+### Notre Engagement
+Nous aidons nos clients à choisir des équipements conformes.
 
-#### Lave-Vaisselle
-- **Classe A** : Récupération de vapeur, filtration intelligente
-- **Classe B** : Économie d'eau optimisée
-- **Exigence 2026** : Minimum classe D
-
-#### Réfrigération
-- **Classe A** : Compresseurs à vitesse variable, éclairage LED
-- **Classe B** : Isolation renforcée, joints optimisés
-- **Exigence 2026** : Minimum classe E
-
-### Comment Choisir ses Équipements ?
-
-1. **Vérifiez le label** : Demandez toujours le classement énergétique
-2. **Calculez le TCO** : Coût total de possession sur 10 ans
-3. **Privilégiez la classe A** : Investissement rentabilisé en 2-3 ans
-4. **Demandez les certifications** : CE, RoHS, Eco-Design
-
-### Notre Gamme Économe
-Tous nos équipements sont classés A ou B selon les nouvelles normes 2026. Nous fournissons les certificats et labels pour chaque produit.
-
-**Demandez notre catalogue** avec les classements énergétiques détaillés.
+**Contactez-nous** pour un audit gratuit.
       `,
       en: `
 ## EU 2026 Energy Standards for CHR Equipment
 
 ### The New Energy Label
-Since March 2021, the EU has introduced a new energy labeling system. In 2026, requirements become stricter.
+Since March 2021, the EU has introduced a new energy labeling system. In 2026, the requirements become stricter.
 
 ### Major Changes
 
 #### 1. Revised Rating Scale
-- **Old scale**: A+++ to D
-- **New scale**: A to G (stricter)
-- An A+++ rated appliance in 2020 might be rated C in 2026
+- **Old scale** : A+++ to D
+- **New scale** : A to G (stricter)
+- An appliance rated A+++ in 2020 could be rated C in 2026
 
 #### 2. Minimum Requirements
-The following equipment must reach at least class E:
+The following equipment must meet at least class E:
 - Professional ovens
 - Commercial dishwashers
 - Refrigerators and freezers
 
 #### 3. Cost Impact
-| Class | Consumption | Annual Savings |
-|-------|------------|----------------|
-| A | -40% | €800-1200 |
-| B | -25% | €500-800 |
-| C | -10% | €200-400 |
-| D | Standard | Reference |
+Older equipment may require investments to comply.
 
-### Equipment Affected
+#### 4. Timeline
+- **2021** : Label introduction
+- **2026** : Minimum requirements enforced
 
-#### Professional Ovens
-- **Class A**: Convection ovens with heat recovery
-- **Class B**: Standard convection ovens
-- **2026 Requirement**: Minimum class C
+### Our Commitment
+We help customers select compliant equipment.
 
-#### Dishwashers
-- **Class A**: Steam recovery, smart filtration
-- **Class B**: Optimized water savings
-- **2026 Requirement**: Minimum class D
-
-#### Refrigeration
-- **Class A**: Variable speed compressors, LED lighting
-- **Class B**: Enhanced insulation, optimized seals
-- **2026 Requirement**: Minimum class E
-
-### How to Choose Your Equipment?
-
-1. **Check the label**: Always ask for the energy rating
-2. **Calculate TCO**: Total cost of ownership over 10 years
-3. **Prioritize class A**: Investment payback in 2-3 years
-4. **Request certifications**: CE, RoHS, Eco-Design
-
-### Our Energy-Efficient Range
-All our equipment is rated A or B according to 2026 standards. We provide certificates and labels for each product.
-
-**Request our catalog** with detailed energy ratings.
+**Contact us** for a free audit.
       `,
       es: `
-## Estándares Energéticos UE 2026 para Equipos CHR
+## Normas Energéticas UE 2026 para Equipos CHR
 
 ### La Nueva Etiqueta Energética
-Desde marzo de 2021, la UE ha introducido un nuevo sistema de etiquetado energético. En 2026, los requisitos se vuelven más estrictos.
+Desde marzo de 2021, la UE introdujo un nuevo sistema de etiquetado energético. En 2026, los requisitos se vuelven más estrictos.
 
-### Cambios Mayores
+### Cambios Principales
 
 #### 1. Escala de Calificación Revisada
-- **Escala anterior**: A+++ a D
-- **Nueva escala**: A a G (más estricta)
-- Un electrodoméstico calificado A+++ en 2020 podría ser calificado C en 2026
+- **Escala antigua** : A+++ a D
+- **Nueva escala** : A a G (más estricta)
+- Un electrodoméstico calificado A+++ en 2020 podría calificarse C en 2026
 
 #### 2. Requisitos Mínimos
-Los siguientes equipos deben alcanzar al menos la clase E:
+Los siguientes equipos deben cumplir al menos la clase E:
 - Hornos profesionales
 - Lavavajillas comerciales
 - Refrigeradores y congeladores
 
 #### 3. Impacto en Costos
-| Clase | Consumo | Ahorro Anual |
-|-------|---------|--------------|
-| A | -40% | 800-1200€ |
-| B | -25% | 500-800€ |
-| C | -10% | 200-400€ |
-| D | Estándar | Referencia |
+El equipo más antiguo puede requerir inversiones para cumplir.
 
-### Equipos Afectados
+#### 4. Cronograma
+- **2021** : Introducción de la etiqueta
+- **2026** : Requisitos mínimos vigentes
 
-#### Hornos Profesionales
-- **Clase A**: Hornos de convección con recuperación de calor
-- **Clase B**: Hornos de convección estándar
-- **Requisito 2026**: Mínimo clase C
+### Nuestro Compromiso
+Ayudamos a los clientes a seleccionar equipos conformes.
 
-#### Lavavajillas
-- **Clase A**: Recuperación de vapor, filtración inteligente
-- **Clase B**: Ahorro de agua optimizado
-- **Requisito 2026**: Mínimo clase D
+**Contáctenos** para una auditoría gratuita.
+      `
+    }
+  },
+  {
+    id: 'eu-2026-energy-standards',
+    slug: 'eu-2026-energy-standards',
+    date: '2026-04-15',
+    category: { color: 'brand-blue', label: 'Normes Énergétiques' },
+    image: { main: 'https://images.unsplash.com/photo-1618556450994-a3963cdcfd1b?w=1200', alt: 'Article Normes Énergétiques - JUYI CHR' },
+    title: {
+      fr: 'F-Gas 2026 : Règlementation et Étiquettes A-G pour le CHR',
+      en: 'F-Gas 2026: Regulation and A-G Labeling for CHR Equipment',
+      es: 'F-Gas 2026: Regulación y Etiquetas A-G para Equipos CHR'
+    },
+    subtitle: {
+      fr: "Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.",
+      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
+      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
+    },
+    excerpt: {
+      fr: "Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.",
+      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
+      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
+    },
+    author: { name: 'Équipe JUYI CHR', role: 'Expert CHR', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' },
+    readTime: '10 min',
+    content: {
+      fr: `
+## Règlement F-Gas 2026 et Étiquetage A-G pour le CHR
 
-#### Refrigeración
-- **Clase A**: Compresores de velocidad variable, iluminación LED
-- **Clase B**: Aislamiento mejorado, sellos optimizados
-- **Requisito 2026**: Mínimo clase E
+### Contexte
+La réglementation F-Gas 2026 impose des restrictions sur les fluides frigorigènes à fort GWP. Cet article explique les nouvelles étiquettes A-G et ce que cela signifie pour les équipements CHR.
 
-### ¿Cómo Elegir sus Equipos?
+### Points Clés
 
-1. **Verifique la etiqueta**: Siempre solicite la calificación energética
-2. **Calcule el TCO**: Costo total de propiedad a 10 años
-3. **Priorice la clase A**: Inversión recuperada en 2-3 años
-4. **Solicite certificaciones**: CE, RoHS, Eco-Design
+#### 1. Interdictions Programmées
+- R-404A interdit depuis 2025
+- R-507A interdit à partir de 2026
+- R-134a interdit dans certains équipements
 
-### Nuestra Gama Energéticamente Eficiente
-Todos nuestros equipos están clasificados A o B según las normas 2026. Proporcionamos certificados y etiquetas para cada producto.
+#### 2. Nouvelle Échelle A-G
+Le système d'étiquetage évolue pour refléter l'efficacité énergétique et l'impact environnemental.
 
-**Solicite nuestro catálogo** con calificaciones energéticas detalladas.
+#### 3. Choix d'Équipements
+Privilégiez les équipements utilisant des fluides naturels (CO2, hydrocarbures) ou à faible GWP.
+
+### Conclusion
+Anticipez ces changements pour rester conformes et optimiser vos coûts énergétiques.
+
+**Contactez notre équipe** pour des conseils personnalisés.
+      `,
+      en: `
+## F-Gas 2026 Regulation and A-G Labeling for CHR
+
+### Background
+The F-Gas 2026 regulation restricts high-GWP refrigerants. This article explains the new A-G labels and what it means for CHR equipment.
+
+### Key Points
+
+#### 1. Scheduled Bans
+- R-404A banned since 2025
+- R-507A banned from 2026
+- R-134a banned in certain equipment
+
+#### 2. New A-G Scale
+The labeling system evolves to reflect energy efficiency and environmental impact.
+
+#### 3. Equipment Choices
+Favor equipment using natural refrigerants (CO2, hydrocarbons) or low-GWP fluids.
+
+### Conclusion
+Anticipate these changes to stay compliant and optimize energy costs.
+
+**Contact our team** for personalized advice.
+      `,
+      es: `
+## Regulación F-Gas 2026 y Etiquetas A-G para CHR
+
+### Antecedentes
+El reglamento F-Gas 2026 restringe los refrigerantes de alto GWP. Este artículo explica las nuevas etiquetas A-G y lo que significa para los equipos CHR.
+
+### Puntos Clave
+
+#### 1. Prohibiciones Programadas
+- R-404A prohibido desde 2025
+- R-507A prohibido desde 2026
+- R-134a prohibido en ciertos equipos
+
+#### 2. Nueva Escala A-G
+El sistema de etiquetado evoluciona para reflejar la eficiencia energética y el impacto ambiental.
+
+#### 3. Elección de Equipos
+Favorezca equipos que utilicen refrigerantes naturales (CO2, hidrocarburos) o bajo GWP.
+
+### Conclusión
+Anticipe estos cambios para mantenerse conforme y optimizar costos energéticos.
+
+**Contacte a nuestro equipo** para asesoramiento personalizado.
       `
     }
   }
-  {
-
 ];
 export default blogPosts;

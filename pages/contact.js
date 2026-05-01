@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
-import SmartAssistant from '../components/SmartAssistant';
+import InquiryForm from '../components/InquiryForm';
 import { useRouter } from 'next/router';
 import { translations } from '../data/translations';
 
@@ -112,11 +112,11 @@ export default function Contact() {
           </div>
 
           {/* Right: Smart Assistant */}
-          <div>
+          <div id="contact">
             <h2 className="text-2xl font-bold text-brand-blue mb-8 uppercase tracking-wide border-l-4 border-brand-orange pl-4">
-              {t.contact_assistant_title || 'ASSISTANT IA'}
+              {t.form_title || 'DEMANDE DE DEVIS'}
             </h2>
-            <SmartAssistant />
+            <InquiryForm compact={false} />
           </div>
         </div>
       </main>

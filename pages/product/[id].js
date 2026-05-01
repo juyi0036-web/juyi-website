@@ -6,6 +6,8 @@ import { products } from '../../data/products';
 import { categories } from '../../data/categories';
 import { translations } from '../../data/translations';
 
+import CTABanner from '../../components/CTABanner';
+
 export default function ProductDetail({ product: productProp }) {
   const router = useRouter();
   const { id } = router.query;
@@ -56,6 +58,9 @@ export default function ProductDetail({ product: productProp }) {
             {t.nav_home}
           </Link>
         </main>
+
+      {/* CTA Banner */}
+      <CTABanner link="/contact#contact" />
       </div>
     );
   }

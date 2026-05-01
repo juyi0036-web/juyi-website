@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
 import blogPosts from '../../data/blogPosts';
 
+import CTABanner from '../../components/CTABanner';
+
 export default function Blog() {
   const { locale } = useRouter();
   const t = locale === 'en' ? 'en' : locale === 'es' ? 'es' : 'fr';
@@ -52,8 +54,8 @@ export default function Blog() {
                       <span className={`bg-${blogPosts[0].category.color}-100 text-${blogPosts[0].category.color}-600 text-xs font-bold px-3 py-1 rounded-full`}>
                         {blogPosts[0].category.label}
                       </span>
-                      <span className="text-gray-400 text-sm">{blogPosts[0].date}</span>
-                      <span className="text-gray-400 text-sm">• {blogPosts[0].readTime}</span>
+                      {/* <span className="text-gray-400 text-sm">{blogPosts[0].date}</span>
+                      <span className="text-gray-400 text-sm">• {blogPosts[0].readTime}</span> */}
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4 group-hover:text-brand-orange transition-colors">
                       {blogPosts[0].title[t] || blogPosts[0].title.fr}
@@ -101,8 +103,8 @@ export default function Blog() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-gray-400 text-sm">{post.date}</span>
-                    <span className="text-gray-400 text-sm">• {post.readTime}</span>
+                    {/* <span className="text-gray-400 text-sm">{post.date}</span>
+                    <span className="text-gray-400 text-sm">• {post.readTime}</span> */}
                   </div>
                   <h2 className="text-xl font-bold text-brand-dark mb-3 line-clamp-2">
                     <Link href={`/blog/${post.slug}`} className="hover:text-brand-orange transition-colors">
@@ -129,22 +131,11 @@ export default function Blog() {
           })}
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="mt-16 bg-brand-blue rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">
-            {t === 'en' ? 'Stay Updated' : t === 'es' ? 'Manténgase Actualizado' : 'Restez Informé'}
-          </h2>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            {t === 'en' ? 'Subscribe to our newsletter for the latest industry insights and regulatory updates.' : t === 'es' ? 'Suscríbase a nuestro boletín para las últimas perspectivas de la industria y actualizaciones regulatorias.' : 'Abonnez-vous à notre newsletter pour les dernières perspectives de l\'industrie et les mises à jour réglementaires.'}
-          </p>
-          <Link 
-            href="/contact"
-            className="inline-block bg-brand-orange text-white px-8 py-4 rounded font-bold hover:bg-orange-700 transition shadow-xl uppercase tracking-wider"
-          >
-            {t === 'en' ? 'Contact Us' : t === 'es' ? 'Contáctenos' : 'Contactez-nous'}
-          </Link>
-        </div>
+
       </main>
+
+      {/* CTA Banner */}
+      <CTABanner />
 
       <footer className="bg-brand-dark text-slate-400 py-12 border-t border-white/5 text-center text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">

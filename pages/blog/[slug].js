@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
 import blogPosts from '../../data/blogPosts';
 
+import CTABanner from '../../components/CTABanner';
+
 export default function BlogPost() {
   const router = useRouter();
   const { slug } = router.query;
@@ -59,8 +61,8 @@ export default function BlogPost() {
               <span className={`bg-${post.category.color}-600 text-white text-xs font-bold px-3 py-1 rounded-full`}>
                 {post.category.label}
               </span>
-              <span className="text-white/80 text-sm">{post.date}</span>
-              <span className="text-white/80 text-sm">• {post.readTime}</span>
+              {/* <span className="text-white/80 text-sm">{post.date}</span>
+              <span className="text-white/80 text-sm">• {post.readTime}</span> */}
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
               {title}
@@ -85,7 +87,7 @@ export default function BlogPost() {
             <div className="text-sm text-gray-500">{post.author.role}</div>
           </div>
           <div className="ml-auto text-sm text-gray-400">
-            {post.readTime} {t === 'en' ? 'read' : t === 'es' ? 'de lectura' : 'de lecture'}
+            {/* {post.readTime} {t === 'en' ? 'read' : t === 'es' ? 'de lectura' : 'de lecture'} */}
           </div>
         </div>
 
@@ -144,7 +146,7 @@ export default function BlogPost() {
                           <span className={`bg-${relatedPost.category.color}-100 text-${relatedPost.category.color}-600 text-xs font-bold px-3 py-1 rounded-full`}>
                             {relatedPost.category.label}
                           </span>
-                          <span className="text-gray-400 text-sm">{relatedPost.readTime}</span>
+                          {/* <span className="text-gray-400 text-sm">{relatedPost.readTime}</span> */}
                         </div>
                         <h3 className="text-lg font-bold text-brand-dark mb-2 group-hover:text-brand-orange transition-colors">
                           {relatedTitle}
@@ -160,6 +162,9 @@ export default function BlogPost() {
           </div>
         </div>
       </main>
+
+      {/* CTA Banner */}
+      <CTABanner />
 
       <footer className="bg-brand-dark text-slate-400 py-12 border-t border-white/5 text-center text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">

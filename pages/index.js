@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect, useLayoutEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
+import CTABanner from '../components/CTABanner';
 import { translations } from '../data/translations';
 
 export default function Home() {
@@ -87,7 +88,7 @@ export default function Home() {
               {t.hero_desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
+              <a href="/contact#contact" className="px-8 py-4 bg-brand-orange text-white font-bold rounded hover:bg-orange-700 transition shadow-lg shadow-orange-900/20 uppercase tracking-wider text-sm">
                 {t.hero_btn_sourcing || 'Parler à l\'Assistant'}
               </a>
               <Link href="/products" className="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition backdrop-blur-sm uppercase tracking-wider text-sm">
@@ -294,18 +295,8 @@ export default function Home() {
         </section>
 
 
-        {/* === CTA SECTION === */}
-        <section className="py-20 bg-brand-orange text-white">
-          <div className="max-w-4xl mx-auto text-center px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.cta_title || 'Prêt à Optimiser Votre Supply Chain ?'}</h2>
-            <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-              {t.cta_desc || 'Arrêtez de payer les marges des intermédiaires. Commencez à sourcer directement auprès d\'usines certifiées en toute transparence.'}
-            </p>
-            <a href="#assistant" className="inline-block bg-white text-brand-orange px-10 py-4 rounded font-bold hover:bg-brand-blue hover:text-white transition shadow-xl uppercase tracking-wider">
-              {t.cta_btn || 'Parler à l\'Assistant IA'}
-            </a>
-          </div>
-        </section>
+        {/* CTA Banner - Remplace Assistant IA */}
+        <CTABanner link="/contact#contact" />
 
       </main>
 
@@ -319,8 +310,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+    </div>
 
       
-    </div>
   );
 }

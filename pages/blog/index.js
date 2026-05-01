@@ -13,7 +13,6 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-brand-blue">
       <Head>
-      <Head>
         <title>{t === 'en' ? 'Blog - Industry Insights | JUYI CHR' : t === 'es' ? 'Blog - Perspectivas de la Industria | JUYI CHR' : 'Blog - Perspectives Industrie | JUYI CHR'}</title>
         <meta name="description" content={blogPosts[0]?.subtitle[t] || blogPosts[0]?.subtitle.fr || 'Dernières perspectives de l\'industrie sur les réglementations UE, normes énergétiques et tendances des équipements CHR.'} />
         <meta property="og:title" content={t === 'en' ? 'Blog - Industry Insights | JUYI CHR' : t === 'es' ? 'Blog - Perspectivas de la Industria | JUYI CHR' : 'Blog - Perspectives Industrie | JUYI CHR'} />

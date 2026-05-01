@@ -14,9 +14,9 @@ const blogPosts = [
       es: 'Bomba de Calor Agua-Aire: Solución CLIMA 2050 para CHR'
     },
     subtitle: {
-      fr: 'Découvrez comment les pompes à chaleur air-eau révolutionnent le secteur CHR grâce à une efficacité énergétique exceptionnelle et une réduction significative des émissions de CO2.',
-      en: 'Discover how air-to-water heat pumps are revolutionizing the CHR sector with exceptional energy efficiency and significant CO2 emission reduction.',
-      es: 'Descubra cómo las bombas de calor agua-aire están revolucionando el sector CHR con excepcional eficiencia energética y reducción significativa de emisiones de CO2.'
+      fr: 'Découvrez comment les pompes à chaleur air-eau transforment le secteur CHR : COP 3-5, réduction CO2 de 50-80%, applications pratiques et conformité F-Gas 2026. L\'alternative durable aux chaudières fossilistes.',
+      en: 'Discover how air-to-water heat pumps are transforming the CHR sector: COP 3-5, 50-80% CO2 reduction, practical applications, and F-Gas 2026 compliance. The sustainable alternative to fossil boilers.',
+      es: 'Descubra cómo las bombas de calor agua-aire transforman el sector CHR: COP 3-5, reducción CO2 50-80%, aplicaciones prácticas y conformidad F-Gas 2026. La alternativa sostenible a calderas fossilistas.'
     },
     excerpt: {
       fr: 'Les pompes à chaleur air-eau représentent l\'une des technologies les plus prometteuses pour décarboner les équipements CHR d\'ici 2050. Performance, économies d\'énergie, et impact environnemental réduit.',
@@ -140,9 +140,9 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
       es: '2026: La UE Prohíbe Ciertos Refrigerantes - Lo Que Necesita Saber'
     },
     subtitle: {
-      fr: 'La réglementation F-Gas 2026 impose de nouvelles restrictions sur les fluides frigorigènes à fort PRG. Découvrez les exigences et les nouvelles étiquettes A-G.',
-      en: 'The F-Gas 2026 regulation imposes new restrictions on high-GWP refrigerants. Discover the requirements and the new A-G labels.',
-      es: 'El reglamento F-Gas 2026 impone nuevas restricciones sobre refrigerantes de alto PCA. Descubra los requisitos y las nuevas etiquetas A-G.'
+      fr: 'La réglementation F-Gas 2026 interdit certains HFC et impose l\'étiquette A-G. Découvrez les restrictions sur les fluides frigorigènes à fort PRG et comment préparer vos équipements CHR.',
+      en: 'The F-Gas 2026 regulation bans certain HFCs and mandates A-G labeling. Discover the restrictions on high-GWP refrigerants and how to prepare your CHR equipment.',
+      es: 'El reglamento F-Gas 2026 prohíbe ciertos HFC e impone la etiqueta A-G. Descubra las restricciones sobre refrigerantes de alto PCA y cómo preparar sus equipos CHR.'
     },
     excerpt: {
       fr: 'À partir de 2026, l\'Union européenne impose de nouvelles restrictions sur les fluides frigorigènes à fort potentiel de réchauffement global (PRG). Découvrez comment cela affecte vos équipements de froid et comment vous préparer.',

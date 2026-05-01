@@ -6,9 +6,20 @@ import blogPosts from '../../data/blogPosts';
 
 import CTABanner from '../../components/CTABanner';
 
-export default function Blog() {
-  const { locale } = useRouter();
+
+export async function getStaticProps({ locale }) {
   const t = locale === 'en' ? 'en' : locale === 'es' ? 'es' : 'fr';
+  
+  return {
+    props: {
+      blogPosts,
+      t
+    }
+  };
+}
+
+export default function Blog({ blogPosts, t }) {
+  
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-brand-blue">

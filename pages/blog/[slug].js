@@ -6,13 +6,48 @@ import blogPosts from '../../data/blogPosts';
 
 import CTABanner from '../../components/CTABanner';
 
-export default function BlogPost() {
-  const router = useRouter();
-  const { slug } = router.query;
-  const { locale } = router;
+
+export async function getStaticPaths({ locales }) {
+  const paths = [];
+  
+  blogPosts.forEach(post => {
+    locales.forEach(locale => {
+      paths.push({
+        params: { slug: post.slug },
+        locale
+      });
+    });
+  });
+
+  return {
+    paths,
+    fallback: false
+  };
+}
+
+export async function getStaticProps({ params, locale }) {
+  const slug = params.slug;
+  const post = blogPosts.find(p => p.slug === slug);
+  
+  if (!post) {
+    return {
+      notFound: true
+    };
+  }
+
   const t = locale === 'en' ? 'en' : locale === 'es' ? 'es' : 'fr';
 
-  const post = blogPosts.find(p => p.slug === slug);
+  return {
+    props: {
+      post,
+      t
+    }
+  };
+}
+
+
+export default function BlogPost({ post, t }) {
+  
 
   if (!post) {
     return (

@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
-
-
 const blogPosts = [
   {
     id: 'eu-2026-refrigerant-ban',
     slug: 'eu-2026-refrigerant-ban',
     date: '2026-04-20',
     category: { color: 'brand-orange', label: 'Réglementation UE' },
-    image: { main: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200', alt: 'F-Gas 2026 Regulation - JUYI CHR' },
+    image: { 
+      main: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200',
+      alt: 'F-Gas 2026 Regulation - JUYI CHR' 
+    },
     title: {
       fr: '2026 : L\'UE Interdit Certains Fluides Frigorigènes - Ce Que Vous Devez Savoir',
       en: '2026: EU Bans Certain Refrigerants - What You Need to Know',
@@ -23,201 +23,252 @@ const blogPosts = [
       en: 'Starting 2026, the European Union imposes new restrictions on high Global Warming Potential (GWP) refrigerants. Learn how this affects your cold equipment and how to prepare.',
       es: 'A partir de 2026, la Unión Europea impone nuevas restricciones sobre refrigerantes con alto Potencial de Calentamiento Global (GWP). Descubra cómo afecta a sus equipos de frío y cómo prepararse.'
     },
-    author: { name: 'Équipe JUYI CHR', role: 'Expert CHR', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' },
+    author: { 
+      name: 'Équipe JUYI CHR', 
+      role: 'Expert CHR', 
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' 
+    },
     readTime: '8 min',
     content: {
       fr: `
 ## Normes Énergétiques UE 2026 pour les Équipements CHR
 
-### Le Nouveau Label
-Depuis mars 2021, l'UE a introduit un nouveau système d'étiquetage énergétique. En 2026, les exigences deviennent plus strictes.
+À partir de 2026, l\'Union européenne met en place de nouvelles normes énergétiques pour les équipements de la Chaîne du Froid et de la Restauration (CHR). Ces mesures visent à réduire la consommation d\'énergie et les émissions de CO₂.
 
-### Changements Majeurs
+### Ce Que Change la Nouvelle Étiquette Énergétique
 
-#### 1. Échelle de Notation Révisée
-- **Ancienne échelle** : A+++ à D
-- **Nouvelle échelle** : A à G (plus stricte)
-- Un appareil classé A+++ en 2020 pourrait être classé C en 2026
+La nouvelle étiquette énergétique européenne, qui se déploie progressivement depuis 2021, couvrira à partir de 2026 davantage d\'équipements CHR :
+- Réfrigération commerciale
+- Equipements de cuisson professionnels
+- Machines à laver industrielles
 
-#### 2. Exigences Minimales
-Les équipements suivants doivent atteindre au minimum la classe E :
-- Fours professionnels
-- Lave-vaisselle commerciaux
-- Réfrigérateurs et congélateurs
+L\'échelle passe de A+++ à G (similaire aux étiquettes électroménagers), avec des_classes A réservées aux_technologies les_plus_vertes comme les_ Pompe à Chaleur Air Eau.
 
-#### 3. Impact sur les Coûts
-Les équipements anciens peuvent nécessiter des investissements pour se conformer.
+### Focus sur les Fluides Frigorigènes
 
-#### 4. Calendrier
-- **2021** : Introduction du nouveau label
-- **2026** : Exigences minimales en vigueur
+Le Règlement F-Gas 2026 limite progressivement l\'utilisation des fluides frigorigènes à fort PRG :
+- Interdiction de Certains HFC dans les_nouvelles installations
+- Quotas d\'approvisionnement réduits
+- Promotion des fluides naturels (CO₂, NH₃) et des fluides à faible PRG
 
-### Notre Engagement
-Nous aidons nos clients à choisir des équipements conformes.
+### Comment Se Préparer ?
 
-**Contactez-nous** pour un audit gratuit.
+1. **Auditer votre parc** : Identifiez les équipements utilisant des fluides concernés
+2. **Planifier le remplacement** : Anticipez les investissements nécessaires
+3. **Former vos équipes** : Sensibilisez aux nouvelles_règles de manipulation
+4. **Choisir des solutions durables** : Privilégiez les équipements basés sur les_Pompes à Chaleur et les fluides naturels
+
+### Ressources Utiles
+
+- [Réglementation F-Gas UE 2026](https://climate.ec.europa.eu/eu-action/fluorinated-greenhouse-gases/f-gas-regulation_fr)
+- [Nouvelle Étiquette Énergétique](https://energy-label.ec.europa.eu/)
+
+---
+*Article rédigé par l\'équipe technique JUYI CHR, spécialiste des solutions CHR durables.*
       `,
       en: `
 ## EU 2026 Energy Standards for CHR Equipment
 
-### The New Energy Label
-Since March 2021, the EU has introduced a new energy labeling system. In 2026, the requirements become stricter.
+Starting in 2026, the European Union is implementing new energy standards for Cold Chain and Catering (CHR) equipment. These measures aim to reduce energy consumption and CO₂ emissions.
 
-### Major Changes
+### What Changes with the New Energy Label
 
-#### 1. Revised Rating Scale
-- **Old scale** : A+++ to D
-- **New scale** : A to G (stricter)
-- An appliance rated A+++ in 2020 could be rated C in 2026
+The new European energy label, gradually rolled out since 2021, will cover more CHR equipment from 2026:
+- Commercial refrigeration
+- Professional cooking equipment
+- Industrial washing machines
 
-#### 2. Minimum Requirements
-The following equipment must meet at least class E:
-- Professional ovens
-- Commercial dishwashers
-- Refrigerators and freezers
+The scale ranges from A+++ to G (similar to household appliances), with A_classes reserved for the_greenest technologies like Air-to-Water Heat Pumps.
 
-#### 3. Cost Impact
-Older equipment may require investments to comply.
+### Focus on Refrigerants
 
-#### 4. Timeline
-- **2021** : Label introduction
-- **2026** : Minimum requirements enforced
+The F-Gas Regulation 2026 gradually limits the use of high-GWP refrigerants:
+- Ban on Certain HFCs in new installations
+- Reduced supply quotas
+- Promotion of natural refrigerants (CO₂, NH₃) and low-GWP fluids
 
-### Our Commitment
-We help customers select compliant equipment.
+### How to Prepare?
 
-**Contact us** for a free audit.
+1. **Audit your equipment** Identify units using regulated refrigerants
+2. **Plan replacements** Anticipate necessary investments
+3. **Train your teams** Raise awareness of new handling rules
+4. **Choose sustainable solutions** Favor equipment based on Heat Pumps and natural refrigerants
+
+### Useful Resources
+
+- [EU F-Gas Regulation 2026](https://climate.ec.europa.eu/eu-action/fluorinated-greenhouse-gases/f-gas-regulation_en)
+- [New Energy Label](https://energy-label.ec.europa.eu/)
+
+---
+*Written by JUYI CHR technical team, specialist in sustainable CHR solutions.*
       `,
       es: `
 ## Normas Energéticas UE 2026 para Equipos CHR
 
-### La Nueva Etiqueta Energética
-Desde marzo de 2021, la UE introdujo un nuevo sistema de etiquetado energético. En 2026, los requisitos se vuelven más estrictos.
+A partir de 2026, la Unión Europea implementa nuevas normas energéticas para equipos de Cadena de Frío y Restauración (CHR). Estas medidas buscan reducir el consumo de energía y las emisiones de CO₂.
 
-### Cambios Principales
+### Qué Cambia con la Nueva Etiqueta Energética
 
-#### 1. Escala de Calificación Revisada
-- **Escala antigua** : A+++ a D
-- **Nueva escala** : A a G (más estricta)
-- Un electrodoméstico calificado A+++ en 2020 podría calificarse C en 2026
+La nueva etiqueta energética europea, implementada gradualmente desde 2021, cubrirá más equipos CHR desde 2026:
+- Refrigeración comercial
+- Equipos de cocina profesionales
+- Lavadoras industriales
 
-#### 2. Requisitos Mínimos
-Los siguientes equipos deben cumplir al menos la clase E:
-- Hornos profesionales
-- Lavavajillas comerciales
-- Refrigeradores y congeladores
+La escala va de A+++ a G (similar a electrodomésticos), con clases A reservadas para las tecnologías más verdes como las_Bombas de Calor Agua-Aire.
 
-#### 3. Impacto en Costos
-El equipo más antiguo puede requerir inversiones para cumplir.
+### Enfoque en Refrigerantes
 
-#### 4. Cronograma
-- **2021** : Introducción de la etiqueta
-- **2026** : Requisitos mínimos vigentes
+El Reglamento F-Gas 2026 limita gradualmente el uso de refrigerantes de alto PCA:
+- Prohibición de Ciertos HFC en nuevas instalaciones
+- Cuotas de suministro reducidas
+- Promoción de refrigerantes naturales (CO₂, NH₃) y fluidos de bajo PCA
 
-### Nuestro Compromiso
-Ayudamos a los clientes a seleccionar equipos conformes.
+### ¿Cómo Prepararse?
 
-**Contáctenos** para una auditoría gratuita.
+1. **Auditar su parque** Identifique equipos que usan refrigerantes regulados
+2. **Planificar reemplazos** Anticipe las inversiones necesarias
+3. **Formar a sus equipos** Conciencie sobre las nuevas reglas de manipulación
+4. **Elegir soluciones sostenibles** Priorice equipos basados en Bombas de Calor y refrigerantes naturales
+
+### Recursos útiles
+
+- [Reglamento F-Gas UE 2026](https://climate.ec.europa.eu/eu-action/fluorinated-greenhouse-gases/f-gas-regulation_es)
+- [Nueva Etiqueta Energética](https://energy-label.ec.europa.eu/)
+
+---
+*Artículo redactado por el equipo técnico de JUYI CHR, especialista en soluciones CHR sostenibles.*
       `
     }
   },
   {
     id: 'eu-2026-energy-standards',
     slug: 'eu-2026-energy-standards',
-    date: '2026-04-15',
-    category: { color: 'brand-blue', label: 'Normes Énergétiques' },
-    image: { main: 'https://images.unsplash.com/photo-1618556450994-a3963cdcfd1b?w=1200', alt: 'Article Normes Énergétiques - JUYI CHR' },
+    date: '2026-04-30',
+    category: { color: 'brand-blue', label: 'Innovation Énergétique' },
+    image: { 
+      main: 'https://images.unsplash.com/photo-1595920633112-7039d49e585d?w=1200&q=80',
+      alt: 'Pompe à Chaleur Air Eau - JUYI CHR' 
+    },
     title: {
-      fr: 'F-Gas 2026 : Règlementation et Étiquettes A-G pour le CHR',
-      en: 'F-Gas 2026: Regulation and A-G Labeling for CHR Equipment',
-      es: 'F-Gas 2026: Regulación y Etiquetas A-G para Equipos CHR'
+      fr: 'Pompe à Chaleur Air Eau : Solution CLIMAT 2050 pour le CHR',
+      en: 'Air-to-Water Heat Pumps: CLIMATE 2050 Solution for CHR',
+      es: 'Bomba de Calor Agua-Aire: Solución CLIMA 2050 para CHR'
     },
     subtitle: {
-      fr: "Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.",
-      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
-      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
+      fr: 'Découvrez comment les pompes à chaleur air-eau révolutionnent le secteur CHR grâce à une efficacité énergétique exceptionnelle et une réduction significative des émissions de CO₂.',
+      en: 'Discover how air-to-water heat pumps are revolutionizing the CHR sector with exceptional energy efficiency and significant CO₂ emission reduction.',
+      es: 'Descubra cómo las bombas de calor agua-aire están revolucionando el sector CHR con excepcional eficiencia energética y reducción significativa de emisiones de CO₂.'
     },
     excerpt: {
-      fr: "Le règlement F-Gas 2026 et l\'étiquette A-G redéfinissent les normes pour équipements CHR.",
-      en: 'The F-Gas 2026 regulation and A-G labels redefine standards for CHR equipment.',
-      es: 'El reglamento F-Gas 2026 y las etiquetas A-G redefinen las normas para equipos CHR.'
+      fr: 'Les pompes à chaleur air-eau représentent l\'une des technologies les plus prometteuses pour décarboner les équipements CHR d\'ici 2050. Performance, économies d\'énergie, et impact environnemental réduit.',
+      en: 'Air-to-water heat pumps are one of the most promising technologies for decarbonizing CHR equipment by 2050. Performance, energy savings, and reduced environmental impact.',
+      es: 'Las bombas de calor agua-aire son una de las tecnologías más prometedoras para descarbonizar equipos CHR para 2050. Rendimiento, ahorro energético y reducción del impacto ambiental.'
     },
-    author: { name: 'Équipe JUYI CHR', role: 'Expert CHR', avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' },
+    author: { 
+      name: 'Équipe JUYI CHR', 
+      role: 'Expert CHR', 
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face' 
+    },
     readTime: '10 min',
     content: {
       fr: `
-## Règlement F-Gas 2026 et Étiquetage A-G pour le CHR
+## Pompe à Chaleur Air Eau : La Technologie CLIMAT 2050 pour le CHR
 
-### Contexte
-La réglementation F-Gas 2026 impose des restrictions sur les fluides frigorigènes à fort GWP. Cet article explique les nouvelles étiquettes A-G et ce que cela signifie pour les équipements CHR.
+Les pompes à chaleur (PAC) air-eau transforment la chaleur de l\'air ambiant en energía thermique pour le chauffage et l\'eau chaude sanitaire. Pour le secteur CHR, elles offrent une alternative propre aux chaudières fossilistes.
 
-### Points Clés
+### Performance Énergétique Exceptionnelle
 
-#### 1. Interdictions Programmées
-- R-404A interdit depuis 2025
-- R-507A interdit à partir de 2026
-- R-134a interdit dans certains équipements
+Avec un COP (Coefficient de Performance) typique de 3 à 5, les PAC air-eau produisent 3 à 5 kWh de chaleur pour 1 kWh d\'électricité consommée. Cela représente jusqu\'à 70% d\'économies d\'énergie par rapport aux systèmes électriques directes.
 
-#### 2. Nouvelle Échelle A-G
-Le système d'étiquetage évolue pour refléter l'efficacité énergétique et l'impact environnemental.
+### Impact Environnemental Réduit
 
-#### 3. Choix d'Équipements
-Privilégiez les équipements utilisant des fluides naturels (CO2, hydrocarbures) ou à faible GWP.
+En utilisant l\'électricité (de plus en plus décarbonée) et en évitant les combustibles fossiles, les PAC contribuent à :
+- Réduire les émissions de CO₂ de 50 à 80%
+- Minimiser la dépendance aux énergies importées
+- Respecter les objectifs_climatiques 2050
 
-### Conclusion
-Anticipez ces changements pour rester conformes et optimiser vos coûts énergétiques.
+### Applications CHR
 
-**Contactez notre équipe** pour des conseils personnalisés.
+- **Réseaux de chaleur** : Production d\'eau chaude pour chauffage urbain
+- **Eau chaude sanitaire** : Hôtels, restaurants, établissements de santé
+- **Chauffage et climatisation** : Bâtiments commerciaux et industriels
+
+### Pourquoi Choisir JUYI CHR ?
+
+Fort de notre expertise dans le secteur CHR, nous vous accompagnons dans :
+- L\'étude de faisabilité et le dimensionnement
+- L\'installation et la mise en service
+- La maintenance prédictive et l\'optimisation
+
+---
+*Article technique par l\'équipe R&D JUYI CHR.*
       `,
       en: `
-## F-Gas 2026 Regulation and A-G Labeling for CHR
+## Air-to-Water Heat Pumps: The CLIMATE 2050 Technology for CHR
 
-### Background
-The F-Gas 2026 regulation restricts high-GWP refrigerants. This article explains the new A-G labels and what it means for CHR equipment.
+Heat pumps (HP) air-to-water convert heat from ambient air into thermal energy for heating and domestic hot water. For the CHR sector, they offer a clean alternative to fossil-fuel boilers.
 
-### Key Points
+### Exceptional Energy Performance
 
-#### 1. Scheduled Bans
-- R-404A banned since 2025
-- R-507A banned from 2026
-- R-134a banned in certain equipment
+With a typical COP (Coefficient of Performance) of 3 to 5, air-to-water HPs produce 3 to 5 kWh of heat for 1 kWh of electricity consumed. That represents up to 70% energy savings compared to direct electric systems.
 
-#### 2. New A-G Scale
-The labeling system evolves to reflect energy efficiency and environmental impact.
+### Reduced Environmental Impact
 
-#### 3. Equipment Choices
-Favor equipment using natural refrigerants (CO2, hydrocarbons) or low-GWP fluids.
+By using electricity (increasingly decarbonized) and avoiding fossil fuels, HPs contribute to:
+- Reducing CO₂ emissions by 50 to 80%
+- Minimizing dependence on imported energy
+- Meeting 2050 climate targets
 
-### Conclusion
-Anticipate these changes to stay compliant and optimize energy costs.
+### CHR Applications
 
-**Contact our team** for personalized advice.
+- **District heating** Production of hot water for urban heating
+- **Domestic hot water** Hotels, restaurants, healthcare facilities
+- **Heating and cooling** Commercial and industrial buildings
+
+### Why Choose JUYI CHR?
+
+With our expertise in the CHR sector, we support you in:
+- Feasibility study and sizing
+- Installation and commissioning
+- Predictive maintenance and optimization
+
+---
+*Technical article by JUYI CHR R&D team.*
       `,
       es: `
-## Regulación F-Gas 2026 y Etiquetas A-G para CHR
+## Bomba de Calor Agua-Aire: La Tecnología CLIMA 2050 para CHR
 
-### Antecedentes
-El reglamento F-Gas 2026 restringe los refrigerantes de alto GWP. Este artículo explica las nuevas etiquetas A-G y lo que significa para los equipos CHR.
+Las bombas de calor (BC) agua-aire convierten el calor del aire ambiente en energía térmica para calefacción y agua caliente sanitaria. Para el sector CHR, ofrecen una alternativa limpia a las calderas de combustibles fósiles.
 
-### Puntos Clave
+### Rendimiento Energético Excepcional
 
-#### 1. Prohibiciones Programadas
-- R-404A prohibido desde 2025
-- R-507A prohibido desde 2026
-- R-134a prohibido en ciertos equipos
+Con un COP (Coeficiente de Performance) típico de 3 a 5, las BC agua-aire producen 3 a 5 kWh de calor por 1 kWh de electricidad consumida. Esto representa hasta un 70% de ahorro energético frente a sistemas eléctricos directos.
 
-#### 2. Nueva Escala A-G
-El sistema de etiquetado evoluciona para reflejar la eficiencia energética y el impacto ambiental.
+### Impacto Ambiental Reducido
 
-#### 3. Elección de Equipos
-Favorezca equipos que utilicen refrigerantes naturales (CO2, hidrocarburos) o bajo GWP.
+Al usar electricidad (cada vez más descarbonizada) y evitar combustibles fósiles, las BC contribuyen a:
+- Reducir las emisiones de CO₂ entre un 50 y 80%
+- Minimizar la dependencia de energías importadas
+- Cumplir los objetivos climáticos 2050
 
-### Conclusión
-Anticipe estos cambios para mantenerse conforme y optimizar costos energéticos.
+### Aplicaciones CHR
 
-**Contacte a nuestro equipo** para asesoramiento personalizado.
+- **Redes de calor** Producción de agua caliente para calefacción urbana
+- **Agua caliente sanitaria** Hoteles, restaurantes, centros de salud
+- **Calefacción y climatización** Edificios comerciales e industriales
+
+### ¿Por Qué Elegir JUYI CHR?
+
+Con nuestra experiencia en el sector CHR, le acompañamos en:
+- Estudio de viabilidad y dimensionamiento
+- Instalación y puesta en marcha
+- Mantenimiento predictivo y optimización
+
+---
+*Artículo técnico del equipo de I+D de JUYI CHR.*
       `
     }
   }
 ];
+
 export default blogPosts;

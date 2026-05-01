@@ -13,8 +13,13 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-brand-blue">
       <Head>
+      <Head>
         <title>{t === 'en' ? 'Blog - Industry Insights | JUYI CHR' : t === 'es' ? 'Blog - Perspectivas de la Industria | JUYI CHR' : 'Blog - Perspectives Industrie | JUYI CHR'}</title>
-        <meta name="description" content={t === 'en' ? 'Latest industry insights on EU regulations, energy standards, and CHR equipment trends.' : t === 'es' ? 'Últimas perspectivas de la industria sobre regulaciones UE, estándares energéticos y tendencias de equipos CHR.' : 'Dernières perspectives de l\'industrie sur les réglementations UE, normes énergétiques et tendances des équipements CHR.'} />
+        <meta name="description" content={blogPosts[0]?.subtitle[t] || blogPosts[0]?.subtitle.fr || 'Dernières perspectives de l\'industrie sur les réglementations UE, normes énergétiques et tendances des équipements CHR.'} />
+        <meta property="og:title" content={t === 'en' ? 'Blog - Industry Insights | JUYI CHR' : t === 'es' ? 'Blog - Perspectivas de la Industria | JUYI CHR' : 'Blog - Perspectives Industrie | JUYI CHR'} />
+        <meta property="og:description" content={blogPosts[0]?.subtitle[t] || blogPosts[0]?.subtitle.fr || 'Dernières perspectives de l\'industrie sur les réglementations UE, normes énergétiques et tendances des équipements CHR.'} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={blogPosts[0]?.image?.main || 'https://www.juyi-chr.com/logo.png'} />
       </Head>
 
       <Navbar />

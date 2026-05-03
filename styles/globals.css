@@ -15,3 +15,32 @@ body {
 }
 a { color: inherit; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+/* 移动端 H5 优化样式 */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .h-safe-bottom {
+    height: env(safe-area-inset-bottom);
+  }
+}
+
+/* 强制移动端图片不拉伸 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 提高移动端点击灵敏度 */
+button, a {
+  touch-action: manipulation;
+}

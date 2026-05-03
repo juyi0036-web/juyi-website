@@ -1,6 +1,8 @@
 import '../styles/globals.css'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
+import FloatingWhatsApp from '../components/FloatingWhatsApp'
+import BottomNav from '../components/BottomNav'
 
 function MyApp({ Component, pageProps }) {
   const [lang, setLang] = useState('zh')
@@ -23,7 +25,13 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router])
 
-  return <Component {...pageProps} lang={lang} setLang={setLang} />
+  return (
+    <>
+      <Component {...pageProps} lang={lang} setLang={setLang} />
+      <FloatingWhatsApp />
+      <BottomNav />
+    </>
+  )
 }
 
 export default MyApp

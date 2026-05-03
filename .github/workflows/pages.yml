@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          submodules: true
+          submodules: false
           fetch-depth: 0
 
       - name: Setup Node
@@ -36,18 +36,18 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd juyi-website
+          cd .
           npm ci
 
       - name: Build with Next.js
         run: |
-          cd juyi-website
+          cd .
           npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./juyi-website/.next
+          path: ./.next
 
   deploy:
     environment:

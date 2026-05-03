@@ -24,9 +24,9 @@ const blogPosts = [
       es: 'Las bombas de calor agua-aire son una de las tecnologías más prometedoras para descarbonizar equipos CHR para 2050. Rendimiento, ahorro energético y reducción del impacto ambiental.'
     },
     author: { 
-      name: 'Chen Wei', 
-      role: 'Directeur Supply Chain Chine', 
-      avatar: '/team/chen.jpg' 
+      name: 'Philippe Dubois', 
+      role: 'Fondateur & Directeur Général', 
+      avatar: '/team/philippe.jpg' 
     },
     readTime: '10 min',
     content: {
@@ -68,7 +68,7 @@ Fort de notre expertise dans le secteur CHR, nous vous accompagnons dans :
 - La maintenance prédictive et l'optimisation
 
 ---
-*Article technique par Chen Wei, Directeur Supply Chain.*`,
+*Article technique par Philippe Dubois, Fondateur & Directeur Général.*`,
       en: `
 ## Air-to-Water Heat Pumps: The CLIMATE 2050 Solution for CHR
 
@@ -107,7 +107,7 @@ With our expertise in the CHR sector, we support you in:
 - Predictive maintenance and optimization
 
 ---
-*Technical article by Chen Wei, Supply Chain Director.*`,
+*Technical article by Philippe Dubois, Founder & CEO.*`,
       es: `
 ## Bomba de Calor Agua-Aire: Solución CLIMA 2050 para CHR
 
@@ -146,7 +146,7 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
 - Mantenimiento predictivo y optimización
 
 ---
-*Artículo técnico por Chen Wei, Director de Supply Chain.*`
+*Artículo técnico por Philippe Dubois, Fundador y Director General.*`
     }
   },
   {

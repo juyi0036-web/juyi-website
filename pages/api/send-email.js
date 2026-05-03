@@ -7,8 +7,10 @@ export default async function handler(req, res) {
 
   // Newsletter subscription (singleton endpoint: type distinguishes flows)
   if (req.body.type === 'newsletter') {
-    const { company, email } = req.body;
-    if (!company || !email) {
+    // Accept either 'company' or 'name' from frontend
+    const { company, name, email } = req.body;
+    const companyName = company || name || '';
+    if (!companyName || !email) {
       return res.status(400).json({ error: 'Company and email are required' });
     }
     try {
@@ -21,11 +23,11 @@ export default async function handler(req, res) {
         body: JSON.stringify({
           from: 'contact@juyi-chr.com',
           to: ['contact@juyi-chr.com'],
-          subject: `[JUYI CHR] Newsletter Subscription: ${company}`,
-          text: `New Newsletter Subscription\nCompany: ${company}\nEmail: ${email}`,
+          subject: `[JUYI CHR] Newsletter Subscription: ${companyName}`,
+          text: `New Newsletter Subscription\nCompany: ${companyName}\nEmail: ${email}`,
           html: `<div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
                    <h2 style="color: #ea580c;">Newsletter Subscription</h2>
-                   <p><strong>Company:</strong> ${company}</p>
+                   <p><strong>Company:</strong> ${companyName}</p>
                    <p><strong>Email:</strong> ${email}</p>
                  </div>`
         })

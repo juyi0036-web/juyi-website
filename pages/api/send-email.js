@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         },
         body: JSON.stringify({
           from: 'contact@juyi-chr.com',
-          to: ['contact@juyi-chr.com'],
+          to: ['contact@juyi-chr.com', 'juyi0036@gmail.com'],
           subject: `[JUYI CHR] Newsletter Subscription: ${companyName}`,
           text: `New Newsletter Subscription\nCompany: ${companyName}\nEmail: ${email}`,
           html: `<div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -33,7 +33,13 @@ export default async function handler(req, res) {
         })
       });
       if (!resp.ok) throw new Error('Resend failed');
-      return res.status(200).json({ success: true });
+      return 
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      console.error('Resend error (Newsletter):', resp.status, err);
+      return res.status(resp.status || 500).json({ message: 'Error', error: err.message || resp.status });
+    }
+    res.status(200).json({ success: true });
     } catch (error) {
       console.error('Newsletter error:', error);
       return res.status(500).json({ error: 'Failed to send subscription email' });
@@ -84,7 +90,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'contact@juyi-chr.com',
-        to: ['contact@juyi-chr.com'],
+        to: ['contact@juyi-chr.com', 'juyi0036@gmail.com'],
         subject: '[JUYI CHR] New Lead: ' + (name || 'Unknown'),
         text: text,
         html: html

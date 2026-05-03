@@ -174,7 +174,7 @@ export default function Home() {
               {/* Left: Professional Image (Spans height on large screens) */}
               <div className="lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[500px] bg-slate-200">
                 <img 
-                  src="/products/petrin-test.jpg" 
+                  src="/quality.jpg" 
                   alt="Technicienne chinoise inspectant soigneusement un pétrin industriel intelligent"
                   className="w-full h-full object-cover"
                   onError={(e) => {

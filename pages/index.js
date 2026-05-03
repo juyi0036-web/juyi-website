@@ -172,11 +172,15 @@ export default function Home() {
             {/* Main Content - Image + Cards */}
             <div className="grid lg:grid-cols-3 gap-8 items-start mb-16">
               {/* Left: Professional Image (Spans height on large screens) */}
-              <div className="lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[500px] bg-slate-100 flex items-center justify-center">
+              <div className="lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[500px] bg-slate-200">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" 
-                  alt="Technicienne qualifiée inspectant l'équipement CHR"
+                  src="/products/petrin-test.jpg" 
+                  alt="Technicienne chinoise inspectant soigneusement un pétrin industriel intelligent"
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.onerror = null; 
+                    e.target.src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800";
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8">

@@ -21,7 +21,7 @@ export default async function handler(req, res) {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          from: 'contact@juyi-chr.com',
+          from: 'onboarding@resend.dev',
           to: ['contact@juyi-chr.com', 'juyi0036@gmail.com'],
           subject: `[JUYI CHR] Newsletter Subscription: ${companyName}`,
           text: `New Newsletter Subscription\nCompany: ${companyName}\nEmail: ${email}`,
@@ -89,7 +89,7 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'contact@juyi-chr.com',
+        from: 'onboarding@resend.dev',
         to: ['contact@juyi-chr.com', 'juyi0036@gmail.com'],
         subject: '[JUYI CHR] New Lead: ' + (name || 'Unknown'),
         text: text,

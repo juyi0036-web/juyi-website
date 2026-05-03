@@ -26,7 +26,7 @@ const blogPosts = [
     author: { 
       name: 'Philippe Dubois', 
       role: 'Fondateur & Directeur Général', 
-      avatar: '/team/philippe.jpg' 
+      avatar: '/team/philippe-dubois.jpg' 
     },
     readTime: '10 min',
     content: {
@@ -176,7 +176,7 @@ Con nuestra experiencia en el sector CHR, le acompañamos en:
     author: { 
       name: 'Philippe Dubois', 
       role: 'Fondateur & Directeur Général', 
-      avatar: '/team/philippe.jpg' 
+      avatar: '/team/philippe-dubois.jpg' 
     },
     readTime: '8 min',
     content: {

@@ -45,7 +45,7 @@ export default function InquiryForm({ compact = false }) {
       const respData = await response.json().catch(() => null);
       console.log('Response data:', respData);
 
-      if (response.ok && respData && respData.message === 'Email sent successfully') {
+      if (response.ok && respData && (respData.success === true || respData.message === 'Email sent successfully')) {
         setSubmitted(true);
         setFormData({ company: '', name: '', email: '', phone: '', category: '', message: '' });
       } else {

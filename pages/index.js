@@ -174,8 +174,8 @@ export default function Home() {
               {/* Left: Professional Image (Spans height on large screens) */}
               <div className="lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[400px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800" 
-                  alt="Ingénieur chinoise effectuant un contrôle qualité sur un pétrin industriel"
+                  src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800" 
+                  alt="Technicienne chinoise inspectant soigneusement un pétrin industriel"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

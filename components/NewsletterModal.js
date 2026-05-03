@@ -44,7 +44,9 @@ export default function NewsletterModal({ isOpen, onClose }) {
           onClose();
         }, 3000);
       } else {
-        setError(data.error || 'Failed to subscribe');
+        setError(data.error || 'Failed to subscribe' + 
+      (data.message ? ': ' + data.message : '') + 
+      ' (Status: ' + response.status + ')');
       }
     } catch (err) {
       setError('Network error. Please try again.');

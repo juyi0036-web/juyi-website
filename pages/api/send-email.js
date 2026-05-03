@@ -32,14 +32,12 @@ export default async function handler(req, res) {
                  </div>`
         })
       });
-      if (!resp.ok) throw new Error('Resend failed');
-      return 
-    if (!resp.ok) {
-      const err = await resp.json().catch(() => ({}));
-      console.error('Resend error (Newsletter):', resp.status, err);
-      return res.status(resp.status || 500).json({ message: 'Error', error: err.message || resp.status });
-    }
-    res.status(200).json({ success: true });
+      if (!resp.ok) {
+        const err = await resp.json().catch(() => ({}));
+        console.error('Resend error (Newsletter):', resp.status, err);
+        return res.status(resp.status || 500).json({ message: 'Error', error: err.message || resp.status });
+      }
+      return res.status(200).json({ success: true });
     } catch (error) {
       console.error('Newsletter error:', error);
       return res.status(500).json({ error: 'Failed to send subscription email' });

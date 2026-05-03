@@ -38,7 +38,7 @@ export default function NewsletterModal({ isOpen, onClose }) {
 
       const data = await response.json();
 
-      if (response.ok) {
+      if (response.ok && (data?.success === true || data?.message === 'Email sent successfully')) {
         setSubmitted(true);
         setTimeout(() => {
           onClose();

@@ -1,5 +1,179 @@
 const blogPosts = [
   {
+    id: 'france-chr-trends-2026',
+    slug: 'france-chr-trends-2026',
+    date: '2026-05-15',
+    category: { color: 'brand-blue', label: 'Analyse Marché' },
+    image: { 
+      main: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=1200',
+      alt: 'Marché CHR France 2026 - Analyse Stratégique' 
+    },
+    title: {
+      fr: 'Marché CHR France 2026 : Entre Inflation et Reconfiguration Stratégique',
+      en: 'France CHR Market 2026: Between Inflation and Strategic Reconfiguration',
+      es: 'Mercado CHR Francia 2026: Entre la Inflación y la Reconfiguración Estratégica'
+    },
+    subtitle: {
+      fr: 'Analyse approfondie des 5 tendances clés qui redéfinissent la restauration française en 2026 : de la Premiumization à l\'IA invisible, découvrez comment naviguer dans ce nouveau paradigme.',
+      en: 'In-depth analysis of the 5 key trends redefining French catering in 2026: from Premiumization to invisible AI, discover how to navigate this new paradigm.',
+      es: 'Análisis profundo de las 5 tendencias clave que redefinen la restauración francesa en 2026: de la Premiumización a la IA invisible, descubra cómo navegar este nuevo paradigma.'
+    },
+    excerpt: {
+      fr: 'Le secteur CHR français traverse un point d\'inflexion majeur en 2026. Décryptage des nouveaux comportements de consommation et des impératifs opérationnels pour les restaurateurs.',
+      en: 'The French CHR sector is going through a major turning point in 2026. Decoding new consumer behaviors and operational imperatives for restaurateurs.',
+      es: 'El sector CHR francés atraviesa un punto de inflexión importante en 2026. Descifrando los nuevos comportamientos de consumo y los imperativos operativos para los restauradores.'
+    },
+    author: { 
+      name: 'Sheng Yu', 
+      role: 'Expert Stratégie Supply Chain', 
+      avatar: '/team/sheng-yu.jpg' 
+    },
+    readTime: '15 min',
+    content: {
+      fr: `
+## Marché CHR France 2026 : Le Nouveau Paradigme Opérationnel
+
+En combinant les données de marché de 2026 et une analyse sectorielle approfondie, le secteur CHR (Cafés, Hôtels, Restaurants) en France se trouve à un tournant de "reconfiguration logique". Voici les cinq tendances fondamentales qui redéfinissent l'industrie.
+
+### 1. La Bataille des Marges face à l'Inflation
+
+Bien que le chiffre d'affaires total du secteur en France devrait dépasser **123 milliards d'euros** en 2026, cette croissance est principalement portée par l'inflation.
+
+- **Déclassement de la consommation** : Le prix moyen d'un "Plat du jour" traditionnel a franchi la barre des **17,28 €**, atteignant le plafond psychologique des consommateurs. En conséquence, 59 % des actifs se tournent désormais vers des solutions de GMS (salades ou sandwichs préparés).
+- **Impératif de rentabilité** : Avec une hausse des faillites (notamment dans la restauration rapide, +19%), la survie dépend désormais de marges strictes : **70-75% sur le solide** et **85% sur le liquide**.
+
+### 2. Le Retour à "l'Économie de l'Expérience" : La Premiumization
+
+Face à la cherté de la vie, le consommateur français adopte une approche "Manger moins, mais manger mieux".
+
+- **Le restaurant comme lien social** : 73 % des clients privilégient de nouveau la consommation sur place pour la valeur relationnelle.
+- **Retour aux sources** : On observe un abandon de la cuisine moléculaire complexe au profit du **"Char, Smoke and Flame"** (cuisson à la flamme et au charbon) pour sublimer le produit brut. Les recettes de grand-mère et les plats à partager ("One-pot dishes") font un retour en force.
+
+### 3. "L'IA Invisible" : Nouveau Muscle Opérationnel
+
+En 2026, l'IA n'est plus un gadget mais un outil de gestion fondamental.
+
+- **Du SEO au GEO** : La recherche traditionnelle laisse place à la **GEO (Generative Engine Optimization)**. 50 % des consommateurs utilisent ChatGPT ou Claude pour trouver une table. Les données des restaurants doivent être structurées pour être "IA-compatibles".
+- **Automatisation de la chaîne** : L'IA est intégrée à la gestion des stocks, aux plannings et à l'analyse des coûts matières (Food Cost).
+
+### 4. Un Marché du Travail axé sur les Compétences
+
+Malgré une pénurie persistante (50 % des établissements en difficulté de recrutement), le profil recherché évolue.
+
+- **La Polyvalence** : On ne recrute plus pour un poste unique, mais pour des profils hybrides capables de gérer "Réception + Conciergerie" ou "Petit-déjeuner + Bar".
+- **Soft Skills & Digital** : Le processus de recrutement s'est accéléré (48h). On privilégie désormais l'intelligence émotionnelle et la capacité à maîtriser les outils digitaux (PMS, back-office).
+
+### 5. Mutation du Marché des Boissons : "No-Low" et RTD
+
+La structure de consommation des boissons subit un séisme, même au pays du vin.
+
+- **Désalcoolisation** : La montée en puissance du "No-Low" (sans ou faible alcool) est structurelle.
+- **RTD (Ready-to-Drink)** : Les cocktails prêts à boire explosent.
+- **Tendance Amertume & Umami** : Les chefs utilisent de plus en plus le miso fermenté ou les tanins du thé pour créer des profondeurs de goût complexes sans alcool.
+
+---
+### Recommandations JUYI CHR
+
+Pour les acteurs de la supply chain et des équipements, l'opportunité réside dans les **équipements à haute efficacité énergétique** capables de supporter des cuissons complexes (simulation charbon, contrôle thermique de précision) tout en réduisant la dépendance à la main-d'œuvre. La durabilité (ESG) est désormais le ticket d'entrée incontournable pour les grandes chaînes hôtelières.
+
+*Analyse rédigée par Sheng Yu, Expert Stratégie Supply Chain.*`,
+      en: `
+## France CHR Market 2026: The New Operational Paradigm
+
+Combining 2026 market data with deep industry analysis, the CHR (Cafés, Hotels, Restaurants) sector in France is at a turning point of "logical reconfiguration." Here are the five fundamental trends redefining the industry.
+
+### 1. The Margin Battle Against Inflation
+
+While total sector revenue in France is expected to exceed **€123 billion** in 2026, this growth is primarily driven by inflation.
+
+- **Consumption Downgrading**: The average price of a traditional "Plat du jour" has crossed the **€17.28** mark, hitting consumers' psychological ceiling. Consequently, 59% of employees now turn to supermarket solutions (prepared salads or sandwiches).
+- **Profitability Imperative**: With rising bankruptcies (especially in fast food, +19%), survival now depends on strict margins: **70-75% on food** and **85% on drinks**.
+
+### 2. The Return to "Experience Economy": Premiumization
+
+Faced with the high cost of living, French consumers are adopting a "Eat less, but eat better" approach.
+
+- **Restaurant as a Social Link**: 73% of customers again prioritize on-site dining for its relational value.
+- **Back to Basics**: We see a shift away from complex molecular cuisine towards **"Char, Smoke and Flame"** (flame and charcoal cooking) to enhance raw ingredients. Grandma's recipes and sharing plates ("One-pot dishes") are making a strong comeback.
+
+### 3. "Invisible AI": New Operational Muscle
+
+In 2026, AI is no longer a gimmick but a fundamental management tool.
+
+- **From SEO to GEO**: Traditional search is giving way to **GEO (Generative Engine Optimization)**. 50% of consumers use ChatGPT or Claude to find a table. Restaurant data must be structured to be "AI-compatible."
+- **Full Chain Automation**: AI is integrated into inventory management, scheduling, and food cost analysis.
+
+### 4. A Skills-Oriented Labor Market
+
+Despite persistent shortages (50% of establishments struggling to recruit), the sought-after profile is evolving.
+
+- **Polyvalence**: We no longer recruit for a single position, but for hybrid profiles capable of managing "Reception + Concierge" or "Breakfast + Bar."
+- **Soft Skills & Digital**: The recruitment process has accelerated (48h). Emotional intelligence and the ability to master digital tools (PMS, back-office) are now prioritized.
+
+### 5. Drink Market Mutation: "No-Low" and RTD
+
+The beverage consumption structure is undergoing an earthquake, even in the land of wine.
+
+- **De-alcoholization**: The rise of "No-Low" (no or low alcohol) is structural.
+- **RTD (Ready-to-Drink)**: Ready-to-drink cocktails are exploding.
+- **Bitterness & Umami Trend**: Chefs are increasingly using fermented miso or tea tannins to create complex flavor depths without alcohol.
+
+---
+### JUYI CHR Recommendations
+
+For supply chain and equipment players, the opportunity lies in **high-energy efficiency equipment** capable of supporting complex cooking (charcoal simulation, precision thermal control) while reducing labor dependency. Sustainability (ESG) is now the essential entry ticket for major hotel chains.
+
+*Analysis by Sheng Yu, Supply Chain Strategy Expert.*`,
+      es: `
+## Mercado CHR Francia 2026: El Nuevo Paradigma Operativo
+
+Combinando los datos de mercado de 2026 con un análisis sectorial profundo, el sector CHR (Cafés, Hoteles, Restaurantes) en Francia se encuentra en un punto de "reconfiguración lógica". Aquí están las cinco tendencias fundamentales que redefinen la industria.
+
+### 1. La Batalla de Márgenes frente a la Inflación
+
+Aunque se espera que los ingresos totales del sector en Francia superen los **123.000 millones de euros** en 2026, este crecimiento está impulsado principalmente por la inflación.
+
+- **Degradación del consumo**: El precio medio de un "Plat du jour" tradicional ha superado la barrera de los **17,28 €**, alcanzando el techo psicológico de los consumidores. Como resultado, el 59% de los trabajadores recurre ahora a soluciones de supermercado (ensaladas o sándwiches preparados).
+- **Imperativo de rentabilidad**: Con el aumento de las quiebras (especialmente en la comida rápida, +19%), la supervivencia depende ahora de márgenes estrictos: **70-75% en comida** y **85% en bebida**.
+
+### 2. El Regreso a la "Economía de la Experiencia": Premiumización
+
+Ante el alto coste de la vida, el consumidor francés adopta un enfoque de "Comer menos, pero comer mejor".
+
+- **El restaurante como vínculo social**: El 73% de los clientes vuelve a priorizar el consumo en el local por su valor relacional.
+- **Regreso a las raíces**: Se observa un abandono de la cocina molecular compleja en favor del **"Char, Smoke and Flame"** (cocción a la llama y al carbón) para realzar el producto bruto. Las recetas de la abuela y los platos para compartir ("One-pot dishes") vuelven con fuerza.
+
+### 3. "IA Invisible": Nuevo Músculo Operativo
+
+En 2026, la IA ya no es un gadget sino una herramienta de gestión fundamental.
+
+- **De SEO a GEO**: La búsqueda tradicional deja paso a la **GEO (Generative Engine Optimization)**. El 50% de los consumidores utiliza ChatGPT o Claude para encontrar mesa. Los datos de los restaurantes deben estar estructurados para ser "compatibles con la IA".
+- **Automatización de toda la cadena**: La IA se integra en la gestión de inventarios, horarios y análisis de costes de alimentos (Food Cost).
+
+### 4. Un Mercado Laboral Orientado a las Competencias
+
+A pesar de la escasez persistente (50% de los establecimientos con dificultades para contratar), el perfil buscado evoluciona.
+
+- **Polivalencia**: Ya no se contrata para un solo puesto, sino para perfiles híbridos capaces de gestionar "Recepción + Conserjería" o "Desayuno + Bar".
+- **Soft Skills y Digital**: El proceso de contratación se ha acelerado (48h). Se prioriza la inteligencia emocional y la capacidad de dominar herramientas digitales (PMS, back-office).
+
+### 5. Mutación del Mercado de Bebidas: "No-Low" y RTD
+
+La estructura del consumo de bebidas está sufriendo un terremoto, incluso en el país del vino.
+
+- **Desalcoholización**: El auge del "No-Low" (sin o bajo alcohol) es estructural.
+- **RTD (Ready-to-Drink)**: Los cócteles listos para beber están explotando.
+- **Tendencia Amargor y Umami**: Los chefs utilizan cada vez más miso fermentado o taninos del té para crear profundidades de sabor complejas sin alcohol.
+
+---
+### Recomendaciones JUYI CHR
+
+Para los actores de la cadena de suministro y equipos, la oportunidad reside en **equipos de alta eficiencia energética** capaces de soportar cocciones complejas (simulación de carbón, control térmico de precisión) reduciendo al mismo tiempo la dependencia de la mano de obra. La sostenibilidad (ESG) es ahora el ticket de entrada imprescindible para las grandes cadenas hoteleras.
+
+*Análisis redactado por Sheng Yu, Experto en Estrategia de Cadena de Suministro.*`
+    }
+  },
+  {
     id: 'eu-2026-energy-standards',
     slug: 'eu-2026-energy-standards',
     date: '2026-04-30',

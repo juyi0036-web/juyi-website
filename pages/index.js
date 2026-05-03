@@ -170,97 +170,163 @@ export default function Home() {
             </div>
 
             {/* Main Content - Image + Cards */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-              {/* Left: Professional Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="grid lg:grid-cols-3 gap-8 items-start mb-16">
+              {/* Left: Professional Image (Spans height on large screens) */}
+              <div className="lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[400px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800" 
-                  alt="Quality control in professional kitchen equipment manufacturing"
-                  className="w-full h-[500px] object-cover"
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" 
+                  alt="Quality control and industrial standards testing"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-brand-orange text-white px-4 py-2 rounded-lg font-bold">
+                  <div className="flex flex-col gap-2">
+                    <div className="bg-brand-orange text-white px-4 py-2 rounded-lg font-bold w-fit shadow-lg">
                       100% Certifié
                     </div>
-                    <div className="text-white text-sm">
+                    <div className="text-white text-sm font-medium drop-shadow-md">
                       Contrôle qualité rigoureux sur chaque équipement
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Right: Certification Cards */}
-              <div className="space-y-6">
+              {/* Right: Certification Cards Grid */}
+              <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* CE Certification */}
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group">
-                  <div className="flex items-start gap-4">
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-brand-blue rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:bg-brand-orange transition-colors">
+                      <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold text-base group-hover:bg-brand-orange transition-colors shadow-sm">
                         CE
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-brand-dark mb-2">{t.qual_ce_title || 'Certifié CE'}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        {t.qual_ce_desc || 'Chaque équipement subit des tests stricts pour répondre aux exigences européennes de sécurité, santé et environnement.'}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">Sécurité</span>
-                        <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">Santé</span>
-                        <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">Environnement</span>
+                      <h3 className="text-lg font-bold text-brand-dark mb-1">{t.qual_ce_title || 'Certifié CE'}</h3>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="bg-blue-100 text-blue-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Sécurité</span>
+                        <span className="bg-blue-100 text-blue-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Santé</span>
                       </div>
                     </div>
                   </div>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {t.qual_ce_desc || 'Chaque équipement subit des tests stricts pour répondre aux exigences européennes.'}
+                  </p>
                 </div>
 
                 {/* HACCP */}
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group">
-                  <div className="flex items-start gap-4">
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-brand-blue rounded-xl flex items-center justify-center group-hover:bg-brand-orange transition-colors">
-                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center group-hover:bg-brand-orange transition-colors shadow-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-brand-dark mb-2">{t.qual_haccp_title || 'Conception HACCP'}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        {t.qual_haccp_desc || 'Équipements conçus pour l\'hygiène. Surfaces faciles à nettoyer, matériaux alimentaires et conformité aux normes d\'analyse des risques.'}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">Hygiène</span>
-                        <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">Inox Alimentaire</span>
-                        <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">Nettoyage Facile</span>
+                      <h3 className="text-lg font-bold text-brand-dark mb-1">{t.qual_haccp_title || 'Conception HACCP'}</h3>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Hygiène</span>
+                        <span className="bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Alimentaire</span>
                       </div>
                     </div>
                   </div>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {t.qual_haccp_desc || 'Équipements conçus pour l\'hygiène avec matériaux alimentaires certifiés.'}
+                  </p>
                 </div>
 
                 {/* Eco & RoHS */}
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group">
-                  <div className="flex items-start gap-4">
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-brand-blue rounded-xl flex items-center justify-center group-hover:bg-brand-orange transition-colors">
-                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center group-hover:bg-brand-orange transition-colors shadow-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-brand-dark mb-2">{t.qual_eco_title || 'Éco-Conception & RoHS'}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        {t.qual_eco_desc || 'Priorité à l\'efficacité énergétique et à la restriction des substances dangereuses. Des solutions durables pour la cuisine moderne.'}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="bg-emerald-100 text-emerald-700 text-xs px-2 py-1 rounded">Éco-Design</span>
-                        <span className="bg-emerald-100 text-emerald-700 text-xs px-2 py-1 rounded">RoHS</span>
-                        <span className="bg-emerald-100 text-emerald-700 text-xs px-2 py-1 rounded">Énergie Efficace</span>
+                      <h3 className="text-lg font-bold text-brand-dark mb-1">{t.qual_eco_title || 'Éco-Conception'}</h3>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">RoHS</span>
+                        <span className="bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Durable</span>
                       </div>
                     </div>
                   </div>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {t.qual_eco_desc || 'Focus sur l\'efficacité énergétique et la restriction des substances dangereuses.'}
+                  </p>
+                </div>
+
+                {/* AQL & QC */}
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center group-hover:bg-brand-orange transition-colors shadow-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-dark mb-1">{t.qual_aql_title || 'Inspection AQL'}</h3>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="bg-orange-100 text-orange-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">ISO 9001</span>
+                        <span className="bg-orange-100 text-orange-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">0 Défaut</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {t.qual_aql_desc || 'Contrôle rigoureux sur site et inspection systématique avant expédition.'}
+                  </p>
+                </div>
+
+                {/* Noise Control */}
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center group-hover:bg-brand-orange transition-colors shadow-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-dark mb-1">{t.qual_noise_title || 'Acoustique'}</h3>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="bg-purple-100 text-purple-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">&lt; 70dB</span>
+                        <span className="bg-purple-100 text-purple-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Confort</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {t.qual_noise_desc || 'Conception optimisée pour un niveau sonore réduit et un meilleur confort.'}
+                  </p>
+                </div>
+
+                {/* Energy Efficiency */}
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-brand-orange/50 transition duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center group-hover:bg-brand-orange transition-colors shadow-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-dark mb-1">{t.qual_energy_title || 'Énergie ERP'}</h3>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="bg-yellow-100 text-yellow-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Label A++</span>
+                        <span className="bg-yellow-100 text-yellow-700 text-[10px] px-2 py-0.5 rounded font-medium uppercase">Eco-Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {t.qual_energy_desc || 'Conformité aux directives ERP 2024 pour une rentabilité maximale.'}
+                  </p>
                 </div>
               </div>
             </div>

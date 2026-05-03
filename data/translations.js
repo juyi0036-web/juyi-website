@@ -47,6 +47,12 @@ export const translations = {
     qual_haccp_desc: "Équipements conçus pour l'hygiène. Surfaces faciles à nettoyer, matériaux alimentaires et conformité aux normes d'analyse des risques.",
     qual_eco_title: "Éco-Conception & RoHS",
     qual_eco_desc: "Priorité à l'efficacité énergétique et à la restriction des substances dangereuses. Des solutions durables pour la cuisine moderne.",
+    qual_aql_title: "Inspection AQL & QC",
+    qual_aql_desc: "Contrôle rigoureux sur site selon les normes ISO 9001. Inspection systématique avant expédition pour garantir zéro défaut.",
+    qual_noise_title: "Performance Acoustique",
+    qual_noise_desc: "Conception optimisée pour un niveau sonore réduit (< 70dB). Amélioration du confort de travail en cuisine professionnelle.",
+    qual_energy_title: "Efficacité Énergétique ERP",
+    qual_energy_desc: "Conformité aux directives d'éco-conception UE 2024. Optimisation de la consommation pour une rentabilité maximale.",
 
     // Trends 2026
     trend_badge: "Market Intelligence",
@@ -388,7 +394,13 @@ export const translations = {
     qual_haccp_title: "HACCP Design",
     qual_haccp_desc: "Equipment designed for hygiene. Easy to clean surfaces, food-grade materials, and compliance with hazard analysis standards.",
     qual_eco_title: "Eco-Design & RoHS",
-    qual_eco_desc: "Focus on energy efficiency and restriction of hazardous substances. Sustainable solutions for the modern kitchen.",
+    qual_eco_desc: "Priority on energy efficiency and restriction of hazardous substances. Sustainable solutions for the modern kitchen.",
+    qual_aql_title: "AQL & QC Inspection",
+    qual_aql_desc: "Rigorous on-site control following ISO 9001 standards. Systematic pre-shipment inspection to guarantee zero defects.",
+    qual_noise_title: "Acoustic Performance",
+    qual_noise_desc: "Optimized design for reduced noise levels (< 70dB). Improved working comfort in professional kitchens.",
+    qual_energy_title: "ERP Energy Efficiency",
+    qual_energy_desc: "Compliance with EU 2024 eco-design directives. Optimized consumption for maximum profitability.",
 
     // Trends 2026
     trend_badge: "Market Intelligence",
@@ -729,7 +741,13 @@ export const translations = {
     qual_haccp_title: "Diseño HACCP",
     qual_haccp_desc: "Equipos diseñados para la higiene. Superficies fáciles de limpiar, materiales de grado alimenticio y cumplimiento con normas de análisis de peligros.",
     qual_eco_title: "Eco-Diseño y RoHS",
-    qual_eco_desc: "Enfoque en la eficiencia energética y restricción de sustancias peligrosas. Soluciones sostenibles para la cocina moderna.",
+    qual_eco_desc: "Prioridad en la eficiencia energética y restricción de sustancias peligrosas. Soluciones sostenibles para la cocina moderna.",
+    qual_aql_title: "Inspección AQL y QC",
+    qual_aql_desc: "Control riguroso en sitio según las normas ISO 9001. Inspección sistemática antes del envío para garantizar cero defectos.",
+    qual_noise_title: "Rendimiento Acústico",
+    qual_noise_desc: "Diseño optimizado para niveles de ruido reducidos (< 70dB). Mejora del confort laboral en cocinas profesionales.",
+    qual_energy_title: "Eficiencia Energética ERP",
+    qual_energy_desc: "Cumplimiento de las directivas de ecodiseño UE 2024. Consumo optimizado para la máxima rentabilidad.",
 
     // Trends 2026
     trend_badge: "Inteligencia de Mercado",

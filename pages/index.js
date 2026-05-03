@@ -183,15 +183,6 @@ export default function Home() {
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                
-                {/* Brand Logo Overlay */}
-                <div className="absolute top-6 left-6 z-20">
-                  <img 
-                    src="/logo.png" 
-                    alt="JUYI CHR Logo" 
-                    className="h-10 w-auto brightness-0 invert opacity-80"
-                  />
-                </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <div className="flex flex-col gap-2">

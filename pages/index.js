@@ -174,8 +174,8 @@ export default function Home() {
               {/* Left: Professional Image (Spans height on large screens) */}
               <div className="lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[400px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" 
-                  alt="Quality control and industrial standards testing"
+                  src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" 
+                  alt="Quality control and industrial testing of professional kitchen equipment"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

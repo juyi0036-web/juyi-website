@@ -95,7 +95,7 @@ export default function BlogPost({ post, t }) {
         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-4">
-              <span className={`bg-${post.category.color}-600 text-white text-xs font-bold px-3 py-1 rounded-full`}>
+              <span className="bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-full">
                 {post.category.label}
               </span>
               {/* <span className="text-white/80 text-sm">{post.date}</span>
@@ -130,7 +130,9 @@ export default function BlogPost({ post, t }) {
 
         {/* Article Content */}
         <article className="prose prose-lg max-w-none text-gray-700">
+          <div className="prose max-w-none lg:max-w-3xl mx-auto">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        </div>
         </article>
 
         {/* Share & CTA */}
